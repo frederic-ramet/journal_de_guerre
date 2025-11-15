@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+#!/usr/bin/env python3
+"""
+Génère automatiquement le site web avec toutes les images du journal.
+"""
+import os
+from pathlib import Path
+
+def generate_site(images_dir: str, output_file: str):
+    """Génère le HTML pour toutes les images."""
+
+    images_path = Path(images_dir)
+    images = sorted([f.name for f in images_path.glob("*.jpeg")])
+
+    print(f"Trouvé {len(images)} images")
+
+    # HTML header
+    html = '''<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -185,110 +201,14 @@
         <div class="nav-controls">
             <button class="nav-btn" onclick="prevPage()" id="prev-btn">← Précédent</button>
             <select class="page-select" id="page-select" onchange="goToPage(this.value)">
-                <option value="0">IMG_0410.jpeg (Page 1/103)</option>
-                <option value="1">IMG_0411.jpeg (Page 2/103)</option>
-                <option value="2">IMG_0412.jpeg (Page 3/103)</option>
-                <option value="3">IMG_0413.jpeg (Page 4/103)</option>
-                <option value="4">IMG_0414.jpeg (Page 5/103)</option>
-                <option value="5">IMG_0415.jpeg (Page 6/103)</option>
-                <option value="6">IMG_0416.jpeg (Page 7/103)</option>
-                <option value="7">IMG_0417.jpeg (Page 8/103)</option>
-                <option value="8">IMG_0418.jpeg (Page 9/103)</option>
-                <option value="9">IMG_0419.jpeg (Page 10/103)</option>
-                <option value="10">IMG_0420.jpeg (Page 11/103)</option>
-                <option value="11">IMG_0421.jpeg (Page 12/103)</option>
-                <option value="12">IMG_0422.jpeg (Page 13/103)</option>
-                <option value="13">IMG_0423.jpeg (Page 14/103)</option>
-                <option value="14">IMG_0424.jpeg (Page 15/103)</option>
-                <option value="15">IMG_0425.jpeg (Page 16/103)</option>
-                <option value="16">IMG_0426.jpeg (Page 17/103)</option>
-                <option value="17">IMG_0427.jpeg (Page 18/103)</option>
-                <option value="18">IMG_0428.jpeg (Page 19/103)</option>
-                <option value="19">IMG_0429.jpeg (Page 20/103)</option>
-                <option value="20">IMG_0430.jpeg (Page 21/103)</option>
-                <option value="21">IMG_0431.jpeg (Page 22/103)</option>
-                <option value="22">IMG_0432.jpeg (Page 23/103)</option>
-                <option value="23">IMG_0433.jpeg (Page 24/103)</option>
-                <option value="24">IMG_0434.jpeg (Page 25/103)</option>
-                <option value="25">IMG_0435.jpeg (Page 26/103)</option>
-                <option value="26">IMG_0436.jpeg (Page 27/103)</option>
-                <option value="27">IMG_0437.jpeg (Page 28/103)</option>
-                <option value="28">IMG_0438.jpeg (Page 29/103)</option>
-                <option value="29">IMG_0439.jpeg (Page 30/103)</option>
-                <option value="30">IMG_0440.jpeg (Page 31/103)</option>
-                <option value="31">IMG_0441.jpeg (Page 32/103)</option>
-                <option value="32">IMG_0442.jpeg (Page 33/103)</option>
-                <option value="33">IMG_0443.jpeg (Page 34/103)</option>
-                <option value="34">IMG_0444.jpeg (Page 35/103)</option>
-                <option value="35">IMG_0445.jpeg (Page 36/103)</option>
-                <option value="36">IMG_0446.jpeg (Page 37/103)</option>
-                <option value="37">IMG_0447.jpeg (Page 38/103)</option>
-                <option value="38">IMG_0448.jpeg (Page 39/103)</option>
-                <option value="39">IMG_0449.jpeg (Page 40/103)</option>
-                <option value="40">IMG_0450.jpeg (Page 41/103)</option>
-                <option value="41">IMG_0451.jpeg (Page 42/103)</option>
-                <option value="42">IMG_0452.jpeg (Page 43/103)</option>
-                <option value="43">IMG_0453.jpeg (Page 44/103)</option>
-                <option value="44">IMG_0454.jpeg (Page 45/103)</option>
-                <option value="45">IMG_0455.jpeg (Page 46/103)</option>
-                <option value="46">IMG_0456.jpeg (Page 47/103)</option>
-                <option value="47">IMG_0457.jpeg (Page 48/103)</option>
-                <option value="48">IMG_0458.jpeg (Page 49/103)</option>
-                <option value="49">IMG_0459.jpeg (Page 50/103)</option>
-                <option value="50">IMG_0460.jpeg (Page 51/103)</option>
-                <option value="51">IMG_0461.jpeg (Page 52/103)</option>
-                <option value="52">IMG_0462.jpeg (Page 53/103)</option>
-                <option value="53">IMG_0463.jpeg (Page 54/103)</option>
-                <option value="54">IMG_0464.jpeg (Page 55/103)</option>
-                <option value="55">IMG_0465.jpeg (Page 56/103)</option>
-                <option value="56">IMG_0466.jpeg (Page 57/103)</option>
-                <option value="57">IMG_0467.jpeg (Page 58/103)</option>
-                <option value="58">IMG_0468.jpeg (Page 59/103)</option>
-                <option value="59">IMG_0469.jpeg (Page 60/103)</option>
-                <option value="60">IMG_0470.jpeg (Page 61/103)</option>
-                <option value="61">IMG_0471.jpeg (Page 62/103)</option>
-                <option value="62">IMG_0472.jpeg (Page 63/103)</option>
-                <option value="63">IMG_0473.jpeg (Page 64/103)</option>
-                <option value="64">IMG_0474.jpeg (Page 65/103)</option>
-                <option value="65">IMG_0475.jpeg (Page 66/103)</option>
-                <option value="66">IMG_0476.jpeg (Page 67/103)</option>
-                <option value="67">IMG_0477.jpeg (Page 68/103)</option>
-                <option value="68">IMG_0478.jpeg (Page 69/103)</option>
-                <option value="69">IMG_0479.jpeg (Page 70/103)</option>
-                <option value="70">IMG_0480.jpeg (Page 71/103)</option>
-                <option value="71">IMG_0481.jpeg (Page 72/103)</option>
-                <option value="72">IMG_0482.jpeg (Page 73/103)</option>
-                <option value="73">IMG_0483.jpeg (Page 74/103)</option>
-                <option value="74">IMG_0484.jpeg (Page 75/103)</option>
-                <option value="75">IMG_0485.jpeg (Page 76/103)</option>
-                <option value="76">IMG_0486.jpeg (Page 77/103)</option>
-                <option value="77">IMG_0487.jpeg (Page 78/103)</option>
-                <option value="78">IMG_0488.jpeg (Page 79/103)</option>
-                <option value="79">IMG_0489.jpeg (Page 80/103)</option>
-                <option value="80">IMG_0490.jpeg (Page 81/103)</option>
-                <option value="81">IMG_0491.jpeg (Page 82/103)</option>
-                <option value="82">IMG_0492.jpeg (Page 83/103)</option>
-                <option value="83">IMG_0493.jpeg (Page 84/103)</option>
-                <option value="84">IMG_0494.jpeg (Page 85/103)</option>
-                <option value="85">IMG_0495.jpeg (Page 86/103)</option>
-                <option value="86">IMG_0496.jpeg (Page 87/103)</option>
-                <option value="87">IMG_0497.jpeg (Page 88/103)</option>
-                <option value="88">IMG_0498.jpeg (Page 89/103)</option>
-                <option value="89">IMG_0499.jpeg (Page 90/103)</option>
-                <option value="90">IMG_0500.jpeg (Page 91/103)</option>
-                <option value="91">IMG_0501.jpeg (Page 92/103)</option>
-                <option value="92">IMG_0502.jpeg (Page 93/103)</option>
-                <option value="93">IMG_0503.jpeg (Page 94/103)</option>
-                <option value="94">IMG_0504.jpeg (Page 95/103)</option>
-                <option value="95">IMG_0505.jpeg (Page 96/103)</option>
-                <option value="96">IMG_0506.jpeg (Page 97/103)</option>
-                <option value="97">IMG_0507.jpeg (Page 98/103)</option>
-                <option value="98">IMG_0508.jpeg (Page 99/103)</option>
-                <option value="99">IMG_0509.jpeg (Page 100/103)</option>
-                <option value="100">IMG_0510.jpeg (Page 101/103)</option>
-                <option value="101">IMG_0511.jpeg (Page 102/103)</option>
-                <option value="102">IMG_0512.jpeg (Page 103/103)</option>
-            </select>
+'''
+
+    # Add options for each page
+    for i, img in enumerate(images):
+        page_num = img.replace('IMG_', '').replace('.jpeg', '')
+        html += f'                <option value="{i}">{img} (Page {i+1}/{len(images)})</option>\n'
+
+    html += '''            </select>
             <button class="nav-btn" onclick="nextPage()" id="next-btn">Suivant →</button>
         </div>
     </header>
@@ -326,113 +246,19 @@
 
     <script>
         const images = [
-            "../jpg_source/IMG_0410.jpeg",
-            "../jpg_source/IMG_0411.jpeg",
-            "../jpg_source/IMG_0412.jpeg",
-            "../jpg_source/IMG_0413.jpeg",
-            "../jpg_source/IMG_0414.jpeg",
-            "../jpg_source/IMG_0415.jpeg",
-            "../jpg_source/IMG_0416.jpeg",
-            "../jpg_source/IMG_0417.jpeg",
-            "../jpg_source/IMG_0418.jpeg",
-            "../jpg_source/IMG_0419.jpeg",
-            "../jpg_source/IMG_0420.jpeg",
-            "../jpg_source/IMG_0421.jpeg",
-            "../jpg_source/IMG_0422.jpeg",
-            "../jpg_source/IMG_0423.jpeg",
-            "../jpg_source/IMG_0424.jpeg",
-            "../jpg_source/IMG_0425.jpeg",
-            "../jpg_source/IMG_0426.jpeg",
-            "../jpg_source/IMG_0427.jpeg",
-            "../jpg_source/IMG_0428.jpeg",
-            "../jpg_source/IMG_0429.jpeg",
-            "../jpg_source/IMG_0430.jpeg",
-            "../jpg_source/IMG_0431.jpeg",
-            "../jpg_source/IMG_0432.jpeg",
-            "../jpg_source/IMG_0433.jpeg",
-            "../jpg_source/IMG_0434.jpeg",
-            "../jpg_source/IMG_0435.jpeg",
-            "../jpg_source/IMG_0436.jpeg",
-            "../jpg_source/IMG_0437.jpeg",
-            "../jpg_source/IMG_0438.jpeg",
-            "../jpg_source/IMG_0439.jpeg",
-            "../jpg_source/IMG_0440.jpeg",
-            "../jpg_source/IMG_0441.jpeg",
-            "../jpg_source/IMG_0442.jpeg",
-            "../jpg_source/IMG_0443.jpeg",
-            "../jpg_source/IMG_0444.jpeg",
-            "../jpg_source/IMG_0445.jpeg",
-            "../jpg_source/IMG_0446.jpeg",
-            "../jpg_source/IMG_0447.jpeg",
-            "../jpg_source/IMG_0448.jpeg",
-            "../jpg_source/IMG_0449.jpeg",
-            "../jpg_source/IMG_0450.jpeg",
-            "../jpg_source/IMG_0451.jpeg",
-            "../jpg_source/IMG_0452.jpeg",
-            "../jpg_source/IMG_0453.jpeg",
-            "../jpg_source/IMG_0454.jpeg",
-            "../jpg_source/IMG_0455.jpeg",
-            "../jpg_source/IMG_0456.jpeg",
-            "../jpg_source/IMG_0457.jpeg",
-            "../jpg_source/IMG_0458.jpeg",
-            "../jpg_source/IMG_0459.jpeg",
-            "../jpg_source/IMG_0460.jpeg",
-            "../jpg_source/IMG_0461.jpeg",
-            "../jpg_source/IMG_0462.jpeg",
-            "../jpg_source/IMG_0463.jpeg",
-            "../jpg_source/IMG_0464.jpeg",
-            "../jpg_source/IMG_0465.jpeg",
-            "../jpg_source/IMG_0466.jpeg",
-            "../jpg_source/IMG_0467.jpeg",
-            "../jpg_source/IMG_0468.jpeg",
-            "../jpg_source/IMG_0469.jpeg",
-            "../jpg_source/IMG_0470.jpeg",
-            "../jpg_source/IMG_0471.jpeg",
-            "../jpg_source/IMG_0472.jpeg",
-            "../jpg_source/IMG_0473.jpeg",
-            "../jpg_source/IMG_0474.jpeg",
-            "../jpg_source/IMG_0475.jpeg",
-            "../jpg_source/IMG_0476.jpeg",
-            "../jpg_source/IMG_0477.jpeg",
-            "../jpg_source/IMG_0478.jpeg",
-            "../jpg_source/IMG_0479.jpeg",
-            "../jpg_source/IMG_0480.jpeg",
-            "../jpg_source/IMG_0481.jpeg",
-            "../jpg_source/IMG_0482.jpeg",
-            "../jpg_source/IMG_0483.jpeg",
-            "../jpg_source/IMG_0484.jpeg",
-            "../jpg_source/IMG_0485.jpeg",
-            "../jpg_source/IMG_0486.jpeg",
-            "../jpg_source/IMG_0487.jpeg",
-            "../jpg_source/IMG_0488.jpeg",
-            "../jpg_source/IMG_0489.jpeg",
-            "../jpg_source/IMG_0490.jpeg",
-            "../jpg_source/IMG_0491.jpeg",
-            "../jpg_source/IMG_0492.jpeg",
-            "../jpg_source/IMG_0493.jpeg",
-            "../jpg_source/IMG_0494.jpeg",
-            "../jpg_source/IMG_0495.jpeg",
-            "../jpg_source/IMG_0496.jpeg",
-            "../jpg_source/IMG_0497.jpeg",
-            "../jpg_source/IMG_0498.jpeg",
-            "../jpg_source/IMG_0499.jpeg",
-            "../jpg_source/IMG_0500.jpeg",
-            "../jpg_source/IMG_0501.jpeg",
-            "../jpg_source/IMG_0502.jpeg",
-            "../jpg_source/IMG_0503.jpeg",
-            "../jpg_source/IMG_0504.jpeg",
-            "../jpg_source/IMG_0505.jpeg",
-            "../jpg_source/IMG_0506.jpeg",
-            "../jpg_source/IMG_0507.jpeg",
-            "../jpg_source/IMG_0508.jpeg",
-            "../jpg_source/IMG_0509.jpeg",
-            "../jpg_source/IMG_0510.jpeg",
-            "../jpg_source/IMG_0511.jpeg",
-            "../jpg_source/IMG_0512.jpeg",
-        ];
+'''
+
+    # Add image paths
+    for img in images:
+        html += f'            "../jpg_source/{img}",\n'
+
+    html += '''        ];
 
         const transcriptions = {
-            0: `<h2>IMG_0410 - Couverture</h2>
+'''
+
+    # Add transcription placeholders (we'll fill some of these)
+    html += '''            0: `<h2>IMG_0410 - Couverture</h2>
                 <p><strong>Carnet Appartenant</strong></p>
                 <p>à <strong>Ramet Ernest</strong></p>
                 <p><strong>Etude</strong></p>
@@ -479,7 +305,9 @@
                 <p>Moi...le moins le moins me</p>
                 <p>Ainsi Harasse...</p>
                 <div class="note">Suite des enseignements spirituels</div>`,
-        };
+'''
+
+    html += '''        };
 
         let currentPage = 0;
         let currentZoom = 1;
@@ -588,3 +416,14 @@
     </script>
 </body>
 </html>
+'''
+
+    # Write the file
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(html)
+
+    print(f"Site généré: {output_file}")
+    print(f"Total: {len(images)} pages")
+
+if __name__ == "__main__":
+    generate_site("jpg_source", "site/index.html")

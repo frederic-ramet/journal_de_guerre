@@ -1,2 +1,34 @@
+# Directories to ignore
 jpg_source/
 venv/
+venv_htr/
+__pycache__/
+*.pyc
+
+# Data directories (large files)
+data/raw/
+data/processed/
+data/training/
+data/models/
+
+# Model cache
+.cache/
+*.pkl
+*.pt
+*.bin
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Environment
+.env
+*.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

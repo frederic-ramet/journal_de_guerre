@@ -1,0 +1,56 @@
+# Custom vocabulary for Journal de Guerre
+# Historical French and domain-specific terms
+# One word per line, comments start with #
+
+# Spiritual/philosophical terms
+spiritisme
+réincarnation
+incarnation
+désincarnation
+exhilaration
+macération
+déminéralisation
+potincaration
+immortel
+mortel
+esprit
+aspirations
+
+# Names from the journal
+Ramet
+Ernest
+Romain
+Cini
+Edouard
+
+# Places
+Montpellier
+
+# Old French spellings and common words
+étude
+leçon
+voie
+carnet
+appartenant
+commencé
+donné
+apprendre
+aimer
+tenir
+copie
+
+# Religious/spiritual
+Dieu
+église
+prière
+âme
+corps
+
+# Common historical terms
+guerre
+journal
+page
+date
+année
+mois
+jour

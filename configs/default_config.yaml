@@ -1,0 +1,65 @@
+# HTR Pipeline Configuration
+# Default configuration for Journal de Guerre text extraction
+
+# General settings
+general:
+  language: "fr"
+  output_dir: "data/processed"
+  cache_enabled: true
+  verbose: false
+
+# Image preprocessing
+preprocessing:
+  target_dpi: 300
+  binarization_method: "sauvola"  # Options: otsu, sauvola, adaptive
+  denoise_strength: 10
+  contrast_clip_limit: 2.0
+  deskew_enabled: true
+  border_removal: true
+
+# Line segmentation
+segmentation:
+  min_line_height: 20
+  max_line_height: 200
+  min_line_width_ratio: 0.1
+  horizontal_projection_threshold: 0.05
+  vertical_gap_threshold: 10
+  detect_columns: true
+  max_columns: 2
+  line_padding: 5
+
+# Text recognition (TrOCR)
+recognition:
+  model_name: "base"  # Options: base, large, small
+  custom_model_path: null  # Path to fine-tuned model
+  device: null  # null for auto-detection, "cuda" or "cpu"
+  max_length: 256
+  num_beams: 5
+  batch_size: 1  # Increase if enough VRAM
+
+# Post-processing
+postprocessing:
+  use_spell_checker: true
+  use_grammar_checker: false  # Slower but more thorough
+  custom_vocabulary_file: "configs/custom_vocab.txt"
+  date_normalization: true
+  preserve_original_case: true
+  min_word_length: 2
+
+# Training settings (for fine-tuning)
+training:
+  learning_rate: 5.0e-5
+  num_epochs: 10
+  batch_size: 8
+  warmup_steps: 100
+  weight_decay: 0.01
+  fp16: true  # Mixed precision (requires GPU)
+  save_steps: 500
+  eval_steps: 100
+  output_dir: "data/models/trocr-journal"
+
+# Evaluation metrics
+evaluation:
+  compute_cer: true  # Character Error Rate
+  compute_wer: true  # Word Error Rate
+  save_predictions: true

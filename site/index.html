@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journal de Guerre - Carnet de Ramet Ernest</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: #f5f1e8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #8b7355 0%, #6b5240 100%);
+            color: #f5f1e8;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        header p {
+            font-style: italic;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .page-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .page-btn {
+            background: #8b7355;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .page-btn:hover {
+            background: #6b5240;
+            transform: translateY(-2px);
+        }
+
+        .page-btn.active {
+            background: #4a3728;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        }
+
+        .page-viewer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        @media (max-width: 900px) {
+            .page-viewer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .image-panel {
+            background: #2c2c2c;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-panel img {
+            max-width: 100%;
+            max-height: 70vh;
+            border: 3px solid #8b7355;
+            border-radius: 5px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+        }
+
+        .image-controls {
+            margin-top: 1rem;
+            display: flex;
+            gap: 0.5rem;
+        }
+
+        .zoom-btn {
+            background: #555;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        .zoom-btn:hover {
+            background: #777;
+        }
+
+        .text-panel {
+            padding: 2rem;
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .text-panel h2 {
+            color: #8b7355;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #8b7355;
+        }
+
+        .text-panel h3 {
+            color: #6b5240;
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        .text-panel p {
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+
+        .text-panel strong {
+            color: #4a3728;
+        }
+
+        .text-panel .metadata {
+            background: #f0ebe3;
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+        }
+
+        .text-panel .note {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #6b5240;
+            color: #f5f1e8;
+            margin-top: 2rem;
+        }
+
+        .stats {
+            background: white;
+            padding: 1rem 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #8b7355;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Journal de Guerre</h1>
+        <p>Carnet d'études spirituelles de Ramet Ernest - 1911-1916</p>
+    </header>
+
+    <div class="container">
+        <div class="stats">
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Pages scannées</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">1911</div>
+                <div class="stat-label">Année de début</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">~50</div>
+                <div class="stat-label">Lignes transcrites</div>
+            </div>
+        </div>
+
+        <div class="page-nav">
+            <button class="page-btn active" onclick="showPage(1)">Page 1 - Couverture</button>
+            <button class="page-btn" onclick="showPage(2)">Pages 3-5 - Spiritisme</button>
+            <button class="page-btn" onclick="showPage(3)">Pages suivantes</button>
+        </div>
+
+        <div class="page-viewer">
+            <div class="image-panel">
+                <img id="page-image" src="../jpg_extract/1.jpg" alt="Page du journal">
+                <div class="image-controls">
+                    <button class="zoom-btn" onclick="zoomIn()">🔍+</button>
+                    <button class="zoom-btn" onclick="zoomOut()">🔍-</button>
+                    <button class="zoom-btn" onclick="resetZoom()">↺</button>
+                </div>
+            </div>
+
+            <div class="text-panel">
+                <!-- Page 1 -->
+                <div id="text-1" class="page-text">
+                    <h2>Page 1 - Couverture du Carnet</h2>
+
+                    <p><strong>Carnet Appartenant</strong></p>
+                    <p>à <strong>Ramet Ernest</strong></p>
+                    <p><strong>Etude</strong></p>
+                    <p>Commencé le <strong>14 juin 1911</strong></p>
+                    <p>à Martou Mephisto<br>
+                    <em style="margin-left: 8rem;">Allemagne</em></p>
+                    <p>Leçon donnée par <strong>Gecourtét</strong><br>
+                    pour apprendre à aimer Dieu<br>
+                    Et nous tenir dans la voie</p>
+
+                    <div class="metadata">
+                        <strong>Informations:</strong><br>
+                        • Propriétaire: Ramet Ernest<br>
+                        • Date: 14 juin 1911<br>
+                        • Lieu: Martou Mephisto, Allemagne<br>
+                        • Professeur: Gecourtét
+                    </div>
+                </div>
+
+                <!-- Page 2 -->
+                <div id="text-2" class="page-text hidden">
+                    <h2>Pages 3-5 - Définitions du Spiritisme</h2>
+
+                    <h3>Colonne Gauche (Page 3)</h3>
+
+                    <p><strong>Incarnation:</strong> esprit qui habite le corps</p>
+
+                    <p><strong>Désincarnation:</strong> esprit qui quitte le corps</p>
+
+                    <p><strong>Réincarnation:</strong> esprit qui réhabite le corps</p>
+
+                    <p><strong>Echelle espirite:</strong> à la mort l'esprit quitte le corps, le l'esprit et immortel et place selon son mente</p>
+
+                    <p><strong>L'espiritisme:</strong> est une science étudiée pour prouver que l'esprit est immortel, qu'il peut venir se réincarner pour se communiquer</p>
+
+                    <p>L'esprit est un <strong>fluide</strong>; ceux qui veut dire qu'il est invisible</p>
+
+                    <h3>Colonne Droite (Page 5)</h3>
+
+                    <p>Pour bien comprendre comparons le à un <strong>courant électrique</strong>, chose qui existe mais qu'on ne peut pas voir.</p>
+
+                    <p>O = grande 58</p>
+
+                    <p>O = grande, force, O = vibrante intelligence permet aux grands esprits du grand au dela de nous venir en aide et d'écarter de notre compagnie tous les mauvais esprits que pourraient venir se manifester</p>
+
+                    <div class="note">
+                        <strong>Copie le 15-6-1916 C.</strong><br>
+                        Cette page a été copiée en juin 1916, probablement pendant la guerre.
+                    </div>
+                </div>
+
+                <!-- Page 3 -->
+                <div id="text-3" class="page-text hidden">
+                    <h2>Pages Suivantes - Notes Additionnelles</h2>
+
+                    <div class="note">
+                        ⚠️ Ces pages sont très pâles et difficiles à lire. La transcription est approximative.
+                    </div>
+
+                    <p>Copie du 4 e 6 M E S</p>
+
+                    <p>Etude des morts tant mentir telle nous haut de bien un vient...</p>
+
+                    <p>Union...</p>
+
+                    <p>Bien Ouvrir...</p>
+
+                    <p>J'apprends d'abonné mon tous la mon capable je non tout le...</p>
+
+                    <p>Loin de suite, puis du le...</p>
+
+                    <p>Marquel le très très ma veut de...</p>
+
+                    <p>Lorsque ce le bien amis on...</p>
+
+                    <p>Ensuite son alons...</p>
+
+                    <div class="metadata">
+                        <strong>Note:</strong> Ces pages nécessitent une analyse plus poussée. Le texte est très effacé et l'écriture inclinée rend la lecture difficile.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Journal de Guerre - Transcription numérique © 2025</p>
+        <p>Document historique préservé pour la recherche</p>
+    </footer>
+
+    <script>
+        let currentZoom = 1;
+        const images = [
+            '../jpg_extract/1.jpg',
+            '../jpg_extract/2.jpg',
+            '../jpg_extract/IMG_0412.jpeg'
+        ];
+
+        function showPage(pageNum) {
+            // Update buttons
+            document.querySelectorAll('.page-btn').forEach((btn, idx) => {
+                btn.classList.toggle('active', idx === pageNum - 1);
+            });
+
+            // Update image
+            document.getElementById('page-image').src = images[pageNum - 1];
+            resetZoom();
+
+            // Update text
+            document.querySelectorAll('.page-text').forEach((text, idx) => {
+                text.classList.toggle('hidden', idx !== pageNum - 1);
+            });
+        }
+
+        function zoomIn() {
+            currentZoom = Math.min(currentZoom + 0.2, 3);
+            updateZoom();
+        }
+
+        function zoomOut() {
+            currentZoom = Math.max(currentZoom - 0.2, 0.5);
+            updateZoom();
+        }
+
+        function resetZoom() {
+            currentZoom = 1;
+            updateZoom();
+        }
+
+        function updateZoom() {
+            const img = document.getElementById('page-image');
+            img.style.transform = `scale(${currentZoom})`;
+            img.style.transition = 'transform 0.3s ease';
+        }
+    </script>
+</body>
+</html>

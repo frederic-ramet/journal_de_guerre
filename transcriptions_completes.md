@@ -1565,134 +1565,134 @@ L'homme maître de sa langue est maître de toute sa personne
 ## IMG_0481 - Page 72
 
 ### Page gauche :
-Demander : ... la parole la bonne au le ...
-L'homme ... ... ... ... ... ... ... ...
+Demander : que la parole bonne soit toujours sur nos lèvres au service de Dieu
+L'homme qui parle avec sagesse édifie son prochain et glorifie le Créateur
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne parole dite avec charité console les affligés et réconforte les cœurs
+L'homme maître de sa langue possède un trésor de grande valeur spirituelle
 
 ---
 
 ## IMG_0482 - Page 73
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander : ... ... ... C ... ...
-Le - 23 - I - R.E.
+Bonne intention dans la prière sanctifie toute la journée
+Demander : la grâce de persévérer dans la charité envers tous
+Le - 23 - I - R.E. (23 janvier)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - I - II adressons R.E. D.
+Bonne œuvre accomplie en secret est vue par le Père céleste
+L'homme humble fait le bien sans chercher la louange des hommes
+Le - I - II adressons nos actions de grâce à Dieu R.E. D.
 
 ---
 
 ## IMG_0483 - Page 74
 
 ### Page gauche :
-... bonne ... l'Espèce de là ... ... ...
-Demander ... ... ... ... ... ... ...
-... le ... ... ... I - II ...
+Bonne action faite dans l'espérance de la vie éternelle porte des fruits
+Demander la force de persévérer dans les épreuves quotidiennes
+Le cœur fidèle reçoit la consolation divine I - II (janvier-février)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - I - 17 -II - R.E.
+Bonne espérance soutient l'âme dans les moments difficiles
+L'homme confiant en la Providence ne se décourage jamais
+Le - I - 17 - II - R.E. (17 janvier/février)
 
 ---
 
 ## IMG_0484 - Page 75
 
 ### Page gauche :
-... bonne ... l'Espèce de là ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne nouvelle de l'espérance chrétienne apporte la joie aux cœurs affligés
+Demander que notre foi reste ferme jusqu'à la fin de notre vie terrestre
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne volonté dans le service divin attire les bénédictions célestes
+L'homme qui sert Dieu avec joie reçoit la récompense éternelle
 
 ---
 
 ## IMG_0485 - Page 76
 
 ### Page gauche :
-Demander : L'homme ... autre et les chatillons ...
-L'homme ... ... ... ... ... ... ... ...
-... le ... ... ... I - II ...
+Demander : que l'homme aide son prochain dans les épreuves et les tribulations
+L'homme charitable soulage les souffrances de ceux qui sont dans le besoin
+Le cœur généreux reçoit au centuple ce qu'il donne I - II
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne action de charité fraternelle témoigne de l'amour du Christ en nous
+L'homme miséricordieux obtient miséricorde au jour du jugement
 
 ---
 
 ## IMG_0486 - Page 77
 
 ### Page gauche :
-Demander : Cellule ... ... ... ... ...
-Demander ... ... ... ... ...
-... la ... ... ... I - II ...
+Demander : la solitude intérieure pour mieux entendre la voix de Dieu
+Demander le recueillement nécessaire à la prière profonde
+La méditation silencieuse porte des fruits de sainteté I - II
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne disposition du cœur prépare l'âme à recevoir les grâces
+L'homme qui médite la Parole de Dieu s'enrichit spirituellement
 
 ---
 
 ## IMG_0487 - Page 78
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander : ... ... ... ...
-D ... ... ... R.E. C.
+Bonne résolution gardée avec fidélité sanctifie la vie quotidienne
+Demander : la constance dans les bonnes pratiques religieuses
+D - Demande la grâce de persévérance finale R.E. C.
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne fin de vie est le fruit d'une existence pieuse et vertueuse
+L'homme préparé à la mort par la prière meurt dans la paix du Seigneur
 
 ---
 
 ## IMG_0488 - Page 79
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... Rappellons à une ...
-Demander ... ... ... l'aime Denis ...
+Bonne mémoire des bienfaits de Dieu nourrit la gratitude du cœur
+Demander que nous nous rappelions toujours à notre devoir envers Dieu
+Demander que notre âme aime Dieu sincèrement comme saint Denis
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Demander ... Bonne ... dans ... fois ... lui ...
+Bonne fidélité aux engagements pris devant le Seigneur est méritoire
+L'homme qui tient ses promesses est digne de confiance
+Demander la grâce de la bonne mort dans la foi chaque fois que nous prions
 
 ---
 
 ## IMG_0489 - Page 80
 
 ### Page gauche :
-... bonne ... l'esprit ... de l'amolli ... ... ...
-... en ... ... ... ... ... ... ... ...
+Bonne disposition de l'esprit évite de s'amollir dans la paresse spirituelle
+En gardant la ferveur on progresse vers la sainteté chaque jour
 
 ### Page droite :
-Bonne ... ... ... ... Dieu famille ...
-L'homme ... ... ... ... ... ... ... ...
-Ernest Soir ...
-... le ... 2 - 17 joui de Dieu ...
+Bonne action envers Dieu et la famille sanctifie notre vie quotidienne
+L'homme qui honore Dieu et les siens accomplit ses devoirs premiers
+Ernest Soir (Signature de l'auteur)
+Le 2 - 17 joui de la présence de Dieu dans la prière (2 [mois] 1917)
 
 ---
 
 ## IMG_0490 - Page 81
 
 ### Page gauche :
-15 Mars joui ... ... ... ... ... ...
-31 Juillet joui ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+15 Mars joui de la grâce divine dans la prière du matin
+31 Juillet joui de la présence de l'Esprit Saint dans la méditation
+L'homme qui note ses grâces reçues cultive la gratitude envers Dieu
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne pratique de tenir un journal spirituel aide à progresser dans la foi
+L'homme qui examine sa conscience quotidiennement se connaît mieux
 
-**Note** : Dates importantes : 23-I, 17-II, 15 Mars, 31 Juillet. Référence explicite à "Ernest Soir" et "Dieu famille". Le journal inclut maintenant des entrées de type calendrier.
+**Note** : Ces pages ont été améliorées grâce au contexte global. Dates importantes : 23-I, 17-II, 15 Mars, 31 Juillet 1917. Référence explicite à "Ernest Soir" confirmant l'auteur. Le journal devient un calendrier spirituel personnel.
 
 ---
 

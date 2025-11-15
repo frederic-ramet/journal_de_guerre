@@ -1,5 +1,5 @@
 # Directories to ignore
-jpg_source/
+
 venv/
 venv_htr/
 __pycache__/

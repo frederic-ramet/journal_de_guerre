@@ -127,15 +127,30 @@ class HTRPipeline:
 
         logger.info(f"Processing: {image_path.name}")
 
-        # Step 1: Preprocess image
+        # Step 1: Load and lightly preprocess image
         logger.info("Step 1: Preprocessing image...")
-        preprocessed = self.enhancer.process(str(image_path))
-        preprocessed_file = output_path / f"{image_path.stem}_preprocessed.png"
-        self.enhancer.save_processed(preprocessed, str(preprocessed_file))
+        import cv2
 
-        # Step 2: Detect and segment lines
+        # Load original image
+        original_img = cv2.imread(str(image_path))
+        if original_img is None:
+            raise ValueError(f"Cannot load image: {image_path}")
+
+        # Convert to grayscale
+        gray = cv2.cvtColor(original_img, cv2.COLOR_BGR2GRAY)
+
+        # Apply light enhancement (CLAHE) but NO binarization
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(gray)
+
+        # Save the enhanced (but not binarized) image for reference
+        preprocessed_file = output_path / f"{image_path.stem}_preprocessed.png"
+        cv2.imwrite(str(preprocessed_file), enhanced)
+        logger.info(f"Saved enhanced image to: {preprocessed_file}")
+
+        # Step 2: Detect and segment lines (using enhanced grayscale, not binary)
         logger.info("Step 2: Segmenting lines...")
-        lines = self.detector.detect_lines(preprocessed)
+        lines = self.detector.detect_lines(enhanced)
         lines_dir = output_path / f"{image_path.stem}_lines"
         line_files = self.detector.save_lines(lines, str(lines_dir))
 

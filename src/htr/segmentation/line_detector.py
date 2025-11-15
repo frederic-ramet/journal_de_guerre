@@ -38,14 +38,14 @@ class LineDetector:
     def _default_config() -> dict:
         """Default configuration for line detection."""
         return {
-            "min_line_height": 20,
+            "min_line_height": 15,
             "max_line_height": 200,
             "min_line_width_ratio": 0.1,  # Min width as ratio of page width
-            "horizontal_projection_threshold": 0.05,
+            "horizontal_projection_threshold": 0.02,  # Lower for faded documents
             "vertical_gap_threshold": 10,
-            "detect_columns": True,
+            "detect_columns": False,  # Set True for double-page scans
             "max_columns": 2,
-            "line_padding": 5,
+            "line_padding": 8,
         }
 
     def detect_lines(self, image: np.ndarray) -> List[TextLine]:
@@ -59,13 +59,30 @@ class LineDetector:
         """
         logger.info("Detecting text lines...")
 
-        # Ensure binary image (white text on black background for processing)
+        # Ensure grayscale
         if len(image.shape) == 3:
             image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-        # Invert if necessary (we want white text on black)
+        # Store original for line extraction (before heavy processing)
+        original_image = image.copy()
+
+        # For faded historical documents, apply additional enhancement
+        mean_val = np.mean(image)
+        logger.debug(f"Image mean value: {mean_val:.1f}")
+
+        # Check if image has very low contrast (faded document)
+        std_val = np.std(image)
+        logger.debug(f"Image std deviation: {std_val:.1f}")
+
+        if mean_val > 200 or std_val < 30:  # Very light or low contrast
+            logger.debug("Applying enhanced processing for faded document")
+            image = self._enhance_faded_document(image)
+
+        # Invert if necessary (we want white text on black for detection)
         if np.mean(image) > 127:
             image = 255 - image
+
+        logger.debug(f"After processing, mean: {np.mean(image):.1f}, non-zero: {np.count_nonzero(image)}")
 
         # Detect columns first
         if self.config.get("detect_columns", True):
@@ -79,21 +96,22 @@ class LineDetector:
         for col_idx, (col_start, col_end) in enumerate(columns):
             # Extract column region
             column_img = image[:, col_start:col_end]
+            original_col = original_image[:, col_start:col_end]
 
             # Detect lines in this column
             line_regions = self._detect_line_regions(column_img)
 
-            for y_start, y_end in line_regions:
-                # Extract line image
-                line_img = column_img[y_start:y_end, :]
+            logger.debug(f"Column {col_idx}: found {len(line_regions)} line regions")
 
-                # Crop to actual text content
-                line_img = self._crop_to_content(line_img)
+            for y_start, y_end in line_regions:
+                # Extract line image from ORIGINAL (better quality for OCR)
+                line_img = original_col[y_start:y_end, :]
+
+                # Crop to actual text content using the processed version
+                processed_line = column_img[y_start:y_end, :]
+                line_img = self._crop_to_content_with_mask(line_img, processed_line)
 
                 if line_img is not None and self._is_valid_line(line_img):
-                    # Convert back to standard format (black text on white)
-                    line_img = 255 - line_img
-
                     bbox = (col_start, y_start, col_end - col_start, y_end - y_start)
                     text_line = TextLine(
                         image=line_img,
@@ -106,6 +124,59 @@ class LineDetector:
 
         logger.info(f"Detected {len(all_lines)} text lines in {len(columns)} column(s)")
         return all_lines
+
+    def _enhance_faded_document(self, image: np.ndarray) -> np.ndarray:
+        """Enhance faded/low contrast documents for better line detection.
+
+        Args:
+            image: Grayscale image
+
+        Returns:
+            Enhanced binary image
+        """
+        # Apply strong CLAHE to boost contrast
+        clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(image)
+
+        # Use adaptive thresholding which works better for uneven lighting
+        binary = cv2.adaptiveThreshold(
+            enhanced, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY, 31, 15
+        )
+
+        # Morphological operations to connect text and reduce noise
+        kernel = np.ones((2, 2), np.uint8)
+        binary = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel)
+
+        return binary
+
+    def _crop_to_content_with_mask(self, line_img: np.ndarray, mask_img: np.ndarray) -> Optional[np.ndarray]:
+        """Crop line image using a mask to find text bounds.
+
+        Args:
+            line_img: Original line image (for output)
+            mask_img: Processed/binary image (for finding bounds)
+
+        Returns:
+            Cropped image or None if empty
+        """
+        # Vertical projection to find text bounds
+        v_proj = np.sum(mask_img, axis=0)
+
+        # Find non-zero regions
+        non_zero = np.where(v_proj > 0)[0]
+        if len(non_zero) == 0:
+            return None
+
+        left = non_zero[0]
+        right = non_zero[-1]
+
+        # Add small padding
+        padding = 5
+        left = max(0, left - padding)
+        right = min(line_img.shape[1], right + padding)
+
+        return line_img[:, left:right]
 
     def _detect_columns(self, image: np.ndarray) -> List[Tuple[int, int]]:
         """Detect vertical columns in the document.
@@ -174,10 +245,17 @@ class LineDetector:
         h_proj = np.sum(image, axis=1)
 
         # Normalize
-        h_proj = h_proj / np.max(h_proj) if np.max(h_proj) > 0 else h_proj
+        max_proj = np.max(h_proj)
+        if max_proj > 0:
+            h_proj = h_proj / max_proj
+        else:
+            logger.warning("Empty projection profile - no text detected")
+            return []
 
-        # Threshold for line detection
-        threshold = self.config.get("horizontal_projection_threshold", 0.05)
+        logger.debug(f"Projection profile: max={max_proj}, mean={np.mean(h_proj):.3f}")
+
+        # Threshold for line detection - use lower threshold for faded documents
+        threshold = self.config.get("horizontal_projection_threshold", 0.02)
 
         # Find line regions (where projection > threshold)
         in_line = False

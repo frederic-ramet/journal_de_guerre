@@ -19,14 +19,14 @@ preprocessing:
 
 # Line segmentation
 segmentation:
-  min_line_height: 20
+  min_line_height: 15
   max_line_height: 200
   min_line_width_ratio: 0.1
-  horizontal_projection_threshold: 0.05
+  horizontal_projection_threshold: 0.02  # Lower for faded documents
   vertical_gap_threshold: 10
-  detect_columns: true
+  detect_columns: false  # Set to true for double-page scans
   max_columns: 2
-  line_padding: 5
+  line_padding: 8
 
 # Text recognition (TrOCR)
 recognition:

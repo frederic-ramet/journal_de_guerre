@@ -66,48 +66,88 @@ class LineDetector:
         # Store original for line extraction (before heavy processing)
         original_image = image.copy()
 
-        # For faded historical documents, apply additional enhancement
         mean_val = np.mean(image)
-        logger.debug(f"Image mean value: {mean_val:.1f}")
-
-        # Check if image has very low contrast (faded document)
         std_val = np.std(image)
-        logger.debug(f"Image std deviation: {std_val:.1f}")
+        logger.debug(f"Image stats: mean={mean_val:.1f}, std={std_val:.1f}")
 
-        if mean_val > 200 or std_val < 30:  # Very light or low contrast
-            logger.debug("Applying enhanced processing for faded document")
-            image = self._enhance_faded_document(image)
+        # Try multiple enhancement strategies with fallback
+        enhancement_strategies = self._get_enhancement_strategies()
 
-        # Invert if necessary (we want white text on black for detection)
-        if np.mean(image) > 127:
-            image = 255 - image
+        best_lines = []
+        best_strategy = "none"
 
-        logger.debug(f"After processing, mean: {np.mean(image):.1f}, non-zero: {np.count_nonzero(image)}")
+        for strategy_name, enhance_func in enhancement_strategies:
+            logger.debug(f"Trying strategy: {strategy_name}")
 
-        # Detect columns first
-        if self.config.get("detect_columns", True):
-            columns = self._detect_columns(image)
+            # Apply enhancement
+            processed_image = enhance_func(image.copy())
+
+            # Invert if necessary (we want white text on black for detection)
+            if np.mean(processed_image) > 127:
+                processed_image = 255 - processed_image
+
+            # Detect lines with this strategy
+            lines = self._detect_lines_single_pass(original_image, processed_image)
+
+            logger.debug(f"Strategy '{strategy_name}': found {len(lines)} lines")
+
+            if len(lines) > len(best_lines):
+                best_lines = lines
+                best_strategy = strategy_name
+
+            # If we found a reasonable number of lines, stop trying
+            if len(lines) >= 3:
+                break
+
+        logger.info(f"Best strategy: '{best_strategy}' with {len(best_lines)} text lines")
+        return best_lines
+
+    def _get_enhancement_strategies(self) -> List[Tuple[str, callable]]:
+        """Get list of enhancement strategies to try.
+
+        Returns:
+            List of (name, function) tuples
+        """
+        strategies = [
+            ("adaptive_strong", self._enhance_adaptive_strong),
+            ("adaptive_medium", self._enhance_adaptive_medium),
+            ("otsu_clahe", self._enhance_otsu_clahe),
+            ("simple_threshold", self._enhance_simple_threshold),
+            ("morphological", self._enhance_morphological),
+        ]
+        return strategies
+
+    def _detect_lines_single_pass(
+        self,
+        original_image: np.ndarray,
+        processed_image: np.ndarray
+    ) -> List[TextLine]:
+        """Single pass line detection with a specific processed image.
+
+        Args:
+            original_image: Original grayscale for line extraction
+            processed_image: Processed/binary image for detection
+
+        Returns:
+            List of TextLine objects
+        """
+        # Detect columns
+        if self.config.get("detect_columns", False):
+            columns = self._detect_columns(processed_image)
         else:
-            columns = [(0, image.shape[1])]  # Single column
+            columns = [(0, processed_image.shape[1])]
 
         all_lines = []
         line_number = 0
 
         for col_idx, (col_start, col_end) in enumerate(columns):
-            # Extract column region
-            column_img = image[:, col_start:col_end]
+            column_img = processed_image[:, col_start:col_end]
             original_col = original_image[:, col_start:col_end]
 
-            # Detect lines in this column
             line_regions = self._detect_line_regions(column_img)
 
-            logger.debug(f"Column {col_idx}: found {len(line_regions)} line regions")
-
             for y_start, y_end in line_regions:
-                # Extract line image from ORIGINAL (better quality for OCR)
                 line_img = original_col[y_start:y_end, :]
-
-                # Crop to actual text content using the processed version
                 processed_line = column_img[y_start:y_end, :]
                 line_img = self._crop_to_content_with_mask(line_img, processed_line)
 
@@ -122,33 +162,83 @@ class LineDetector:
                     all_lines.append(text_line)
                     line_number += 1
 
-        logger.info(f"Detected {len(all_lines)} text lines in {len(columns)} column(s)")
         return all_lines
 
-    def _enhance_faded_document(self, image: np.ndarray) -> np.ndarray:
-        """Enhance faded/low contrast documents for better line detection.
-
-        Args:
-            image: Grayscale image
-
-        Returns:
-            Enhanced binary image
-        """
-        # Apply strong CLAHE to boost contrast
-        clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(8, 8))
+    def _enhance_adaptive_strong(self, image: np.ndarray) -> np.ndarray:
+        """Strong adaptive enhancement for very faded documents."""
+        clahe = cv2.createCLAHE(clipLimit=5.0, tileGridSize=(8, 8))
         enhanced = clahe.apply(image)
 
-        # Use adaptive thresholding which works better for uneven lighting
+        binary = cv2.adaptiveThreshold(
+            enhanced, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
+            cv2.THRESH_BINARY, 21, 10
+        )
+
+        kernel = np.ones((3, 3), np.uint8)
+        binary = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel)
+        return binary
+
+    def _enhance_adaptive_medium(self, image: np.ndarray) -> np.ndarray:
+        """Medium adaptive enhancement."""
+        clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(image)
+
         binary = cv2.adaptiveThreshold(
             enhanced, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
             cv2.THRESH_BINARY, 31, 15
         )
 
-        # Morphological operations to connect text and reduce noise
         kernel = np.ones((2, 2), np.uint8)
         binary = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel)
+        return binary
+
+    def _enhance_otsu_clahe(self, image: np.ndarray) -> np.ndarray:
+        """Otsu thresholding with CLAHE preprocessing."""
+        clahe = cv2.createCLAHE(clipLimit=4.0, tileGridSize=(8, 8))
+        enhanced = clahe.apply(image)
+
+        _, binary = cv2.threshold(enhanced, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        return binary
+
+    def _enhance_simple_threshold(self, image: np.ndarray) -> np.ndarray:
+        """Simple fixed threshold (for high contrast documents)."""
+        # Normalize first
+        normalized = cv2.normalize(image, None, 0, 255, cv2.NORM_MINMAX)
+
+        # Use percentile-based threshold
+        threshold_val = np.percentile(normalized, 85)
+        _, binary = cv2.threshold(normalized, threshold_val, 255, cv2.THRESH_BINARY)
 
         return binary
+
+    def _enhance_morphological(self, image: np.ndarray) -> np.ndarray:
+        """Heavy morphological processing for very faint text."""
+        # Strong contrast enhancement
+        clahe = cv2.createCLAHE(clipLimit=6.0, tileGridSize=(4, 4))
+        enhanced = clahe.apply(image)
+
+        # Bilateral filter to reduce noise while keeping edges
+        filtered = cv2.bilateralFilter(enhanced, 9, 75, 75)
+
+        # Adaptive threshold with small block size
+        binary = cv2.adaptiveThreshold(
+            filtered, 255, cv2.ADAPTIVE_THRESH_MEAN_C,
+            cv2.THRESH_BINARY, 15, 8
+        )
+
+        # Dilate to connect broken text
+        kernel_dilate = np.ones((2, 3), np.uint8)
+        binary = cv2.dilate(binary, kernel_dilate, iterations=1)
+
+        # Close gaps
+        kernel_close = np.ones((3, 3), np.uint8)
+        binary = cv2.morphologyEx(binary, cv2.MORPH_CLOSE, kernel_close)
+
+        return binary
+
+    def _enhance_faded_document(self, image: np.ndarray) -> np.ndarray:
+        """Legacy method - now uses adaptive_medium strategy."""
+        return self._enhance_adaptive_medium(image)
 
     def _crop_to_content_with_mask(self, line_img: np.ndarray, mask_img: np.ndarray) -> Optional[np.ndarray]:
         """Crop line image using a mask to find text bounds.

@@ -6,10 +6,11 @@ __pycache__/
 *.pyc
 
 # Data directories (large files)
-data/raw/
-data/processed/
-data/training/
-data/models/
+data/raw/*
+data/processed/*
+data/training/*
+data/models/*
+!data/*/.gitkeep
 
 # Model cache
 .cache/

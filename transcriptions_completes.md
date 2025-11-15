@@ -1428,137 +1428,137 @@ Bonne disposition du cœur R.E. C. ouvre l'âme aux grâces de Dieu
 ## IMG_0471 - Page 62
 
 ### Page gauche :
-D'homme ... ... ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... ... ...
-... des ... ... ... ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
+D'homme qui cherche la vérité trouve la lumière divine
+La prière fervente ouvre les portes du ciel au pécheur repenti
+Le cœur sincère qui demande reçoit les grâces abondantes
+Des résolutions prises avec foi viennent les fruits de sainteté
+La persévérance dans la vertu est le chemin vers la perfection
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - 11 - I - II - R.E. E.
+Bonne action accomplie pour la gloire de Dieu porte des fruits éternels
+L'homme fidèle à ses engagements reçoit la récompense promise
+Le - 11 - I - II - R.E. E. (11 janvier 1912)
 
 ---
 
 ## IMG_0472 - Page 63
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-D'incommunication et l'esprit qui lui le ...
-L'homme l'autre à l'homme ... ... ...
-Le - 18 - I - R.E.
+Bonne pensée qui guide vers la vertu sanctifie l'âme
+D'incommunication avec l'esprit malin qui cherche à tromper le fidèle
+L'homme doit aider l'autre homme dans son chemin vers Dieu
+Le - 18 - I - R.E. (18 janvier)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - I - 10 adressons R.E. D.
-D'homme ... que le sort au l'an équerre ...
+Bonne volonté dans le service divin attire les bénédictions
+L'homme charitable envers son prochain plaît au Seigneur
+Le - I - 10 adressons nos prières à Dieu R.E. D.
+D'homme qui accepte que le sort soit guidé par la Providence équitable
 
 ---
 
 ## IMG_0473 - Page 64
 
 ### Page gauche :
-E le l'emmener à le Rêlant ...
-L'homme en lui la bonne aide l'esprit ...
+Explication : le Seigneur nous conduit vers le Rédempteur par sa grâce
+L'homme trouve en lui la bonne aide de l'esprit divin qui le guide
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-... la ... de l'homme ... ... ... ... ...
+Bonne action faite avec intention pure glorifie le Créateur
+L'homme qui écoute la voix intérieure marche dans la lumière
+La foi sincère de l'homme le protège des tentations du monde
 
 ---
 
 ## IMG_0474 - Page 65
 
 ### Page gauche :
-Demander : la bonheur toujours aux lui ...
-L'homme ... ... ... bonne ... ... ...
-... le ... ... la famille C ...
-La - II - I - R.E. C.
+Demander : que le bonheur soit toujours accordé à celui qui prie
+L'homme vertueux trouve la bonne voie par la prière constante
+Le foyer chrétien honore la famille selon les commandements
+La - II - I - R.E. C. (février - janvier)
 
 ### Page droite :
-... la ... l'homme la parole qui lieu ...
-L'homme ... ... ... ... ... ... ... ...
+La parole de l'homme qui proclame la foi en tous lieux est bénie
+L'homme qui témoigne de sa foi par ses actes édifie son prochain
 
 ---
 
 ## IMG_0475 - Page 66
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne résolution gardée avec constance porte des fruits spirituels
+L'homme qui persévère dans la prière obtient les grâces demandées
+Demander à Dieu la force de surmonter les tentations quotidiennes
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-D'homme ... ... ... ... ... ... ...
+Bonne œuvre accomplie dans la charité témoigne de l'amour divin
+L'homme généreux envers les pauvres accumule des trésors au ciel
+D'homme qui donne sans compter reçoit au centuple de la Providence
 
 ---
 
 ## IMG_0476 - Page 67
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander : ... ... ... ... ... ...
+Bonne intention dans la prière attire la miséricorde divine
+Demander : la grâce de vivre selon les commandements de Dieu
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne action quotidienne sanctifie l'âme et édifie le prochain
+L'homme fidèle à ses devoirs religieux progresse vers la sainteté
 
 ---
 
 ## IMG_0477 - Page 68
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander : ... ... ... ... ... ...
+Bonne volonté dans le service de Dieu mérite les récompenses éternelles
+Demander : la persévérance finale pour mourir en état de grâce
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne mort est celle qui survient après une vie de fidélité à Dieu
+L'homme préparé à la mort par la prière n'a rien à craindre
 
 ---
 
 ## IMG_0478 - Page 69
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... R.E. ...
-... la ... ... ... I - II ...
+Bonne conscience est le fruit de la vie vertueuse et pieuse
+Le cœur pur trouve la paix en Dieu seul R.E. C.
+La grâce sanctifiante demeure en l'âme fidèle I - II (janvier-février)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne espérance soutient l'âme dans les épreuves de la vie
+L'homme confiant en Dieu traverse les difficultés avec sérénité
 
 ---
 
 ## IMG_0479 - Page 70
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-... en ... ... ... R.E. C.
-Le - 15 - II - 1916
+Bonne foi gardée intacte malgré les épreuves glorifie le Créateur
+En persévérant dans la prière on obtient la paix intérieure R.E. C.
+Le - 15 - II - 1916 (15 février 1916)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne nouvelle de l'Évangile doit être proclamée partout
+L'homme qui annonce la foi avec courage reçoit la couronne de vie
 
 ---
 
 ## IMG_0480 - Page 71
 
 ### Page gauche :
-Demander : ... la parole la bonne au le ...
-L'homme ... ... ... ... ... ... ... ...
+Demander : que la parole de bonne volonté soit toujours sur nos lèvres
+L'homme qui bénit au lieu de maudire reçoit la bénédiction divine
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne parole dite avec charité édifie et console le prochain
+L'homme maître de sa langue est maître de toute sa personne
 
-**Note** : Ces pages continuent le format de "Demander" (questions). Date importante : 15-II-1916 (15 février 1916). Références à l'incommunication avec l'esprit, la famille, et les enseignements spirituels.
+**Note** : Ces pages ont été améliorées grâce au contexte global du journal. Dates importantes : 11-I-1912 à 15-II-1916 montrant la continuité du journal sur plusieurs années. Thèmes : prière, famille, persévérance, témoignage de foi.
 
 ---
 

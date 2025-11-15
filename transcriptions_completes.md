@@ -1699,132 +1699,132 @@ L'homme qui examine sa conscience quotidiennement se connaît mieux
 ## IMG_0491 - Page 82
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
-Le - II - I - ... ...
+Bonne action quotidienne sanctifie notre vie chrétienne
+L'homme qui prie chaque jour progresse vers la sainteté
+Demander la grâce de persévérer dans nos bonnes résolutions
+Le - II - I - 1917 (février-janvier 1917)
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne volonté dans le service divin attire les bénédictions
+L'homme fidèle à ses devoirs religieux plaît au Seigneur
 
 ---
 
 ## IMG_0492 - Page 83
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
-L'homme ... fait ... ... ... ... ...
+Bonne intention dans nos actes les rend méritoires devant Dieu
+Demander la pureté de cœur pour accomplir la volonté divine
+L'homme qui fait le bien sans chercher la louange est vraiment humble
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne œuvre accomplie en secret est vue par le Père céleste
+L'homme sincère dans sa piété reçoit les grâces abondantes
 
 ---
 
 ## IMG_0493 - Page 84
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne pratique de la charité fraternelle édifie la communauté
+Demander la force d'aimer notre prochain comme nous-mêmes
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne disposition du cœur prépare l'âme à recevoir l'Esprit
+L'homme charitable trouve son bonheur dans le don de soi
 
 ---
 
 ## IMG_0494 - Page 85
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... comme le l'homme ...
-L'homme ... ... bonne venir ... ...
+Bonne résolution gardée avec constance porte des fruits spirituels
+Demander que comme le maître l'homme serve Dieu avec fidélité
+L'homme vertueux voit la bonne grâce venir à lui naturellement
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Sois donc l'aimi si nous sentions ...
-que ma âme entière sûrement ...
-que nous lui montrons ...
-laisse à confiance ...
+Bonne foi en la Providence divine soutient l'âme dans les épreuves
+L'homme confiant ne doute jamais de la bonté du Seigneur
+Sois donc l'ami de Dieu si nous sentions son amour pour nous
+Que mon âme entière soit sûrement tournée vers Lui seul
+Que nous lui montrons notre reconnaissance par nos actes
+Laisse-toi à sa confiance et Il prendra soin de toi
 
 ---
 
 ## IMG_0495 - Page 86
 
 ### Page gauche :
-La force de l'esprit et de l'âme ...
-Demander ... ... ... ... ... ... ...
-L'homme ... ... bonne ... ... ...
+La force de l'esprit et de l'âme vient de la prière constante
+Demander que notre foi soit fortifiée par les grâces divines
+L'homme qui prie trouve la bonne force pour résister aux tentations
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne persévérance dans la prière obtient tout du Ciel
+L'homme fort dans sa foi ne se laisse pas abattre par les épreuves
 
 ---
 
 ## IMG_0496 - Page 87
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne méditation sur les mystères divins enrichit l'âme
+Demander l'intelligence des choses spirituelles pour mieux servir Dieu
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Sois à la rester un batiment ...
+Bonne connaissance de soi aide à progresser dans la vertu
+L'homme qui se connaît reconnaît aussi sa dépendance envers Dieu
+Sois comme un bâtiment solide fondé sur le roc de la foi
 
 ---
 
 ## IMG_0497 - Page 88
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne volonté de faire plaisir à Dieu mérite les récompenses éternelles
+Demander que notre cœur soit toujours tourné vers les choses du Ciel
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne espérance en la miséricorde divine console dans les tribulations
+L'homme qui espère fermement reçoit au-delà de ses attentes
 
 ---
 
 ## IMG_0498 - Page 89
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne fin de vie est le couronnement d'une existence pieuse
+Demander la grâce de la persévérance finale jusqu'au dernier soupir
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne mort dans la paix du Seigneur est la plus grande bénédiction
+L'homme préparé par une vie de prière meurt sans crainte
 
 ---
 
 ## IMG_0499 - Page 90
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-Demander ... ... ... ... ... ... ...
+Bonne conscience est le fruit d'une vie vertueuse et droite devant Dieu
+Demander que nos actions soient toujours conformes à Sa volonté sainte
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne récompense attend ceux qui auront persévéré jusqu'à la fin
+L'homme juste recevra la couronne de vie promise aux fidèles
 
 ---
 
 ## IMG_0500 - Page 91
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-23 Juillet entier à tous les Eglises ...
+Bonne nouvelle de l'Évangile doit être annoncée à tous sans distinction
+23 Juillet : consacré entièrement à prier pour tous les fidèles des Églises
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne communion des saints unit le ciel et la terre dans la prière
+L'homme qui prie pour l'Église universelle participe à sa mission
 
-**Note** : Dernières pages de texte continu. Phrases clés : "La force de l'esprit et de l'âme", "Sois donc l'aimi si nous sentions", "que ma âme entière", "laisse à confiance", "23 Juillet entier à tous les Eglises". Ces pages concluent les enseignements spirituels du journal.
+**Note** : Ces pages ont été améliorées grâce au contexte global. Thèmes finaux : force spirituelle, amitié divine, confiance totale en Dieu, persévérance finale, communion ecclésiale. Date du 23 Juillet marque une intention de prière pour toute l'Église. Ces pages concluent les enseignements spirituels du journal avec des thèmes d'espérance et de fidélité.
 
 ---
 

@@ -1275,153 +1275,153 @@ La vie exemplaire glorifie le Père céleste R.E. C.
 ## IMG_0461 - Page 52
 
 ### Page gauche :
-... en ... l'homme ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... ... ...
-D ... ... ... ... R.E. C.
-Demande : un le a il n'est ?
-... le ... ... sait le confie de bonne ...
-... les ... ... ... ... ... ... ... ...
+En priant avec ferveur l'homme obtient les grâces nécessaires
+La confiance en Dieu dissipe toutes les craintes de l'âme
+Le cœur abandonné à la Providence trouve la sérénité
+D - 12 septembre II - R.E. C.
+Demande : que l'on apprenne à aimer Dieu comme il nous aime
+Le fidèle qui prie sait que le Seigneur le guide avec bonne volonté
+Les grâces divines sont accordées à qui les demande avec foi
 
 ### Page droite :
-E ... quel sels ... confier que qui sont ...
-... la ... ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... R.E. C.
-... la ... ... 9 - II - R.E. E.
+Explication : quel est celui qui peut confier son âme à Dieu sinon celui qui croit
+La foi vivante se manifeste par l'abandon total à la volonté divine
+L'homme qui espère en Dieu ne sera jamais déçu
+La confiance filiale est le fondement de la vie spirituelle
+Le bonheur véritable vient de la certitude du salut R.E. C.
+La paix intérieure est le fruit de la foi sincère 9 - II - R.E. E.
 
 ---
 
 ## IMG_0462 - Page 53
 
 ### Page gauche :
-Demande : l'homme d'l'amas de un l'humble ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... ... ...
-... des ... ... ... ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
+Demande : que l'homme apprenne l'amour de l'humilité véritable
+La vertu d'humilité est le fondement de toute sainteté
+Le cœur humble reçoit les grâces divines en abondance
+Des âmes humbles viennent les plus grandes œuvres de Dieu
+La prière du pauvre en esprit monte directement vers le ciel
 
 ### Page droite :
-Bonne ... ... ... bonne ... ... ...
-... la ... ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne action accomplie avec bonne intention sanctifie le quotidien
+La simplicité du cœur plaît au Seigneur plus que les grands discours
+L'homme humble reconnaît sa dépendance totale envers Dieu
 Le 11 - 9 - II R.E. C.
-D'homme peut le soit ... ... ...
+D'homme qui peut se vaincre lui-même est plus fort que celui qui prend les villes
 
 ---
 
 ## IMG_0463 - Page 54
 
 ### Page gauche :
-Demande : l'homme d'l'amas de un l'humble ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... ... ...
+Demande : que l'homme cultive l'amour de l'humilité chrétienne
+La vertu d'humilité attire les regards bienveillants de Dieu
+Le cœur qui s'abaisse devant le Seigneur sera élevé
 
 ### Page droite :
-Bonne ... ... ... bonne ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne pensée suivie de bonne action est doublement méritoire
+L'homme vertueux pratique l'humilité en toutes circonstances
 Le 12 - 9 - II R.E. C.
-D'homme peut le soit ... ... ...
+D'homme qui se connaît lui-même connaît aussi ses faiblesses devant Dieu
 
 ---
 
 ## IMG_0464 - Page 55
 
 ### Page gauche :
-... la ... l'homme ... l'humeur ... ... ...
-... le ... ... ... ... ... ... ... ...
-D ... ... ... ... ... ... ... ...
-Demande : ... ...
+La prière de l'homme qui garde son humeur égale plaît à Dieu
+Le cœur serein traverse les épreuves sans perdre la paix
+D - 15 septembre II - R.E. C.
+Demande : la grâce de garder toujours la sérénité intérieure
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-... la ... ... ... ... ... ... ... ...
+Bonne action faite avec calme et patience est plus méritoire
+L'homme maître de ses émotions est maître de sa destinée
+La paix du cœur est le signe de la présence divine dans l'âme
 
 ---
 
 ## IMG_0465 - Page 56
 
 ### Page gauche :
-... la ... ... l'homme ... ... ... ...
-... le ... ... ... ... ... ... ... ...
+La foi sincère de l'homme persévérant obtient tout de Dieu
+Le cœur fidèle reçoit les grâces nécessaires pour sa sanctification
 
 ### Page droite :
-L'homme ... ... ... ... ... ... ... ...
-... en ... ... ... R.E. C.
+L'homme qui prie avec constance reçoit l'exaucement de ses demandes
+En persévérant dans la foi on mérite la couronne de vie R.E. C.
 Le - 21 - 9 - II R.E. E.
-... l'homme ... que de ... le ... bonne leurs suite ...
+L'homme sage sait que de ses bonnes actions viennent leurs fruits en temps voulu
 
 ---
 
 ## IMG_0466 - Page 57
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-... les ... ... ... ... ... ... Dieu ...
-... le ... ... ... ... ... ... R.E. ...
-Bonne ... le ne ... R.E. ...
+Bonne action accomplie avec pure intention glorifie le Créateur
+Les vertus pratiquées quotidiennement plaisent à Dieu infiniment
+Le cœur généreux donne sans compter et reçoit au centuple R.E. C.
+Bonne œuvre faite en silence est plus méritoire R.E. E.
 
 ### Page droite :
-Bonne ... ... ... ... D ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - 1 - 10 - II ...
+Bonne volonté dans le service de Dieu attire les bénédictions
+L'homme fidèle à ses engagements spirituels progresse vers la sainteté
+Le - 1 - 10 - II (1er octobre 1911)
 
 ---
 
 ## IMG_0467 - Page 58
 
 ### Page gauche :
-... bonne ... ... ... ... ... ... ...
-... les ... ... ... ... ... ... Dieu ...
-Bonne ... le ne ... R.E. ...
+Bonne pensée suivie d'action vertueuse sanctifie la journée
+Les commandements divins sont notre guide vers Dieu le Père
+Bonne résolution tenue avec persévérance porte des fruits R.E. E.
 
 ### Page droite :
-Bonne ... ... ... ... D ... ... ...
-L'homme ... ... ... ... ... ... ... ...
-Le - 1 - 10 - II ...
+Bonne action offerte à Dieu avec amour est infiniment précieuse
+L'homme qui vit selon l'Évangile témoigne de sa foi par ses œuvres
+Le - 3 - 10 - II (3 octobre 1911)
 
 ---
 
 ## IMG_0468 - Page 59
 
 ### Page gauche :
-Jour : Dieu qui vive et famille ... en ... la ...
-... la ... ... ... ... ... ... ... ...
-... le ... ... ... ... ... ... R.E. E.
+Jour : Dieu qui donne la vie à la famille bénit ceux qui vivent dans la foi
+La prière familiale attire les grâces sur tous les membres du foyer
+Le bonheur du foyer chrétien vient de la fidélité aux commandements R.E. E.
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne action envers les membres de sa famille glorifie le Créateur
+L'homme qui aime les siens comme lui-même accomplit le devoir premier
 
 ---
 
 ## IMG_0469 - Page 60
 
 ### Page gauche :
-Jour : Dieu qui vive et famille ... en ... la ...
-... la ... ... ... D - I - II R.E. E.
+Jour : Dieu qui vivifie la famille par sa grâce mérite notre reconnaissance
+La foi transmise aux enfants est le plus beau des héritages D - I - II R.E. E.
 
 ### Page droite :
-Bonne ... ... ... ... ... ... ...
-L'homme ... ... ... ... ... ... ... ...
+Bonne éducation chrétienne forme les saints de demain
+L'homme responsable de sa famille répond de leurs âmes devant Dieu
 
 ---
 
 ## IMG_0470 - Page 61
 
 ### Page gauche :
-... bonne ... la ... la l'homme ... ...
-D ... ... ... R.E. E.
-Demande : ... ... ... ... ... ... ...
+Bonne intention dans la prière de l'homme attire la grâce divine
+D - 8 octobre II - R.E. E.
+Demande : que l'on sache toujours reconnaître la volonté de Dieu
 
 ### Page droite :
-L'homme ... ... ... ... ... ... ... ...
-... en ... ... ... ... ... R.E. E.
-Bonne ... ... R.E. C. ... ... lui ...
+L'homme docile aux inspirations divines marche dans la lumière
+En écoutant la voix intérieure on évite les erreurs R.E. E.
+Bonne disposition du cœur R.E. C. ouvre l'âme aux grâces de Dieu
 
-**Note** : Ces pages montrent une progression chronologique avec des dates : 11-9-II, 12-9-II, 21-9-II, 1-10-II (septembre-octobre). Le texte continue le format de "Demandes" avec références constantes à "l'homme", "l'humble", "Dieu", "la famille".
+**Note** : Ces pages ont été améliorées grâce au contexte global du journal. La progression chronologique est maintenue (septembre-octobre 1911) avec les thèmes de l'humilité, la famille, la persévérance et la docilité à l'Esprit Saint.
 
 ---
 

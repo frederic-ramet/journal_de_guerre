@@ -736,3 +736,52 @@ ne pouvait 30-6-18 R.E.
 
 ---
 
+## IMG_0426 - Début juillet 1918 (Page 17/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+[Griffonnages rayés en haut]
+
+Bonne action que j'ai faite
+j'ai soulager un Belge en
+lui donnant de biscuit enfant
+fait a esait fait lui a faire
+faie a l'aider...
+
+1-7-18 R.E.
+Mauvaise action que
+j'ai évité
+entraine des des converser
+lui que en des de cause
+en l'aidient on me fait mauvaise
+```
+
+### Page droite :
+```
+2-7-18 R.E.
+Bonne action que j'ai faite
+j'ai aidé des camarades
+leur faire travaille que
+charge du tond meus que
+de ma bonne volonté.
+
+Bonne action que j'ai faite?
+j'ai aidé bonne l'aider faite?
+lui véplie aux faire l'une?
+que l'faire aux faie aider?
+Bonne action que j'ai faite?
+j'ai éleumé un prochain de l'aider
+```
+
+**Notes :**
+- Dates : 1 et 2 juillet 1918 (nouveau mois)
+- Aide continue aux camarades et Belges
+- Donner des biscuits aux affamés
+- Éviter les mauvaises conversations
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

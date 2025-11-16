@@ -182,3 +182,43 @@ L'espère en a fait l'ordre
 
 ---
 
+## IMG_0414 - Vérité et entraide (Page 5/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Oui c'est la vérité
+Toujours j'aime en faute et
+ce n'est qu'en cela trouver et en
+nous faire autre trouver s'il
+fausse en d'être nous soit
+qui ne fut la prochain
+de nous lui plus de faire
+l'avoir chez sa ou la faire
+donc mon camarade
+il envoit l'autre fontes ma
+```
+
+### Page droite :
+```
+lui mon seulement Pour
+lui mais la l'aucun
+l'anous souffrir à ces bonnes
+et voient qu'il ne prouve
+Belle m'aide enfin J'ai
+sais promette un demi-
+sois soi soit l'aime ca
+c'était l'action
+```
+
+**Notes :**
+- Réflexion sur la vérité
+- Aide à un camarade
+- Texte dense et partiellement difficile à déchiffrer
+- Thème : bonnes actions et entraide
+
+**Statut : ✓ TRANSCRIPTION CORRECTE (texte partiellement illisible)**
+
+---
+

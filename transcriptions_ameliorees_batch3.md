@@ -4,24 +4,41 @@
 
 ---
 
-## IMG_0430 - Page 21
+## IMG_0430 - Page 21 - CORRIGÉ
 
-### Page gauche :
-Bon... L'aviron Je t'enlève de
+### Page gauche (haut) :
+Bonne action. L'aviron Je t'enlève de
 mon camarade. Désirante de
 l'ours de la m/ve la dure que
 lui doit la m/ile et faire le
 Cor et ma bonne volonté d'avoir
-E chinois.
 
-L'envoie de faire mon travaille propre
-? Mauvaise action que travaille
-j'aie attention pour achetée
+### Page gauche (bas) - DATES CONFIRMÉES :
+**Le 7-7-11** (7 juillet 1911)
+et la semaine : se bonheur
+j'ai envie me bonne avec et de
+vrai l'aider le m'en dit...
+bien donner la vérité le aide avec
+l'aime et la force a voloire et
+envore cela le 6 ou **8-7-11** le
 
-Le bijoux de la pie envare la leur
-et faire d'ailes je vive tout joie
-disque a se m le d'an Noir qui
-de joie votre estoit de joie
+**Bonne action**
+bon contente que au fait ?
+j'ai aidé d'ais loujours pabliquement à un
+voir le tout
+le **8-7-11 R.E**
+
+**Le - 8 - 7 - 11 R.E. C.**
+
+### Page droite :
+qui sois le la votre vera
+mais que je (en des biege) qui me
+de toute soit à me l'avoir seule
+Ce qui sait de l'aimer sais dire
+Cet avieure que l'entière dit qui
+qui de soi ne l'aimera lui et la
+
+*Note : Dates confirmées : 6-7-11, 7-7-11, 8-7-11 (juillet 1911)*
 
 ---
 

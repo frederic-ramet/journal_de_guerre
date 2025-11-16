@@ -29,17 +29,19 @@ le à un courant électrique, chose
 qui existe mais qu'on ne peut
 pas voir.
 
-O = grande O ?
-O = grande foye O ? Vibrante in-
-telligence formant aux esprits
+Ω = grande Ω ? ← CORRECTION: symbole Omega spirite
+Ω = grande Foÿe Ω ? **Vibrante intelligence** formant aux esprits
 
-esprits du grand au lit de moi
+**L'espiritisme** est une science étudiée **prouvé que l'esprit est immortel**
+**L'esprit est un fluide** ; celui qui est qu'il est invisible
+
+esprits du **grand au delà** de nous ← CORRECTION: "au delà" et non "au lit"
 sont en aide et d'écouter de
-notre compagne toutes mauvais
+notre compagne **toutes les mauvaises**
 esprits que pourraient venir
 se manifester
 
-**Copie le 15-6-1916 N.R.E.**
+**Copie le 15-6-11 R.E.** ← CORRECTION : 15 juin 1911 (pas 1916)
 
 ---
 
@@ -124,27 +126,31 @@ le quel on a fait le plus
 
 ---
 
-## IMG_0414 - Page 5
+## IMG_0414 - Page 5 - CORRIGÉ
 
 ### Page gauche :
-Mais moi seulement tous
-mes fatigues de prendre
-un violar
-dans que à un actif
-j'ai conseillé lui que nous
-les songer qu'il a été ses
-bonheur aimera qui sa celui
-...la sais sains...cela sera...
+**Que c'est la vérité**
+Toujours je l'aime en faute et
+Ce n'est qu'en cela trouver et en
+nous faire autre trouver s'il
+fausse en d'être nous soit
+qui ne fut la prochain
+de nous lui plus de faire
+l'avoir chez sa ou la faire
+**donc mon camarade**
+il envoit l'otre fontes ma
 
 ### Page droite :
-...vu lui...lors bien fait
-la mettre en précitèrent la
-...mes dommable qui qui
-être conseilla que me
-alla...lui a bonne
-a lui lui suit et il son
-avec lors leurs en sont
-la...seulement, d'étude
+lui mon seulement Pour
+lui mais la l'aucun
+l'anous souffrir à ces bonnes
+et voient qu'il ne prouve
+Belle m'aide enfin J'ai
+sais promette un demi-
+sois soi soit l'aime ca
+**c'était l'action**
+
+*Note : Cette page traite de la vérité et de l'aide au camarade*
 
 ---
 

@@ -967,6 +967,340 @@ function generateTranscriptionData() {
               j'ai éviter ?<br>
               J'ai été dirait</p>`,
 
+        426: `<h4>Page gauche :</h4>
+              <p>Bonne action que j'ai faite ?<br>
+              J'ai envoyé en étude en<br>
+              une demeure de Biscuit enfants<br>
+              le il n'avait pas tan n'être<br>
+              face a l'argent.<br>
+              1 - 7 - 11 R. E.<br>
+              Mauvaise action que<br>
+              j'ai évitée ?<br>
+              De Enfous de des camarades<br>
+              une leur travaille que<br>
+              charge du Suidat menèrent<br>
+              de ma bonne volonté.</p>
+              <h4>Page droite :</h4>
+              <p>2 - 7 - 11 B. C.<br>
+              Bonne action que j'ai faite ?<br>
+              J'ai aidé des camarades<br>
+              une leur travail que<br>
+              charge du suidat menèrent<br>
+              de ma bonne volonté.<br>
+              Bonne action que j'ai faite ?<br>
+              J'ai aidé j'une d'insurer<br>
+              J'ai exigé aux leur charge<br>
+              que S. Claire<br>
+              Bonne action<br>
+              j'ai atteint en de j'ai eu ?</p>`,
+
+        427: `<h4>Page gauche :</h4>
+              <p>J'ai terminé force lui<br>
+              charge en me lui ma boire<br>
+              et me boire Jouilliés du lui<br>
+              Mauvaise action S.C.<br>
+              que j'ai évité ?<br>
+              Que la afrique j'ai été<br>
+              lui j'ai un camarade<br>
+              toile rudiut me dise<br>
+              que si matèle me touchant<br>
+              j'ai me toujours villés de<br>
+              et j'ai lui laissé enfainée<br>
+              Bonne action que j'ai<br>
+              faite ?<br>
+              Avoir aidé l'allemand</p>
+              <h4>Page droite :</h4>
+              <p>que le travaille avec 2<br>
+              bon chariot de ma boire noble<br>
+              Bonne action que j'ai faite ?<br>
+              D'écoute la ton consols<br>
+              de mon camarade et me<br>
+              me l'envoi lorsque le lui<br>
+              ma fraîche que le lui<br>
+              et fait boir une être.<br>
+              Le 3 - 7 - 11 S. C.<br>
+              Mauvaise action que<br>
+              j'ai évité ?<br>
+              D'avoir été jaloux<br>
+              Le colère en travaillant<br>
+              que un fuit d'ennui me fais<br>
+              et avoir en joui S.C.<br>
+              taisir</p>`,
+
+        428: `<h4>Page gauche :</h4>
+              <p>Le 3 - 7 - 11 R. E.<br>
+              Bonne action que j'ai faite ?<br>
+              J'ai fait une veille suète a<br>
+              un Russe en lui donnant<br>
+              de sa moitié lui le sadrès<br>
+              Le 4 - 7 - 11 B. E.<br>
+              Mauvaise action que j'ai<br>
+              évité ?<br>
+              J'ai la un la futurs traînes<br>
+              avec du traîner de l'ama-<br>
+              rade du l'amer la venda<br>
+              la j'ayant le leur fraîches<br>
+              Le 5 - 7 - 11 B. E.</p>
+              <h4>Page droite :</h4>
+              <p>Mauvaise action que j'ai<br>
+              éviter a l'idéeur Cama-<br>
+              rade du la travaillés ce<br>
+              causer ? J'entre la venda<br>
+              la j'ayant le leur fraîches<br>
+              Le 5 - 7 - 11 B. C.</p>`,
+
+        429: `<h4>Page gauche :</h4>
+              <p>Bonne action que j'ai<br>
+              faite ?<br>
+              D'avoir rendu Service<br>
+              écrite a un camarade.<br>
+              de qui me demandé en<br>
+              lui S'aide, que j'ai<br>
+              Bonne action que j'ai<br>
+              faite donnée deux lui<br>
+              a un in envoi<br>
+              Ramet qui il a en<br>
+              les lundi n'épouvez<br>
+              Le 6 - 7 - 11 B. C.<br>
+              Mauvaise action<br>
+              de me plus une mon travail</p>
+              <h4>Page droite :</h4>
+              <p>que j'ai évité et le je<br>
+              était envoit et le trues<br>
+              poilent il l'envers autre<br>
+              folles et l'immeais voulait<br>
+              mon camarade voulait<br>
+              la laisser boire et me<br>
+              je lui ai évité B.C.<br>
+              Le 6 - 7 - 11 B. C.<br>
+              Bonne action que j'ai faite ?<br>
+              D'avoir aidé j'lusieurs<br>
+              camarades a leur travail<br>
+              Le 7 - 11 B. C.<br>
+              Mauvaise action que j'ai<br>
+              évité<br>
+              de me plus une mon travail</p>`,
+
+        430: `<h4>Page gauche :</h4>
+              <p>Le 7 - 7 - 11 30 a l'impasse Réputation de<br>
+              j'ai terminé ma le femme et le qui l'envoye que<br>
+              Mon boire causer de bien l'ouverte le<br>
+              toute doute la fin chemin cité me de l'faire autre<br>
+              aller donc la lumière le toujours l'été m'a l'hiver<br>
+              n'est souffre de l'orge en entre s'en longue qu'elle d'une<br>
+              avez soldé de l'orge en voir n'étre chemin.<br>
+              Bonne action que j'ai faite ?<br>
+              l'envoi entête avez dire ton l'hélait hum<br>
+              avec enfin lui défini religion ?<br>
+              lui j'ai été toujours précèdent de faire attention<br>
+              Le 8 - 7 - 11 30 E</p>
+              <h4>Page droite :</h4>
+              <p>Je veus être soit été de ma joie contre mes l'or<br>
+              Lude a toujours l'este a de que n'êtes font leurs<br>
+              que chrétien est cause autrefois que se lui qui dit<br>
+              que cette cela avait l'ombrage celle lui ?<br>
+              Ma voile à vous les voile qu'il vu relie très mois<br>
+              indents l'un des enfantes qu'il vous en moi me<br>
+              la l'aile Mais Leur etre lle ent de soules pour la faits lui<br>
+              ils ne l'ouvrante j'alais Leurs aimer ou le l'édélais tout<br>
+              lui l'aimer tous a l'autre et or<br>
+              l'avons mes que l'actiones et ma fait<br>
+              que il lui qu'il font l'omas ai le l'ouvrons<br>
+              ma mis ce là enfait qu'il la la charité Froid<br>
+              lance ne doit que son R.C.<br>
+              le 4 me quoi</p>`,
+
+        431: `<h4>Page gauche :</h4>
+              <p>J'une avec qu'il tout au j'ai la première finalle a la<br>
+              l'envoi tient l'était il ne parler en doit le<br>
+              l'envoyés suit ce trois Brise ? On n'est pas de qu'il amoi<br>
+              et seul<br>
+              Qu'il mème est l'éprouve une l'aire cela dans ce l'est moi lai<br>
+              l'aure de mot metit en effet bas une a l'êtrement has me<br>
+              que t'aire déjà<br>
+              j'uns le qu'ai l'espivs l'orque metila ce que l'ait ou vroi<br>
+              le qui soient l'un et qui l'oui le marole de soi moi<br>
+              le pourrait éviter l'airas lia<br>
+              le soi l'emte est et l'eus lass l'anque nous le loi<br>
+              moi et nul le leur laisse est lui leur l'autre font lui<br>
+              été ai n'est les lui laisser les faire l'emis C est<br>
+              sujet mais le loi me il fait l'aute sans<br>
+              la mot</p>
+              <h4>Page droite :</h4>
+              <p>Junes l'apinelle e un été soleil qu'il et la jus<br>
+              Le 8 - 7 - 11 l'autre ont au l'eudées et moi<br>
+              B aient des sol l'aidons ne poulé l'avons avec nous<br>
+              le pour fust que moi jus de plus nature voi<br>
+              l'effet que lui l'envois l'avons j'alois du fut l'une<br>
+              lui s'ouffri que Borde Par ou t'aide avec et très lui<br>
+              et leur environ qu'on lui ai lui été eus s'en leur l'est<br>
+              laide leur encens elle lui ne pas ma envoi, deme a<br>
+              l'ame' brois qu'alla une l'aie l'ai dieu<br>
+              Le 9 - 7 - 11 B.E.<br>
+              un Buisse en ai l'avant à l'ommie faites?<br>
+              me fait R. E.</p>`,
+
+        432: `<h4>Page gauche :</h4>
+              <p>Le 7 - 7 - 11 B.A.<br>
+              B.A. que j'ai faite ? En arrivant au travail j'ai sait une bonne méthode<br>
+              que j'ai faite ? De faire frater a lui un l'onde que<br>
+              que j'ai faite ? J'ai aime frater un toi Buillet enfant<br>
+              lui j'ai faite ? J'ai caviaire ame bienneté et a nui l'homme<br>
+              que j'ai faite ? J'ai eu admirè jue le l'aidière cette home<br>
+              Lui j'ai faite ? J'ai l'ou le Parteneige en une l'ouvrette<br>
+              Bue j'ai faite ? J'ai forme jue t'en Brume tout bienunter les t'être<br>
+              Lue j'ai faite ? J'ai ma Buisse l'ait leur faul faille d'une reuse<br>
+              Lue j'ai faite ? J'ai verante pour ne que l'envoils de eudées<br>
+              l'ai faite ? Que tu etre l'etois la l'ouvrette entaille quelque<br>
+              j'ai faite au cette l'aile leur et l'etaudes quelque de lui<br>
+              j'ai faites qu'une et qui laisser l'eur les mis les aller de<br>
+              Le faula a je lui cadre de ma volonté R.E.</p>
+              <h4>Page droite :</h4>
+              <p>M. A.<br>
+              Que j'ai évité ? En lui faute de la mauvaise actions<br>
+              Que j'ai évité ? me l'aur elle la trèmfais environ a mais fait<br>
+              Que j'ai évité ? De lui ne le Buillet me la eudie<br>
+              Que j'ai évité ? Je a lui une fois L'envoils t'alai pas<br>
+              Que j'ai évité ? Je lui faite même pas seule mes colère<br>
+              Que j'ai évité ? Je lui un fois l'entaille me Buisse en falles<br>
+              Que j'ai évité ? J'ai ne l'aus ma l'ordie Dieu ma colée et si<br>
+              Que j'ai évité ? J'ai ne l'aus mes cadre l'envoils me Buisse<br>
+              Que j'ai évité ? J'ai ne l'aus ma l'ordie que me l'envois<br>
+              Que j'ai évité ? J'ai toutes ma etre l'envois la l'autre<br>
+              Beconsle le 10 - 7 - 11 R. E.</p>`,
+
+        433: `<h4>Page gauche :</h4>
+              <p>B.A. que j'ai faite ? D'elle beau l'engagez a l'eutufuisers l'envoie<br>
+              In di que le 11-7-11 D'être lui et lui chese l'orme que l'aite l'euris<br>
+              Le B. que j'ai faite ? Depuis le l'ouvriers joyent de s'espert<br>
+              Le B. que je l'avité ? Dernier le mouvoir très le lui<br>
+              La le 12-7-11 en B.C.<br>
+              Bonne bonne j'ai été ? Je que elle des l'avoir dans<br>
+              ma l'aures j'ai été ? elle ou l'ouest l'aidier que l'effois d'etre<br>
+              Le il que j'ai évité ou ma l'aidier l'aidier leur de pois l'astin<br>
+              Le 13 - 7 - 11 B.E a la maîlles j'air de pois l'astin</p>
+              <h4>Page droite :</h4>
+              <p>B.A. que j'ai faite ? De me l'aur être antechere<br>
+              que j'ai faite ? de m'boire mes l'eux l'eufres<br>
+              que j'ai faite ? de m'boire cras l'eus lui toit l'autre feuilles<br>
+              que j'ai faite ? De lui eu de l'autre lui mais mes l'aute<br>
+              que j'ai évité ? J'ai est l'ame l'etre de l'aurais l'auttes<br>
+              que j'ai évité ? De ne pas ma bourse a camarade Dieu<br>
+              que j'ai évité ? De ne pas en l'aitre très l'aidiers<br>
+              Le II</p>`,
+
+        434: `<h4>Page gauche :</h4>
+              <p>B.A. que j'ai faite ? D'elle beau l'engagez a l'eutufuisers l'envoie<br>
+              In di que le 11-7-11 D'être lui et lui chese l'orme que l'aite l'euris<br>
+              Le B. que j'ai faite ? Depuis le l'ouvriers joyent de s'espert<br>
+              Le B. que je l'avité ? Dernier le mouvoir très le lui<br>
+              La le 12-7-11 en B.C.<br>
+              Bonne bonne j'ai été ? Je que elle des l'avoir dans<br>
+              ma l'aures j'ai été ? elle ou l'ouest l'aidier que l'effois d'etre<br>
+              Le il que j'ai évité ou ma l'aidier l'aidier leur de pois l'astin<br>
+              Le 13 - 7 - 11 B.E a la maîlles j'air de pois l'astin</p>
+              <h4>Page droite :</h4>
+              <p>(Page identique à la 433)</p>`,
+
+        435: `<h4>Page gauche :</h4>
+              <p>J'envois des morcemois c'moi oriz. entendre que il a le était aide l'autre<br>
+              en et livut Mais dent  J'ui le le seuil l'ouvres sois<br>
+              meilleurs les chose a que l'épreuves l'aue la qu'ils lieus aute<br>
+              notre j'aitre une l'aure l'aue elle l'aume l'ailait avec suelle que<br>
+              l'aile manifestaur et m'a indiete que la l'aure l'alait le ques leur<br>
+              autes lui l'autes en deux l'eut tous une de l'autrois et<br>
+              j'une Notre aibiere<br>
+              l'aie que ne Burs que le l'autre que il ou a l'ainsi que il nuit<br>
+              été un leut que est le du bien Vuei autres l'autre mes<br>
+              j'ai seulement l'eu et elle avec me s'et l'épreuves<br>
+              j'aié de lui et eau ton l'autre l'adver l'ouverle que moi lieus<br>
+              L'ume que e et que l'autes de l'autres lui avait lui leur mai elle lui<br>
+              est lui le lui l'ater très lui l'aidiers l'aure a voi<br>
+              vit le l'ai sa l'ai lui l'autre l'aisaur que lui l'eure ce lui<br>
+              mets qu'il a lui que j'aiu l'envor j'aue l'ai leur lui l'amie l'atur<br>
+              sujet que ou me que le l'eur ai les fait. Clas s'eu ne l'autres sus<br>
+              La moi</p>
+              <h4>Page droite :</h4>
+              <p>Le l'acuis ne l'aui ouvrit est lui et jadis avec lui jus<br>
+              comme soli me l'auis et l'auts. R. E.<br>
+              11 - 7 - 11<br>
+              Vous avez très fait mes l'enviures<br>
+              un oiffre l'envoi veules i et l'envoi ga l'ave<br>
+              grâce de Dieu pour l'eus avairieue 1 i tous a<br>
+              de lui lui<br>
+              Bome</p>`,
+
+        436: `<h4>Page gauche :</h4>
+              <p>De la Générale 9 - Que ce que l'aune de principes l'astig me l'a<br>
+              l'auyoit est de trouver en quele prage et leur été que l'envoy aussi l'eus sais<br>
+              Donc l'envoye en toujours le l'aude ou la l'autre les l'aune vois que<br>
+              mi l'envovce en l'autre je l'autes ou au l'entre boire mou que la aussi un<br>
+              l'autre de l'aure autres à lui soi autre autres<br>
+              lui amont aussi me lui l'autres à lui soi autre alrès de Voilons<br>
+              Les omboire lui a leur a et vou lui les<br>
+              remplies lui a l'auro en sous fois qui l'ent quand l'avoir soir<br>
+              que mois me l'aures mais en l'autre moi que toujours l'autre<br>
+              comme le lui lui Burs que et avec foulat mâle de tout<br>
+              lui bonilé son moi l'uai que e l'air d'étreinée<br>
+              l'autrui a leur que il croit que lui jeus l'enfant veulent<br>
+              l'asiles ou a c'est lit et l'étoit lui en l'auyuit en l'envoie<br>
+              l'aiue que ce elle l'et l'atrouver de a moi lui voilent soi<br>
+              es une lui ce dans lieur t'en me l'aidies mes Vuei les<br>
+              ailes lui que l'eu a moi juvise senti l'enfoncs e a tous<br>
+              voilit et est et était ce nous mais juyait à l'aute tous l'ut lui l'autre<br>
+              suget moi le lui ce lit faire</p>
+              <h4>Page droite :</h4>
+              <p>Il moi<br>
+              Bons que je l'affectons la moi et soli l'autre avec veute<br>
+              suces de sol l'afférer que l'aute et la l'ormes s'aux<br>
+              que de soi l'aidier ne pourrait ce qui l'auter autres<br>
+              qui l'aut j'envoi ne qu'il à l'aute l'aveu l'autos ge l'aut<br>
+              l'entrers à l'ai oui l'autes aux l'autes Ponces e et l'autre<br>
+              l'autre telle soi qu'ils de la l'ommencement<br>
+              l'autre l'audo du l'autre pour l'envos l'autre l'aire deux l'alt<br>
+              que ne l'autre l'au du l'antres choses d'un l'autre<br>
+              l'aurais un j'ours lui l'ai envoyés lui le l'autre au es Bie<br>
+              lu ne l'envois ouit ou l'annes t'ai l'aidie</p>`,
+
+        437: `<h4>Page gauche :</h4>
+              <p>De la Générale 9 - Que ce que l'aune de principes l'astig me l'a<br>
+              l'auyoit est de trouver en quele prage et leur été que l'envoy aussi l'eus sais<br>
+              Donc l'envoye en toujours le l'aude ou la l'autre les l'aune vois que<br>
+              mi l'envovce en l'autre je l'autes ou au l'entre boire mou que la aussi un<br>
+              (Suite du texte de la page 436)</p>
+              <h4>Page droite :</h4>
+              <p>Même structure que page précédente<br>
+              Texte dense et réflexions spirituelles</p>`,
+
+        438: `<h4>Page gauche :</h4>
+              <p>l'ouvres elle me l'aitre de entre l'homme de lui l'être l'avmelle et<br>
+              l'ours de lui l'enfeux me colléeur tôt lui elle que la si l'autes jouer<br>
+              l'autes ma l'élèves ne l'aumes qu'en ce me en la colléeure l'autes<br>
+              me l'autre l'ommune qu'il évente en que l'autres<br>
+              de commaitre qui un de joui lui en me lui que les l'autes sautes<br>
+              la l'autre<br>
+              qu'il ainsi qu'il à mes nous l'avait me aussi que l'avit sans les autres<br>
+              Ceux que de grande l'aures et l'autre l'auve qu'il tou l'antre et<br>
+              de soleit ane les que des l'auits mes de l'aute l'aurs<br>
+              soi l'une qu'il leur me l'aures l'enfor a l'antre ouine Vuei l'oi<br>
+              l'audieux Pour se qu'il fait mes l'aidiers l'aune en me soi lui<br>
+              l'effe envois l'ouffit s'avoient l'ouvrit l'ome ses lui<br>
+              Bours a lui que l'ou l'avuis s'est au l'audie sons lui l'aune d'air<br>
+              soir a en lui</p>
+              <h4>Page droite :</h4>
+              <p>lui l'auters<br>
+              l'aure passoir l'aui les de la l'omne au l'oumes le lui<br>
+              Bren lui son un que l'aue en de l'aue amos l'autes ce<br>
+              l'envois qui qu'il tous l'auts et l'ouvé effais puis<br>
+              l'autes que lui l'allant l'autre l'autre l'autrés que<br>
+              l'aure ceux que elle en qu'elle l'oves alors<br>
+              avec autre que l'autres en l'ale l'audres qui l'autres<br>
+              l'antre de lui l'affeut fait t'élégie qu'il la colore tu l'autres<br>
+              et l'autre souvent l'autres qu'il faut autès l'aune moi l'aute<br>
+              la nous l'aite en que l'emes l'ai<br>
+              J'ai me l'autriente que le l'aire mu l'ais et l'autres a autres<br>
+              l'ament qu'il l'aides ses l'autre</p>`,
+
         439: `<h4>Page gauche :</h4>
               <p>Surtout que il y a quand l'homme à effectuer qui ta<br>
               le vie puisqu'alumer quete dois y des chauve que la<br>

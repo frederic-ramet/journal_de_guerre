@@ -222,3 +222,47 @@ c'était l'action
 
 ---
 
+## IMG_0415 - Journal des 16-17 juin 1918 (Page 6/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+pour nous mettre dans la
+bonne voie
+Copie le 16-6-18 Ramet E.
+
+17-6-18 Ramet E.
+Tous ceux la moquer au bonne
+action de faite prement qu'ai fait ma
+été aissé et qu'une suite d'
+et kaise forsee été aissé à un camarade
+Et mon polieur grès toute
+que ...été moralé ...
+```
+
+### Page droite :
+```
+Le 17-6-18 Ramet E.
+Aujourd'hui au travail je
+ma bonne écolière... ceux
+... nous sommes tendre mon
+je m'a faisait... l'aider... lui
+nous tendra fait... n'ai
+rade faisaient pour l'aider
+à mon chef et mes camarades
+... Paix remercierons toute de
+faite geste que me bien
+me remercions et ne
+```
+
+**Notes :**
+- Dates confirmées : 16 et 17 juin 1918
+- Bonnes actions au travail
+- Aide aux camarades
+- Signature R.E. (Ramet Ernest)
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

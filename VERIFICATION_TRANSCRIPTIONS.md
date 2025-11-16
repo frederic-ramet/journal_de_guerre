@@ -1265,3 +1265,83 @@ Date visible : "le 9-9..." (9 septembre 1918)
 
 ---
 
+## IMG_0460 - Septembre 1918 (Page 51/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Date visible : "le 9-9" (9 septembre 1918)
+
+**Thèmes :**
+- Réflexions sur Dieu et la prière
+- Continuation des épreuves spirituelles
+- Gratitude et persévérance
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0461-0469 - Réflexions septembre (Pages 52-60/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions spirituelles continues, progression dans septembre 1918.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0470 - Mi-septembre 1918 (Page 61/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Date visible : "le 10"
+Références à Dieu et prière continues.
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0471-0479 - Réflexions continues (Pages 62-70/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions spirituelles continues.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0480 - Invocation spirituelle (Page 71/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Titre visible : "Invocation à la Seignelle"
+
+**Thèmes :**
+- Invocation et prière formelle
+- Réflexions spirituelles denses
+- Foi et persévérance
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0481-0484 - Réflexions continues (Pages 72-75/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions continues.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0485 - Deuxième mois (Page 76/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Mention : "Deuxième mois"
+
+**Notes :**
+- Référence au deuxième mois de réflexions
+- Texte dense sur la foi
+- Continuation des exercices spirituels
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

@@ -128,3 +128,57 @@ j'esprit... en important...
 
 ---
 
+## IMG_0413 - Entraide entre camarades (Page 4/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Normand.
+Le 1er il m'écrit.
+avant que l'ayez mis arroté
+des filles de projet aussi
+à partir d'aujourd'hui
+Quand on est Malade de
+donner le bien et aider.
+
+J'ai fait la première...
+changer complètement de
+vie défait quelque temps
+j'ai fait quelque progrès
+mais je ne veux pas en
+rester là
+```
+
+### Page droite :
+```
+Quand j'ai été malade
+de veau à mes deux
+camarades tous où mis vouloir
+dit un chez l'autre tout d'où
+
+Oui définit jusqu'à deux ans
+être bienfaits auxquels de leur
+et dehors bêtises et aimer
+et tout la réponse et aimer
+n'avons en autre chose d'autre
+et nous oublions de ce que
+vous dites
+
+d'un camarade l'aucune
+Camille... Nouveau...
+pas... Fremeuse vieux
+m'avez dit lien
+L'espère en a fait l'ordre
+```
+
+**Notes :**
+- Entraide entre camarades au camp de prisonniers
+- Réflexion sur les progrès moraux accomplis
+- Mention de Normand (camarade)
+- Résolution de continuer à s'améliorer
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

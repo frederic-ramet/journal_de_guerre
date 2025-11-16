@@ -1014,3 +1014,53 @@ le 9-7-18 R.E.
 
 ---
 
+## IMG_0432 - Liste B.A./M.A. (Page 23/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Format liste avec abréviations :
+- B.A. = Bonne Action
+- M.A. = Mauvaise Action (évitée)
+
+### Pages :
+```
+9-7-18 B.A.
+B.A. que j'ai faite? [liste numérotée]
+...
+M.A. évitée [liste]
+...
+10-7-18
+```
+
+**Notes :**
+- Dates : 9 et 10 juillet 1918
+- Nouvelle structure en liste numérotée
+- Plus organisé et systématique
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0433 - Liste B.A./M.A. suite (Page 24/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Pages :
+```
+B.A. que j'ai faite? ...
+Le 11-7-18
+Le 12-7-18
+Le 13-7-18
+Le 14-7-18
+...
+```
+
+**Notes :**
+- Dates : 11, 12, 13, 14 juillet 1918
+- Continue le format liste B.A./M.A.
+- Progression journalière documentée
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

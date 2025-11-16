@@ -466,3 +466,49 @@ Bonne action être aime aux
 
 ---
 
+## IMG_0420 - Leçons fin juin 1918 + dessins (Page 11/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche (haut) :
+```
+[Griffonnages et dessins]
+23-6-18
+[Signatures et essais de plume]
+```
+
+### Page gauche (bas) :
+```
+Leçon 21-6-18 R.E.
+Mauvaise action évité
+Allaient quel dessins etes
+que lui ou marché très
+a cause été à suivre lui men
+couer.
+```
+
+### Page droite :
+```
+Leçon du 24-6-18 R.E.
+Bonne action Donné deux
+Biscuit a un rade voulant
+que l'avait pas de mesleur
+que manger. L'aue jelit
+l'aure de le boulanger de ce
+maison.
+
+Leçon du 29-6-18 R.E.
+Mauvaise action que se
+due camarade que sa
+```
+
+**Notes :**
+- Dates : 21, 23, 24 et 29 juin 1918
+- Griffonnages/essais de plume en haut
+- Bonne action : donner des biscuits à un camarade affamé
+- Mauvaise action évitée notée
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

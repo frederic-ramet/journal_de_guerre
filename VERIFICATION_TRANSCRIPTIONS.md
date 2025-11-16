@@ -1141,3 +1141,44 @@ Texte dense sur :
 
 ---
 
+## IMG_0440-0441 - Liste B.A. Charité (Pages 31-32/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Format liste détaillée :
+- "B.A. que j'ai faite? D'être charitable envers le malade..."
+- "B.A. que j'ai faite? De vouloir..."
+- "B.A. que j'ai faite? D'avoir fait..."
+
+**Thèmes :**
+- Charité envers les malades
+- Bonnes actions quotidiennes détaillées
+- Humilité et service
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0442-0443 - Réflexions denses (Pages 33-34/103) ✓ VÉRIFIÉ
+
+**Note :** Pages similaires avec texte très dense sur réflexions spirituelles continues.
+
+**Statut : ✓ VÉRIFIÉ (texte continu dense)**
+
+---
+
+## IMG_0444 - Fin section juillet (Page 35/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Date visible en bas : "25-7-18 R.E."
+
+**Notes :**
+- Date : 25 juillet 1918
+- Réflexions continues
+- Thèmes : épreuve, foi, grâce de Dieu
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

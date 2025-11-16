@@ -434,12 +434,7 @@ function initReadingMode() {
 
     // Image transform state
     let rotation = 90; // Default 90° rotation for all images
-    let scale = 1;
-    let panX = 0;
-    let panY = 0;
-    let isDragging = false;
-    let startX = 0;
-    let startY = 0;
+    let panzoomInstance = null;
 
     // Editor state
     let isEditing = false;
@@ -455,20 +450,54 @@ function initReadingMode() {
     // Generate thumbnails
     generateReadingThumbnails(transcriptions, thumbnailsContainer);
 
-    // Apply image transform
-    function applyTransform() {
-        if (readingImage) {
-            readingImage.style.transform = `rotate(${rotation}deg) scale(${scale}) translate(${panX}px, ${panY}px)`;
+    // Apply rotation transform (Panzoom handles scale and pan)
+    function applyRotation() {
+        if (panzoomInstance) {
+            const currentPan = panzoomInstance.getPan();
+            const currentScale = panzoomInstance.getScale();
+            panzoomInstance.setStyle('transform',
+                `rotate(${rotation}deg) scale(${currentScale}) translate(${currentPan.x}px, ${currentPan.y}px)`);
+        }
+    }
+
+    // Initialize Panzoom on the image
+    function initPanzoom() {
+        if (readingImage && typeof Panzoom !== 'undefined') {
+            // Destroy existing instance if any
+            if (panzoomInstance) {
+                panzoomInstance.destroy();
+            }
+
+            panzoomInstance = Panzoom(readingImage, {
+                maxScale: 5,
+                minScale: 0.5,
+                contain: false,
+                cursor: 'grab',
+                // Custom transform to include rotation
+                setTransform: (elem, { scale, x, y }) => {
+                    panzoomInstance.setStyle('transform',
+                        `rotate(${rotation}deg) scale(${scale}) translate(${x}px, ${y}px)`);
+                }
+            });
+
+            // Enable mouse wheel zoom on container
+            imageContainer.addEventListener('wheel', panzoomInstance.zoomWithWheel);
+
+            // Apply initial rotation
+            readingImage.style.transform = `rotate(${rotation}deg) scale(1) translate(0px, 0px)`;
         }
     }
 
     // Reset image view
     function resetImageView() {
         rotation = 90; // Reset to default 90° rotation
-        scale = 1;
-        panX = 0;
-        panY = 0;
-        applyTransform();
+        if (panzoomInstance) {
+            panzoomInstance.reset({ animate: false });
+        }
+        // Reapply rotation after reset
+        if (readingImage) {
+            readingImage.style.transform = `rotate(${rotation}deg) scale(1) translate(0px, 0px)`;
+        }
     }
 
     // Get page number for current index (410 + index)
@@ -747,86 +776,42 @@ function initReadingMode() {
     prevBtn.addEventListener('click', goToPrev);
     nextBtn.addEventListener('click', goToNext);
 
+    // Initialize Panzoom
+    initPanzoom();
+
     // Image control event listeners
     if (rotateLeftBtn) {
         rotateLeftBtn.addEventListener('click', function() {
             rotation -= 90;
-            applyTransform();
+            applyRotation();
         });
     }
 
     if (rotateRightBtn) {
         rotateRightBtn.addEventListener('click', function() {
             rotation += 90;
-            applyTransform();
+            applyRotation();
         });
     }
 
     if (zoomInBtn) {
         zoomInBtn.addEventListener('click', function() {
-            scale = Math.min(scale * 1.25, 5);
-            applyTransform();
+            if (panzoomInstance) {
+                panzoomInstance.zoomIn();
+            }
         });
     }
 
     if (zoomOutBtn) {
         zoomOutBtn.addEventListener('click', function() {
-            scale = Math.max(scale / 1.25, 0.5);
-            applyTransform();
+            if (panzoomInstance) {
+                panzoomInstance.zoomOut();
+            }
         });
     }
 
     if (resetViewBtn) {
         resetViewBtn.addEventListener('click', resetImageView);
-    }
-
-    // Mouse wheel zoom
-    if (imageContainer) {
-        imageContainer.addEventListener('wheel', function(e) {
-            e.preventDefault();
-            const delta = e.deltaY > 0 ? 0.9 : 1.1;
-            scale = Math.min(Math.max(scale * delta, 0.5), 5);
-            applyTransform();
-        });
-
-        // Pan/drag functionality - always enabled
-        imageContainer.addEventListener('mousedown', function(e) {
-            isDragging = true;
-            startX = e.clientX - panX;
-            startY = e.clientY - panY;
-            imageContainer.style.cursor = 'grabbing';
-            // Disable transition for smooth dragging
-            if (readingImage) {
-                readingImage.style.transition = 'none';
-            }
-            e.preventDefault(); // Prevent image selection
-        });
-
-        imageContainer.addEventListener('mousemove', function(e) {
-            if (isDragging) {
-                panX = e.clientX - startX;
-                panY = e.clientY - startY;
-                applyTransform();
-            }
-        });
-
-        imageContainer.addEventListener('mouseup', function() {
-            isDragging = false;
-            imageContainer.style.cursor = 'grab';
-            // Re-enable transition after drag
-            if (readingImage) {
-                readingImage.style.transition = 'transform 0.3s ease';
-            }
-        });
-
-        imageContainer.addEventListener('mouseleave', function() {
-            isDragging = false;
-            imageContainer.style.cursor = 'grab';
-            // Re-enable transition after drag
-            if (readingImage) {
-                readingImage.style.transition = 'transform 0.3s ease';
-            }
-        });
     }
 
     // Edit mode event listeners

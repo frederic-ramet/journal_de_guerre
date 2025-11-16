@@ -1610,7 +1610,6 @@ p {
 }
 
 .reading-image {
-    transition: transform 0.3s ease;
     transform-origin: center center;
     user-select: none;
     -webkit-user-drag: none;

@@ -419,3 +419,50 @@ répondre.
 
 ---
 
+## IMG_0419 - Leçons des 17-19-21 juin 1918 (Page 10/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Leçon du 17-6-18 R.E.
+Une Mauvaise action que
+j'ai eu l'oublié avec cette
+lui fut évité aujourd'hui
+au travail a écouter lui
+mauvaise paroles foire
+blauce a mon Chef lime ci
+a deie avant tout
+mauvaise il l'espée avec
+une bonne colonte, et il de
+Dieu de continuer crois de
+```
+
+### Page droite :
+```
+avant de faisable a que
+lui sa dire. l'entre avec cette
+leçon de se de reconnus
+de se faure frouver fua
+si nous que a exécuté moi.
+
+Leçon du 19-6-18 R.E.
+Bonne action été à nulope
+un camarade tèlge du...
+suget de laissé... et
+très bien me lui mait froin
+
+Leçon du 21-6-18 R.E.
+Bonne action être aime aux
+```
+
+**Notes :**
+- Multiple leçons : 17, 19 et 21 juin 1918
+- Structure récapitulative des leçons
+- Thèmes : Éviter mauvaises paroles au travail, aider camarades
+- Signature R.E. répétée
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

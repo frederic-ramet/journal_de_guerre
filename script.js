@@ -433,7 +433,7 @@ function initReadingMode() {
     let currentIndex = 0;
 
     // Image transform state
-    let rotation = 0;
+    let rotation = 90; // Default 90° rotation for all images
     let scale = 1;
     let panX = 0;
     let panY = 0;
@@ -464,7 +464,7 @@ function initReadingMode() {
 
     // Reset image view
     function resetImageView() {
-        rotation = 0;
+        rotation = 90; // Reset to default 90° rotation
         scale = 1;
         panX = 0;
         panY = 0;

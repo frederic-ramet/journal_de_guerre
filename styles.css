@@ -1551,3 +1551,236 @@ p {
 [id] {
     scroll-margin-top: 80px;
 }
+
+/* ==========================================================================
+   Enhanced Viewer Controls
+   ========================================================================== */
+
+/* Image Controls */
+.image-controls {
+    display: flex;
+    gap: var(--space-xs);
+    margin-bottom: var(--space-sm);
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: var(--space-xs);
+    border-radius: 8px;
+}
+
+.image-control-btn {
+    background: var(--color-primary);
+    color: white;
+    border: none;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all var(--transition-fast);
+    min-width: 40px;
+}
+
+.image-control-btn:hover {
+    background: var(--color-accent);
+    transform: scale(1.05);
+}
+
+.image-control-btn:active {
+    transform: scale(0.95);
+}
+
+/* Image Container with Zoom/Pan */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    background: #f0f0f0;
+    border-radius: 8px;
+    height: calc(100% - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container:active {
+    cursor: grabbing;
+}
+
+.reading-image {
+    max-width: 100%;
+    max-height: 100%;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+/* Transcription Header */
+.transcription-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-sm);
+}
+
+.transcription-header h4 {
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.edit-toggle-btn {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.edit-toggle-btn:hover {
+    background: var(--color-primary);
+    color: white;
+}
+
+.edit-toggle-btn.editing {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+/* Transcription Editor */
+.transcription-editor {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    height: 100%;
+}
+
+.transcription-textarea {
+    flex: 1;
+    min-height: 200px;
+    padding: var(--space-sm);
+    border: 2px solid var(--color-border);
+    border-radius: 8px;
+    font-family: var(--font-serif);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    resize: vertical;
+    background: white;
+}
+
+.transcription-textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+}
+
+.editor-note-section {
+    background: #fff9e6;
+    padding: var(--space-sm);
+    border-radius: 8px;
+    border: 1px solid #f0d080;
+}
+
+.editor-note-section label {
+    display: block;
+    font-weight: 600;
+    color: var(--color-primary);
+    margin-bottom: var(--space-xs);
+    font-size: 0.9rem;
+}
+
+.transcriptor-note {
+    width: 100%;
+    min-height: 80px;
+    padding: var(--space-xs);
+    border: 1px solid var(--color-border);
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: 0.85rem;
+    resize: vertical;
+    background: white;
+}
+
+.transcriptor-note:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.editor-actions {
+    display: flex;
+    gap: var(--space-sm);
+    justify-content: flex-end;
+}
+
+.editor-btn {
+    padding: var(--space-xs) var(--space-md);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all var(--transition-fast);
+}
+
+.save-btn {
+    background: #28a745;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #218838;
+    transform: translateY(-1px);
+}
+
+.cancel-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #c82333;
+    transform: translateY(-1px);
+}
+
+/* Transcription Note Display */
+.transcriptor-note-display {
+    background: #fff9e6;
+    padding: var(--space-sm);
+    border-radius: 8px;
+    border-left: 4px solid var(--color-accent);
+    margin-top: var(--space-md);
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.transcriptor-note-display strong {
+    color: var(--color-primary);
+    font-style: normal;
+}
+
+/* Save Indicator */
+.save-indicator {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #28a745;
+    color: white;
+    padding: var(--space-sm) var(--space-md);
+    border-radius: 8px;
+    z-index: 10001;
+    animation: slideIn 0.3s ease, fadeOut 0.3s ease 2s forwards;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}

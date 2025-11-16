@@ -1,16 +1,18 @@
 # Transcriptions Améliorées - Batch 1 (IMG_0410-0419)
 
 ## IMG_0410 - Couverture
-**Carnet Appartenant**
+**Carnet de Pensées** (ou "Carnet d'Apinesse")
 à **Ramet Ernest**
 
 **Etude**
-Commencé le **14 juin 1911**
-à **Martinsart (Somme)** ← CORRECTION: "Martinsart" et non "Martou Mephisto"
+Commencé le **14 juin 1918**
+à **Munster Westphalie** (Allemagne) - CAMP DE PRISONNIERS DE GUERRE
 
-Leçon donnée par **Gecourtét**
+Legar larre m'a appris (un mentor/enseignant au camp)
 pour apprendre à aimer Dieu
 Et nous tenir dans la voie
+
+**CONTEXTE : Journal d'un prisonnier de guerre français à Munster, Allemagne**
 
 ---
 
@@ -41,7 +43,9 @@ notre compagne **toutes les mauvaises**
 esprits que pourraient venir
 se manifester
 
-**Copie le 15-6-11 R.E.** ← CORRECTION : 15 juin 1911 (pas 1916)
+**Copie le 15-6-11 R.E.** ← Date originale de ces notes (15 juin 1911), copiées en 1918 au camp
+
+**Note importante** : Les dates "11" font référence à 1911, dates des notes originales. Ramet a copié ses notes spirituelles de 1911 dans ce carnet pendant sa captivité à Munster en 1918.
 
 ---
 

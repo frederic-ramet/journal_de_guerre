@@ -146,31 +146,32 @@ mois... j'ai quitté le l'intérieur
 # SYNTHÈSE FINALE DU JOURNAL
 
 **Auteur** : Ramet Ernest
-**Période couverte** : 14 juin 1911 - 1916/1917
-**Lieu initial** : Martinsart (Somme)
-**Contexte** : Journal spirituel commencé avant la guerre, continué pendant la Première Guerre Mondiale
+**Période du carnet** : 14 juin 1918 (début) - notes copiées de 1911-1917
+**Lieu de rédaction** : **MUNSTER, WESTPHALIE (Allemagne)** - Camp de prisonniers de guerre
+**Contexte** : **JOURNAL DE PRISONNIER DE GUERRE** - Ramet copie ses notes spirituelles antérieures pendant sa captivité
 
-**Parcours militaire** (d'après IMG_0509) :
+**Parcours militaire avant capture** (d'après IMG_0509) :
 - Service dans le **Bataillon d'ouvriers d'Artillerie**
 - Passage par **Guémicourt** (C.M.)
 - Cantonnement à **Montcheuvrois et Ons**
 - Séjour à **Dunkerque**
 - Campagne en **Somme**
+- **Capture et internement à Munster (Allemagne)**
 
 **Structure du journal** :
-- Pages 1-30 : Format structuré "Bonne action / Mauvaise action évitée" (1911)
-- Pages 31-90 : Réflexions spirituelles denses et continues (1911-1916)
-- Pages 91-100 : Notes de guerre et récapitulatif (1916-1917)
+- Pages 1-30 : Copies de notes de 1911 - Format "Bonne action / Mauvaise action évitée"
+- Pages 31-90 : Copies de réflexions spirituelles (origines 1911-1916)
+- Pages 91-100 : Notes de captivité et récapitulatif militaire (1916-1918)
 - Pages 101-103 : Photos et couverture arrière
 
 **Thèmes principaux** :
-- Spiritualité spirite (début)
+- Spiritualité spirite (notes de 1911)
 - Vertus chrétiennes : humilité, charité, persévérance
 - Dévotion aux saints (St François, St Paul, St Mayeur)
-- Foi en temps de guerre
-- Résignation à la volonté divine
-- Sacrifice et souffrance
+- **Foi en temps de captivité**
+- Résignation à la volonté divine face à l'internement
+- Sacrifice et souffrance du prisonnier
 
 ---
 
-*Note : Ce journal est un témoignage précieux de la vie spirituelle d'un soldat français pendant la Première Guerre Mondiale. Il montre l'évolution d'une pratique spirituelle personnelle (spiritisme en 1911) vers une foi chrétienne plus profonde, renforcée par les épreuves de la guerre.*
+*Note : Ce journal est un témoignage précieux de la vie spirituelle d'un **prisonnier de guerre français en Allemagne** pendant la Première Guerre Mondiale. Ramet Ernest a utilisé sa captivité au camp de Munster pour copier et préserver ses notes spirituelles antérieures, montrant l'évolution d'une pratique spirituelle personnelle (spiritisme en 1911) vers une foi chrétienne profonde, renforcée par l'épreuve de la captivité.*

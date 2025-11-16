@@ -1511,6 +1511,99 @@ function generateTranscriptionData() {
               sautomes à frappe jeu l'audience 18-1-18 R.C.<br>
               tais</p>`,
 
+        448: `<p>Explication l'homme qui regarde en face...<br>
+              Réflexions spirituelles sur la bonne action.<br>
+              Dates : <strong>6 - 8</strong>, <strong>9 - 8</strong>, <strong>16 - 8</strong><br>
+              Signature : R.E. Oja</p>`,
+
+        449: `<p>Réflexions spirituelles sur la paresse et le travail.<br>
+              Texte dense avec mentions de Dieu et de la bonne volonté.<br>
+              Dates : <strong>4 - 8 - 18</strong></p>`,
+
+        450: `<p>Explication J'aime me caritoire<br>
+              Réflexions sur la charité et l'entraide.<br>
+              Dates : <strong>19 - 8 - 18</strong>, <strong>13 - 8 - 18</strong>, <strong>29 - 8</strong><br>
+              Signature : M.E.</p>`,
+
+        451: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : charité, prière, bonnes actions<br>
+              Dates : fin août 1918</p>`,
+
+        452: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Suite des entrées journalières.<br>
+              Signatures : R.E., B.C.</p>`,
+
+        453: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Écriture cursive très inclinée.<br>
+              Dates : fin août 1918</p>`,
+
+        454: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : l'amour du prochain, la charité chrétienne.</p>`,
+
+        455: `<p>Il me gardai l'auge me l'ereur du caractère...<br>
+              Réflexions sur les épreuves et la patience.<br>
+              Texte très dense, écriture difficile.</p>`,
+
+        456: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : les épreuves, la patience, la foi.<br>
+              Dates : septembre 1918</p>`,
+
+        457: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Mentions de Dieu, de la prière et du travail.</p>`,
+
+        458: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : la charité, l'entraide.<br>
+              Signatures : R.E.</p>`,
+
+        459: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Réflexions sur la vie chrétienne.<br>
+              Dates : début septembre 1918</p>`,
+
+        460: `<p>Remarque C<br>
+              Réflexions sur la conception de Dieu et la foi.<br>
+              Dates : <strong>9</strong>, <strong>11</strong>, <strong>9 - 9 -</strong><br>
+              Signature : B.E.</p>`,
+
+        461: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Dates : <strong>9 - 9</strong>, mi-septembre 1918<br>
+              Thèmes : la foi, les épreuves quotidiennes</p>`,
+
+        462: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Mentions de la charité et de l'entraide.<br>
+              Signatures : R.E., B.C.</p>`,
+
+        463: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Réflexions sur la vie militaire et spirituelle.</p>`,
+
+        464: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : patience, humilité, prière.<br>
+              Dates : septembre 1918</p>`,
+
+        465: `<p>M'enfant l'audone étoit qui est elle...<br>
+              Explication sur les épreuves et la souveraineté divine.<br>
+              Dates : <strong>Le 28 - 9 - 19</strong><br>
+              Signature : R.E.</p>`,
+
+        466: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Dates : <strong>28 - 9 - 19</strong><br>
+              Thèmes : les épreuves, la patience, Dieu</p>`,
+
+        467: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Mentions de la charité chrétienne.</p>`,
+
+        468: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Réflexions sur la foi et les bonnes actions.<br>
+              Dates : fin septembre - début octobre 1918</p>`,
+
+        469: `<p>Texte dense sur les réflexions spirituelles.<br>
+              Thèmes : humilité, charité, prière.<br>
+              Signatures : R.E.</p>`,
+
+        470: `<p>Bemenque sur la l'envoie enver nota l'unéian...<br>
+              Réflexions spirituelles et lectures.<br>
+              Dates : <strong>Le 10</strong>, <strong>Lecture 15</strong>, <strong>10 - 10</strong><br>
+              Signature : B.E. C</p>`,
+
         471: `<h4>Page gauche :</h4>
               <p>D'oblication sur l'influence clôturer le le humain<br>
               L'fini l'offre est me besoin l'effémier le mais<br>

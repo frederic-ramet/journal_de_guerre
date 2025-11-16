@@ -624,3 +624,11 @@ j'ai évité
 
 ---
 
+## IMG_0423 - DOUBLON de IMG_0422 (Page 14/103) ✓ VÉRIFIÉ
+
+**Note :** Cette image est identique ou très similaire à IMG_0422. Mêmes textes sur les deux pages.
+
+**Statut : ✓ IMAGE DOUBLON CONFIRMÉE**
+
+---
+

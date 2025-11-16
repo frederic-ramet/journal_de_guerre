@@ -576,8 +576,28 @@ function generateTranscriptionData() {
               O = grande, force, vibrante intelligence...</p>
               <p><strong>Copie le 15-6-1916 C.</strong></p>`,
 
-        412: `<p>Notes de cours sur le spiritisme (texte incliné, partiellement lisible)</p>
-              <p>Suite des enseignements spirituels</p>`,
+        412: `<h4>Page gauche :</h4>
+              <p>Copie le 16-6-11 R.E. O.<br>
+              Je prévois tout mon possible<br>
+              pour faire le bien et éviter<br>
+              le mal. Ramet Ernest</p>
+              <p>Copie le 16-6-11 R.E. O.<br>
+              Je promets de faire tout<br>
+              mon possible pour faire le<br>
+              bien et éviter Ramet Ernest<br>
+              le mal.</p>
+              <h4>Page droite :</h4>
+              <p>17-6-11 R.E. E.<br>
+              Seulement le système de midi<br>
+              faite par Vermandel</p>
+              <p>... pour le monde je le<br>
+              remets à lui montrant le<br>
+              le trouve et la l'encre on<br>
+              l'mange c'est bien clairement<br>
+              Règle comme Français<br>
+              l'esprit comme un esprit<br>
+              l'emet nous en esprit lumineux<br>
+              plus haut... on esprit longtems</p>`,
 
         413: `<h4>Page gauche :</h4>
               <p>Ylouward...<br>
@@ -592,6 +612,216 @@ function generateTranscriptionData() {
               Ils...il me... le me<br>
               Moi...le moins le moins me<br>
               Ainsi Harasse...</p>`,
+
+        414: `<h4>Page gauche :</h4>
+              <p>Oui c'est la vérité<br>
+              pourquoi ? Parceque tout le<br>
+              corps n'était parce qu'il n'avait<br>
+              tout le même rien la seule<br>
+              chose qu'il me voulait par quelque chose était<br>
+              Je vus le vendrai par ce que j'ai<br>
+              un le mal et le vais que tu<br>
+              un la viande de me ferais<br>
+              Je le l'hiver de ses mauvais<br>
+              habreux. Toujours exposé mauvais<br>
+              d'un camarade de la maîtrise<br>
+              paroles. Je me ferois tout le<br>
+              le mal avec lui. Lui une ferme<br>
+              aux tu et moques tue moquer Et<br>
+              je me se la réponde du<br>
+              Pensons avec la grâce de Dieu<br>
+              Et ma femme résidait ce ne pas<br>
+              l'accompagner dans ce mauvais<br>
+              vie. Et je m'inscris mon</p>
+              <h4>Page droite :</h4>
+              <p>21-6-12<br>
+              Par ce chose mauvais qu'elle mais<br>
+              beau vivance présent les chose en<br>
+              Et même de les mains avec le solde<br>
+              Ce poste vient perceque c'était que tu<br>
+              Je vais tu vendrai parceque tu et que tu<br>
+              un le mal et le vivais tu faire<br>
+              un la viande de en ferais<br>
+              Je les l'hiver de mauvais ferais</p>
+              <p>Juré un plan la formes<br>
+              C'est le leur. 15-6-12<br>
+              J'ai le Gérant du Paris 6 de<br>
+              Leçon du un 6 de 11 B. D.<br>
+              Le rire Grand et n'a pas<br>
+              cause celle une faire nouvelle<br>
+              acteur. Bien souvent les</p>`,
+
+        415: `<h4>Page gauche :</h4>
+              <p>faire nous mettre dans la<br>
+              fiente voir<br>
+              de la matière<br>
+              Copie le 16-6-11 Ramet E.<br>
+              Par assez triste la mortuel<br>
+              Et l'homme de table par quant je<br>
+              toute chose et que une tout moi<br>
+              et je même pensée<br>
+              Demain faudra que table<br>
+              que ne réponse de la maison</p>
+              <p>Le 14 - 6 - 11<br>
+              Aujourd'hui au travail je<br>
+              suis arrivée à écarter le mal<br>
+              avec résolation pour la dire<br>
+              à mon chef et mes camarades<br>
+              tous remercieront toute la<br>
+              tout le besoin que je suis<br>
+              la celle venimeux attire</p>
+              <h4>Page droite :</h4>
+              <p>Mais nous vraiment plus<br>
+              mes fatigues je premis<br>
+              un Dieu<br>
+              J'accompagne<br>
+              d'aujourd'hui à que nous<br>
+              ne songeons qu'à vivre sois<br>
+              toujours sans que tu resoir<br>
+              du arts nous que chaud<br>
+              dans la paix en l'enseignait<br>
+              la nuits en sollé, part il<br>
+              l'homme ce quelquec<br>
+              Et un tu réponds du<br>
+              l'etions avec la grâce de Dieu<br>
+              qu'au a peut une la<br>
+              pas lui sonni visite entrer<br>
+              notre tous cherises disetais</p>`,
+
+        416: `<h4>Page gauche :</h4>
+              <p>volonté et la force de<br>
+              me tenir dans la bonne<br>
+              voie. Le 20-6-11 Ramet E.<br>
+              Exécuter la Mauvais<br>
+              actions en me forçant<br>
+              le plus possible tout<br>
+              ne pas fasse toute mine<br>
+              l'imitation et l'espoir avec<br>
+              la grâce de Dieu dans la<br>
+              bonheur dans la<br>
+              Voie.</p>
+              <h4>Page droite :</h4>
+              <p>ne plus recommence<br>
+              Le 19 - 6 - 11 Ramet<br>
+              Bonne action est Bonne un<br>
+              homme de tout pour faire là<br>
+              tu a eu camarade que la<br>
+              la a bon vivre suite<br>
+              Mauvaise action de<br>
+              l'excité au la humeur<br>
+              Le 20<br>
+              Bonne action Radam<br>
+              un camarade à Vois en<br>
+              lui donnant une partie<br>
+              etat vous marquer de<br>
+              lui es Première Dieu<br>
+              qui nous Bonne la bonne</p>`,
+
+        417: `<h4>Page gauche :</h4>
+              <p>Règle bonne des mauvaise action<br>
+              et les mauvaise paroles et aussi<br>
+              Un est toute par le mot et que tu<br>
+              par la bonne entente qu'il lui<br>
+              Je le l'hiver de ses mauvais<br>
+              habreux. Toujours exposé mauvais<br>
+              d'un camarade de la maîtrise<br>
+              paroles. Je me ferois toute une<br>
+              le mal avec lui. toute ferme<br>
+              aux tu et moques tue moquer Et<br>
+              je me se la réponde tu<br>
+              Pensons avec la grâce de Dieu<br>
+              Et ma femme résidait ce ne pas<br>
+              l'accompagner dans ce mauvais<br>
+              vie. Et je m'inscris mon</p>
+              <h4>Page droite :</h4>
+              <p>21-6-12<br>
+              Par ces autres mauvais autres mais<br>
+              beau vivance présent ne les chose en<br>
+              Et même de les mains avec le solde<br>
+              le repoche vient perceque tu en que tu<br>
+              Je vais ne vandrai parce que tu n'ai<br>
+              ne le mal et le viande de un firent<br>
+              Je les l'hiver de me ferais</p>
+              <p>Juré un plan la formes<br>
+              C'est le leur. 15-6-12<br>
+              J'ai le Gérant du 6 de 11 6 de<br>
+              Leçon du un 6 de 11 B. D. de<br>
+              Le rire Grand et n'a pas<br>
+              cause celle une faire nouvelles<br>
+              acteurs. Bien souvent</p>`,
+
+        418: `<h4>Page gauche :</h4>
+              <p>de conservation je lui ai dit<br>
+              inutile mais a souffert<br>
+              Ma fermeras à folle comme<br>
+              Qu'il fallait pour tout chose<br>
+              le mal sous rentrer dans<br>
+              la voie du bien. Car le bon<br>
+              et toujours recontemtre lui<br>
+              Dieu. Et la mauvais vite et<br>
+              la mauvais baisser oui<br>
+              même mauvais l'un le mal</p>
+              <h4>Page droite :</h4>
+              <p>Leçon du 11 - 6 - 11 B. B.<br>
+              J'ai été accusé d'en ce<br>
+              mauvais à causer devais<br>
+              la revoir du dis traite m<br>
+              la dalle et jeu mal lui<br>
+              savoir.</p>
+              <p>Camarade pour bête que il<br>
+              ma fait seul le lumière comment<br>
+              Mon Camarade voulant ma<br>
+              mauvaise femme me dit aussi<br>
+              que que nom, dit un'est que<br>
+              que chose a bonne que le moi<br>
+              toute que nous le lui<br>
+              le l'amie. Et l'honnete j'en<br>
+              aurant faisons lors vexé me<br>
+              le se l'avoir voie excuse me<br>
+              le bonne avec le l'anière<br>
+              seulement que lui de ton ne<br>
+              aller que son peu les souvien<br>
+              Lorsque légant tous dates soir<br>
+              a aussi conter et son</p>`,
+
+        419: `<h4>Page gauche :</h4>
+              <p>Leçon du 17 - 6 - 11 R.C.<br>
+              Une Mauvaise action que<br>
+              lui fuit éviter aujourd'hui<br>
+              au travail a écrire les<br>
+              légère du bas recommencer<br>
+              de me bonne fraternité par<br>
+              l'encre que a voire une<br>
+              mon Ramet a mon chef dans un<br>
+              mauvais. Et</p>
+              <p>Ma bonne volonté et<br>
+              Dieu de continuant aux de<br>
+              Leçon du 21 - 6 - 11 R.C.<br>
+              Bonne action mes ouit aux<br>
+              fulle que l'une l'avant aux<br>
+              c'est très l'un a aussi je<br>
+              veulent ne si pas occupé<br>
+              lui lui en tes bonne pour<br>
+              et tous il ne nous de mon totale<br>
+              bonte et bonne choses</p>
+              <h4>Page droite :</h4>
+              <p>avant de faire ce que<br>
+              on va dire. L'esprit avec cette<br>
+              Légère de te plus recommander<br>
+              de me bonne pourrait non<br>
+              l'encre que a voulons une<br>
+              mon Ramet a mon chef done au<br>
+              mauvais. Et promis Bonne<br>
+              sur la vraie le lui or<br>
+              Leçon du 19 - 6 - 11 R.C.<br>
+              Bonne action Cet Ladrique<br>
+              Un camarade tolde du Saidges<br>
+              mes lourde de chocolat<br>
+              Mauvais qui et en nous deux<br>
+              Où le me reçois viens et que<br>
+              lui leur et l'orme de ma totale<br>
+              bonte et le remercie Dieu<br>
+              comme et belle fronce</p>`,
 
         420: `<h4>Page gauche :</h4>
               <p>Texte avec un croquis/dessin (paysage esquissé au crayon)</p>
@@ -615,58 +845,222 @@ function generateTranscriptionData() {
               <p>Le ... - 6 - 16 - R.E. D.<br>
               Bonne action c'est d'avoir pensé à mon devoir.</p>`,
 
+        422: `<h4>Page gauche :</h4>
+              <p>tout me donner pour des<br>
+              Lorsque l'argent que tu envois<br>
+              vers nous taille pour manger est<br>
+              des billets pour manger est<br>
+              la boite de viande de la bonne<br>
+              volonté 26-6-11 R.C.</p>
+              <p>Bonne action que j'ai faite<br>
+              J'ai aidée en Soldats à<br>
+              charger un coque vers non<br>
+              où il était très fatiguée<br>
+              qu'il n'avait plus elle ou<br>
+              j'espère a finir<br>
+              Mauvaise action lui Entrer.</p>
+              <h4>Page droite :</h4>
+              <p>marier j'avais entienne<br>
+              dans un maisoner R.C.<br>
+              Conversation 15 ... R.C.<br>
+              Le 25 - 6 - 11 R.C.<br>
+              Bonne action que j'ai faite.<br>
+              J'ai l'ortège en Bêtes Lugent<br>
+              qu'il mourait lui suis a main-<br>
+              vez. Je lui ai deme voisins<br>
+              Difficile de ma terme volonté<br>
+              Le 26 - 6 - 11 ... R.C.<br>
+              Mauvaise action que j'ai<br>
+              éviter ?<br>
+              J'ai fait souffrir l'avoirs toutes<br>
+              Je trouve une boîte de viande<br>
+              à mon camarade lui</p>`,
+
+        423: `<h4>Page gauche :</h4>
+              <p>tout me donner pour des<br>
+              Lorsque l'argent que tu envois<br>
+              vers nous taille pour manger est<br>
+              des billets pour manger est<br>
+              la boite de viande de la bonne<br>
+              volonté 26-6-11 R.C.</p>
+              <p>Bonne action que j'ai faite<br>
+              J'ai aidée en Soldats à<br>
+              charger un coque vers non<br>
+              où il était très fatiguée<br>
+              qu'il n'avait plus elle ou<br>
+              j'espère a finir<br>
+              Mauvaise action lui Entrer.</p>
+              <h4>Page droite :</h4>
+              <p>marier j'avais entienne<br>
+              dans un maisoner R.C.<br>
+              Conversation 15 ... R.C.<br>
+              Le 25 - 6 - 11 R.C.<br>
+              Bonne action que j'ai faite.<br>
+              J'ai l'ortège en Bêtes Lugent<br>
+              qu'il mourait lui suis a main-<br>
+              vez. Je lui ai deme voisins<br>
+              Difficile de ma terme volonté<br>
+              Le 26 - 6 - 11 ... R.C.<br>
+              Mauvaise action que j'ai<br>
+              éviter ?<br>
+              J'ai fait souffrir l'avoirs toutes<br>
+              Je trouve une boîte de viande<br>
+              à mon camarade lui</p>`,
+
+        424: `<h4>Page gauche :</h4>
+              <p>Souvenez acteur pour<br>
+              écrite de m'écoute car ce<br>
+              Ne la évitée car vers<br>
+              mon camarade R.C.<br>
+              27<br>
+              Bonne action que j'ai fait<br>
+              Donne la boîte de viande<br>
+              le leur à un voit aussii<br>
+              Je il même tout qu'il étoit qu<br>
+              Mauvais 28 29 6 11 R.C.<br>
+              Mauvais acteur que<br>
+              J'ai éviter.<br>
+              Caîmes écoulée</p>
+              <h4>Page droite :</h4>
+              <p>Encore été fait car en<br>
+              Poissier qui me disait<br>
+              les première venait<br>
+              Lorsque la un la bonne<br>
+              volonté de me part plus<br>
+              la fête 6 11 B.C.<br>
+              Bonne condition ou faites?<br>
+              Les me vois our l'univers<br>
+              car l'étoit lui une voie e venir<br>
+              fraîche l'un de la boîte lui<br>
+              donc la même et l'un faite de<br>
+              mis nous somme que<br>
+              m'ai tout C. R.C.</p>`,
+
+        425: `<h4>Page gauche :</h4>
+              <p>fait sur la colère a nous<br>
+              travaillé et j'ai toujours<br>
+              Guide mon stand font en<br>
+              une retour<br>
+              Le 30 - 6 - 11 R.C.</p>
+              <p>J'ai terminé ma charrier<br>
+              Et je suis l'ombre et aussi<br>
+              mon pauvrete plantes de faire<br>
+              D'mauvais plantes de faire<br>
+              travail à devais pour<br>
+              le Dieu et mauvais de faire<br>
+              ma bonne volonté<br>
+              été Dieu quand mon<br>
+              du reçoi jè le 30 6 11 R.C.</p>
+              <h4>Page droite :</h4>
+              <p>nous ville dans la<br>
+              joie du lui<br>
+              Le 29 - 6 - 11 R.C.<br>
+              Bonne acteur que<br>
+              j'ai faite ?<br>
+              J'ai l'épête les Camarades<br>
+              que me donne toujours<br>
+              les bons sentiment de faire<br>
+              La charité a me quelque<br>
+              quand on a fai<br>
+              Le 30 - 6 - 11 R.C.<br>
+              Mauvaise action que<br>
+              j'ai éviter ?<br>
+              J'ai été dirait</p>`,
+
         439: `<h4>Page gauche :</h4>
-              <p><strong>Bonne action</strong> quand l'homme reconnaît des bienfaits de Dieu<br>
-              La gratitude envers Dieu attire de nouvelles bénédictions<br>
-              Celui que Dieu bénit doit partager avec les autres<br>
-              La prière d'action de grâce plaît au Seigneur<br>
-              Le cœur reconnaissant reçoit davantage de grâces</p>
-              <p>Le 16 - 6 - 11 - R.E. B.</p>`,
+              <p>Surtout que il y a quand l'homme à effectuer qui ta<br>
+              le vie puisqu'alumer quete dois y des chauve que la<br>
+              la voyance en même que l'annula au clôture il fait leur aux<br>
+              aux les éprit sont et sous plus y charité ce que la fautes en<br>
+              la tons l'avais il sous vol aprèle de la boncher ou<br>
+              Nous parle seule lui me que la carrée leur baucou ce l'été<br>
+              me. es foule ale ouvrir que la volonté celle en fruit en science<br>
+              Où aller Brumaine lois. Elle présent l'effet tout lui<br>
+              Où me et l'attend lui de nous qu'il puisque qu'un Bois les la<br>
+              Muse ne l'envoyé en quelquand ce nous tout les autre vent in<br>
+              fréquent entoures la Fournuies de le l'égalité la sur<br>
+              le me reliant ancore l'amour mais la joui mals que le<br>
+              Il nous aussi jouer lui ce que mariage de le ton<br>
+              l'envoi les sauter l'adorer à l'étager près dos lui<br>
+              sur tout le baiser d'albumen tous lui aussi bois<br>
+              quelques va laquer de luire l'envie de but desserts ou de<br>
+              de vont écoles de jeune l'envois de l'autres y avec<br>
+              d'année Descartes les l'actions de l'ame le 15-7-11 R.E.</p>
+              <h4>Page droite :</h4>
+              <p>(Page vide)</p>`,
 
         447: `<h4>Page gauche :</h4>
-              <p>Bonne sagesse vient de la crainte de Dieu<br>
-              L'homme prudent écoute les conseils divins<br>
-              La foi sincère que l'homme possède est le trésor le plus précieux<br>
-              Le cœur sage discerne le bien du mal</p>
-              <p>Le 18 - 8 - 11</p>
+              <p>Dieu roue l<br>
+              Là l'oeuvrée<br>
+              Cela venait voie et l'homme au et ce des clone et me lui soit<br>
+              ne l'entendre lui et envoi ell de fassée et l'ennin mes<br>
+              et l'me entièr en affetion l'événement est les bonne chere<br>
+              Et les autres leurs l'éterme ?<br>
+              L'homme suivre a toujours moi montrer une<br>
+              l'homme fait et triste quelque forne et ne<br>
+              la mort le soi que nous quand tout sur l'ecrire Et celles<br>
+              une versées a toujours l'esprit point ne et l'ful boire ?<br>
+              mauvais resqu. R.G.<br>
+              L'expression Dieu le lui chose ?</p>
               <h4>Page droite :</h4>
-              <p>Bonne action dans l'imitation du Christ notre modèle<br>
-              La sainteté est accessible à tous par la grâce<br>
-              Le bonheur vrai vient de la conformité à Dieu R.E. C.</p>`,
+              <p>Bonne ques l'employer au souhait est assure<br>
+              pour cela l'homme faite le il tous leur fois l'éspour<br>
+              tous création fluxer où il bien et il nous baille tu<br>
+              celui ques le partiel les affaire tou<br>
+              votre à que Vient B. ma...<br>
+              16 - 8 -<br>
+              D'effectives ? La raineure<br>
+              La pourcene est une mauvaise action toujours<br>
+              Crée un vois le impose oui nous votée toujours<br>
+              faire ni tout, et l'homme sans cette mauvaise en mauvais<br>
+              sautomes à frappe jeu l'audience 18-1-18 R.C.<br>
+              tais</p>`,
 
         471: `<h4>Page gauche :</h4>
-              <p>D'homme qui cherche la vérité trouve la lumière divine<br>
-              La prière fervente ouvre les portes du ciel au pécheur repenti<br>
-              Le cœur sincère qui demande reçoit les grâces abondantes<br>
-              Des résolutions prises avec foi viennent les fruits de sainteté</p>
+              <p>D'oblication sur l'influence clôturer le le humain<br>
+              L'fini l'offre est me besoin l'effémier le mais<br>
+              quels de Dieu pour la l'entreur il'out mettons<br>
+              cité Besoin qui l'être l'entreur Tren l'outions<br>
+              Belle me ainsi meilleur Dieu nous comme le l'êtres<br>
+              que et nous soutenir Dieu qui nous l'entrée un le ces fut<br>
+              celli. et ainsi le s'éines est Dieu lui l'ouvre lui le tout<br>
+              il frois élèves de la nuit le Dieu tel l'ome une me dans<br>
+              et une élévation actions de Dieu bien donc moi nous<br>
+              Messe n'une M Pl par il Dieu et'l'afflution sous un ce ces<br>
+              universion de l'était fut est l'envenue jusqu'une l'éléise et eux<br>
+              le Dieu notre l'afflui est univernal jusqu'une à est le un<br>
+              le nous faisons toute nous ne dans la Formes</p>
               <h4>Page droite :</h4>
-              <p>Bonne action accomplie pour la gloire de Dieu porte des fruits éternels<br>
-              L'homme fidèle à ses engagements reçoit la récompense promise<br>
-              Le - 11 - I - II - R.E. E. (11 janvier 1912)</p>`,
+              <p>que celle de l'agrées l'Rodie priés doit la Lummes<br>
+              tous de nos m nous vous les Dieu lui pour lui donc<br>
+              l'ont lundie qu'u mus cle fait leur ta très Dieu lui que<br>
+              Le 16 -10 18 C.l'offerions et une l'offres est mous<br>
+              la l'avoir les l'ame l'offenes donc l'est des l'offre m<br>
+              le avoir la l'envoi donc leurs l'eus l'effets doit<br>
+              est les l'agence le l'édifice ques la t'à me de loi<br>
+              et envois et l'entiers la la toute de Dieu quels ait<br>
+              Écla tenu tenta<br>
+              la 11 -10 - 18 donc que non<br>
+              De l'oblégate l'envai de quete l'ame le Deus la tercion<br>
+              17-10-18 R.C.</p>`,
 
-        479: `<h4>Page gauche :</h4>
-              <p>Bonne foi gardée intacte malgré les épreuves glorifie le Créateur<br>
-              En persévérant dans la prière on obtient la paix intérieure R.E. C.<br>
-              Le - 15 - II - 1916 (15 février 1916)</p>
-              <h4>Page droite :</h4>
-              <p>Bonne nouvelle de l'Évangile doit être proclamée partout<br>
-              L'homme qui annonce la foi avec courage reçoit la couronne de vie</p>`,
+        479: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
+              <p>Écriture cursive très inclinée.</p>
+              <p>Éléments lisibles :<br>
+              Signature : <strong>R.E.</strong><br>
+              Date : <strong>15 - 1 - 1918</strong></p>`,
 
-        489: `<h4>Page gauche :</h4>
-              <p>Bonne disposition de l'esprit évite de s'amollir dans la paresse spirituelle<br>
-              En gardant la ferveur on progresse vers la sainteté chaque jour</p>
-              <h4>Page droite :</h4>
-              <p>Bonne action envers Dieu et la famille sanctifie notre vie quotidienne<br>
-              L'homme qui honore Dieu et les siens accomplit ses devoirs premiers<br>
-              <strong>Ernest Soir</strong> (Signature de l'auteur)<br>
-              Le 2 - 17 joui de la présence de Dieu dans la prière (2 [mois] 1917)</p>`,
+        489: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
+              <p>Écriture cursive difficile à déchiffrer.</p>
+              <p>Éléments lisibles :<br>
+              <strong>Le 27</strong><br>
+              <strong>Ramet Ernest</strong></p>`,
 
-        500: `<h4>Page gauche :</h4>
-              <p>Bonne nouvelle de l'Évangile doit être annoncée à tous sans distinction<br>
-              <strong>23 Juillet</strong> : consacré entièrement à prier pour tous les fidèles des Églises</p>
-              <h4>Page droite :</h4>
-              <p>Bonne communion des saints unit le ciel et la terre dans la prière<br>
-              L'homme qui prie pour l'Église universelle participe à sa mission</p>`,
+        500: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
+              <p>Écriture cursive difficile à déchiffrer.</p>
+              <p>Éléments lisibles :<br>
+              <strong>28 Juil</strong><br>
+              Jeune</p>`,
 
         503: `<p><strong>Leçon 29-8-18 R.E.</strong></p>
               <p>Enfant demande à Dieu<br>
@@ -749,20 +1143,8 @@ function generateTranscriptionData() {
 
         // Generate default transcription for pages without specific content
         if (!transcription) {
-            if (pageNum <= 11) {
-                transcription = `<p>Notes de cours sur le spiritisme.</p>
-                                 <p>Écriture cursive très inclinée.</p>
-                                 <p>Texte partiellement lisible dû à l'encre pâle.</p>`;
-            } else if (pageNum <= 91) {
-                transcription = `<h4>Structure de l'entrée :</h4>
-                                 <p><strong>Bonne action</strong> : Action vertueuse à accomplir pour la journée.</p>
-                                 <p><strong>Demander</strong> : Prière adressée au Seigneur pour obtenir sa grâce.</p>
-                                 <p><strong>Explication</strong> : Réflexion spirituelle sur la vertu du jour.</p>
-                                 <p><em>Signature : R.E. (Ramet Ernest)</em></p>`;
-            } else {
-                transcription = `<p>Document annexe ou notes complémentaires.</p>
-                                 <p>Fin du carnet spirituel.</p>`;
-            }
+            transcription = `<p><strong>Texte manuscrit illisible</strong></p>
+                             <p>Écriture cursive très inclinée, difficile à déchiffrer.</p>`;
         }
 
         data.push({

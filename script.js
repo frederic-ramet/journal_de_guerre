@@ -423,6 +423,8 @@ function initReadingMode() {
     const transcriptorNoteTextarea = document.getElementById('transcriptorNote');
     const saveBtn = document.getElementById('saveTranscription');
     const cancelBtn = document.getElementById('cancelEdit');
+    const exportBtn = document.getElementById('exportData');
+    const importInput = document.getElementById('importData');
 
     if (!modal) return;
 
@@ -443,7 +445,7 @@ function initReadingMode() {
     let isEditing = false;
 
     // Load saved modifications from localStorage
-    const savedMods = JSON.parse(localStorage.getItem('journalTranscriptionMods') || '{}');
+    let savedMods = JSON.parse(localStorage.getItem('journalTranscriptionMods') || '{}');
 
     // Set total pages
     if (totalPagesSpan) {
@@ -519,6 +521,82 @@ function initReadingMode() {
         setTimeout(() => {
             indicator.remove();
         }, 2500);
+    }
+
+    // Export modifications to JSON file
+    function exportModifications() {
+        const exportData = {
+            version: '1.0',
+            exportDate: new Date().toISOString(),
+            projectName: 'Journal de Guerre - Ramet Ernest',
+            modifications: savedMods
+        };
+
+        const jsonStr = JSON.stringify(exportData, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `journal_transcriptions_${new Date().toISOString().split('T')[0]}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        // Show confirmation
+        const indicator = document.createElement('div');
+        indicator.className = 'save-indicator';
+        indicator.textContent = 'Export téléchargé !';
+        document.body.appendChild(indicator);
+        setTimeout(() => indicator.remove(), 2500);
+    }
+
+    // Import modifications from JSON file
+    function importModifications(file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const importData = JSON.parse(e.target.result);
+
+                if (!importData.modifications) {
+                    alert('Format de fichier invalide. Le fichier doit contenir un objet "modifications".');
+                    return;
+                }
+
+                // Merge or replace modifications
+                const mergeChoice = confirm(
+                    'Voulez-vous fusionner avec les modifications existantes ?\n\n' +
+                    'OK = Fusionner (garder les deux)\n' +
+                    'Annuler = Remplacer (écraser les existantes)'
+                );
+
+                if (mergeChoice) {
+                    // Merge: imported data takes precedence
+                    savedMods = { ...savedMods, ...importData.modifications };
+                } else {
+                    // Replace
+                    savedMods = importData.modifications;
+                }
+
+                // Save to localStorage
+                localStorage.setItem('journalTranscriptionMods', JSON.stringify(savedMods));
+
+                // Refresh current page display
+                updateReadingMode();
+
+                // Show confirmation
+                const indicator = document.createElement('div');
+                indicator.className = 'save-indicator';
+                indicator.textContent = `Import réussi ! ${Object.keys(importData.modifications).length} page(s) importée(s)`;
+                document.body.appendChild(indicator);
+                setTimeout(() => indicator.remove(), 3000);
+
+            } catch (err) {
+                alert('Erreur lors de la lecture du fichier JSON.\n' + err.message);
+            }
+        };
+        reader.readAsText(file);
     }
 
     // Update reading mode display
@@ -751,6 +829,20 @@ function initReadingMode() {
 
     if (cancelBtn) {
         cancelBtn.addEventListener('click', cancelEdit);
+    }
+
+    // Export/Import event listeners
+    if (exportBtn) {
+        exportBtn.addEventListener('click', exportModifications);
+    }
+
+    if (importInput) {
+        importInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                importModifications(e.target.files[0]);
+                e.target.value = ''; // Reset input
+            }
+        });
     }
 
     // Listen for thumbnail jump events

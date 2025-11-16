@@ -737,9 +737,16 @@
 
             <div class="reading-modal-header">
                 <h3 id="readingModalTitle">Page 1 - Couverture</h3>
-                <span class="reading-modal-counter">
-                    Page <span id="readingCurrentPage">1</span> sur <span id="readingTotalPages">103</span>
-                </span>
+                <div class="header-controls">
+                    <button class="export-btn" id="exportData" title="Exporter les modifications">⬇ Export</button>
+                    <label class="import-btn" title="Importer des modifications">
+                        ⬆ Import
+                        <input type="file" id="importData" accept=".json" style="display: none;">
+                    </label>
+                    <span class="reading-modal-counter">
+                        Page <span id="readingCurrentPage">1</span> sur <span id="readingTotalPages">103</span>
+                    </span>
+                </div>
             </div>
 
             <div class="reading-modal-body">

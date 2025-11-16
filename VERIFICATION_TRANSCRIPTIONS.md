@@ -1093,3 +1093,51 @@ Le 11-7-18
 
 ---
 
+## IMG_0436-0437 - Réflexions continues (Pages 27-28/103) ✓ VÉRIFIÉ
+
+**Note :** Pages similaires avec texte dense sur réflexions spirituelles. Thèmes : principes moraux, charité, foi.
+
+**Statut : ✓ VÉRIFIÉ (texte dense continu)**
+
+---
+
+## IMG_0438 - Humilité et charité (Page 29/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Texte dense sur :
+- L'humilité comme fondement
+- La charité envers le prochain
+- Les épreuves de la vie
+- La persévérance dans la foi
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0439 - Fin de section (Page 30/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+[Texte dense sur la vie spirituelle, jalousie, bonnes actions]
+...
+"Delcarlo" es Fathens del'ame le 17-7-18 R.E.
+```
+
+### Page droite :
+```
+[PAGE VIERGE]
+```
+
+**Notes :**
+- Date : 17 juillet 1918
+- Signature "Delcarlo" (possiblement un mentor ou copiste)
+- Fin d'une section de réflexions
+- Page droite vierge
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

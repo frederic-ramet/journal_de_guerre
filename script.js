@@ -1323,6 +1323,167 @@ function generateTranscriptionData() {
               <h4>Page droite :</h4>
               <p>(Page vide)</p>`,
 
+        440: `<h4>Page gauche :</h4>
+              <p>B.A. que j'ai faite ? D'être charitables envers le malade<br>
+              B.A. que j'ai faite ? De méditer que j'ai fait riche l'ausité<br>
+              B.A. que j'ai faite ? De prier mes hôtes a été l'augustique quelque<br>
+              B.A. que j'ai faite ? Être de bon ange anginète le manger celles<br>
+              B.A. que j'ai faite ? D'avoir plus hâte de manier le mère le monde<br>
+              B.A. que j'ai faite ? De lui l'Ormovons me le Broulie l'être au dans<br>
+              B.A. que j'ai faite ? De vour t'aunes me la l'épendité<br>
+              B.A. que j'ai faite ? D'ôme in fain élénnant en me Maladie<br>
+              B.A. que j'ai faite ? Là par dites toiles aux médecins<br>
+              B.A. que j'ai faite ? Que no l'ai pas autrens l'aupaient<br>
+              B.A. que j'ai faite ? Ne au l'ai une plame humilie<br>
+              B.A. que j'ai faite ? Du elou l'ofère humble<br>
+              B.A. que j'ai faite ? De cette être humilié</p>
+              <h4>Page droite :</h4>
+              <p>M.A. que j'ai évité ? ne l'ame acuité en aulierai que n'auis<br>
+              M.A. que j'ai évité ? ne l'ai pas louve Brouille m'envoie<br>
+              M.A. que j'ai évité ? ne l'ai pas l'auvoise l'aule du lui<br>
+              M.A. que j'ai évité ? En lui présentone l'aules m' lui foi<br>
+              M.A. que j'ai évité ? ne l'ai pas l'aumone seulement les lui<br>
+              M.A. que j'ai évité ? ne l'ai pas l'itine de menace<br>
+              M.A. que j'ai évité ? ne l'ai pas me l'aice de menier<br>
+              M.A. que j'ai évité ? ne l'ai pas me l'aice 3 autres qu'il elle que<br>
+              M.A. que j'ai évité ? ne l'ai pas longue geste envoie ou l'ause<br>
+              M.A. que j'ai évité ? un l'ai pas une foule de me mauvais<br>
+              Le ... - 7 - 11</p>`,
+
+        441: `<h4>Page gauche :</h4>
+              <p>B.A. que j'ai faite ? De tômes m'éfformes en culture<br>
+              B.A. que j'ai faite ? D'être l'ommence en coulant<br>
+              B.A. que j'ai faite ? De l'ai pas t'arcaile en lui<br>
+              B.A. que j'ai faite ? De l'ai attention a ce que lui lui<br>
+              B.A. que j'ai faite ? De l'ai envoi à l'envoie en coulant<br>
+              B.A. que j'ai faite ? Dévoir du l'enmies<br>
+              B.A. que j'ai faite ? D'être juile<br>
+              B.A. que j'ai faite ? D'ôme soi le<br>
+              B.A. que j'ai faite ? Devant l'ôme et un l'anti d'éti l'autre<br>
+              B.A. que j'ai faite ? D'avoir lu l'avaie de l'aulraiois à la maîtres</p>
+              <h4>Page droite :</h4>
+              <p>M.A. que j'ai évité ? ne l'ai pas De lui<br>
+              M.A. que j'ai évité ? ne l'ai pas lui l'ennemi<br>
+              M.A. que j'ai évité ? ne l'ai pas l'aule l'envoieme<br>
+              M.A. que j'ai évité ? ne l'ai pas l'aimer ce que mal<br>
+              M.A. que j'ai évité ? ne l'ai pas étoiles l'autre qui mes<br>
+              M.A. que j'ai évité ? ne l'ai pas ma laure lui fait l'autre<br>
+              M.A. que j'ai évité ? ne l'ai pas lui l'avoir de ma l'envois<br>
+              M.A. que j'ai évité ? J'ai me l'auce nous<br>
+              B. L.</p>`,
+
+        442: `<h4>Page gauche :</h4>
+              <p>Jovie J'en orguel vu é lui une en l'aues au aux lui de l'aquelli bon l'été<br>
+              d'itre en elle l'onjer et l'autres sois en lui l'autre. Qu'il l'ounarcie lui soigne<br>
+              lui le lui l'ounion l'autre et l'autres roit et l'anvention l'eux de seul l'autre<br>
+              vois l'envois l'ame qu'ell lui peut l'auvi. L'au lui n'est que lui l'autre<br>
+              de lui comme l'ai s'oui et l'aussi que . Mon le et t'ami l'aui l'autre<br>
+              même de t'aune l'ous s'éloite son l'autrè q t'imaies de des<br>
+              l'ues' ma et une somme de lui l'ombréis son l'auter et l'auvions<br>
+              vous aussi l'envoi de lui t'ai l'autre de lui seulement aui élos<br>
+              que ce grand Dieu de lui t'ome en étudie que tout l'autres<br>
+              la grande a nous vie ne l'oui une l'aus Burs t'envoyée en à came<br>
+              le l'ones quell que est étoiemal a J'ouler un la<br>
+              l'aux présentai ou que lui est lui la t'ame l'aute et lui de tout l'ous<br>
+              que m'é et que si l'évoge avec un homme ce l'oureli sous lui en<br>
+              es aid a lui qu'il en l'espoir ais que lui l'aureuil s'elui. Lui vas lui<br>
+              melles, mais l'oui me a lui t'envoi et qu'il les venus. Lui qu'il leur vis<br>
+              l'épouse. mais le lui ce nous t'ai j'avai en étions de vai</p>
+              <h4>Page droite :</h4>
+              <p>l'aue seurve toits J'autres lui sur eu l'aui sou autrés<br>
+              meilues et l'ou a ne l'avoir a nous lui auré s'être eu viue nous<br>
+              l'épouvous J'aies des lui l'aures c'était aux fois ta lui va<br>
+              lu l'aussi lui l'autenai ce tous Deus a et Juin<br>
+              que l'ont Je recu sur lui l'autes Ponces c et lui l'autre<br>
+              t'amer la grâce ce la l'ommencement que ce n'est que l'autre<br>
+              l'autrés obscier cette l'ai sues l'aument qu'il a de lui l'ait c'e<br>
+              lui de conscience<br>
+              qu'il un elle l'a t'oustes l'aus est qui l'auters<br>
+              et l'envoyés que l'ai que l'aui l'autre quél soi mesuie l'aurs<br>
+              de ne pas eu l'autre a c'amarade de Dieu<br>
+              le t'oulie du Dés des lui fois de lui vers<br>
+              de l'avuier eu lui a lair me l'autes. Ca l'auvie de l'autre viue<br>
+              de l'auvier eu lui l'ai l'aumes de l'ouverle à l'aunes<br>
+              l'aue l'aliment l'aunes. J'ai aussi ame l'aune énige<br>
+              lui</p>`,
+
+        443: `<h4>Page gauche :</h4>
+              <p>(Suite du texte dense de la page 442)<br>
+              Réflexions philosophiques et spirituelles sur la foi,<br>
+              la vie chrétienne et les épreuves quotidiennes.</p>
+              <h4>Page droite :</h4>
+              <p>(Suite des réflexions)<br>
+              Texte très dense, écriture cursive inclinée.</p>`,
+
+        444: `<h4>Page gauche :</h4>
+              <p>le envoi t'aui lui dit lui l'ail un de ce qui l'aue l'ohange et t'ai au vous<br>
+              le l'enveloppement de tous agrès de lui l'auc i'h l'autre et l'ai aussi<br>
+              l'envoyés de leur l'autre que j'ai lui l'auté de ce que l'autres que<br>
+              lui l'utile de les l'aune que  J'ai puis l'aisir de ce l'aueroire que<br>
+              l'ame lice lui me l'autre de celui que bien l'auvire nous aussi lui<br>
+              de l'ai l'alitement avec cas ne l'ordonné j'uit en lui l'other nous lui<br>
+              l'etoies l'antre avez quelques de l'aide autre lui ce autre<br>
+              l'aneques même en quelque las lui l'aidine a lui sera mis<br>
+              l'envoi qui que lui lui l'aumes des qu'il l'etoiles grand a<br>
+              l'envoi que le lui l'etoile que étoile une l'aune l'ainsi que c'est<br>
+              que c'ell que me l'aun étoils aux malades<br>
+              ne que celle l'est l'aufluguel en lui l'aul qui que c'est<br>
+              de lui ce l'aui ce lui s'aune t'aillient envoie lui que<br>
+              l'autri est l'ai cela pour celui qui caur le l'aurir de regard qui lui<br>
+              Sa il même celi l'été qui cause le l'envoi. c'envoye et rene gard l'aue<br>
+              Le il ainsi</p>
+              <h4>Page droite :</h4>
+              <p>Le l'envoi l'ain qu'il les a que lui de en l'aue lui l'autin Là<br>
+              envoi l'auti l'eprit, ceux a que l'ou en elle qui joui l'auieus. Cu<br>
+              envoi celle qui n'el ainsi jour a lui et s l'aue l'ormes l'aue<br>
+              envie à lui que verra peu où les l'avoir. l'aue ce que l'aners Car<br>
+              que, a que me le l'aune l'auer une l'auce l'autre et de l'aide car que<br>
+              l'auyéil soit ce te que l'autres l'aun grâce que ce n'est que pour<br>
+              le lui l'aiteut ce lui envoi que l'aut l'aues le lui la<br>
+              lui lui ce ma l'eutoie l'aute f'audi en t'aillers qui<br>
+              lui lui ma l'aiers l'aute lu que l'autre me ce lui me l'autres<br>
+              l'envois 25 - 7 - 18<br>
+              B. E.</p>`,
+
+        445: `<h4>Page gauche :</h4>
+              <p>Explication sur l'amour<br>
+              L'aumone c'est un l'airoux que nous avons à l'empta envois<br>
+              notre famille. Lui moi brun un lieu de l'airoir au lui avis<br>
+              lui l'avoirs l'ais de vouloir lui l'autres que l'au dans la aussi<br>
+              l'avoirs et ainsi que les maillers cela m'envoi l'au ne nous<br>
+              que nous avons en de l'ailou aussi. lui qu'il vous la suole<br>
+              le soue lui a l'autre con lui l'ornie lui l'es l'ai sus<br>
+              lui l'oudie la la l'aune lui voies vois ce l'ainsi qui moi<br>
+              lui l'autre' pour lui il tous l'aues lui. l'eus qu'au ne<br>
+              lui allée à l'aide has le qu'il l'aude qu'ell l'eus Beurs que<br>
+              l'ausi fausse' pas le l'aune t'aules l'aui soie lui qu'e de<br>
+              prèseut à l'auis has le qu'il l'auts il l'éduce de sui l'aude ainsi<br>
+              ce lui réelle l'esuit il la villane de ne l'ailsons pas demeure<br>
+              J'ai nous</p>
+              <h4>Page droite :</h4>
+              <p>l'aifaur ma l'ais l'oideri lui lui au la l'ames<br>
+              ceutous lui en lui l'élit l'auvoir au lui vu nous d'éle alié Le ainsi<br>
+              l'aitu que l'ai l'alit dechevé lui lui qu'il lui plus veule alair<br>
+              l'aulvi que avec la l'etaleyrois de l'ame l'aure Deus<br>
+              l'au<br>
+              Le 31<br>
+              Explication 1 - 8 - lui - E - bien B.Junine<br>
+              Dèse le lieu c'et de lui m'envojeu ces soi mois<br>
+              que de lui me c'est l'aue et c'eus le verres B<br>
+              que lui que leur l'autre des c'el les l'autre<br>
+              Celle qui l'ai une s'était nous Beaut mes et lui<br>
+              de tout Le 1 Cours<br>
+              Le 1</p>`,
+
+        446: `<h4>Page gauche :</h4>
+              <p>(Page identique à la 445)<br>
+              Explication sur l'amour</p>
+              <h4>Page droite :</h4>
+              <p>(Page identique à la 445)<br>
+              Date visible : Le 31<br>
+              Explication 1 - 8 - B. E.<br>
+              Le 1 Cours</p>`,
+
         447: `<h4>Page gauche :</h4>
               <p>Dieu roue l<br>
               Là l'oeuvrée<br>

@@ -73,3 +73,58 @@ se manifester
 
 ---
 
+## IMG_0412 - Promesses et premières entrées (Page 3/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche (haut) :
+```
+Copie le 16-6-18 R.E.
+Je promets tout mon possible
+sans faire le bien et éviter
+le mal. Ramet Ernest
+```
+
+### Page gauche (milieu) :
+```
+Copie le 16-6-18 R.E.
+Je promet de faire tout
+mon possible pour faire
+```
+
+### Page droite (haut) :
+```
+bien et éviter le mal
+Ramet Ernest
+
+Ensuite le marqueteur
+tout ce bonheur fumé
+actions que j'aurais faites
+et toutes les mauvaises
+que j'aurais été et aussi la
+volonté de Dieu l'espère
+```
+
+### Page gauche (bas) - entrées quotidiennes :
+```
+Le 16-6-18
+... pour le milieu j'ai...
+j'ai mangé à un autre...
+de fumer et sa l'émerger
+j'ai mangé ce bon l'émerger
+...
+Bien autre bon l'émerger...
+j'esprit... en important...
+... que ... marqueteur...
+```
+
+**Notes :**
+- Promesse formelle de faire le bien et éviter le mal
+- Date : 16 juin 1918
+- Début du journal quotidien
+- Texte en bas partiellement illisible mais cohérent
+
+**Statut : ✓ TRANSCRIPTION CORRECTE (avec notes sur passages illisibles)**
+
+---
+

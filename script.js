@@ -1604,6 +1604,67 @@ function generateTranscriptionData() {
               Dates : <strong>Le 10</strong>, <strong>Lecture 15</strong>, <strong>10 - 10</strong><br>
               Signature : B.E. C</p>`,
 
+        472: `<p>Che de toujours. Ce est le rap chape...<br>
+              Chet l'homme pour a etrouvais ce a sans l'être dans le<br>
+              vois a Dieu. et il est un de il lui expérimente<br>
+              Réflexions sur la réincarnation.<br>
+              Date : <strong>18</strong><br>
+              Thèmes : L'incarnation, c'est l'esprit qui habite le périsprit.<br>
+              De l'incarnation c'est dire l'esprit la chaine. D.E. Réincarnation.<br>
+              Signature : R.E., B.C.</p>`,
+
+        473: `<p>Et le choisement de l'esprit...<br>
+              selon la justice au thème de Dieu dans une<br>
+              Belle Spirituelle au thème de dure place, ce sont<br>
+              Le l'enseigneur lange est le templet avec tous<br>
+              Réflexions sur la justice divine et le libre arbitre.<br>
+              Note : Il était fait pour comprendre dans le bonheur<br>
+              Cela a ce point que nous arriveorgi avec le boire<br>
+              Thèmes : Justice, science, éducation spirituelle.<br>
+              Signature : B.C.</p>`,
+
+        474: `<p>Jean. Les passores demandes...<br>
+              Lyon des Remanents que nous favons toujours vers le<br>
+              espoir des Retours que noté à nouveaux hommes qui<br>
+              Réflexions sur les hommes et la bonté divine.<br>
+              Date : <strong>P.E.</strong><br>
+              Thèmes : Matière, bonté, Dieu, et grâce.<br>
+              Signature : B.C.</p>`,
+
+        475: `<p>Adou à la pratique. Olar à noter...<br>
+              il pas il je verbe Plaque d'hui et bonté ce que<br>
+              ce me de la pratique cela en est de le mot et mais que<br>
+              Réflexions sur la pratique spirituelle et la mort.<br>
+              Date : <strong>Le 05 Janvier 1919</strong><br>
+              Thèmes : Pratique, incarnation, lumière de Dieu.<br>
+              L'amour de Dieu, la force dans le coeur.<br>
+              Signature : B.C.</p>`,
+
+        476: `<p>Et nous entier fait note offenser...<br>
+              actions proire et les maladie le devenir de<br>
+              travaillée qui loi de la bonne actions<br>
+              Réflexions sur le péché et la bonté divine.<br>
+              Thèmes : Pardon, espérance, enfants, charité.<br>
+              Claus leur à les fortune jefome à ami. Deur<br>
+              Signature : B.C.</p>`,
+
+        477: `<p>Et nous entier fait note offenser...<br>
+              actions proire et les maladie le devenir de<br>
+              travaillée qui loi de la bonne actions<br>
+              [Page identique à la page 476]<br>
+              Réflexions sur le péché et la bonté divine.<br>
+              Thèmes : Pardon, espérance, enfants, charité.<br>
+              Signature : B.C.</p>`,
+
+        478: `<p>qui il n'en fait que il ont sur la tere...<br>
+              faire la nous allons da tei à peut ainsi<br>
+              Lyon la nous me conserver qui<br>
+              Réflexions sur la terre et l'esprit.<br>
+              Thèmes : Religion, catholicisme, sacrements.<br>
+              Le il faut signe le l'entrons qui font que l'aime or<br>
+              Date : <strong>11 - 11 - 18</strong><br>
+              Signature : B.C.</p>`,
+
         471: `<h4>Page gauche :</h4>
               <p>D'oblication sur l'influence clôturer le le humain<br>
               L'fini l'offre est me besoin l'effémier le mais<br>

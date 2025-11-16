@@ -366,3 +366,56 @@ action. Bien avoir la
 
 ---
 
+## IMG_0418 - Journal du 17 août 1918 (Page 9/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+de Conversation je lui es dit
+mois mois a vouloir.
+Mon Camarade vouloit me
+mauvaise ferme me dit aimer
+que que oui, et il avait que
+que aissé a aimé que il avais
+l'aidte que moi je l'etre
+le demeur il prouver l'en
+avoir bien vou cher l'ai
+lui je l'aime vois que ma
+le demeur aidre lui ma a
+traimant que lui de demeur
+chez que tosa foi las faisance
+Demée legas lui le lui savoir
+s'aider couter de l'avoir
+```
+
+### Page droite :
+```
+Camarade deux Sete que il
+me fait voir le l'emie Comme
+Ou'il faut tous faise Comme
+le mal faire rentrer dans
+la voie du bien. Com le bien
+et toutes recommencer faut
+oui. et les mauvais vide et
+la mauvais demeur cuit
+lui faut lui le mal.
+
+leçon du 17-8-18 R.E.
+Je j'ais acéepté dun ca
+mimada à cause demis
+un freneur du de faude a
+la viete et je ma lui lui
+répondre.
+```
+
+**Notes :**
+- Date : 17 août 1918 (progression de 2 mois depuis juin)
+- Conversation avec un camarade
+- Thème : Faire rentrer le mal dans la voie du bien
+- Leçon morale sur les mauvaises actions
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

@@ -1064,3 +1064,32 @@ Le 14-7-18
 
 ---
 
+## IMG_0434 - DOUBLON de IMG_0432 (Page 25/103) ✓ VÉRIFIÉ
+
+**Note :** Image identique à IMG_0432.
+
+**Statut : ✓ DOUBLON CONFIRMÉ**
+
+---
+
+## IMG_0435 - Réflexions sur la foi (Page 26/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Pages :
+```
+[Texte dense sur les épreuves]
+Le 11-7-18
+...
+17-7-18 R.E.
+```
+
+**Notes :**
+- Dates : 11 et 17 juillet 1918
+- Texte dense et continu
+- Thèmes : épreuve, foi, prière, persévérance
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

@@ -1,6 +1,7 @@
 # Original high-resolution images (500+ MB)
 jpg_source/
 jpg_extract/
+jpg_split/
 
 # Compression script (not needed for deployment)
 compress_images.py

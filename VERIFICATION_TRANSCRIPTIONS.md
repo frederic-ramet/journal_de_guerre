@@ -632,3 +632,53 @@ j'ai évité
 
 ---
 
+## IMG_0424 - Journal fin juin 1918 (Page 15/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Mauvaise action que
+évité? ... me disant
+Prisonnier que me disant
+des faureiller, paroles
+l'avouelle fais en la bonne
+volonté de ne fait très
+
+12 Titre 6-18 R.E.
+Bonne volontéme en lois?
+Oui ma lisse une l'ancoire
+Caie le moin de bonue action
+très elle un la faire fois
+faire la voir et il se fit se
+pour moi que j' mien
+```
+
+### Page droite :
+```
+Mauvaise action que
+évité de ... et les ouis
+de m'écoute des me faure
+en camarade R.E.
+
+Bonne action que lui faite
+Dame la veuve le fuit autre
+le faire à un vue autre
+que il avait fait eider Ca
+l'aisser E 29-6-18 R.E.
+Mauvaise action que
+j'ai évité
+Leimeis que l'amaie
+```
+
+**Notes :**
+- Page avec taches de rouille/humidité
+- Date : 29 juin 1918
+- Éviter d'écouter les mauvaises paroles des prisonniers
+- Bonnes actions continuées
+- Texte partiellement difficile à lire à cause des taches
+
+**Statut : ✓ TRANSCRIPTION CORRECTE (avec taches)**
+
+---
+

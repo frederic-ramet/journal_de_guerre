@@ -266,3 +266,53 @@ me remercions et ne
 
 ---
 
+## IMG_0416 - Journal des 19-20 juin 1918 (Page 7/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+volonté et la force de
+me tenir dans la bonne
+voie. Le 19-6-18 Ramet E.
+
+Excepter la Marquerie
+activité en me forcant
+le plus possible pour
+me faire tousse tout à mon
+Prochaine et l'espère avec
+la grace de Dieu dans la
+Continuer dans la
+voie.
+```
+
+### Page droite :
+```
+me faire recommence
+Le 19-6-18 Ramet E.
+Bonne action être Donner un
+forme de pâte pour faire la
+lune a un camarade que sa
+la a lui revenu force
+Mauvaise action de
+l'aider a moi la fraternité
+
+Le 20
+Bonne action a aider
+un camarade a Reiter en
+lui donnant une partie
+de lui pour manger et
+La... Pemince bien
+que me Donne la forme
+```
+
+**Notes :**
+- Dates : 19 et 20 juin 1918
+- Partage de nourriture avec camarades
+- Thème : continuer dans la bonne voie avec la grâce de Dieu
+- Structure : Bonne action / Mauvaise action évitée
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

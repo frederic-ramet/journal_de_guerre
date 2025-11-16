@@ -1,2 +1,15 @@
+# Original high-resolution images (500+ MB)
 jpg_source/
+jpg_extract/
+
+# Compression script (not needed for deployment)
+compress_images.py
+
+# Python
+__pycache__/
+*.pyc
 venv/
+
+# OS
+.DS_Store
+Thumbs.db

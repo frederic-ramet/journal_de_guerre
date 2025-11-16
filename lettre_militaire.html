@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lettre administrative militaire - Document annexe du Journal de Guerre de Ramet Ernest">
+    <title>Lettre Militaire - Journal de Guerre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles specific to military letter page */
+        .military-hero {
+            background: linear-gradient(135deg, #4A5568 0%, #2D3748 100%);
+            min-height: 50vh;
+        }
+
+        .military-badge {
+            background: #E53E3E;
+            color: white;
+            padding: 0.25rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .document-viewer {
+            background: #1A202C;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .document-image {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .transcription-block {
+            background: #F7FAFC;
+            border: 2px solid #CBD5E0;
+            border-radius: 10px;
+            padding: 2rem;
+            font-family: 'Courier New', monospace;
+            line-height: 1.8;
+        }
+
+        .transcription-block p {
+            margin-bottom: 1rem;
+        }
+
+        .annotation {
+            color: #718096;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        .warning-box {
+            background: #FFF5F5;
+            border: 2px solid #FC8181;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .warning-box h4 {
+            color: #C53030;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2rem;
+        }
+
+        .info-table th, .info-table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .info-table th {
+            background: var(--color-background);
+            font-weight: 600;
+            width: 30%;
+        }
+
+        .context-note {
+            background: var(--color-background);
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 5px solid #4A5568;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-title">Journal de Guerre</span>
+                <span class="nav-subtitle">Document Annexe</span>
+            </div>
+            <button class="nav-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Accueil</a></li>
+                <li><a href="index.html#contexte" class="nav-link">Contexte Historique</a></li>
+                <li><a href="index.html#journal" class="nav-link">Le Journal</a></li>
+                <li><a href="index.html#transcriptions" class="nav-link">Transcriptions</a></li>
+                <li><a href="index.html#analyse" class="nav-link">Analyse</a></li>
+                <li><a href="index.html#galerie" class="nav-link">Galerie</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero military-hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="military-badge">Document Séparé</span>
+            <h1 class="hero-title">Lettre Administrative Militaire</h1>
+            <h2 class="hero-subtitle">Affaire du 29 Mars</h2>
+            <p class="hero-description">
+                Document officiel trouvé dans le journal de Ramet Ernest, concernant une affaire militaire
+                distincte du contenu spirituel principal.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section class="section section-summary">
+            <div class="container">
+                <a href="index.html" class="back-link">
+                    &#8592; Retour au journal principal
+                </a>
+
+                <h2 class="section-title">Contexte du Document</h2>
+
+                <div class="warning-box">
+                    <h4>Important : Document Séparé</h4>
+                    <p>
+                        Cette lettre administrative militaire a été trouvée insérée dans le carnet de Ramet Ernest
+                        (pages 99-100 de la numérisation). Cependant, elle concerne une <strong>période et un
+                        contexte différents</strong> du journal spirituel principal. Elle est présentée ici
+                        séparément pour maintenir la cohérence thématique du journal de dévotion.
+                    </p>
+                </div>
+
+                <div class="summary-content">
+                    <div class="summary-text">
+                        <p class="lead">
+                            Ce document officiel fait référence à une affaire administrative militaire datée du 29 mars.
+                            Il mentionne le Conseil Militaire (C.M.) et plusieurs lieux : les communes d'Etaples et
+                            Saubourg, ainsi que des références à des commandements militaires.
+                        </p>
+
+                        <h3>Informations Clés</h3>
+                        <table class="info-table">
+                            <tr>
+                                <th>Type de document</th>
+                                <td>Lettre administrative militaire</td>
+                            </tr>
+                            <tr>
+                                <th>Date référencée</th>
+                                <td>29 mars (année non précisée)</td>
+                            </tr>
+                            <tr>
+                                <th>Lieux mentionnés</th>
+                                <td>Communes d'Etaples, Saubourg</td>
+                            </tr>
+                            <tr>
+                                <th>Institutions</th>
+                                <td>Conseil Militaire (C.M.)</td>
+                            </tr>
+                            <tr>
+                                <th>Pages dans le carnet</th>
+                                <td>Pages 99-100 (IMG_0508-0509)</td>
+                            </tr>
+                            <tr>
+                                <th>État de conservation</th>
+                                <td>Relativement bon, encre visible</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="summary-highlights">
+                        <h3>Pourquoi ce document est-il séparé ?</h3>
+                        <ul class="highlight-list">
+                            <li>
+                                <span class="highlight-icon">&#10003;</span>
+                                <span>Nature administrative vs. spirituelle</span>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">&#10003;</span>
+                                <span>Période potentiellement différente</span>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">&#10003;</span>
+                                <span>Contexte militaire officiel</span>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">&#10003;</span>
+                                <span>Pas de lien avec les enseignements religieux</span>
+                            </li>
+                            <li>
+                                <span class="highlight-icon">&#10003;</span>
+                                <span>Document probablement inséré ultérieurement</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Document Viewer -->
+        <section class="section section-gallery">
+            <div class="container">
+                <h2 class="section-title">Document Original</h2>
+
+                <div class="gallery-intro">
+                    <p class="lead">
+                        Ci-dessous, les pages numérisées du document original. L'écriture administrative
+                        diffère du style cursif personnel de Ramet Ernest.
+                    </p>
+                </div>
+
+                <div class="gallery-main">
+                    <div class="document-viewer">
+                        <img src="jpg_web/IMG_0508.jpeg" alt="Lettre militaire - Page 1" class="document-image" id="letterPage1">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Page 99 - Lettre militaire</h4>
+                        <p>
+                            Première page de la lettre administrative. Document officiel mentionnant
+                            l'affaire du 29 mars et les communes d'Etaples. Le style d'écriture est
+                            plus formel que celui du journal personnel.
+                        </p>
+                        <p class="annotation">
+                            Note : Ce document a été trouvé inséré dans le carnet, possiblement
+                            utilisé comme marque-page ou conservé pour référence personnelle.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="gallery-main">
+                    <div class="document-viewer">
+                        <img src="jpg_web/IMG_0509.jpeg" alt="Lettre militaire - Page 2" class="document-image" id="letterPage2">
+                    </div>
+                    <div class="gallery-info">
+                        <h4>Page 100 - Suite de la lettre</h4>
+                        <p>
+                            Deuxième page du document. Références au Conseil Militaire (C.M.),
+                            Saubourg, et autres détails administratifs concernant les commandements
+                            militaires.
+                        </p>
+                        <p class="annotation">
+                            L'état de conservation de ce document est meilleur que celui du journal
+                            principal, suggérant un papier de meilleure qualité ou un ajout plus récent.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Transcription Section -->
+        <section class="section section-transcriptions">
+            <div class="container">
+                <h2 class="section-title">Transcription</h2>
+
+                <div class="transcription-intro">
+                    <p class="lead">
+                        La transcription suivante est partielle en raison de la difficulté de lecture
+                        de certains passages. Les éléments entre crochets sont des interprétations.
+                    </p>
+                </div>
+
+                <div class="transcription-block">
+                    <p><strong>Page 99 :</strong></p>
+                    <p>
+                        [...] relatif à l'affaire du 29 mars [...]<br>
+                        Communes d'Etaples [...]<br>
+                        [Référence] administrative [...]<br>
+                        Commandement [militaire] [...]
+                    </p>
+
+                    <p><strong>Page 100 :</strong></p>
+                    <p>
+                        Conseil Militaire (C.M.) [...]<br>
+                        Saubourg [...]<br>
+                        [Instructions] relatives aux [...]<br>
+                        Commandements [...]
+                    </p>
+
+                    <p class="annotation">
+                        [Note : De nombreux passages restent illisibles ou difficiles à interpréter
+                        sans contexte administratif militaire de l'époque]
+                    </p>
+                </div>
+
+                <div class="context-note">
+                    <h3>Besoin d'expertise supplémentaire</h3>
+                    <p>
+                        Pour une transcription complète et une compréhension approfondie de ce document,
+                        il serait nécessaire de consulter :
+                    </p>
+                    <ul>
+                        <li>Les <strong>Archives militaires françaises</strong> concernant la période 1914-1918</li>
+                        <li>Un spécialiste de l'<strong>histoire militaire de la Grande Guerre</strong></li>
+                        <li>Les registres des <strong>communes d'Etaples</strong> pour cette période</li>
+                        <li>Les archives du <strong>Conseil Militaire</strong> mentionné</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Historical Context -->
+        <section class="section section-context">
+            <div class="container">
+                <h2 class="section-title">Contexte Historique : Etaples</h2>
+
+                <div class="context-grid">
+                    <div class="context-card">
+                        <div class="context-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>Etaples pendant la Grande Guerre</h3>
+                        <p>
+                            La commune d'Etaples, située dans le Pas-de-Calais, était un important centre
+                            logistique militaire pendant la Première Guerre Mondiale. Elle abritait :
+                        </p>
+                        <ul>
+                            <li>Un camp d'entraînement britannique majeur</li>
+                            <li>Des hôpitaux militaires</li>
+                            <li>Des dépôts de ravitaillement</li>
+                            <li>Des infrastructures ferroviaires stratégiques</li>
+                        </ul>
+                    </div>
+
+                    <div class="context-card">
+                        <div class="context-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                <polyline points="14 2 14 8 20 8"/>
+                                <line x1="16" y1="13" x2="8" y2="13"/>
+                                <line x1="16" y1="17" x2="8" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3>Administration Militaire</h3>
+                        <p>
+                            Les Conseils Militaires (C.M.) étaient des instances administratives et
+                            disciplinaires de l'armée française. Ils traitaient de nombreuses affaires :
+                        </p>
+                        <ul>
+                            <li>Questions disciplinaires</li>
+                            <li>Affectations et mutations</li>
+                            <li>Permissions et congés</li>
+                            <li>Affaires administratives diverses</li>
+                        </ul>
+                    </div>
+
+                    <div class="context-card">
+                        <div class="context-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/>
+                                <line x1="12" y1="17" x2="12.01" y2="17"/>
+                            </svg>
+                        </div>
+                        <h3>Questions Ouvertes</h3>
+                        <p>
+                            Plusieurs questions restent sans réponse concernant ce document :
+                        </p>
+                        <ul>
+                            <li>Ramet Ernest était-il directement concerné par cette affaire ?</li>
+                            <li>Le document a-t-il été conservé comme preuve ou simple référence ?</li>
+                            <li>Quel est le lien entre ce document et le journal spirituel ?</li>
+                            <li>Quelle est l'année exacte du "29 mars" mentionné ?</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations -->
+        <section class="section section-heritage">
+            <div class="container">
+                <h2 class="section-title">Recommandations pour l'Analyse</h2>
+
+                <div class="heritage-content">
+                    <div class="heritage-text">
+                        <p class="lead">
+                            Ce document militaire nécessite une analyse spécialisée distincte
+                            du journal spirituel principal.
+                        </p>
+
+                        <h3>Pistes de Recherche</h3>
+                        <ul class="heritage-list">
+                            <li>
+                                <strong>Service Historique de la Défense (SHD)</strong> - Rechercher
+                                le dossier militaire de Ramet Ernest
+                            </li>
+                            <li>
+                                <strong>Archives départementales du Pas-de-Calais</strong> - Documents
+                                sur Etaples pendant 1914-1918
+                            </li>
+                            <li>
+                                <strong>Registres des Conseils Militaires</strong> - Identifier l'affaire
+                                du 29 mars spécifiquement
+                            </li>
+                            <li>
+                                <strong>Journaux de marche</strong> - Unités stationnées à Etaples/Saubourg
+                            </li>
+                        </ul>
+
+                        <h3>Valeur Historique</h3>
+                        <p>
+                            Bien que distinct du journal spirituel, ce document ajoute une dimension
+                            importante à notre compréhension de la vie de Ramet Ernest. Il confirme
+                            son statut de soldat et son implication dans le système militaire français
+                            pendant la Grande Guerre.
+                        </p>
+                    </div>
+
+                    <div class="heritage-sidebar">
+                        <div class="heritage-quote">
+                            <blockquote>
+                                "Chaque document conservé est un fragment de mémoire préservé pour l'histoire."
+                            </blockquote>
+                            <cite>- Principe de préservation patrimoniale</cite>
+                        </div>
+
+                        <div class="heritage-cta">
+                            <h4>Retour au Journal Principal</h4>
+                            <p>
+                                Pour découvrir le contenu spirituel complet du journal de Ramet Ernest :
+                            </p>
+                            <a href="index.html" class="btn btn-primary" style="display: block; text-align: center; margin-top: 1rem;">
+                                Voir le Journal
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Journal de Guerre</h4>
+                    <p>
+                        Projet de préservation du patrimoine familial.<br>
+                        Ramet Ernest (Ernest Soir) - 1911-1918
+                    </p>
+                </div>
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#contexte">Contexte Historique</a></li>
+                        <li><a href="index.html#journal">Le Journal</a></li>
+                        <li><a href="index.html#transcriptions">Transcriptions</a></li>
+                        <li><a href="index.html#analyse">Analyse</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Documents</h4>
+                    <ul>
+                        <li><a href="index.html">Journal Spirituel Principal</a></li>
+                        <li><strong>Lettre Militaire (page actuelle)</strong></li>
+                        <li><a href="synthese_journal.md">Synthèse complète</a></li>
+                        <li><a href="knowledge_graph.md">Graphe de connaissances</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 - Projet de Sauvegarde du Patrimoine</p>
+                <p class="footer-note">
+                    Document annexe séparé du journal principal pour maintenir la cohérence thématique.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple navigation toggle for mobile
+        document.addEventListener('DOMContentLoaded', function() {
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            if (navToggle && navMenu) {
+                navToggle.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>

@@ -682,3 +682,57 @@ Leimeis que l'amaie
 
 ---
 
+## IMG_0425 - Fin juin 1918 (Page 16/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+pour cette dans la
+voie du lieu R.E.
+le 29-6-18 R.E.
+Bonne action que
+j'ai faite?
+j'ai laissé les Camarades
+que me demme toujours
+que me sentiment de faire
+les bons rendment de faire
+va chasé à un prodesseur
+peu une à jour R.E.
+
+le 30-6-18 R.E.
+Mauvaise action que
+j'ai évité?
+j'ai été faire affaires
+```
+
+### Page droite :
+```
+faite sur la colère a mon
+travaille et j'ai toujours
+gardé mon sang froid se
+une retour R.E.
+le 30-6-18 R.E.
+
+J'ai termine ma semaine
+et je me faire bonne voie
+mon prochaine vie de l'avoir
+e mauvaise biens de l'avoir
+il souloit prenant per
+exécuté à couserus à l'avoir
+et bien et l'aidre d' avie
+ma bonne volonté
+de faire continue
+ne pouvait 30-6-18 R.E.
+```
+
+**Notes :**
+- Dates : 29 et 30 juin 1918 (fin du mois)
+- Garder son sang-froid au travail malgré la colère
+- Bilan de la semaine
+- Bonne volonté de continuer dans la bonne voie
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

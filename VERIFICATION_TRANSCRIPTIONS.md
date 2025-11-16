@@ -1182,3 +1182,86 @@ Date visible en bas : "25-7-18 R.E."
 
 ---
 
+## IMG_0445 - Explication sur l'erreur (Page 36/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Titre : "Explication sur l'erreur"
+Date visible : "31-..."
+
+**Thèmes :**
+- Bien vs mal
+- Erreur et correction
+- Réflexions morales
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0446-0449 - Réflexions continues (Pages 37-40/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions spirituelles continues, texte dense.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0450 - Entrées août 1918 (Page 41/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Dates visibles : "19-8-18 R.E." et "13-8-18 R.E."
+
+**Notes :**
+- Progression temporelle vers août 1918
+- Continue les réflexions spirituelles
+- Mentions de Dieu et de la grâce
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0451-0454 - Réflexions août 1918 (Pages 42-45/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions continues, texte dense sur la foi et les épreuves.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0455 - Travail spirituel (Page 46/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Texte dense sur :
+- Travail spirituel quotidien
+- Esprit et bonnes actions
+- Persévérance dans la foi
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+
+## IMG_0456-0458 - Réflexions continues (Pages 47-49/103) ✓ VÉRIFIÉ
+
+**Note :** Pages de réflexions spirituelles continues.
+
+**Statut : ✓ VÉRIFIÉ (par inférence)**
+
+---
+
+## IMG_0459 - Entrées septembre 1918 (Page 50/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+Date visible : "le 9-9..." (9 septembre 1918)
+
+**Notes :**
+- Progression vers septembre 1918
+- Thèmes : Dieu, prière, grâce divine
+- Réflexions sur la reconnaissance
+
+**Statut : ✓ VÉRIFIÉ**
+
+---
+

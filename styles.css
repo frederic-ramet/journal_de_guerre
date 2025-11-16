@@ -177,6 +177,19 @@ p {
     color: var(--color-surface) !important;
 }
 
+.nav-link-reading {
+    background: var(--color-accent);
+    color: var(--color-surface) !important;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-body);
+}
+
+.nav-link-reading:hover {
+    background: var(--color-primary);
+    color: var(--color-surface) !important;
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -1155,6 +1168,17 @@ p {
     .gallery-main {
         grid-template-columns: 1fr;
     }
+
+    .reading-content-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .reading-nav-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1224,6 +1248,31 @@ p {
     .stats-grid {
         grid-template-columns: 1fr;
     }
+
+    .reading-modal-content {
+        width: 98%;
+        height: 95vh;
+        margin: 2.5vh auto;
+    }
+
+    .reading-modal-body {
+        padding: var(--space-sm);
+        gap: var(--space-sm);
+    }
+
+    .reading-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+
+    .reading-modal-header {
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .reading-modal-header h3 {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1251,6 +1300,224 @@ p {
         padding: var(--space-xs) var(--space-sm);
         font-size: 0.8rem;
     }
+}
+
+/* ==========================================================================
+   Reading Mode Modal
+   ========================================================================== */
+.reading-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+.reading-modal.active {
+    display: block;
+}
+
+.reading-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.reading-modal-content {
+    position: relative;
+    width: 95%;
+    max-width: 1400px;
+    height: 90vh;
+    margin: 2vh auto;
+    background: var(--color-surface);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+.reading-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--color-text-light);
+    cursor: pointer;
+    z-index: 10;
+    transition: color var(--transition-fast);
+}
+
+.reading-modal-close:hover {
+    color: var(--color-primary);
+}
+
+.reading-modal-header {
+    padding: var(--space-md) var(--space-xl);
+    background: var(--color-primary);
+    color: var(--color-surface);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reading-modal-header h3 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.reading-modal-counter {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.reading-modal-body {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: var(--space-md);
+    gap: var(--space-md);
+    overflow: hidden;
+}
+
+.reading-nav-btn {
+    flex-shrink: 0;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reading-nav-btn:hover {
+    background: var(--color-primary-dark);
+    transform: scale(1.1);
+}
+
+.reading-content-wrapper {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    height: 100%;
+    overflow: hidden;
+}
+
+.reading-image-section {
+    background: #f0f0f0;
+    border-radius: 10px;
+    padding: var(--space-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.reading-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.reading-transcription-section {
+    background: var(--color-background);
+    border-radius: 10px;
+    padding: var(--space-lg);
+    overflow-y: auto;
+    border: 1px solid var(--color-border);
+}
+
+.reading-transcription-section h4 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+    font-size: 1.2rem;
+}
+
+.reading-transcription-text {
+    font-size: 0.95rem;
+    line-height: 1.8;
+    color: var(--color-text);
+}
+
+.reading-transcription-text h4 {
+    color: var(--color-primary);
+    margin-top: var(--space-md);
+    margin-bottom: var(--space-sm);
+    font-size: 1rem;
+}
+
+.reading-transcription-text p {
+    margin-bottom: var(--space-sm);
+}
+
+.reading-transcription-text strong {
+    color: var(--color-primary-dark);
+}
+
+.reading-transcription-text ul {
+    padding-left: var(--space-lg);
+    margin-bottom: var(--space-sm);
+}
+
+.reading-transcription-text li {
+    margin-bottom: var(--space-xs);
+}
+
+.reading-modal-footer {
+    padding: var(--space-sm) var(--space-md);
+    background: var(--color-background);
+    border-top: 1px solid var(--color-border);
+}
+
+.reading-thumbnails {
+    display: flex;
+    gap: var(--space-xs);
+    overflow-x: auto;
+    padding: var(--space-xs) 0;
+    -webkit-overflow-scrolling: touch;
+}
+
+.reading-thumbnail {
+    flex: 0 0 60px;
+    height: 75px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid transparent;
+    transition: all var(--transition-fast);
+    opacity: 0.7;
+}
+
+.reading-thumbnail:hover {
+    border-color: var(--color-accent);
+    opacity: 1;
+}
+
+.reading-thumbnail.active {
+    border-color: var(--color-primary);
+    opacity: 1;
+}
+
+.reading-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* ==========================================================================

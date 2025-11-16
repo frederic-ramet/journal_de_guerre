@@ -839,3 +839,57 @@ l'aine guide trois compris
 
 ---
 
+## IMG_0428 - Journal 3-5 juillet 1918 (Page 19/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+le 3-7-18 R.E.
+Bonne action que j'ai faite?
+j'ai été une éclé était a
+un Russe en lui donnant a
+leur biscuit mon le soulager
+de sa monié?
+
+le 4-7-18 R.E.
+Mauvaises actions que
+j'ai évité. ?
+Le me laisse tuche
+va la faier et l'aue aime
+loque que j'ai a travaille
+que ma l'aides tordre a
+ma l'adeime R.E.
+
+le 5-7-18 R.E.
+```
+
+### Page droite :
+```
+Bonne action que j'ai faite?
+Dune aidé un camarade
+a fausse sa travaille a toute
+de coque que était en leur
+dere a manger
+
+le 5-7-18 R.E.
+Mauvaise action que j'ai
+évité a
+l'aime a l'abonne Cama-
+rade du Travailles a causa
+cause? l'vérité la conde
+et j'ai évité le plaie faite
+le 5-7-18 R.E.
+```
+
+**Notes :**
+- Dates : 3, 4 et 5 juillet 1918
+- Aide à un Russe (prisonnier) avec des biscuits
+- Aide aux camarades de travail
+- Éviter les disputes au travail
+- Partage de nourriture continue
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

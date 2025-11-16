@@ -789,14 +789,13 @@ function initReadingMode() {
             applyTransform();
         });
 
-        // Pan/drag functionality
+        // Pan/drag functionality - always enabled
         imageContainer.addEventListener('mousedown', function(e) {
-            if (scale > 1) {
-                isDragging = true;
-                startX = e.clientX - panX;
-                startY = e.clientY - panY;
-                imageContainer.style.cursor = 'grabbing';
-            }
+            isDragging = true;
+            startX = e.clientX - panX;
+            startY = e.clientY - panY;
+            imageContainer.style.cursor = 'grabbing';
+            e.preventDefault(); // Prevent image selection
         });
 
         imageContainer.addEventListener('mousemove', function(e) {
@@ -809,12 +808,12 @@ function initReadingMode() {
 
         imageContainer.addEventListener('mouseup', function() {
             isDragging = false;
-            imageContainer.style.cursor = scale > 1 ? 'grab' : 'default';
+            imageContainer.style.cursor = 'grab';
         });
 
         imageContainer.addEventListener('mouseleave', function() {
             isDragging = false;
-            imageContainer.style.cursor = scale > 1 ? 'grab' : 'default';
+            imageContainer.style.cursor = 'grab';
         });
     }
 

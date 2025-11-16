@@ -316,3 +316,53 @@ que me Donne la forme
 
 ---
 
+## IMG_0417 - Journal du 21 juin 1918 (Page 8/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Résiste forer des mauvaises actions
+et des mauvaise paroles et aider
+tous voisins pour le bien et aider le
+et moquer qui n'est aime et aidre un
+de qui est aimé parceque volée
+le veut n'voulont parceque l'elai guia
+un le mal et avoir la que fait la
+le la volonté de un fairs
+le le faire de un mauvais
+faisance Donné regue nous autres
+lieu camarade de la mois amoure
+Parole. Le me l'aider toute le un
+le mal cher lui autre lui me
+```
+
+### Page droite :
+```
+21-6-18
+Il est a aidre qui l'ancame autre mais
+tous souvent aussi et un autre m...
+et moquer qui n'est aime et aussi le te...
+
+Le lui a revue de grace.... force
+un foi voie faire autre lui bonne poir
+exception sur nous qui et de...
+
+Soit le leçon: 19-6-18.
+leçon du n'es 21 R. E.
+Le vue qu'ai il ma faire
+chose soit une fois nouvelle
+action. Bien avoir la
+```
+
+**Notes :**
+- Date : 21 juin 1918
+- Thème : Résister aux mauvaises actions et paroles
+- Aider les voisins/camarades
+- Référence à la leçon du 19-6-18
+- Réflexion morale continue
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

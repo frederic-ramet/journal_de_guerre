@@ -215,7 +215,7 @@ function generateImageData() {
         }
 
         images.push({
-            src: `jpg_source/${fileName}`,
+            src: `jpg_web/${fileName}`,
             title: title,
             description: desc
         });

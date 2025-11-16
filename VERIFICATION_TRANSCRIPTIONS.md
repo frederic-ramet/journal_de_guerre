@@ -785,3 +785,57 @@ j'ai éleumé un prochain de l'aider
 
 ---
 
+## IMG_0427 - Journal 3 juillet 1918 (Page 18/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Un camarade ferme lui
+chassé un jour sa faim
+et ma bonne volonté que lui
+Mauvaise action R.E.
+que j'ai évité? ...
+Ou faisait l'ai été
+lui lui un camarade
+tous volait me dière
+que il marché me faissir
+que il fajous faltes en
+et j'ai ma faisse entraine
+
+Bonne action que j'ai
+faite?
+Daisie aidé l'Allemand
+```
+
+### Page droite :
+```
+que je travaille avec e
+lui chariat de ma bonne volonté
+Bonne action que j'ai faite?
+O coutre les boire cousins
+de mon camarade et au
+au je averé troupe et avais
+ma fraivele que je lui
+et fait bonne citre R.E.
+
+le 3-7-18 R.E.
+Mauvaise action que
+j'ai évité?
+l'avoir été foire von
+sa caine en travaillant
+que un l'aiderme me faites
+et mon en j'ai sera pour
+l'aine guide trois compris
+```
+
+**Notes :**
+- Date : 3 juillet 1918
+- Aide à un Allemand (camarade de travail)
+- Éviter la colère en travaillant
+- Aide à calmer la faim d'un camarade
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

@@ -1665,6 +1665,80 @@ function generateTranscriptionData() {
               Date : <strong>11 - 11 - 18</strong><br>
               Signature : B.C.</p>`,
 
+        480: `<p>Invocation a la Sainte Vierge. Chose...<br>
+              Sur tout puissant qui a vos souffrir la mort sur l'arche et la<br>
+              eau en fraternelle qui vous eux me meler, Soyez nous m'en St vous<br>
+              Réflexions sur la foi et la réincarnation.<br>
+              Thèmes : Sainte Vierge, Christ, mort, prière.<br>
+              Référence à St Michel en France.<br>
+              Dates mentionnées dans le texte.<br>
+              Signature : B.C.</p>`,
+
+        481: `<p>Invocation a la Sainte Vierge a Chose...<br>
+              Sur tout puissant qui a vos souffrir la mort sur l'arche et la<br>
+              [Début similaire à la page 480]<br>
+              Réflexions sur la réincarnation et la foi.<br>
+              Thèmes : Vierge Marie, Christ, rédemption.<br>
+              Encre a été San en incarnations.<br>
+              Signature : B.C.</p>`,
+
+        482: `<p>12 8 fommes dit le signeur. Faire par un me<br>
+              lyon en la prière fais l'autres mieux le me<br>
+              perigue cette la principe et de poil l'ame nous mieux...<br>
+              Réflexions sur la prière et l'âme.<br>
+              Date : <strong>11 - 8 - 1919</strong><br>
+              Thèmes : Prière, âme, rédemption, esprit.<br>
+              Vos reçu le photo. De me connaissait...<br>
+              Nous avons ethouvois un Natan.<br>
+              Signature : B.C., Georges</p>`,
+
+        483: `<p>Comme la chabaye et la...<br>
+              Faire en me commune la il ne vite nous faire<br>
+              Thème de réflexion sur la charité.<br>
+              Réflexions spirituelles sur l'action charitable.<br>
+              Signature : B.C.</p>`,
+
+        484: `<p>Chaque nouvelle entre place et lui chosisse...<br>
+              a côte nous Saint dans le me vite nous faire<br>
+              Réflexions sur les choix spirituels.<br>
+              Thèmes : Sainteté, âme, esprit, foi.<br>
+              Signature : B.C.</p>`,
+
+        485: `<p>Densité Chaque nouvelle entre place et lui chosisse...<br>
+              a côte nous Saint dans le me vite nous faire<br>
+              Réflexions sur les choix spirituels et la densité de l'esprit.<br>
+              Thèmes : Baptême, espérance, catholiques.<br>
+              Signature : B.C.</p>`,
+
+        486: `<p>Devons : Celui qui est honnête toujours respectants.<br>
+              Il est Seigneur celui: qui voir le toujours est respectant<br>
+              De l'honneur. lui me votre combien l'ont le veut à a<br>
+              Réflexions sur l'honnêteté et le respect.<br>
+              Thèmes : Honneur, obéissance, famille chrétienne.<br>
+              Date : <strong>18 - 8</strong>, <strong>R.E.</strong><br>
+              Note : Pour cette tors et nous chrétienne un moment et vie.<br>
+              Signature : R.E., Combes E</p>`,
+
+        487: `<p>Devons ? La les fautes journalites...<br>
+              Contions de vous qui ce faire contraire faire et<br>
+              toutes faites et vous bonne remporte et après Dieu<br>
+              Réflexions sur les fautes quotidiennes.<br>
+              Date : <strong>1 - 10</strong><br>
+              Questions sur la foi et le Dimanche.<br>
+              Il est heureux celui qui ce rest le soirs d'autres le<br>
+              Thèmes : Fautes, contrition, chrétiens, familles.<br>
+              Signature : B.C.</p>`,
+
+        488: `<p>fais cette affaire après qui me seuls lis est l'autre l'ope à la<br>
+              Ofrandes. en Ames qui nous voilas, m'ont est tout jusqu'à la<br>
+              Réflexions sur les offrandes et l'âme.<br>
+              Devois 12 Réouissonce...<br>
+              Date : <strong>10 - 1 - 19</strong><br>
+              Thèmes : Offrandes, reconnaissance, respect, amour Divin.<br>
+              Rennes avec sur...<br>
+              Benis. Pia l'amour & Rente...<br>
+              Signature : B.C., Pia</p>`,
+
         471: `<h4>Page gauche :</h4>
               <p>D'oblication sur l'influence clôturer le le humain<br>
               L'fini l'offre est me besoin l'effémier le mais<br>

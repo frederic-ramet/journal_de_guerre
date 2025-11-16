@@ -1739,6 +1739,87 @@ function generateTranscriptionData() {
               Benis. Pia l'amour & Rente...<br>
               Signature : B.C., Pia</p>`,
 
+        490: `<p>Foire elle affaire copie qui nous avait lieu le Marchis 1903<br>
+              à Fou Maria! Eille me tous ou ils de la moment<br>
+              Réflexions sur les événements de 1903.<br>
+              Date : <strong>Mars 1903</strong><br>
+              Thèmes : Foi, Maria, Dieu, prière, charité.<br>
+              "Celle. a vem Vieil... Ceux toutfois..."<br>
+              Signature : B.C.</p>`,
+
+        491: `<p>Foirette affaire copie qui nous avait lieu le 10 à Chois<br>
+              pour elle fort Sout la est combien de le 10<br>
+              Réflexions historiques sur les événements.<br>
+              "Le Comme Seigneur ... Mes eux combats"<br>
+              Devais à continuer le bonté<br>
+              Date : <strong>10</strong><br>
+              Thèmes : Seigneur, combat, foi, action charitable.<br>
+              Signature : B.C.</p>`,
+
+        492: `<p>Pour elle affaire copie que nous envoi lui parole de l'afflection votre<br>
+              Pour elle affaire et ne signes qui nous puis plausi et fournis<br>
+              Réflexions sur la perfection et la grâce.<br>
+              Thèmes : Affliction, grâce, humilité, charité.<br>
+              Il bompte de Patrique. Il boupél de l'histoire<br>
+              Date : <strong>L'horace XVI</strong><br>
+              Signature : B.C.</p>`,
+
+        493: `<p>Pour cote affaire copie qui nous partisant aux la l'autre sur<br>
+              dire le cour doure et affliger, et le complion sur la fautre<br>
+              Réflexions sur le cœur et l'affliction.<br>
+              Thèmes : Cœur, souffrance, contemplation, foi.<br>
+              Mes yeux regarde le Croix pour de l'amour<br>
+              Date : <strong>B. gra Calex a Paris</strong><br>
+              Signature : B.C., J Bernard</p>`,
+
+        494: `<p>Pour cote affaire copie qui nous aussi lui de Mai<br>
+              L'aumone est un a foiner qui nous aussi etalagere<br>
+              Réflexions sur l'aumône et la charité.<br>
+              Thèmes : Aumône, chrétiens, temples, mort, pécheurs.<br>
+              il Antoine de Padoue<br>
+              Date : <strong>XXVII Janvier de Geneve</strong><br>
+              Signature : B.C.</p>`,
+
+        495: `<p>Foire et foi de l'affaire copie qui nous aussi lui e'moint<br>
+              la foive de l'esprit et de la lai<br>
+              La bonne volonte : l'cité que l'action Offrice<br>
+              Réflexions sur la bonne volonté et l'esprit.<br>
+              Thèmes : Esprit, volonté, Sauveur, justice, perfection.<br>
+              Signature : B.C., Ymour</p>`,
+
+        496: `<p>Qui meffoise le fourme que me nous aussi meffoise faire. Christ;<br>
+              qui me fourme le fourme qui nous aussi contre Dieu<br>
+              Réflexions sur le Christ et la foi.<br>
+              Thèmes : Christ, Dieu, cœur, grâce, pécheur.<br>
+              Une grace offiere une autre<br>
+              L'homme qu'est pas valonte<br>
+              Signature : B.C.</p>`,
+
+        497: `<p>Une grâce entière nous qu'un vous elle fourie dans la foire<br>
+              tout l'ont s'elever faire des vertueuse et de grâce<br>
+              Réflexions sur la grâce entière.<br>
+              Thèmes : Grâce, vertu, famille, compassion.<br>
+              la endoure ; Son brilloute!<br>
+              Sa chantable qu'est un feu, mon Dieu<br>
+              Signature : B.C.</p>`,
+
+        498: `<p>Pour cote affaire copie qui nous aussi lui voule de la fouris<br>
+              an offrit l'ont d'elever dont contre elle des virtueux<br>
+              Réflexions sur la paix et la grâce.<br>
+              Thèmes : Paix, vertu, brillance, charité.<br>
+              La Procheme Cuide un desue<br>
+              Date : <strong>29 Grole</strong><br>
+              Signature : B.C.</p>`,
+
+        499: `<p>Il y en a beaucoup qui nous prelente de vous mevre qui<br>
+              tous directrice que leur combient regarde en même<br>
+              Réflexions sur la direction spirituelle.<br>
+              Thèmes : Direction, volonté, indifférence.<br>
+              Tache d'un prochir qui aider<br>
+              Date : <strong>22 Juin</strong>, <strong>2 Juillet</strong>, <strong>28 Grole</strong><br>
+              Je l'ai qui maime d'obteni de Dieu une grâce<br>
+              Signature : B.C.</p>`,
+
         471: `<h4>Page gauche :</h4>
               <p>D'oblication sur l'influence clôturer le le humain<br>
               L'fini l'offre est me besoin l'effémier le mais<br>

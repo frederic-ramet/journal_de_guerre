@@ -737,9 +737,16 @@
 
             <div class="reading-modal-header">
                 <h3 id="readingModalTitle">Page 1 - Couverture</h3>
-                <span class="reading-modal-counter">
-                    Page <span id="readingCurrentPage">1</span> sur <span id="readingTotalPages">103</span>
-                </span>
+                <div class="header-controls">
+                    <button class="export-btn" id="exportData" title="Exporter les modifications">⬇ Export</button>
+                    <label class="import-btn" title="Importer des modifications">
+                        ⬆ Import
+                        <input type="file" id="importData" accept=".json" style="display: none;">
+                    </label>
+                    <span class="reading-modal-counter">
+                        Page <span id="readingCurrentPage">1</span> sur <span id="readingTotalPages">103</span>
+                    </span>
+                </div>
             </div>
 
             <div class="reading-modal-body">
@@ -747,12 +754,35 @@
 
                 <div class="reading-content-wrapper">
                     <div class="reading-image-section">
-                        <img id="readingImage" src="jpg_web/IMG_0410.jpeg" alt="Page du journal" class="reading-image">
+                        <div class="image-controls">
+                            <button class="image-control-btn" id="rotateLeft" title="Rotation gauche">&#8634;</button>
+                            <button class="image-control-btn" id="rotateRight" title="Rotation droite">&#8635;</button>
+                            <button class="image-control-btn" id="zoomIn" title="Zoom +">+</button>
+                            <button class="image-control-btn" id="zoomOut" title="Zoom -">-</button>
+                            <button class="image-control-btn" id="resetView" title="Réinitialiser">&#8634;&#8635;</button>
+                        </div>
+                        <div class="image-container" id="imageContainer">
+                            <img id="readingImage" src="jpg_web/IMG_0410.jpeg" alt="Page du journal" class="reading-image">
+                        </div>
                     </div>
                     <div class="reading-transcription-section">
-                        <h4>Transcription</h4>
+                        <div class="transcription-header">
+                            <h4>Transcription</h4>
+                            <button class="edit-toggle-btn" id="editToggle" title="Éditer la transcription">&#9998; Éditer</button>
+                        </div>
                         <div id="readingTranscription" class="reading-transcription-text">
                             <!-- Transcription will be inserted here -->
+                        </div>
+                        <div id="transcriptionEditor" class="transcription-editor" style="display: none;">
+                            <textarea id="transcriptionTextarea" class="transcription-textarea" placeholder="Entrez la transcription ici..."></textarea>
+                            <div class="editor-note-section">
+                                <label for="transcriptorNote">Note du transcripteur :</label>
+                                <textarea id="transcriptorNote" class="transcriptor-note" placeholder="Ajoutez vos remarques, incertitudes, ou observations..."></textarea>
+                            </div>
+                            <div class="editor-actions">
+                                <button class="editor-btn save-btn" id="saveTranscription">Sauvegarder</button>
+                                <button class="editor-btn cancel-btn" id="cancelEdit">Annuler</button>
+                            </div>
                         </div>
                     </div>
                 </div>

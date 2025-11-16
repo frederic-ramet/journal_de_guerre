@@ -410,11 +410,42 @@ function initReadingMode() {
     const totalPagesSpan = document.getElementById('readingTotalPages');
     const thumbnailsContainer = document.getElementById('readingThumbnails');
 
+    // New elements for enhanced viewer
+    const imageContainer = document.getElementById('imageContainer');
+    const rotateLeftBtn = document.getElementById('rotateLeft');
+    const rotateRightBtn = document.getElementById('rotateRight');
+    const zoomInBtn = document.getElementById('zoomIn');
+    const zoomOutBtn = document.getElementById('zoomOut');
+    const resetViewBtn = document.getElementById('resetView');
+    const editToggleBtn = document.getElementById('editToggle');
+    const transcriptionEditor = document.getElementById('transcriptionEditor');
+    const transcriptionTextarea = document.getElementById('transcriptionTextarea');
+    const transcriptorNoteTextarea = document.getElementById('transcriptorNote');
+    const saveBtn = document.getElementById('saveTranscription');
+    const cancelBtn = document.getElementById('cancelEdit');
+    const exportBtn = document.getElementById('exportData');
+    const importInput = document.getElementById('importData');
+
     if (!modal) return;
 
     // Generate complete transcription data
     const transcriptions = generateTranscriptionData();
     let currentIndex = 0;
+
+    // Image transform state
+    let rotation = 0;
+    let scale = 1;
+    let panX = 0;
+    let panY = 0;
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+
+    // Editor state
+    let isEditing = false;
+
+    // Load saved modifications from localStorage
+    let savedMods = JSON.parse(localStorage.getItem('journalTranscriptionMods') || '{}');
 
     // Set total pages
     if (totalPagesSpan) {
@@ -423,6 +454,150 @@ function initReadingMode() {
 
     // Generate thumbnails
     generateReadingThumbnails(transcriptions, thumbnailsContainer);
+
+    // Apply image transform
+    function applyTransform() {
+        if (readingImage) {
+            readingImage.style.transform = `rotate(${rotation}deg) scale(${scale}) translate(${panX}px, ${panY}px)`;
+        }
+    }
+
+    // Reset image view
+    function resetImageView() {
+        rotation = 0;
+        scale = 1;
+        panX = 0;
+        panY = 0;
+        applyTransform();
+    }
+
+    // Get page number for current index (410 + index)
+    function getPageNumber() {
+        return 410 + currentIndex;
+    }
+
+    // Get saved transcription for current page
+    function getSavedTranscription() {
+        const pageNum = getPageNumber();
+        if (savedMods[pageNum] && savedMods[pageNum].transcription) {
+            return savedMods[pageNum].transcription;
+        }
+        return transcriptions[currentIndex].transcription;
+    }
+
+    // Get saved note for current page
+    function getSavedNote() {
+        const pageNum = getPageNumber();
+        if (savedMods[pageNum] && savedMods[pageNum].note) {
+            return savedMods[pageNum].note;
+        }
+        return '';
+    }
+
+    // Display transcriptor note if exists
+    function displayTranscriptorNote() {
+        const note = getSavedNote();
+        // Remove existing note display
+        const existingNote = readingTranscription.querySelector('.transcriptor-note-display');
+        if (existingNote) {
+            existingNote.remove();
+        }
+
+        if (note) {
+            const noteDiv = document.createElement('div');
+            noteDiv.className = 'transcriptor-note-display';
+            noteDiv.innerHTML = `<strong>Note du transcripteur :</strong><br>${note.replace(/\n/g, '<br>')}`;
+            readingTranscription.appendChild(noteDiv);
+        }
+    }
+
+    // Show save indicator
+    function showSaveIndicator() {
+        const indicator = document.createElement('div');
+        indicator.className = 'save-indicator';
+        indicator.textContent = 'Modifications sauvegardées !';
+        document.body.appendChild(indicator);
+
+        setTimeout(() => {
+            indicator.remove();
+        }, 2500);
+    }
+
+    // Export modifications to JSON file
+    function exportModifications() {
+        const exportData = {
+            version: '1.0',
+            exportDate: new Date().toISOString(),
+            projectName: 'Journal de Guerre - Ramet Ernest',
+            modifications: savedMods
+        };
+
+        const jsonStr = JSON.stringify(exportData, null, 2);
+        const blob = new Blob([jsonStr], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `journal_transcriptions_${new Date().toISOString().split('T')[0]}.json`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+
+        // Show confirmation
+        const indicator = document.createElement('div');
+        indicator.className = 'save-indicator';
+        indicator.textContent = 'Export téléchargé !';
+        document.body.appendChild(indicator);
+        setTimeout(() => indicator.remove(), 2500);
+    }
+
+    // Import modifications from JSON file
+    function importModifications(file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            try {
+                const importData = JSON.parse(e.target.result);
+
+                if (!importData.modifications) {
+                    alert('Format de fichier invalide. Le fichier doit contenir un objet "modifications".');
+                    return;
+                }
+
+                // Merge or replace modifications
+                const mergeChoice = confirm(
+                    'Voulez-vous fusionner avec les modifications existantes ?\n\n' +
+                    'OK = Fusionner (garder les deux)\n' +
+                    'Annuler = Remplacer (écraser les existantes)'
+                );
+
+                if (mergeChoice) {
+                    // Merge: imported data takes precedence
+                    savedMods = { ...savedMods, ...importData.modifications };
+                } else {
+                    // Replace
+                    savedMods = importData.modifications;
+                }
+
+                // Save to localStorage
+                localStorage.setItem('journalTranscriptionMods', JSON.stringify(savedMods));
+
+                // Refresh current page display
+                updateReadingMode();
+
+                // Show confirmation
+                const indicator = document.createElement('div');
+                indicator.className = 'save-indicator';
+                indicator.textContent = `Import réussi ! ${Object.keys(importData.modifications).length} page(s) importée(s)`;
+                document.body.appendChild(indicator);
+                setTimeout(() => indicator.remove(), 3000);
+
+            } catch (err) {
+                alert('Erreur lors de la lecture du fichier JSON.\n' + err.message);
+            }
+        };
+        reader.readAsText(file);
+    }
 
     // Update reading mode display
     function updateReadingMode() {
@@ -438,7 +613,9 @@ function initReadingMode() {
         }
 
         if (readingTranscription) {
-            readingTranscription.innerHTML = data.transcription;
+            // Use saved transcription if available
+            readingTranscription.innerHTML = getSavedTranscription();
+            displayTranscriptorNote();
         }
 
         if (currentPageSpan) {
@@ -460,6 +637,78 @@ function initReadingMode() {
                 inline: 'center'
             });
         }
+
+        // Reset image view when changing pages
+        resetImageView();
+
+        // Exit edit mode when changing pages
+        if (isEditing) {
+            toggleEditMode();
+        }
+    }
+
+    // Toggle edit mode
+    function toggleEditMode() {
+        isEditing = !isEditing;
+
+        if (isEditing) {
+            // Enter edit mode
+            editToggleBtn.textContent = '✎ Mode édition';
+            editToggleBtn.classList.add('editing');
+            readingTranscription.style.display = 'none';
+            transcriptionEditor.style.display = 'flex';
+
+            // Load current transcription (HTML) and convert to plain text for editing
+            const currentHTML = getSavedTranscription();
+            // Convert HTML to plain text for editing
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = currentHTML;
+            transcriptionTextarea.value = tempDiv.innerText || tempDiv.textContent;
+
+            // Load saved note
+            transcriptorNoteTextarea.value = getSavedNote();
+        } else {
+            // Exit edit mode
+            editToggleBtn.textContent = '✎ Éditer';
+            editToggleBtn.classList.remove('editing');
+            readingTranscription.style.display = 'block';
+            transcriptionEditor.style.display = 'none';
+        }
+    }
+
+    // Save transcription
+    function saveTranscription() {
+        const pageNum = getPageNumber();
+        const newText = transcriptionTextarea.value.trim();
+        const note = transcriptorNoteTextarea.value.trim();
+
+        // Convert plain text to HTML (preserve line breaks)
+        const htmlText = '<p>' + newText.replace(/\n\n/g, '</p><p>').replace(/\n/g, '<br>') + '</p>';
+
+        // Save to localStorage
+        if (!savedMods[pageNum]) {
+            savedMods[pageNum] = {};
+        }
+        savedMods[pageNum].transcription = htmlText;
+        savedMods[pageNum].note = note;
+        savedMods[pageNum].lastModified = new Date().toISOString();
+
+        localStorage.setItem('journalTranscriptionMods', JSON.stringify(savedMods));
+
+        // Update display
+        readingTranscription.innerHTML = htmlText;
+        displayTranscriptorNote();
+
+        // Exit edit mode
+        toggleEditMode();
+
+        // Show save indicator
+        showSaveIndicator();
+    }
+
+    // Cancel editing
+    function cancelEdit() {
+        toggleEditMode();
     }
 
     // Open modal
@@ -473,6 +722,9 @@ function initReadingMode() {
     function closeModal() {
         modal.classList.remove('active');
         document.body.style.overflow = '';
+        if (isEditing) {
+            toggleEditMode();
+        }
     }
 
     // Navigate to previous page
@@ -495,6 +747,104 @@ function initReadingMode() {
     prevBtn.addEventListener('click', goToPrev);
     nextBtn.addEventListener('click', goToNext);
 
+    // Image control event listeners
+    if (rotateLeftBtn) {
+        rotateLeftBtn.addEventListener('click', function() {
+            rotation -= 90;
+            applyTransform();
+        });
+    }
+
+    if (rotateRightBtn) {
+        rotateRightBtn.addEventListener('click', function() {
+            rotation += 90;
+            applyTransform();
+        });
+    }
+
+    if (zoomInBtn) {
+        zoomInBtn.addEventListener('click', function() {
+            scale = Math.min(scale * 1.25, 5);
+            applyTransform();
+        });
+    }
+
+    if (zoomOutBtn) {
+        zoomOutBtn.addEventListener('click', function() {
+            scale = Math.max(scale / 1.25, 0.5);
+            applyTransform();
+        });
+    }
+
+    if (resetViewBtn) {
+        resetViewBtn.addEventListener('click', resetImageView);
+    }
+
+    // Mouse wheel zoom
+    if (imageContainer) {
+        imageContainer.addEventListener('wheel', function(e) {
+            e.preventDefault();
+            const delta = e.deltaY > 0 ? 0.9 : 1.1;
+            scale = Math.min(Math.max(scale * delta, 0.5), 5);
+            applyTransform();
+        });
+
+        // Pan/drag functionality
+        imageContainer.addEventListener('mousedown', function(e) {
+            if (scale > 1) {
+                isDragging = true;
+                startX = e.clientX - panX;
+                startY = e.clientY - panY;
+                imageContainer.style.cursor = 'grabbing';
+            }
+        });
+
+        imageContainer.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                panX = e.clientX - startX;
+                panY = e.clientY - startY;
+                applyTransform();
+            }
+        });
+
+        imageContainer.addEventListener('mouseup', function() {
+            isDragging = false;
+            imageContainer.style.cursor = scale > 1 ? 'grab' : 'default';
+        });
+
+        imageContainer.addEventListener('mouseleave', function() {
+            isDragging = false;
+            imageContainer.style.cursor = scale > 1 ? 'grab' : 'default';
+        });
+    }
+
+    // Edit mode event listeners
+    if (editToggleBtn) {
+        editToggleBtn.addEventListener('click', toggleEditMode);
+    }
+
+    if (saveBtn) {
+        saveBtn.addEventListener('click', saveTranscription);
+    }
+
+    if (cancelBtn) {
+        cancelBtn.addEventListener('click', cancelEdit);
+    }
+
+    // Export/Import event listeners
+    if (exportBtn) {
+        exportBtn.addEventListener('click', exportModifications);
+    }
+
+    if (importInput) {
+        importInput.addEventListener('change', function(e) {
+            if (e.target.files.length > 0) {
+                importModifications(e.target.files[0]);
+                e.target.value = ''; // Reset input
+            }
+        });
+    }
+
     // Listen for thumbnail jump events
     document.addEventListener('readingJump', function(e) {
         currentIndex = e.detail.index;
@@ -505,11 +855,20 @@ function initReadingMode() {
     document.addEventListener('keydown', function(e) {
         if (!modal.classList.contains('active')) return;
 
+        // Don't navigate if editing
+        if (isEditing && (e.target === transcriptionTextarea || e.target === transcriptorNoteTextarea)) {
+            return;
+        }
+
         if (e.key === 'Escape') {
-            closeModal();
-        } else if (e.key === 'ArrowLeft') {
+            if (isEditing) {
+                cancelEdit();
+            } else {
+                closeModal();
+            }
+        } else if (e.key === 'ArrowLeft' && !isEditing) {
             goToPrev();
-        } else if (e.key === 'ArrowRight') {
+        } else if (e.key === 'ArrowRight' && !isEditing) {
             goToNext();
         }
     });

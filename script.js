@@ -1820,6 +1820,61 @@ function generateTranscriptionData() {
               Je l'ai qui maime d'obteni de Dieu une grâce<br>
               Signature : B.C.</p>`,
 
+        501: `<p>Pour que nous être en feue bas, et à tout lieu soi qui en dis<br>
+              ploi et nous en fauver, dictons un feutions sholts que foire<br>
+              Réflexions spirituelles sur la foi et l'homme.<br>
+              Thèmes : Dieu, homme, sacrifice, grâce, créature.<br>
+              à celle due sacrifice au Dieu ce mêle qui si chait une telle<br>
+              Syr pendant : Reluoine d'Amerique<br>
+              La via du demon en est tellement...<br>
+              La grâce est un don de Dieu, mais en règle ordinaire<br>
+              Il y a une distance qui ke place<br>
+              Signature : P.F. François</p>`,
+
+        502: `<p>Pour qu'il ne contient aucune bien...<br>
+              pour la paix fait et foi et l'autre charitable<br>
+              Réflexions sur la paix et la charité.<br>
+              Thèmes : Paix, foi, charité, philosophie.<br>
+              les l'envoi du marchons Catholique<br>
+              Signature : Cather</p>`,
+
+        504: `<p>Leçon <strong>29 - 8 - 18</strong> R.E.<br>
+              avant demande à porter<br>
+              à bien l'emmade il me versin<br>
+              der que c'est Donne peur<br>
+              Quel chure a Donne que il seul<br>
+              Le dernier : l'ete l'orcequé<br>
+              Bonne legon avant<br>
+              fraiche. La quie l'auve<br>
+              de que lance die fui l'ine<br>
+              a l'ecatan ne commerce;<br>
+              [Texte inversé en bas de page]<br>
+              Signature : R.E.</p>`,
+
+        509: `<p><strong>Déclaration de Raoul Suret</strong><br>
+              Affecté le <strong>29 mars 1940</strong> au C.M. de Guinecamp<br>
+              j'ai rejoint le 4eme Bataillon S'oeuvrers d'Artillerie<br>
+              vers la fin d'avril à Wormhout Steenvoorde et environs.<br>
+              Lors de l'invasion j'ai constaté de...<br>
+              Steenvoorde jusqu'à <strong>Dunkerque</strong>. Je suis arrivé<br>
+              à Dunkerque le <strong>29 mai</strong>. J'y suis resté jusqu'au<br>
+              <strong>4 juin</strong>. Vers 2 heures du matin j'ai quitté le Dunkerque<br>
+              à bord d'un canot à rames, en compagnie de<br>
+              marins et étapes Cirault le l'em Calon Jean<br>
+              Nous fumes ramassés par un remorqueur<br>
+              anglais qui nous débarqua à <strong>Ramsgate</strong> (Angleterre)<br>
+              Par le train je fus conduit à <strong>Plymouth</strong><br>
+              où le lendemain j'ai fus embarqué pour <strong>Brest</strong><br>
+              de Créan et fut l'assuré et après l'ociem<br>
+              le train à Brignos en Bordeaut</p>`,
+
+        511: `<p><strong>Image religieuse imprimée</strong><br>
+              La Face "Joyeuse" de Jésus<br>
+              d'ABGAR, roi d'Edesse.<br>
+              Sainte Face de Jésus-Christ<br>
+              D'après le Voile d'Abgar, roi d'Edesse<br>
+              [Image du visage du Christ]</p>`,
+
         471: `<h4>Page gauche :</h4>
               <p>D'oblication sur l'influence clôturer le le humain<br>
               L'fini l'offre est me besoin l'effémier le mais<br>

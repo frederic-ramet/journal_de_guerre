@@ -512,3 +512,61 @@ due camarade que sa
 
 ---
 
+## IMG_0421 - Leçons 23-29 juin 1918 (Page 12/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Leçon du 23-6-18 R.E.
+Bonne action en vue Devant
+avant de commence ma journée
+Daisie faite une bonne
+prière à Dieu qu'il me acorde
+la mauvaise faisans
+
+Leçon du 23-6-18 R.E.
+Mauvaise action évité de
+me laisser entenre du dire
+du mal le moi prochain
+Bonne action que fait fait?
+en donné la moitié de ma a
+lien de faim a un il en avait
+que je faire que il en vente
+besain et aidé ma iclonte
+```
+
+### Page droite :
+```
+et je ma faire lumeur que
+Dieu me guide a voulance ma
+Camarade le 29-6-18 P.E.
+
+Mauvaise action que Jai
+évité? ayant été à l'aide
+lui de bien je ne été même
+mauvais Contention.
+
+le 24-6-18 R.E.
+Bonne action que j'ai faits
+j'ai aidé l'inceux de ma
+camarade que leur travailleur
+et lui plus cher, et de ma
+bonne volonté
+
+le 25-6-...
+Mauvaise action que
+... vrai évité
+```
+
+**Notes :**
+- Dates : 23, 24, 25, 29 juin 1918
+- Prière quotidienne avant de commencer la journée
+- Éviter de dire du mal du prochain
+- Partage de nourriture avec camarade affamé
+- Aide aux camarades travailleurs
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

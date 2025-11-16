@@ -32,3 +32,44 @@ Et nous tenir dans la voie
 
 ---
 
+## IMG_0411 - Définitions Spiritisme (Page 2/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Incarnation : esprit qui habite le corps
+Désincarnation : esprit qui quitte le corps
+Réincarnation : esprit qui réhabite le corps
+Echelle espirite : à la mort l'esprit quitte le corps
+L'espiritisme est une science étudiée pour prouver que l'esprit est immortel, qu'il peut se communiquer à l'homme
+
+Copie le 15-6-18 R.E.
+```
+
+### Page droite :
+```
+Pour bien comprendre comparons le à un courant électrique chose qui existe mais qu'on ne peut pas voir
+
+Ω = grande Ω ?
+Ω = grande Foÿe Ω ? Vibrante intelligence formant aux esprits
+
+L'esprit est un fluide ; celui qui est qu'il est invisible
+
+esprits du grand au delà de nous
+sont en aide et d'écouter de
+notre compagne toutes les mauvaises
+esprits que pourraient venir
+se manifester
+```
+
+**Notes :**
+- Définitions clés du spiritisme
+- Date confirmée : 15 juin 1918 (PAS 1911)
+- Symbole Ω (Omega) utilisé pour représenter l'esprit/force spirituelle
+- Comparaison de l'esprit à un courant électrique
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

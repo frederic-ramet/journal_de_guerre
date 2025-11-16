@@ -570,3 +570,57 @@ Mauvaise action que
 
 ---
 
+## IMG_0422 - Leçons 24-26 juin 1918 (Page 13/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+mauvie l'avais entrainé
+dans les mauvais R.E.
+Conversation 17... R.E.
+Le 25-6-18 R.E.
+Bonne action que j'ai faite?
+J'ai soulager un vieur fuginer
+qu'il maurai ma que a main
+que je lui est donné citur
+réulit de ma bonne volonté
+
+Le 26-6-18 R.E.
+Mauvaise action que j'ai
+évité? ...
+vois fait maison l'aidre feites
+de prendre une forte de miché
+a mon camarade
+```
+
+### Page droite :
+```
+voila me deignez pour les
+leiende. Voulant que ma sait
+que meilleure faire meilleur mes
+leur Récami jour manger me
+la lote de viande de vie bonne
+volonté 26-6-18 R.E.
+
+Bonne action en que j'ai faite
+j'ai aidé un Beldes qui
+chargé de coque voulant
+qu'il était été l'afigue
+qu'il m'avait été dit vu
+jaile a fumit ; 24-6-18 R.E.
+Mauvaise action
+j'ai évité
+```
+
+**Notes :**
+- Dates : 24, 25, 26 juin 1918
+- Aide à un vieux fatigué
+- Partage de viande avec camarades
+- Aide à un Belge chargé et fatigué
+- Éviter de prendre de la nourriture d'un camarade
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

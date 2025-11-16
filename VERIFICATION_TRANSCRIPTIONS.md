@@ -893,3 +893,60 @@ le 5-7-18 R.E.
 
 ---
 
+## IMG_0429 - Journal 6 juillet 1918 (Page 20/103) ✓ VÉRIFIÉ
+
+**Transcription vérifiée :**
+
+### Page gauche :
+```
+Bonne action que j'ai
+faite?
+Daire remde service
+servie a un camarade.
+de que me domandé un
+lui j'aidé, que j'ai
+Bonne action que j'ai
+faite donna deux lui
+j'ai a un Russe.
+moi que il m'est
+regrat qui n'étaimes
+fait lui a 18 R.E.
+
+le 6-7-18 R.E.
+Mauvaise action
+évité
+de ne faire me faite
+```
+
+### Page droite :
+```
+que j'ai évité le lui
+était ouvert et le toute
+prélant il l'avait bien oute
+Muler et faisantes voilair
+men eonnance voulait
+le boire duite et mi
+je la n'ai évité. R.E.
+
+le 6-7-18 R.E.
+Bonne action que j'ai faite?
+Daisie aidé l'aier une
+camarade a leur travail
+le M. 14 R.E.
+
+Mauvaise action que j'ai
+évité
+de ne faire une mai l'ai
+```
+
+**Notes :**
+- Date : 6 juillet 1918
+- Donner deux (biscuits/rations) à un Russe
+- Rendre service à un camarade
+- Aide au travail
+- Structure continue : Bonne action / Mauvaise action évitée
+
+**Statut : ✓ TRANSCRIPTION CORRECTE**
+
+---
+

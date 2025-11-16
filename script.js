@@ -795,6 +795,10 @@ function initReadingMode() {
             startX = e.clientX - panX;
             startY = e.clientY - panY;
             imageContainer.style.cursor = 'grabbing';
+            // Disable transition for smooth dragging
+            if (readingImage) {
+                readingImage.style.transition = 'none';
+            }
             e.preventDefault(); // Prevent image selection
         });
 
@@ -809,11 +813,19 @@ function initReadingMode() {
         imageContainer.addEventListener('mouseup', function() {
             isDragging = false;
             imageContainer.style.cursor = 'grab';
+            // Re-enable transition after drag
+            if (readingImage) {
+                readingImage.style.transition = 'transform 0.3s ease';
+            }
         });
 
         imageContainer.addEventListener('mouseleave', function() {
             isDragging = false;
             imageContainer.style.cursor = 'grab';
+            // Re-enable transition after drag
+            if (readingImage) {
+                readingImage.style.transition = 'transform 0.3s ease';
+            }
         });
     }
 

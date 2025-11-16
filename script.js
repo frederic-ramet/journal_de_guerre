@@ -398,6 +398,7 @@ window.addEventListener('scroll', function() {
 function initReadingMode() {
     const modal = document.getElementById('readingModal');
     const openBtn = document.getElementById('readingModeBtn');
+    const openBtnHero = document.getElementById('readingModeBtnHero');
     const closeBtn = document.getElementById('readingModalClose');
     const overlay = document.querySelector('.reading-modal-overlay');
     const prevBtn = document.getElementById('readingPrev');
@@ -409,7 +410,7 @@ function initReadingMode() {
     const totalPagesSpan = document.getElementById('readingTotalPages');
     const thumbnailsContainer = document.getElementById('readingThumbnails');
 
-    if (!modal || !openBtn) return;
+    if (!modal) return;
 
     // Generate complete transcription data
     const transcriptions = generateTranscriptionData();
@@ -487,7 +488,8 @@ function initReadingMode() {
     }
 
     // Event listeners
-    openBtn.addEventListener('click', openModal);
+    if (openBtn) openBtn.addEventListener('click', openModal);
+    if (openBtnHero) openBtnHero.addEventListener('click', openModal);
     closeBtn.addEventListener('click', closeModal);
     overlay.addEventListener('click', closeModal);
     prevBtn.addEventListener('click', goToPrev);

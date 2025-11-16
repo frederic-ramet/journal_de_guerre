@@ -2,7 +2,9 @@
 
 ## Résumé Exécutif
 
-Ce document présente l'analyse complète du journal spirituel et de guerre de **Ramet Ernest**, **prisonnier de guerre français** à **Munster, Westphalie (Allemagne)** pendant la Première Guerre Mondiale. Le carnet a été commencé le **14 juin 1918** au camp de prisonniers, mais contient des copies de notes spirituelles datant de **1911**. Il contient **103 pages** (IMG_0410 à IMG_0512).
+Ce document présente l'analyse complète du journal spirituel et de guerre de **Ramet Ernest**, **prisonnier de guerre français** à **Munster, Westphalie (Allemagne)** pendant la Première Guerre Mondiale. Le carnet a été commencé le **14 juin 1918** au camp de prisonniers et couvre la période **juin - septembre 1918** (voire jusqu'en 1919). Il contient **103 pages** (IMG_0410 à IMG_0512).
+
+**CORRECTION IMPORTANTE** : Les dates "11" initialement lues sont en fait "18". Le journal entier date de 1918, pas de copies de 1911.
 
 ---
 
@@ -21,30 +23,29 @@ Ce document présente l'analyse complète du journal spirituel et de guerre de *
 ### Contexte : Prisonnier de Guerre (1918)
 - **Début du carnet** : 14 juin 1918 à Munster, Westphalie (Allemagne)
 - **Mentor au camp** : Legar larre (enseignant au camp de prisonniers)
-- **Nature** : Copie de notes antérieures + réflexions de captivité
+- **Nature** : Journal quotidien écrit pendant la captivité
 
-### Phase 1 : Copies de notes spirituelles (origines : Juin 1911)
-- **Dates originales** : 15-6-11, 16-6-11, 17-6-11... (copiées en 1918)
+### Phase 1 : Juin 1918 - Définitions et premières leçons
+- **Dates** : 14-6-18, 15-6-18, 16-6-18, 17-6-18, 19-6-18, 20-6-18, 21-6-18, 23-6-18, 24-6-18, 29-6-18, 30-6-18
 - **Contenu** : Définitions spirites (incarnation, désincarnation, réincarnation)
-- **Format** : "Copie le..." indiquant reproduction de notes antérieures
+- **Format** : "Leçon du...", "Bonne action...", "Mauvaise action évitée..."
 
-### Phase 2 : Journal moral quotidien (origines : Juin-Juillet 1911)
+### Phase 2 : Juillet 1918 - Journal moral quotidien
 - **Format** : "Bonne action que j'ai faite" + "Mauvaise action que j'ai évitée"
-- **Dates originales** : 16-6-11, 17-6-11, 20-6-11, 22-6-11, 24-6-11, 26-6-11, 30-6-11, 5-7-11, 6-7-11, 8-7-11, 11-7-11
-- **Thèmes** : Entraide entre camarades, éviter les mauvaises conversations, maîtrise de la colère
+- **Dates** : 1-7-18, 11-7-18, etc.
+- **Thèmes** : Entraide entre camarades de captivité, éviter les mauvaises conversations, maîtrise de la colère
 
-### Phase 3 : Réflexions spirituelles denses (origines : Août 1911 - 1912)
-- **Dates originales** : 18-8-11, 20-II-11, 22-II-11, 11-I-12, 18-I-12, 28-I-12
+### Phase 3 : Août 1918 - Réflexions spirituelles denses
+- **Dates** : 13-8-18, etc.
 - **Thèmes** : Charité, patience, humilité, persévérance, anges gardiens
-- **Style** : Texte très serré, moins structuré
+- **Style** : Texte très serré, plus de réflexion continue
 
-### Phase 4 : Période de captivité (1916-1918)
-- **Dates** : 15-II-1916, 5 Mars 1916, 23-I-1916, 2-1917
-- **Contexte** : Réflexions d'un prisonnier de guerre
+### Phase 4 : Septembre 1918 - Fin du journal
+- **Dates** : 28-9-18, etc.
 - **Thèmes** : Souffrance, croix, résignation à la volonté divine, saints intercesseurs
 - **Références** : St François, St Mayeur, St Paul
 
-**Note importante** : Ramet a été capturé pendant la WWI et détenu au camp de Munster en Allemagne. Il a utilisé sa captivité pour copier ses notes spirituelles antérieures (1911-1912) et continuer ses réflexions religieuses.
+**Note importante** : TOUTES les dates du journal sont de **1918** (juin à septembre). J'avais initialement mal lu "18" comme "11", créant la fausse théorie de "copies de notes de 1911". Le journal entier a été écrit pendant la captivité à Munster.
 
 ---
 

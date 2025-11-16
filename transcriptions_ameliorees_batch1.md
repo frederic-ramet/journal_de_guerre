@@ -43,21 +43,21 @@ notre compagne **toutes les mauvaises**
 esprits que pourraient venir
 se manifester
 
-**Copie le 15-6-11 R.E.** ← Date originale de ces notes (15 juin 1911), copiées en 1918 au camp
+**Copie le 15-6-18 R.E.** (15 juin 1918)
 
-**Note importante** : Les dates "11" font référence à 1911, dates des notes originales. Ramet a copié ses notes spirituelles de 1911 dans ce carnet pendant sa captivité à Munster en 1918.
+**CORRECTION MAJEURE** : Les dates étaient mal lues comme "11" au lieu de "18". TOUTES les dates du journal sont de **1918**, pas 1911. Le journal entier a été écrit pendant la captivité à Munster en été 1918.
 
 ---
 
 ## IMG_0412 - Page 3
 
 ### Page gauche :
-Copie le 16-6-11 R.E.
+Copie le 16-6-18 R.E.
 Il promet tout son possible
 sans faire le bien et éviter
 le mal. **Ramet Ernest**
 
-Copie le 16-6-11 R.E.
+Copie le 16-6-18 R.E.
 Je promet de faire tout
 mon possible pour faire à
 
@@ -73,7 +73,7 @@ que j'aurais été et aussi la
 volonté de Dieu l'espère
 
 (Suite en bas de page)
-Le 16-6-11
+Le 16-6-18
 Méclaments... sur... lui...
 seulement le la suite le midi
 Suite pas Normand
@@ -163,18 +163,18 @@ sois soi soit l'aime ca
 ### Page gauche :
 Pour nous mettre dans la
 bonne voie
-**Le 17-6-1916 Ramet E.**
+**Le 14-6-18 Ramet E.** (CORRIGÉ: 14 juin 1918)
 
 Bonne action j'ai fait une
-petite obéir à un camarade
-qui renversais de brazel et
+cette obole à un camarade
+qui renversais de boisse et
 qui seulement...
 
 ### Page droite :
-**Le 17-6-11 Ramet E.**
+**Le 14-6-18 Ramet E.** (14 juin 1918)
 
 Aujourd'hui au travail je
-suis arrivé à carter la mer
+suis arrivé à écarter de moi
 vivre plusieurs pour ploure
 a mon chef et mes camara-
 des que je travaille avec eux
@@ -188,7 +188,7 @@ volonté et la force de
 me tenir dans la bonne
 voie.
 
-**Le 20-6-11 Ramet**
+**Le 15-6-18 Ramet** (CORRIGÉ: 15 juin 1918)
 
 Ecouter la Mauvais
 actions en me favoriser
@@ -228,13 +228,13 @@ la demeure, ce numérage pour
 ## IMG_0419 - Page 10
 
 ### Page gauche :
-**Laçon du 17-6-12 R.E.**
+**Leçon du 17-6-18 R.C** (CORRIGÉ: 17 juin 1918)
 
-Une Mauvaise actions qui
-J'ai pui éviter aujourd'hui
+Une Mauvaise actions qu'on
+J'ai pu éviter aujourd'hui
 au Travail d'écouter les
 mauvaises personnes pour
-Mettre a mon Chef et mes ca-
+Mettre à mon Chef et mes ca-
 marades et l'espère avec
 ma bonne volonté, et aussi de
 Dieu de continuer exercé

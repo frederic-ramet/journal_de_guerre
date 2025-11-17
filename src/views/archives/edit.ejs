@@ -1,0 +1,186 @@
+<%- include('../partials/head', { title, additionalCss: ['archives', 'editor'] }) %>
+<%- include('../partials/nav', { activePage: 'archives' }) %>
+
+<main class="archives-editor">
+  <!-- Toolbar -->
+  <div class="editor-toolbar">
+    <div class="toolbar-left">
+      <a href="/archives" class="btn btn-outline">
+        <i class="fas fa-arrow-left"></i> Retour
+      </a>
+      <h2>Page <%= page.page_number %></h2>
+      <span class="badge badge-<%= page.status || 'draft' %>" id="statusBadge">
+        <%= page.status === 'verified' ? 'Vérifié' : page.status === 'validated' ? 'Validé' : 'Brouillon' %>
+      </span>
+    </div>
+    <div class="toolbar-right">
+      <button id="saveBtn" class="btn btn-success">
+        <i class="fas fa-save"></i> Sauvegarder
+      </button>
+      <select id="statusSelect" class="status-select">
+        <option value="draft" <%= page.status === 'draft' ? 'selected' : '' %>>Brouillon</option>
+        <option value="verified" <%= page.status === 'verified' ? 'selected' : '' %>>Vérifié</option>
+        <option value="validated" <%= page.status === 'validated' ? 'selected' : '' %>>Validé</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Main Editor Area -->
+  <div class="editor-container">
+    <!-- Image Panel -->
+    <div class="image-panel">
+      <div class="image-tools">
+        <button id="rotateLeft" class="tool-btn" title="Rotation gauche">
+          <i class="fas fa-undo"></i>
+        </button>
+        <button id="rotateRight" class="tool-btn" title="Rotation droite">
+          <i class="fas fa-redo"></i>
+        </button>
+        <button id="zoomIn" class="tool-btn" title="Zoom +">
+          <i class="fas fa-search-plus"></i>
+        </button>
+        <button id="zoomOut" class="tool-btn" title="Zoom -">
+          <i class="fas fa-search-minus"></i>
+        </button>
+        <button id="resetView" class="tool-btn" title="Réinitialiser">
+          <i class="fas fa-expand"></i>
+        </button>
+        <div class="tool-separator"></div>
+        <button id="cropTool" class="tool-btn" title="Recadrer">
+          <i class="fas fa-crop"></i>
+        </button>
+        <button id="brightnessTool" class="tool-btn" title="Luminosité">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button id="contrastTool" class="tool-btn" title="Contraste">
+          <i class="fas fa-adjust"></i>
+        </button>
+      </div>
+
+      <div class="image-wrapper" id="imageWrapper">
+        <img id="pageImage" src="/<%= page.image_path %>" alt="Page <%= page.page_number %>">
+        <!-- Crop overlay will be added here by JS -->
+      </div>
+
+      <!-- Adjustment sliders (hidden by default) -->
+      <div class="adjustment-panel" id="adjustmentPanel" style="display:none;">
+        <div class="slider-group">
+          <label>Luminosité: <span id="brightnessValue"><%= adjustments.brightness %></span>%</label>
+          <input type="range" id="brightnessSlider" min="50" max="150" value="<%= adjustments.brightness %>">
+        </div>
+        <div class="slider-group">
+          <label>Contraste: <span id="contrastValue"><%= adjustments.contrast %></span>%</label>
+          <input type="range" id="contrastSlider" min="50" max="150" value="<%= adjustments.contrast %>">
+        </div>
+        <button id="applyAdjustments" class="btn btn-primary btn-sm">Appliquer</button>
+      </div>
+    </div>
+
+    <!-- Transcription Panel -->
+    <div class="transcription-panel">
+      <div class="panel-tabs">
+        <button class="tab-btn active" data-tab="transcription">
+          <i class="fas fa-align-left"></i> Transcription
+        </button>
+        <button class="tab-btn" data-tab="notes">
+          <i class="fas fa-sticky-note"></i> Notes
+        </button>
+        <button class="tab-btn" data-tab="metadata">
+          <i class="fas fa-info-circle"></i> Métadonnées
+        </button>
+      </div>
+
+      <div class="tab-content active" id="transcription-tab">
+        <div class="editor-toolbar-mini">
+          <button class="format-btn" data-format="bold" title="Gras">
+            <i class="fas fa-bold"></i>
+          </button>
+          <button class="format-btn" data-format="italic" title="Italique">
+            <i class="fas fa-italic"></i>
+          </button>
+          <button class="format-btn" data-format="heading" title="Titre">
+            <i class="fas fa-heading"></i>
+          </button>
+          <button class="format-btn" data-format="list" title="Liste">
+            <i class="fas fa-list-ul"></i>
+          </button>
+          <button class="format-btn" data-format="paragraph" title="Paragraphe">
+            <i class="fas fa-paragraph"></i>
+          </button>
+        </div>
+        <textarea id="transcriptionEditor" class="transcription-textarea" placeholder="Entrez la transcription ici..."><%= page.content_html ? page.content_html.replace(/<[^>]+>/g, '\n').trim() : '' %></textarea>
+        <div class="html-preview">
+          <h4>Aperçu HTML</h4>
+          <div id="htmlPreview" class="preview-content">
+            <%- page.content_html || '<p>Pas de transcription</p>' %>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="notes-tab">
+        <textarea id="notesEditor" class="notes-textarea" placeholder="Notes du transcripteur (incertitudes, observations...)"><%= page.transcriptor_notes || '' %></textarea>
+      </div>
+
+      <div class="tab-content" id="metadata-tab">
+        <div class="metadata-form">
+          <div class="form-group">
+            <label>Titre</label>
+            <input type="text" id="pageTitle" value="<%= page.title %>">
+          </div>
+          <div class="form-group">
+            <label>Description</label>
+            <textarea id="pageDescription"><%= page.description || '' %></textarea>
+          </div>
+          <div class="form-group">
+            <label>Date écrite</label>
+            <input type="text" id="pageDate" value="<%= page.date_written || '' %>" placeholder="ex: 14-6-18">
+          </div>
+          <div class="form-group">
+            <label>Période</label>
+            <input type="text" id="pagePeriod" value="<%= page.period || '' %>">
+          </div>
+          <div class="form-group">
+            <label>Version</label>
+            <input type="text" value="<%= page.version || 1 %>" readonly>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Footer -->
+  <div class="editor-footer">
+    <% const prevNum = page.image_number > 410 ? page.image_number - 1 : null; %>
+    <% const nextNum = page.image_number < 512 ? page.image_number + 1 : null; %>
+
+    <% if (prevNum) { %>
+      <a href="/archives/edit/<%= prevNum %>" class="btn btn-outline">
+        <i class="fas fa-arrow-left"></i> Page précédente
+      </a>
+    <% } else { %>
+      <span></span>
+    <% } %>
+
+    <span class="page-counter">
+      <%= page.page_number %> / 103
+    </span>
+
+    <% if (nextNum) { %>
+      <a href="/archives/edit/<%= nextNum %>" class="btn btn-outline">
+        Page suivante <i class="fas fa-arrow-right"></i>
+      </a>
+    <% } else { %>
+      <span></span>
+    <% } %>
+  </div>
+</main>
+
+<script>
+  window.pageData = {
+    id: <%= page.id %>,
+    imageNumber: <%= page.image_number %>,
+    adjustments: <%- JSON.stringify(adjustments) %>
+  };
+</script>
+
+<%- include('../partials/footer', { additionalJs: ['editor'] }) %>

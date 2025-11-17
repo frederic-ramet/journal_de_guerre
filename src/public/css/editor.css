@@ -1,0 +1,325 @@
+/* Editor Page Styles */
+
+.archives-editor {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 60px);
+  background: var(--color-background);
+}
+
+/* Toolbar */
+.editor-toolbar {
+  background: var(--color-surface);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.toolbar-left {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.toolbar-left h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.toolbar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.status-select {
+  padding: var(--space-sm) var(--space-md);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+}
+
+/* Main Editor Container */
+.editor-container {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+  padding: var(--space-md);
+  overflow: hidden;
+}
+
+/* Image Panel */
+.image-panel {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.image-tools {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.tool-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-btn:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.tool-btn.active {
+  background: var(--color-primary);
+  color: white;
+}
+
+.tool-separator {
+  width: 1px;
+  height: 30px;
+  background: var(--color-border);
+  margin: 0 var(--space-sm);
+  align-self: center;
+}
+
+.image-wrapper {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+.image-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform var(--transition-fast), filter var(--transition-fast);
+  cursor: grab;
+}
+
+.image-wrapper img:active {
+  cursor: grabbing;
+}
+
+/* Adjustment Panel */
+.adjustment-panel {
+  margin-top: var(--space-md);
+  padding: var(--space-md);
+  background: var(--color-background);
+  border-radius: var(--radius-md);
+}
+
+.slider-group {
+  margin-bottom: var(--space-md);
+}
+
+.slider-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.slider-group input[type="range"] {
+  width: 100%;
+}
+
+/* Transcription Panel */
+.transcription-panel {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.panel-tabs {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-border);
+  padding-bottom: var(--space-sm);
+}
+
+.tab-btn {
+  padding: var(--space-sm) var(--space-md);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
+  transition: all var(--transition-fast);
+}
+
+.tab-btn:hover {
+  color: var(--color-primary);
+}
+
+.tab-btn.active {
+  color: var(--color-primary);
+  background: var(--color-background);
+}
+
+.tab-content {
+  display: none;
+  flex: 1;
+  overflow: hidden;
+}
+
+.tab-content.active {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Editor Toolbar Mini */
+.editor-toolbar-mini {
+  display: flex;
+  gap: var(--space-xs);
+  margin-bottom: var(--space-sm);
+}
+
+.format-btn {
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--color-border);
+  background: white;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.format-btn:hover {
+  background: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.transcription-textarea,
+.notes-textarea {
+  flex: 1;
+  min-height: 200px;
+  padding: var(--space-md);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  resize: none;
+}
+
+.transcription-textarea:focus,
+.notes-textarea:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+/* HTML Preview */
+.html-preview {
+  margin-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-md);
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.html-preview h4 {
+  margin-bottom: var(--space-sm);
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.preview-content {
+  background: var(--color-background);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Metadata Form */
+.metadata-form {
+  overflow-y: auto;
+  padding-right: var(--space-sm);
+}
+
+.form-group {
+  margin-bottom: var(--space-md);
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: var(--space-xs);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+}
+
+.form-group textarea {
+  min-height: 80px;
+}
+
+/* Editor Footer */
+.editor-footer {
+  background: var(--color-surface);
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--shadow-sm);
+  flex-shrink: 0;
+}
+
+.page-counter {
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .editor-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .toolbar-left h2 {
+    display: none;
+  }
+
+  .editor-toolbar {
+    padding: var(--space-sm);
+  }
+
+  .image-tools {
+    justify-content: center;
+  }
+}

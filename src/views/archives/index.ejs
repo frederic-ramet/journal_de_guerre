@@ -1,0 +1,111 @@
+<%- include('../partials/head', { title, additionalCss: ['archives'] }) %>
+<%- include('../partials/nav', { activePage: 'archives' }) %>
+
+<main class="archives-dashboard">
+  <div class="dashboard-header">
+    <h1><i class="fas fa-archive"></i> Archives - Préservation</h1>
+    <p>Outil de travail pour la transcription et l'annotation des pages du journal</p>
+  </div>
+
+  <!-- Statistics -->
+  <section class="archives-stats">
+    <div class="stat-card">
+      <div class="stat-icon"><i class="fas fa-file-alt"></i></div>
+      <div class="stat-info">
+        <div class="stat-value"><%= stats.total || 103 %></div>
+        <div class="stat-label">Total pages</div>
+      </div>
+    </div>
+    <div class="stat-card draft">
+      <div class="stat-icon"><i class="fas fa-pencil-alt"></i></div>
+      <div class="stat-info">
+        <div class="stat-value"><%= stats.drafts || 0 %></div>
+        <div class="stat-label">Brouillons</div>
+      </div>
+    </div>
+    <div class="stat-card verified">
+      <div class="stat-icon"><i class="fas fa-check"></i></div>
+      <div class="stat-info">
+        <div class="stat-value"><%= stats.verified || 0 %></div>
+        <div class="stat-label">Vérifiées</div>
+      </div>
+    </div>
+    <div class="stat-card validated">
+      <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+      <div class="stat-info">
+        <div class="stat-value"><%= stats.validated || 0 %></div>
+        <div class="stat-label">Validées</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Actions -->
+  <section class="archives-actions">
+    <a href="/api/export" class="btn btn-primary" target="_blank">
+      <i class="fas fa-download"></i> Exporter tout (JSON)
+    </a>
+    <button id="filterDrafts" class="btn btn-outline filter-btn active" data-filter="all">
+      Toutes
+    </button>
+    <button id="filterDrafts" class="btn btn-outline filter-btn" data-filter="draft">
+      Brouillons
+    </button>
+    <button id="filterVerified" class="btn btn-outline filter-btn" data-filter="verified">
+      Vérifiées
+    </button>
+  </section>
+
+  <!-- Pages Grid -->
+  <section class="pages-grid">
+    <% if (pages && pages.length > 0) { %>
+      <% pages.forEach(page => { %>
+        <div class="page-card" data-status="<%= page.status || 'draft' %>">
+          <div class="page-thumbnail">
+            <img src="/<%= page.image_path %>" alt="Page <%= page.page_number %>" loading="lazy">
+            <% if (page.annotation_count > 0) { %>
+              <span class="annotation-badge">
+                <i class="fas fa-sticky-note"></i> <%= page.annotation_count %>
+              </span>
+            <% } %>
+          </div>
+          <div class="page-info">
+            <h4>Page <%= page.page_number %></h4>
+            <span class="badge badge-<%= page.status || 'draft' %>">
+              <%= page.status === 'verified' ? 'Vérifié' : page.status === 'validated' ? 'Validé' : 'Brouillon' %>
+            </span>
+          </div>
+          <div class="page-actions">
+            <a href="/archives/edit/<%= page.image_number %>" class="btn btn-primary btn-sm">
+              <i class="fas fa-edit"></i> Éditer
+            </a>
+            <a href="/journal/page/<%= page.page_number %>" class="btn btn-outline btn-sm">
+              <i class="fas fa-eye"></i> Voir
+            </a>
+          </div>
+        </div>
+      <% }); %>
+    <% } else { %>
+      <% for (let i = 410; i <= 512; i++) { %>
+        <div class="page-card" data-status="draft">
+          <div class="page-thumbnail">
+            <img src="/jpg_web/IMG_0<%= i %>.jpeg" alt="Page <%= i - 409 %>" loading="lazy">
+          </div>
+          <div class="page-info">
+            <h4>Page <%= i - 409 %></h4>
+            <span class="badge badge-draft">Brouillon</span>
+          </div>
+          <div class="page-actions">
+            <a href="/archives/edit/<%= i %>" class="btn btn-primary btn-sm">
+              <i class="fas fa-edit"></i> Éditer
+            </a>
+            <a href="/journal/page/<%= i - 409 %>" class="btn btn-outline btn-sm">
+              <i class="fas fa-eye"></i> Voir
+            </a>
+          </div>
+        </div>
+      <% } %>
+    <% } %>
+  </section>
+</main>
+
+<%- include('../partials/footer', { additionalJs: ['archives'] }) %>

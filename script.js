@@ -910,13 +910,14 @@ function generateTranscriptionData() {
 
     // Complete transcriptions database
     const transcriptionDB = {
-        410: `<p><strong>Carnet Appartenant</strong> à <strong>Ramet Ernest</strong></p>
+        410: `<p><strong>Carnet d'aspirations</strong> à <strong>Ramet Ernest</strong></p>
               <p><strong>Etude</strong><br>
-              Commencé le <strong>14 juin 1911</strong><br>
-              à Martou Mephisto - Allemagne</p>
-              <p>Leçon donnée par <strong>Gecourtét</strong><br>
+              Commencé le <strong>14 juin 1918</strong><br>
+              à <strong>Munster Westphalie</strong> (Allemagne) - CAMP DE PRISONNIERS DE GUERRE</p>
+              <p><strong>Legar larre m'a appris</strong><br>
               pour apprendre à aimer Dieu<br>
-              Et nous tenir dans la voie</p>`,
+              Et nous tenir dans la voie</p>
+              <p><em>Note : Journal de prisonnier de guerre français au camp de Munster</em></p>`,
 
         411: `<h4>Page gauche :</h4>
               <ul>
@@ -924,35 +925,41 @@ function generateTranscriptionData() {
                 <li><strong>Désincarnation</strong> : esprit qui quitte le corps</li>
                 <li><strong>Réincarnation</strong> : esprit qui réhabite le corps</li>
                 <li><strong>Echelle espirite</strong> : à la mort l'esprit quitte le corps</li>
-                <li><strong>L'espiritisme</strong> : est une science étudiée pour prouver que l'esprit est immortel</li>
+                <li><strong>L'espiritisme</strong> : est une science étudiée pour prouver que l'esprit est immortel, qu'il peut se communiquer à l'homme</li>
               </ul>
               <h4>Page droite :</h4>
-              <p>Pour bien comprendre comparons le à un <strong>courant électrique</strong><br>
-              O = grande, force, vibrante intelligence...</p>
-              <p><strong>Copie le 15-6-1916 C.</strong></p>`,
+              <p>Pour bien comprendre comparons le à un <strong>courant électrique</strong>, chose qui existe mais qu'on ne peut pas voir<br>
+              Ω = grande Ω ?<br>
+              Ω = grande Foÿe Ω ? <strong>Vibrante intelligence</strong> formant aux esprits<br>
+              L'esprit est un fluide ; celui qui est qu'il est invisible</p>
+              <p>esprits du <strong>grand au delà</strong> de nous<br>
+              sont en aide et d'écouter de<br>
+              notre compagne toutes les mauvaises<br>
+              esprits que pourraient venir<br>
+              se manifester</p>
+              <p><strong>Copie le 15-6-18 R.E.</strong> (15 juin 1918)</p>`,
 
         412: `<h4>Page gauche :</h4>
-              <p>Copie le 16-6-11 R.E. O.<br>
-              Je prévois tout mon possible<br>
-              pour faire le bien et éviter<br>
-              le mal. Ramet Ernest</p>
-              <p>Copie le 16-6-11 R.E. O.<br>
-              Je promets de faire tout<br>
-              mon possible pour faire le<br>
-              bien et éviter Ramet Ernest<br>
-              le mal.</p>
+              <p><strong>Copie le 16-6-18 R.E.</strong><br>
+              Je promets tout mon possible<br>
+              sans faire le bien et éviter<br>
+              le mal. <strong>Ramet Ernest</strong></p>
+              <p><strong>Copie le 16-6-18 R.E.</strong><br>
+              Je promet de faire tout<br>
+              mon possible pour faire à</p>
               <h4>Page droite :</h4>
-              <p>17-6-11 R.E. E.<br>
-              Seulement le système de midi<br>
-              faite par Vermandel</p>
-              <p>... pour le monde je le<br>
-              remets à lui montrant le<br>
-              le trouve et la l'encre on<br>
-              l'mange c'est bien clairement<br>
-              Règle comme Français<br>
-              l'esprit comme un esprit<br>
-              l'emet nous en esprit lumineux<br>
-              plus haut... on esprit longtems</p>`,
+              <p>bien et éviter le mal<br>
+              <strong>Ramet Ernest</strong></p>
+              <p>Ensuite le mancipatoire<br>
+              tout ce bonheur fumé<br>
+              actions que j'aurais faites<br>
+              et toutes les mauvaises<br>
+              que j'aurais été et aussi la<br>
+              volonté de Dieu l'espère</p>
+              <p><strong>Le 16-6-18</strong><br>
+              Méclaments... sur... lui...<br>
+              seulement le la suite le midi<br>
+              Suite pas Normand</p>`,
 
         413: `<h4>Page gauche :</h4>
               <p>Ylouward...<br>
@@ -1007,70 +1014,31 @@ function generateTranscriptionData() {
               acteur. Bien souvent les</p>`,
 
         415: `<h4>Page gauche :</h4>
-              <p>faire nous mettre dans la<br>
-              fiente voir<br>
-              de la matière<br>
-              Copie le 16-6-11 Ramet E.<br>
-              Par assez triste la mortuel<br>
-              Et l'homme de table par quant je<br>
-              toute chose et que une tout moi<br>
-              et je même pensée<br>
-              Demain faudra que table<br>
-              que ne réponse de la maison</p>
-              <p>Le 14 - 6 - 11<br>
-              Aujourd'hui au travail je<br>
-              suis arrivée à écarter le mal<br>
-              avec résolation pour la dire<br>
-              à mon chef et mes camarades<br>
-              tous remercieront toute la<br>
-              tout le besoin que je suis<br>
-              la celle venimeux attire</p>
+              <p>Pour nous mettre dans la<br>
+              bonne voie<br>
+              <strong>Le 14-6-18 Ramet E.</strong> (14 juin 1918)</p>
+              <p>Bonne action j'ai fait une<br>
+              cette obole à un camarade<br>
+              qui renversais de boisse et<br>
+              qui seulement...</p>
               <h4>Page droite :</h4>
-              <p>Mais nous vraiment plus<br>
-              mes fatigues je premis<br>
-              un Dieu<br>
-              J'accompagne<br>
-              d'aujourd'hui à que nous<br>
-              ne songeons qu'à vivre sois<br>
-              toujours sans que tu resoir<br>
-              du arts nous que chaud<br>
-              dans la paix en l'enseignait<br>
-              la nuits en sollé, part il<br>
-              l'homme ce quelquec<br>
-              Et un tu réponds du<br>
-              l'etions avec la grâce de Dieu<br>
-              qu'au a peut une la<br>
-              pas lui sonni visite entrer<br>
-              notre tous cherises disetais</p>`,
+              <p><strong>Le 14-6-18 Ramet E.</strong> (14 juin 1918)<br>
+              Aujourd'hui au travail je<br>
+              suis arrivé à écarter de moi<br>
+              vivre plusieurs pour ploure<br>
+              a mon chef et mes camara-<br>
+              des que je travaille avec eux</p>`,
 
         416: `<h4>Page gauche :</h4>
               <p>volonté et la force de<br>
               me tenir dans la bonne<br>
-              voie. Le 20-6-11 Ramet E.<br>
-              Exécuter la Mauvais<br>
-              actions en me forçant<br>
-              le plus possible tout<br>
-              ne pas fasse toute mine<br>
-              l'imitation et l'espoir avec<br>
-              la grâce de Dieu dans la<br>
-              bonheur dans la<br>
-              Voie.</p>
-              <h4>Page droite :</h4>
-              <p>ne plus recommence<br>
-              Le 19 - 6 - 11 Ramet<br>
-              Bonne action est Bonne un<br>
-              homme de tout pour faire là<br>
-              tu a eu camarade que la<br>
-              la a bon vivre suite<br>
-              Mauvaise action de<br>
-              l'excité au la humeur<br>
-              Le 20<br>
-              Bonne action Radam<br>
-              un camarade à Vois en<br>
-              lui donnant une partie<br>
-              etat vous marquer de<br>
-              lui es Première Dieu<br>
-              qui nous Bonne la bonne</p>`,
+              voie.</p>
+              <p><strong>Le 15-6-18 Ramet</strong> (15 juin 1918)<br>
+              Ecouter la Mauvais<br>
+              actions en me favoriser<br>
+              le plus possible force<br>
+              me faire tout à mon<br>
+              prochain et l'espère avec</p>`,
 
         417: `<h4>Page gauche :</h4>
               <p>Règle bonne des mauvaise action<br>

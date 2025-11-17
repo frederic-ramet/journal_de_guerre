@@ -1,0 +1,533 @@
+{
+  "version": "2.0.0",
+  "lastUpdated": "2025-11-17T00:00:00Z",
+  "entities": {
+    "persons": [
+      {
+        "id": "P001",
+        "name": "Ramet Ernest",
+        "aliases": ["Ernest Soir", "R.E.", "R.E.C.", "R.E.E.", "R.E.D."],
+        "type": "Auteur",
+        "description": "Auteur du journal, soldat français prisonnier de guerre",
+        "frequency": 200,
+        "patterns": ["Ramet Ernest", "Ernest Soir", "R\\.E\\.", "R\\.E\\.C\\.", "R\\.E\\.E\\.", "R\\.E\\.D\\."]
+      },
+      {
+        "id": "P002",
+        "name": "Dieu",
+        "aliases": ["Seigneur", "Père céleste", "Créateur", "Tout-Puissant", "Père"],
+        "type": "Divinité",
+        "description": "Dieu le Père dans la Trinité chrétienne",
+        "frequency": 300,
+        "patterns": ["Dieu", "Seigneur", "Père céleste", "Créateur", "Tout-Puissant"]
+      },
+      {
+        "id": "P003",
+        "name": "L'homme",
+        "aliases": ["Fidèle", "Chrétien", "Pécheur"],
+        "type": "Concept anthropologique",
+        "description": "L'être humain dans sa dimension spirituelle",
+        "frequency": 250,
+        "patterns": ["l'homme", "le fidèle", "le chrétien", "le pécheur"]
+      },
+      {
+        "id": "P004",
+        "name": "Esprit Saint",
+        "aliases": ["Esprit divin", "Saint-Esprit"],
+        "type": "Divinité",
+        "description": "Troisième personne de la Trinité",
+        "frequency": 50,
+        "patterns": ["Esprit Saint", "Saint-Esprit", "Esprit divin"]
+      },
+      {
+        "id": "P005",
+        "name": "Le prochain",
+        "aliases": ["Frère", "Autrui"],
+        "type": "Concept social",
+        "description": "L'autre, le semblable à aimer",
+        "frequency": 40,
+        "patterns": ["le prochain", "son prochain", "autrui", "son frère"]
+      },
+      {
+        "id": "P006",
+        "name": "Les esprits guides",
+        "aliases": ["Esprits bons", "Guides spirituels"],
+        "type": "Entités spirituelles",
+        "description": "Entités spirituelles guidant les vivants (spiritisme)",
+        "frequency": 30,
+        "patterns": ["esprits guides", "esprits bons", "guides spirituels"]
+      },
+      {
+        "id": "P007",
+        "name": "Saint Denis",
+        "aliases": [],
+        "type": "Saint",
+        "description": "Saint martyr",
+        "frequency": 1,
+        "patterns": ["Saint Denis", "St Denis"]
+      },
+      {
+        "id": "P008",
+        "name": "Jésus-Christ",
+        "aliases": ["Christ", "Sauveur", "Rédempteur", "Jésus"],
+        "type": "Divinité",
+        "description": "Fils de Dieu, deuxième personne de la Trinité",
+        "frequency": 15,
+        "patterns": ["Jésus-Christ", "Jésus Christ", "Christ", "Sauveur", "Rédempteur", "Jésus"]
+      },
+      {
+        "id": "P009",
+        "name": "Vierge Marie",
+        "aliases": ["Marie", "Sainte Vierge", "Mère de Dieu"],
+        "type": "Sainte",
+        "description": "Mère de Jésus",
+        "frequency": 5,
+        "patterns": ["Vierge Marie", "Sainte Vierge", "Mère de Dieu", "la Vierge"]
+      },
+      {
+        "id": "P010",
+        "name": "Abgar",
+        "aliases": ["Roi d'Edesse"],
+        "type": "Figure historique",
+        "description": "Roi légendaire ayant reçu le voile de Véronique",
+        "frequency": 1,
+        "patterns": ["Abgar", "roi d'Edesse"]
+      },
+      {
+        "id": "P011",
+        "name": "Legar larre",
+        "aliases": ["Gecourtét"],
+        "type": "Enseignant spirite",
+        "description": "Enseignant spirite mentionné au début du journal",
+        "frequency": 1,
+        "patterns": ["Legar larre", "Gecourtét"]
+      }
+    ],
+    "concepts": [
+      {
+        "id": "C001",
+        "name": "Bonne action",
+        "category": "Vertu",
+        "description": "Action vertueuse quotidienne recommandée",
+        "frequency": 150,
+        "patterns": ["bonne action", "bonnes actions", "bien agir"]
+      },
+      {
+        "id": "C002",
+        "name": "Foi",
+        "category": "Vertu théologale",
+        "description": "Confiance absolue en Dieu",
+        "frequency": 120,
+        "patterns": ["foi", "croire", "croyance", "confiance en Dieu"]
+      },
+      {
+        "id": "C003",
+        "name": "Prière",
+        "category": "Pratique spirituelle",
+        "description": "Communication avec Dieu",
+        "frequency": 100,
+        "patterns": ["prière", "prier", "oraison", "invoquer"]
+      },
+      {
+        "id": "C004",
+        "name": "Grâce divine",
+        "category": "Don divin",
+        "description": "Aide surnaturelle accordée par Dieu",
+        "frequency": 80,
+        "patterns": ["grâce", "grâce divine", "faveur divine"]
+      },
+      {
+        "id": "C005",
+        "name": "Âme",
+        "category": "Anthropologie spirituelle",
+        "description": "Partie immortelle de l'être humain",
+        "frequency": 70,
+        "patterns": ["âme", "âmes", "mon âme", "son âme"]
+      },
+      {
+        "id": "C006",
+        "name": "Cœur",
+        "category": "Anthropologie spirituelle",
+        "description": "Centre moral et spirituel de l'homme",
+        "frequency": 65,
+        "patterns": ["cœur", "mon cœur", "son cœur", "coeur"]
+      },
+      {
+        "id": "C007",
+        "name": "Esprit",
+        "category": "Anthropologie spirituelle",
+        "description": "Dimension spirituelle de l'homme",
+        "frequency": 60,
+        "patterns": ["esprit", "mon esprit", "son esprit"]
+      },
+      {
+        "id": "C008",
+        "name": "Salut",
+        "category": "Eschatologie",
+        "description": "Vie éternelle avec Dieu",
+        "frequency": 50,
+        "patterns": ["salut", "être sauvé", "sauver"]
+      },
+      {
+        "id": "C009",
+        "name": "Charité",
+        "category": "Vertu théologale",
+        "description": "Amour de Dieu et du prochain",
+        "frequency": 45,
+        "patterns": ["charité", "amour du prochain", "bienfaisance"]
+      },
+      {
+        "id": "C010",
+        "name": "Humilité",
+        "category": "Vertu morale",
+        "description": "Reconnaissance de sa petitesse devant Dieu",
+        "frequency": 40,
+        "patterns": ["humilité", "humble", "s'humilier"]
+      },
+      {
+        "id": "C011",
+        "name": "Persévérance",
+        "category": "Vertu morale",
+        "description": "Constance dans la foi et les bonnes actions",
+        "frequency": 35,
+        "patterns": ["persévérance", "persévérer", "constant"]
+      },
+      {
+        "id": "C012",
+        "name": "Patience",
+        "category": "Vertu morale",
+        "description": "Acceptation sereine des épreuves",
+        "frequency": 30,
+        "patterns": ["patience", "patient", "supporter"]
+      },
+      {
+        "id": "C013",
+        "name": "Bonheur",
+        "category": "État spirituel",
+        "description": "Béatitude spirituelle recherchée",
+        "frequency": 50,
+        "patterns": ["bonheur", "heureux", "joie", "félicité"]
+      },
+      {
+        "id": "C014",
+        "name": "Péché",
+        "category": "Négativité spirituelle",
+        "description": "Offense à Dieu, faute morale",
+        "frequency": 25,
+        "patterns": ["péché", "péchés", "faute", "offense"]
+      },
+      {
+        "id": "C015",
+        "name": "Pardon",
+        "category": "Vertu morale",
+        "description": "Miséricorde envers autrui",
+        "frequency": 20,
+        "patterns": ["pardon", "pardonner", "miséricorde"]
+      },
+      {
+        "id": "C016",
+        "name": "Commandements",
+        "category": "Loi divine",
+        "description": "Préceptes divins à suivre",
+        "frequency": 25,
+        "patterns": ["commandements", "commandement", "préceptes", "loi divine"]
+      },
+      {
+        "id": "C017",
+        "name": "Vie éternelle",
+        "category": "Eschatologie",
+        "description": "Récompense finale au paradis",
+        "frequency": 30,
+        "patterns": ["vie éternelle", "éternité", "au-delà"]
+      },
+      {
+        "id": "C018",
+        "name": "Bonne mort",
+        "category": "Eschatologie",
+        "description": "Mort en état de grâce",
+        "frequency": 15,
+        "patterns": ["bonne mort", "mourir en paix", "mort chrétienne"]
+      },
+      {
+        "id": "C019",
+        "name": "Épreuves",
+        "category": "Tribulations",
+        "description": "Difficultés de la vie à surmonter",
+        "frequency": 25,
+        "patterns": ["épreuves", "épreuve", "tribulations", "souffrances"]
+      },
+      {
+        "id": "C020",
+        "name": "Corps",
+        "category": "Anthropologie spirituelle",
+        "description": "Partie matérielle de l'homme",
+        "frequency": 20,
+        "patterns": ["corps", "chair", "matière"]
+      },
+      {
+        "id": "C021",
+        "name": "Incarnation",
+        "category": "Spiritisme",
+        "description": "Entrée de l'esprit dans un corps",
+        "frequency": 10,
+        "patterns": ["incarnation", "s'incarner"]
+      },
+      {
+        "id": "C022",
+        "name": "Désincarnation",
+        "category": "Spiritisme",
+        "description": "Sortie de l'esprit du corps",
+        "frequency": 10,
+        "patterns": ["désincarnation", "se désincarner"]
+      },
+      {
+        "id": "C023",
+        "name": "Réincarnation",
+        "category": "Spiritisme",
+        "description": "Retour de l'esprit dans un nouveau corps",
+        "frequency": 10,
+        "patterns": ["réincarnation", "se réincarner"]
+      }
+    ],
+    "places": [
+      {
+        "id": "L001",
+        "name": "Munster Westphalie",
+        "type": "Camp de prisonniers",
+        "country": "Allemagne",
+        "description": "Camp de prisonniers de guerre où Ernest est détenu",
+        "patterns": ["Munster", "Westphalie", "Munster Westphalie"]
+      },
+      {
+        "id": "L002",
+        "name": "Dunkerque",
+        "type": "Ville",
+        "country": "France",
+        "description": "Ville française mentionnée dans le service militaire",
+        "patterns": ["Dunkerque"]
+      },
+      {
+        "id": "L003",
+        "name": "Guémicourt",
+        "type": "Commune",
+        "country": "France",
+        "description": "Lieu d'origine ou de service",
+        "patterns": ["Guémicourt"]
+      },
+      {
+        "id": "L004",
+        "name": "Etaples",
+        "type": "Commune",
+        "country": "France",
+        "description": "Mentionné dans une lettre militaire",
+        "patterns": ["Etaples"]
+      },
+      {
+        "id": "L005",
+        "name": "Le Ciel",
+        "type": "Lieu spirituel",
+        "country": "Métaphysique",
+        "description": "Destination finale des âmes justes",
+        "patterns": ["le ciel", "au ciel", "paradis", "le Paradis"]
+      }
+    ],
+    "objects": [
+      {
+        "id": "O001",
+        "name": "Carnet",
+        "type": "Document",
+        "description": "Support physique du journal",
+        "patterns": ["carnet", "journal", "cahier"]
+      },
+      {
+        "id": "O002",
+        "name": "Sainte Face de Jésus",
+        "type": "Image pieuse",
+        "description": "Image de dévotion représentant le visage du Christ",
+        "patterns": ["Sainte Face", "face de Jésus", "Sainte Face de Jésus"]
+      },
+      {
+        "id": "O003",
+        "name": "Image de la Vierge",
+        "type": "Image pieuse",
+        "description": "Représentation de la Vierge Marie",
+        "patterns": ["image de la Vierge", "portrait de Marie"]
+      },
+      {
+        "id": "O004",
+        "name": "Voile d'Abgar",
+        "type": "Relique",
+        "description": "Voile légendaire portant l'image du Christ",
+        "patterns": ["voile d'Abgar", "Voile d'Abgar"]
+      }
+    ]
+  },
+  "themes": [
+    {
+      "id": "T001",
+      "name": "Spiritisme",
+      "description": "Enseignements et pratiques spirites",
+      "color": "#9B59B6",
+      "keywords": ["spiritisme", "esprit", "médium", "séance", "incarnation", "désincarnation", "réincarnation", "guide spirituel"]
+    },
+    {
+      "id": "T002",
+      "name": "Foi chrétienne",
+      "description": "Prières et réflexions religieuses catholiques",
+      "color": "#3498DB",
+      "keywords": ["foi", "Dieu", "prière", "Christ", "Église", "sacrements", "grâce", "salut"]
+    },
+    {
+      "id": "T003",
+      "name": "Vertus morales",
+      "description": "Réflexions sur les vertus à cultiver",
+      "color": "#27AE60",
+      "keywords": ["vertu", "humilité", "charité", "patience", "persévérance", "pardon", "bonne action"]
+    },
+    {
+      "id": "T004",
+      "name": "Captivité",
+      "description": "Expériences au camp de prisonniers de Munster",
+      "color": "#E74C3C",
+      "keywords": ["prisonnier", "camp", "Munster", "captivité", "guerre", "détention"]
+    },
+    {
+      "id": "T005",
+      "name": "Introspection",
+      "description": "Réflexions personnelles sur soi-même",
+      "color": "#F39C12",
+      "keywords": ["réflexion", "méditation", "conscience", "âme", "cœur", "esprit"]
+    },
+    {
+      "id": "T006",
+      "name": "Eschatologie",
+      "description": "Questions sur la mort et l'au-delà",
+      "color": "#1ABC9C",
+      "keywords": ["mort", "vie éternelle", "salut", "paradis", "jugement", "bonne mort"]
+    }
+  ],
+  "relations": [
+    {
+      "id": "R001",
+      "type": "REQUIERT",
+      "source": "C001",
+      "target": "C010",
+      "description": "Bonne action requiert Humilité"
+    },
+    {
+      "id": "R002",
+      "type": "REQUIERT",
+      "source": "C001",
+      "target": "C002",
+      "description": "Bonne action requiert Foi"
+    },
+    {
+      "id": "R003",
+      "type": "MÈNE_À",
+      "source": "C002",
+      "target": "C008",
+      "description": "Foi mène au Salut"
+    },
+    {
+      "id": "R004",
+      "type": "DONNE",
+      "source": "P002",
+      "target": "C004",
+      "description": "Dieu donne la Grâce"
+    },
+    {
+      "id": "R005",
+      "type": "OFFRE",
+      "source": "P002",
+      "target": "C008",
+      "description": "Dieu offre le Salut"
+    },
+    {
+      "id": "R006",
+      "type": "PURIFIE",
+      "source": "C003",
+      "target": "C006",
+      "description": "Prière purifie le Cœur"
+    },
+    {
+      "id": "R007",
+      "type": "FORTIFIE",
+      "source": "C003",
+      "target": "C005",
+      "description": "Prière fortifie l'Âme"
+    },
+    {
+      "id": "R008",
+      "type": "GUIDE",
+      "source": "P004",
+      "target": "P003",
+      "description": "Esprit Saint guide l'Homme"
+    },
+    {
+      "id": "R009",
+      "type": "MODÈLE_POUR",
+      "source": "P008",
+      "target": "P003",
+      "description": "Jésus-Christ est modèle pour l'Homme"
+    },
+    {
+      "id": "R010",
+      "type": "ÉCRIT",
+      "source": "P001",
+      "target": "O001",
+      "description": "Ramet Ernest écrit le Carnet"
+    },
+    {
+      "id": "R011",
+      "type": "POSSÈDE",
+      "source": "P003",
+      "target": "C005",
+      "description": "L'Homme possède une Âme"
+    },
+    {
+      "id": "R012",
+      "type": "POSSÈDE",
+      "source": "P003",
+      "target": "C006",
+      "description": "L'Homme possède un Cœur"
+    },
+    {
+      "id": "R013",
+      "type": "POSSÈDE",
+      "source": "P003",
+      "target": "C007",
+      "description": "L'Homme possède un Esprit"
+    },
+    {
+      "id": "R014",
+      "type": "POSSÈDE",
+      "source": "P003",
+      "target": "C020",
+      "description": "L'Homme possède un Corps"
+    },
+    {
+      "id": "R015",
+      "type": "ENVERS",
+      "source": "C009",
+      "target": "P005",
+      "description": "Charité envers le Prochain"
+    },
+    {
+      "id": "R016",
+      "type": "PRISONNIER_À",
+      "source": "P001",
+      "target": "L001",
+      "description": "Ramet Ernest prisonnier à Munster"
+    }
+  ],
+  "hierarchy": {
+    "ÊTRE_SUPRÊME": ["P002", "P008", "P004"],
+    "ÊTRE_HUMAIN": ["P001", "P003", "P005"],
+    "PARTIE_HOMME": ["C005", "C006", "C007", "C020"],
+    "VERTU_THÉOLOGALE": ["C002", "C009"],
+    "VERTU_MORALE": ["C010", "C011", "C012", "C015"],
+    "ACTION_SPIRITUELLE": ["C001", "C003"],
+    "ESCHATOLOGIE": ["C008", "C017", "C018"],
+    "SPIRITISME": ["C021", "C022", "C023"]
+  }
+}

@@ -5,12 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // DOM Elements
   const pageImage = document.getElementById('pageImage');
-  const transcriptionEditor = document.getElementById('transcriptionEditor');
+  const htmlEditor = document.getElementById('html-editor');
   const htmlPreview = document.getElementById('htmlPreview');
   const notesEditor = document.getElementById('notesEditor');
   const statusSelect = document.getElementById('statusSelect');
   const statusBadge = document.getElementById('statusBadge');
   const saveBtn = document.getElementById('saveBtn');
+
+  // Ontology panel instance
+  let ontologyPanel = null;
 
   // Image manipulation state
   let rotation = pageData.adjustments?.rotation || 0;
@@ -31,6 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
       btn.classList.add('active');
       document.getElementById(`${tabName}-tab`).classList.add('active');
+
+      // Initialize ontology panel when tab is clicked
+      if (tabName === 'ontology' && !ontologyPanel && window.OntologyPanel) {
+        ontologyPanel = new window.OntologyPanel('ontologyPanelContainer');
+      }
     });
   });
 
@@ -101,7 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
   formatBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const format = btn.dataset.format;
-      const textarea = transcriptionEditor;
+      const textarea = htmlEditor;
       const start = textarea.selectionStart;
       const end = textarea.selectionEnd;
       const selectedText = textarea.value.substring(start, end);
@@ -133,9 +141,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Live preview
   function updatePreview() {
-    if (htmlPreview && transcriptionEditor) {
+    if (htmlPreview && htmlEditor) {
       // Convert plain text to HTML if needed
-      let html = transcriptionEditor.value;
+      let html = htmlEditor.value;
 
       // If no HTML tags, wrap in paragraphs
       if (!html.includes('<')) {
@@ -146,7 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  transcriptionEditor?.addEventListener('input', Utils.debounce(updatePreview, 300));
+  htmlEditor?.addEventListener('input', Utils.debounce(updatePreview, 300));
 
   // Status change
   statusSelect?.addEventListener('change', () => {
@@ -167,18 +175,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     try {
       // Prepare HTML content
-      let htmlContent = transcriptionEditor.value;
+      let htmlContent = htmlEditor.value;
       if (!htmlContent.includes('<')) {
         htmlContent = htmlContent.split('\n\n').map(p => `<p>${p.trim()}</p>`).join('\n');
       }
 
-      // Save transcription
-      await Utils.api(`/transcriptions/${pageData.id}`, {
+      // Save transcription with automatic semantic extraction
+      const saveResult = await Utils.api(`/transcriptions/${pageData.id}`, {
         method: 'PUT',
         body: {
           content_html: htmlContent,
           transcriptor_notes: notesEditor.value,
-          status: statusSelect.value
+          status: statusSelect.value,
+          auto_extract: true // Enable automatic ontology extraction
         }
       });
 
@@ -196,7 +205,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
       });
 
-      Utils.notify('Sauvegarde réussie !', 'success');
+      // Show semantic analysis results if available
+      if (saveResult.semanticAnalysis) {
+        const analysis = saveResult.semanticAnalysis;
+        const message = `Sauvegarde réussie ! Ontologie mise à jour: ${analysis.entitiesExtracted.persons} personnes, ${analysis.entitiesExtracted.concepts} concepts, ${analysis.entitiesExtracted.places} lieux. Thèmes: ${analysis.themesDetected.join(', ') || 'aucun'}`;
+        Utils.notify(message, 'success');
+
+        // Refresh ontology panel if it's initialized
+        if (ontologyPanel) {
+          ontologyPanel.clear();
+        }
+      } else {
+        Utils.notify('Sauvegarde réussie !', 'success');
+      }
     } catch (error) {
       Utils.notify('Erreur lors de la sauvegarde', 'error');
       console.error('Save error:', error);

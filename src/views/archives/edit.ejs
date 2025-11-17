@@ -1,4 +1,4 @@
-<%- include('../partials/head', { title, additionalCss: ['archives', 'editor'] }) %>
+<%- include('../partials/head', { title, additionalCss: ['archives', 'editor', 'ontology'] }) %>
 <%- include('../partials/nav', { activePage: 'archives' }) %>
 
 <main class="archives-editor">
@@ -82,6 +82,9 @@
         <button class="tab-btn active" data-tab="transcription">
           <i class="fas fa-align-left"></i> Transcription
         </button>
+        <button class="tab-btn" data-tab="ontology">
+          <i class="fas fa-brain"></i> Ontologie
+        </button>
         <button class="tab-btn" data-tab="notes">
           <i class="fas fa-sticky-note"></i> Notes
         </button>
@@ -108,12 +111,18 @@
             <i class="fas fa-paragraph"></i>
           </button>
         </div>
-        <textarea id="transcriptionEditor" class="transcription-textarea" placeholder="Entrez la transcription ici..."><%= page.content_html ? page.content_html.replace(/<[^>]+>/g, '\n').trim() : '' %></textarea>
+        <textarea id="html-editor" class="transcription-textarea" placeholder="Entrez la transcription en HTML ici..."><%- page.content_html || '' %></textarea>
         <div class="html-preview">
-          <h4>Aperçu HTML</h4>
+          <h4>Aperçu</h4>
           <div id="htmlPreview" class="preview-content">
             <%- page.content_html || '<p>Pas de transcription</p>' %>
           </div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="ontology-tab">
+        <div id="ontologyPanelContainer">
+          <!-- Ontology panel will be initialized here by JavaScript -->
         </div>
       </div>
 
@@ -183,4 +192,4 @@
   };
 </script>
 
-<%- include('../partials/footer', { additionalJs: ['editor'] }) %>
+<%- include('../partials/footer', { additionalJs: ['editor', 'ontology-panel'] }) %>

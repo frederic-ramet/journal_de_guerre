@@ -1,4 +1,4 @@
-<%- include('../partials/head', { title, additionalCss: ['etude'] }) %>
+<%- include('../partials/head', { title, additionalCss: ['etude', 'ontology'] }) %>
 <%- include('../partials/nav', { activePage: 'etude' }) %>
 
 <main class="etude-main">
@@ -82,9 +82,58 @@
     </div>
   </section>
 
+  <!-- Knowledge Graph Section -->
+  <section class="graph-section">
+    <h2><i class="fas fa-project-diagram"></i> Graphe de Connaissances</h2>
+    <p>Visualisation interactive des relations entre entités, concepts et thèmes du journal.</p>
+    <div class="graph-controls">
+      <button onclick="graph?.zoomIn()" class="btn btn-sm"><i class="fas fa-search-plus"></i></button>
+      <button onclick="graph?.zoomOut()" class="btn btn-sm"><i class="fas fa-search-minus"></i></button>
+      <button onclick="graph?.resetZoom()" class="btn btn-sm"><i class="fas fa-expand"></i></button>
+      <select onchange="graph?.filter(this.value)" class="filter-select">
+        <option value="all">Tout afficher</option>
+        <option value="person">Personnes</option>
+        <option value="concept">Concepts</option>
+        <option value="place">Lieux</option>
+        <option value="theme">Thèmes</option>
+      </select>
+    </div>
+    <div id="knowledge-graph" class="graph-container"></div>
+  </section>
+
+  <!-- Ontology Browser Section -->
+  <section class="ontology-browser-section">
+    <h2><i class="fas fa-sitemap"></i> Explorateur d'Ontologie</h2>
+    <div class="ontology-browser">
+      <div class="ontology-tabs">
+        <div class="ontology-tab active" data-tab="hierarchy">Hiérarchie</div>
+        <div class="ontology-tab" data-tab="relations">Relations</div>
+        <div class="ontology-tab" data-tab="stats">Statistiques</div>
+      </div>
+
+      <div class="ontology-tab-content active" id="hierarchy-content">
+        <div class="hierarchy-tree" id="hierarchy-tree">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="ontology-tab-content" id="relations-content">
+        <div id="relations-list">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="ontology-tab-content" id="stats-content">
+        <div id="ontology-statistics">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Entities Section -->
   <section class="entities-section">
-    <h2><i class="fas fa-project-diagram"></i> Entités Mentionnées</h2>
+    <h2><i class="fas fa-list"></i> Entités Mentionnées</h2>
     <div class="entities-grid">
       <div class="entity-category">
         <h3><i class="fas fa-user"></i> Personnes</h3>
@@ -205,4 +254,144 @@
   </section>
 </main>
 
-<%- include('../partials/footer', { additionalJs: ['etude'] }) %>
+<!-- D3.js for graph visualization -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+  let graph = null;
+
+  // Initialize knowledge graph
+  document.addEventListener('DOMContentLoaded', async () => {
+    // Load graph
+    if (window.KnowledgeGraph) {
+      graph = new KnowledgeGraph('knowledge-graph');
+    }
+
+    // Ontology browser tabs
+    const tabButtons = document.querySelectorAll('.ontology-tab');
+    const tabContents = document.querySelectorAll('.ontology-tab-content');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        const tabName = btn.dataset.tab;
+        document.getElementById(`${tabName}-content`).classList.add('active');
+
+        // Load content on demand
+        if (tabName === 'hierarchy') loadHierarchy();
+        if (tabName === 'relations') loadRelations();
+        if (tabName === 'stats') loadStatistics();
+      });
+    });
+
+    // Load initial content
+    loadHierarchy();
+  });
+
+  async function loadHierarchy() {
+    try {
+      const response = await fetch('/api/ontology/hierarchy');
+      const hierarchy = await response.json();
+      const container = document.getElementById('hierarchy-tree');
+
+      let html = '';
+      for (const [category, entityIds] of Object.entries(hierarchy)) {
+        html += `
+          <div class="hierarchy-item">
+            <div class="hierarchy-category" onclick="this.classList.toggle('expanded')">
+              <i class="fas fa-chevron-right"></i>
+              ${formatCategoryName(category)}
+            </div>
+            <div class="hierarchy-children">
+              ${entityIds.map(id => `<div class="hierarchy-child">${id}</div>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = html;
+    } catch (err) {
+      console.error('Error loading hierarchy:', err);
+    }
+  }
+
+  async function loadRelations() {
+    try {
+      const response = await fetch('/api/ontology/relations');
+      const relations = await response.json();
+      const container = document.getElementById('relations-list');
+
+      let html = '<table class="relations-table"><thead><tr><th>Source</th><th>Type</th><th>Cible</th></tr></thead><tbody>';
+      relations.forEach(rel => {
+        html += `<tr><td>${rel.source}</td><td><strong>${rel.type}</strong></td><td>${rel.target}</td></tr>`;
+      });
+      html += '</tbody></table>';
+
+      container.innerHTML = html;
+    } catch (err) {
+      console.error('Error loading relations:', err);
+    }
+  }
+
+  async function loadStatistics() {
+    try {
+      const response = await fetch('/api/ontology/statistics');
+      const stats = await response.json();
+      const container = document.getElementById('ontology-statistics');
+
+      container.innerHTML = `
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number">${stats.totalEntities}</div>
+            <div class="stat-label">Entités totales</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.persons}</div>
+            <div class="stat-label">Personnes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.concepts}</div>
+            <div class="stat-label">Concepts</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.places}</div>
+            <div class="stat-label">Lieux</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.themes}</div>
+            <div class="stat-label">Thèmes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.relations}</div>
+            <div class="stat-label">Relations</div>
+          </div>
+        </div>
+        <p class="stats-meta">
+          Version: ${stats.version}<br>
+          Dernière mise à jour: ${new Date(stats.lastUpdated).toLocaleString('fr-FR')}
+        </p>
+      `;
+    } catch (err) {
+      console.error('Error loading statistics:', err);
+    }
+  }
+
+  function formatCategoryName(name) {
+    const translations = {
+      'ÊTRE_SUPRÊME': 'Être Suprême',
+      'ÊTRE_HUMAIN': 'Être Humain',
+      'PARTIE_HOMME': 'Parties de l\'Homme',
+      'VERTU_THÉOLOGALE': 'Vertus Théologales',
+      'VERTU_MORALE': 'Vertus Morales',
+      'ACTION_SPIRITUELLE': 'Actions Spirituelles',
+      'ESCHATOLOGIE': 'Eschatologie',
+      'SPIRITISME': 'Spiritisme'
+    };
+    return translations[name] || name;
+  }
+</script>
+
+<%- include('../partials/footer', { additionalJs: ['etude', 'knowledge-graph'] }) %>

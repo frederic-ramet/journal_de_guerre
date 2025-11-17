@@ -1,0 +1,564 @@
+/* Ontology Panel Styles */
+
+.ontology-panel {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.ontology-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 2px solid var(--color-primary);
+}
+
+.ontology-header h3 {
+  margin: 0;
+  color: var(--color-primary-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.ontology-header h3 i {
+  color: var(--color-primary);
+}
+
+/* Status Messages */
+.ontology-status {
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  background: var(--color-background);
+  color: var(--color-text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.ontology-status.status-loading {
+  background: #e3f2fd;
+  color: #1565c0;
+}
+
+.ontology-status.status-error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.ontology-status.status-warning {
+  background: #fff3e0;
+  color: #ef6c00;
+}
+
+.ontology-status.status-success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+/* Results Container */
+.ontology-results {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.ontology-section {
+  margin-bottom: var(--space-lg);
+}
+
+.ontology-section h4 {
+  color: var(--color-primary);
+  margin-bottom: var(--space-md);
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.ontology-section h4 i {
+  color: var(--color-accent);
+}
+
+/* Themes */
+.themes-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.theme-badge {
+  padding: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid;
+  background: var(--color-background);
+  transition: all var(--transition-fast);
+}
+
+.theme-badge:hover {
+  transform: translateX(5px);
+}
+
+.theme-name {
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.theme-score {
+  float: right;
+  background: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.theme-keywords {
+  margin-top: var(--space-xs);
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.theme-keywords small {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: var(--radius-sm);
+  margin: 2px;
+}
+
+/* Entity Lists */
+.entity-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.entity-item {
+  padding: var(--space-sm);
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  border-left: 3px solid transparent;
+}
+
+.entity-item:hover {
+  background: var(--color-primary-light);
+  border-left-color: var(--color-primary);
+}
+
+.entity-item.highlighted {
+  background: #fff3cd;
+  border-left-color: #ffc107;
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+}
+
+.entity-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entity-name {
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.entity-count {
+  background: var(--color-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.entity-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--space-xs);
+}
+
+.entity-type {
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.entity-confidence {
+  color: var(--color-text-muted);
+}
+
+/* Dates */
+.date-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+}
+
+.date-item i {
+  color: var(--color-accent);
+}
+
+.date-raw {
+  font-weight: 500;
+}
+
+.date-formatted {
+  color: var(--color-text-muted);
+}
+
+/* Statistics */
+.ontology-stats {
+  margin-top: var(--space-lg);
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+.stats-summary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-md);
+  text-align: center;
+}
+
+.stat-item {
+  background: var(--color-background);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+}
+
+.stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.stat-label {
+  display: block;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-xs);
+}
+
+.analyzed-at {
+  text-align: center;
+  margin-top: var(--space-md);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* No Data State */
+.no-data {
+  padding: var(--space-md);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-style: italic;
+  background: var(--color-background);
+  border-radius: var(--radius-sm);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .ontology-results {
+    max-height: 400px;
+  }
+
+  .stats-summary {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .stat-value {
+    font-size: 1.2rem;
+  }
+}
+
+/* Knowledge Graph Visualization Styles */
+.graph-container {
+  width: 100%;
+  height: 600px;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+}
+
+.graph-controls {
+  position: absolute;
+  top: var(--space-md);
+  left: var(--space-md);
+  z-index: 10;
+  display: flex;
+  gap: var(--space-sm);
+  background: rgba(255, 255, 255, 0.9);
+  padding: var(--space-sm);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.graph-legend {
+  position: absolute;
+  bottom: var(--space-md);
+  right: var(--space-md);
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  padding: var(--space-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xs);
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+
+.legend-label {
+  font-size: 0.85rem;
+  color: var(--color-text);
+}
+
+/* Node Info Panel */
+.node-info {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  z-index: 10;
+  background: white;
+  padding: var(--space-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+  min-width: 250px;
+  max-width: 350px;
+  display: none;
+}
+
+.node-info.visible {
+  display: block;
+}
+
+.node-info h4 {
+  margin: 0 0 var(--space-md) 0;
+  color: var(--color-primary-dark);
+}
+
+.node-info-content {
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.node-info-close {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-muted);
+}
+
+.node-info-close:hover {
+  color: var(--color-text);
+}
+
+/* Ontology Browser Styles */
+.ontology-browser {
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.ontology-tabs {
+  display: flex;
+  border-bottom: 2px solid var(--color-border);
+  margin-bottom: var(--space-lg);
+}
+
+.ontology-tab {
+  padding: var(--space-md) var(--space-lg);
+  cursor: pointer;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  color: var(--color-text-muted);
+  transition: all var(--transition-fast);
+}
+
+.ontology-tab:hover {
+  color: var(--color-text);
+}
+
+.ontology-tab.active {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary);
+  font-weight: 600;
+}
+
+.ontology-tab-content {
+  display: none;
+}
+
+.ontology-tab-content.active {
+  display: block;
+}
+
+.hierarchy-tree {
+  padding-left: var(--space-lg);
+}
+
+.hierarchy-item {
+  margin-bottom: var(--space-sm);
+}
+
+.hierarchy-category {
+  font-weight: 600;
+  color: var(--color-primary-dark);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.hierarchy-category:hover {
+  color: var(--color-primary);
+}
+
+.hierarchy-category i {
+  font-size: 0.8rem;
+  transition: transform var(--transition-fast);
+}
+
+.hierarchy-category.expanded i {
+  transform: rotate(90deg);
+}
+
+.hierarchy-children {
+  padding-left: var(--space-xl);
+  margin-top: var(--space-sm);
+  display: none;
+}
+
+.hierarchy-category.expanded + .hierarchy-children {
+  display: block;
+}
+
+.hierarchy-child {
+  padding: var(--space-xs) 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+/* Relations Table */
+.relations-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.relations-table th,
+.relations-table td {
+  padding: var(--space-sm);
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.relations-table th {
+  background: var(--color-background);
+  font-weight: 600;
+  color: var(--color-primary-dark);
+}
+
+.relations-table tr:hover {
+  background: var(--color-primary-light);
+}
+
+/* Statistics Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+}
+
+.stat-box {
+  background: var(--color-background);
+  padding: var(--space-lg);
+  border-radius: var(--radius-md);
+  text-align: center;
+  border: 1px solid var(--color-border);
+}
+
+.stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+}
+
+.stats-meta {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  padding-top: var(--space-md);
+  border-top: 1px solid var(--color-border);
+}
+
+/* Filter Select */
+.filter-select {
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  font-size: 0.9rem;
+}
+
+/* Graph Section Specific */
+.graph-section {
+  margin-bottom: var(--space-3xl);
+}
+
+.graph-section p {
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-md);
+}
+
+.ontology-browser-section {
+  margin-bottom: var(--space-3xl);
+}
+
+/* SVG Graph Styles */
+.knowledge-graph-svg {
+  background: var(--color-background);
+  border-radius: var(--radius-lg);
+}
+
+.knowledge-graph-svg text {
+  pointer-events: none;
+  user-select: none;
+}
+
+.knowledge-graph-svg .node {
+  cursor: pointer;
+}
+
+.knowledge-graph-svg .node:hover circle {
+  stroke-width: 3;
+  filter: brightness(1.1);
+}

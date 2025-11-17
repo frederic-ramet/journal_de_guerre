@@ -40,12 +40,14 @@ const journalRoutes = require('./src/routes/journal');
 const archivesRoutes = require('./src/routes/archives');
 const etudeRoutes = require('./src/routes/etude');
 const apiRoutes = require('./src/routes/api');
+const ontologyRoutes = require('./src/routes/ontology');
 
 app.use('/', indexRoutes);
 app.use('/journal', journalRoutes);
 app.use('/archives', archivesRoutes);
 app.use('/etude', etudeRoutes);
 app.use('/api', apiRoutes);
+app.use('/api/ontology', ontologyRoutes);
 
 // Error handling
 app.use((err, req, res, next) => {

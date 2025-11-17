@@ -1,5 +1,9 @@
 const express = require('express');
 const router = express.Router();
+const OntologyExtractor = require('../services/ontology-extractor');
+
+// Initialize ontology extractor
+const extractor = new OntologyExtractor();
 
 // Get all pages
 router.get('/pages', (req, res) => {
@@ -46,7 +50,7 @@ router.get('/pages/:id', (req, res) => {
 router.put('/transcriptions/:pageId', (req, res) => {
   const db = req.db;
   const pageId = parseInt(req.params.pageId);
-  const { content_html, transcriptor_notes, status } = req.body;
+  const { content_html, transcriptor_notes, status, auto_extract } = req.body;
 
   try {
     const result = db.prepare(`
@@ -69,11 +73,107 @@ router.put('/transcriptions/:pageId', (req, res) => {
       UPDATE transcriptions SET content = ? WHERE page_id = ?
     `).run(plainText, pageId);
 
-    res.json({ success: true, changes: result.changes });
+    // Automatic semantic extraction if enabled or if status is verified/validated
+    let semanticAnalysis = null;
+    if (auto_extract !== false && (status === 'verified' || status === 'validated')) {
+      semanticAnalysis = extractAndSaveSemantics(db, pageId, plainText);
+    }
+
+    res.json({
+      success: true,
+      changes: result.changes,
+      semanticAnalysis
+    });
   } catch (err) {
     res.status(500).json({ success: false, error: err.message });
   }
 });
+
+// Helper function to extract and save semantic data
+function extractAndSaveSemantics(db, pageId, text) {
+  const analysis = extractor.analyze(text);
+
+  // Clear existing page-entity relationships for this page
+  db.prepare('DELETE FROM page_entities WHERE page_id = ?').run(pageId);
+
+  // Clear existing page-theme relationships for this page
+  db.prepare('DELETE FROM page_themes WHERE page_id = ?').run(pageId);
+
+  // Insert entities and create relationships
+  const insertEntity = db.prepare(`
+    INSERT OR IGNORE INTO entities (type, name, description)
+    VALUES (?, ?, ?)
+  `);
+
+  const getEntityId = db.prepare(`
+    SELECT id FROM entities WHERE type = ? AND name = ?
+  `);
+
+  const linkPageEntity = db.prepare(`
+    INSERT OR REPLACE INTO page_entities (page_id, entity_id, mention_count)
+    VALUES (?, ?, ?)
+  `);
+
+  // Process persons
+  for (const person of analysis.entities.persons) {
+    insertEntity.run('person', person.name, person.type);
+    const entity = getEntityId.get('person', person.name);
+    if (entity) {
+      linkPageEntity.run(pageId, entity.id, person.count);
+    }
+  }
+
+  // Process concepts
+  for (const concept of analysis.entities.concepts) {
+    insertEntity.run('concept', concept.name, concept.category);
+    const entity = getEntityId.get('concept', concept.name);
+    if (entity) {
+      linkPageEntity.run(pageId, entity.id, concept.count);
+    }
+  }
+
+  // Process places
+  for (const place of analysis.entities.places) {
+    insertEntity.run('place', place.name, place.type);
+    const entity = getEntityId.get('place', place.name);
+    if (entity) {
+      linkPageEntity.run(pageId, entity.id, place.count);
+    }
+  }
+
+  // Process themes
+  const getThemeId = db.prepare(`
+    SELECT id FROM themes WHERE name = ?
+  `);
+
+  const insertTheme = db.prepare(`
+    INSERT OR IGNORE INTO themes (name, description, color)
+    VALUES (?, ?, ?)
+  `);
+
+  const linkPageTheme = db.prepare(`
+    INSERT OR IGNORE INTO page_themes (page_id, theme_id)
+    VALUES (?, ?)
+  `);
+
+  for (const theme of analysis.themes.slice(0, 3)) { // Top 3 themes
+    insertTheme.run(theme.name, theme.description, theme.color);
+    const themeRecord = getThemeId.get(theme.name);
+    if (themeRecord) {
+      linkPageTheme.run(pageId, themeRecord.id);
+    }
+  }
+
+  return {
+    entitiesExtracted: {
+      persons: analysis.entities.persons.length,
+      concepts: analysis.entities.concepts.length,
+      places: analysis.entities.places.length
+    },
+    themesDetected: analysis.themes.slice(0, 3).map(t => t.name),
+    dates: analysis.dates
+  };
+}
 
 // Save image adjustments
 router.put('/adjustments/:pageId', (req, res) => {

@@ -1,0 +1,42 @@
+  <footer class="main-footer">
+    <div class="footer-container">
+      <div class="footer-info">
+        <h3>Journal de Guerre</h3>
+        <p>Ramet Ernest - Prisonnier de guerre à Munster (1918)</p>
+        <p>103 pages de réflexions spirituelles et témoignage historique</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="/">Accueil</a></li>
+          <li><a href="/journal">Lecture</a></li>
+          <li><a href="/archives">Archives</a></li>
+          <li><a href="/etude">Étude</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-resources">
+        <h4>Ressources</h4>
+        <ul>
+          <li><a href="/api/export" target="_blank">Exporter les données (JSON)</a></li>
+          <li><a href="/etude/search">Rechercher</a></li>
+          <li><a href="/etude/graph">Graphe de connaissances</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 - Projet de préservation du patrimoine historique</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/js/core.js"></script>
+  <% if (typeof additionalJs !== 'undefined' && additionalJs) { %>
+    <% additionalJs.forEach(js => { %>
+      <script src="/js/<%= js %>.js"></script>
+    <% }); %>
+  <% } %>
+</body>
+</html>

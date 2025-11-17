@@ -1,0 +1,147 @@
+<%- include('partials/head', { title, additionalCss: ['portal'] }) %>
+<%- include('partials/nav', { activePage: 'home' }) %>
+
+<main class="portal">
+  <!-- Hero Section -->
+  <section class="portal-hero">
+    <div class="hero-content">
+      <h1>Journal de Guerre</h1>
+      <h2>Ramet Ernest</h2>
+      <p class="hero-subtitle">Prisonnier de guerre français - Munster, Westphalie (1918)</p>
+      <p class="hero-description">
+        103 pages de réflexions spirituelles, témoignage unique d'un soldat français
+        captif en Allemagne pendant la Première Guerre mondiale.
+      </p>
+    </div>
+  </section>
+
+  <!-- Three Spaces -->
+  <section class="portal-spaces">
+    <h2 class="section-title">Explorez le Journal</h2>
+
+    <div class="spaces-grid">
+      <!-- Journal Space -->
+      <a href="/journal" class="space-card journal-card">
+        <div class="space-icon">
+          <i class="fas fa-book-reader"></i>
+        </div>
+        <h3>Journal</h3>
+        <p class="space-subtitle">Lecture immersive</p>
+        <p class="space-description">
+          Feuilletez le carnet page par page, lisez les transcriptions
+          dans une interface épurée et immersive.
+        </p>
+        <div class="space-features">
+          <span><i class="fas fa-eye"></i> Visualisation plein écran</span>
+          <span><i class="fas fa-text-height"></i> Transcriptions annotées</span>
+          <span><i class="fas fa-moon"></i> Mode nuit</span>
+        </div>
+        <div class="space-cta">
+          Commencer la lecture <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Archives Space -->
+      <a href="/archives" class="space-card archives-card">
+        <div class="space-icon">
+          <i class="fas fa-archive"></i>
+        </div>
+        <h3>Archives</h3>
+        <p class="space-subtitle">Préservation et édition</p>
+        <p class="space-description">
+          Contribuez à la préservation du patrimoine : transcrivez,
+          annotez et recadrez les images originales.
+        </p>
+        <div class="space-features">
+          <span><i class="fas fa-edit"></i> Éditeur de transcription</span>
+          <span><i class="fas fa-crop"></i> Outils de recadrage</span>
+          <span><i class="fas fa-database"></i> Base de données</span>
+        </div>
+        <div class="space-cta">
+          Accéder aux outils <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+
+      <!-- Study Space -->
+      <a href="/etude" class="space-card etude-card">
+        <div class="space-icon">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <h3>Étude</h3>
+        <p class="space-subtitle">Analyse et contexte</p>
+        <p class="space-description">
+          Comprenez le contexte historique, explorez les thèmes et
+          les entités mentionnées dans le journal.
+        </p>
+        <div class="space-features">
+          <span><i class="fas fa-project-diagram"></i> Graphe de connaissances</span>
+          <span><i class="fas fa-search"></i> Recherche textuelle</span>
+          <span><i class="fas fa-chart-line"></i> Analyse thématique</span>
+        </div>
+        <div class="space-cta">
+          Explorer l'analyse <i class="fas fa-arrow-right"></i>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Statistics -->
+  <section class="portal-stats">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number"><%= stats.totalPages || 103 %></div>
+        <div class="stat-label">Pages</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><%= stats.verifiedPages || 0 %></div>
+        <div class="stat-label">Vérifiées</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><%= stats.entities || 0 %></div>
+        <div class="stat-label">Entités</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number"><%= stats.themes || 0 %></div>
+        <div class="stat-label">Thèmes</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Context Teaser -->
+  <section class="portal-context">
+    <h2 class="section-title">Contexte Historique</h2>
+    <div class="context-content">
+      <div class="context-text">
+        <p>
+          <strong>Juin 1918</strong> - Ernest Ramet, soldat français du Bataillon d'ouvriers d'Artillerie,
+          est prisonnier de guerre au camp de <strong>Munster en Westphalie</strong> (Allemagne).
+        </p>
+        <p>
+          Dans ce carnet de 103 pages, il copie et préserve ses réflexions spirituelles antérieures
+          (1911-1917), mêlant <strong>spiritisme</strong> et <strong>foi chrétienne</strong>,
+          tout en documentant son expérience de captivité.
+        </p>
+        <p>
+          Ce journal est un témoignage rare de la vie spirituelle d'un soldat français
+          pendant la Grande Guerre, montrant comment la foi servait de refuge face à l'adversité.
+        </p>
+      </div>
+      <div class="context-timeline">
+        <div class="timeline-item">
+          <span class="year">1911</span>
+          <span class="event">Premières études spirites</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">1914-18</span>
+          <span class="event">Service militaire & captivité</span>
+        </div>
+        <div class="timeline-item">
+          <span class="year">Juin 1918</span>
+          <span class="event">Début du journal à Munster</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<%- include('partials/footer', { additionalJs: ['portal'] }) %>

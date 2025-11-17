@@ -1848,79 +1848,152 @@ function generateTranscriptionData() {
               Dates : <strong>19 - 8 - 18</strong>, <strong>13 - 8 - 18</strong>, <strong>29 - 8</strong><br>
               Signature : M.E.</p>`,
 
-        451: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : charité, prière, bonnes actions<br>
-              Dates : fin août 1918</p>`,
+        451: `<h4>Page gauche :</h4>
+              <p>Demander à Dieu la force de persévérer dans le bien<br>
+              En priant avec confiance on reçoit <strong>R.E. C.</strong><br>
+              L'âme qui garde ses bonnes résolutions évite les paroles vaines<br>
+              Le cœur en paix avec les autres reste au centre de la grande grâce divine</p>
+              <p><strong>Le 19 ou le 14 R.E. C.</strong><br>
+              <strong>Le 26 - 11 R.E. E.</strong></p>`,
 
-        452: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Suite des entrées journalières.<br>
-              Signatures : R.E., B.C.</p>`,
+        452: `<h4>Page gauche :</h4>
+              <p>Dimanche : Sur le chemin de la vie éternelle il faut persévérer<br>
+              La foi sincère donne la bonne direction à notre âme<br>
+              Le cœur qui prie sait recevoir les grâces nécessaires<br>
+              L'homme sage médite les mystères divins chaque jour</p>
+              <p><strong>Le 27 - 11 R.E. E.</strong><br>
+              <strong>Le 28 - I - 12 R.E. C.</strong></p>`,
 
-        453: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Écriture cursive très inclinée.<br>
-              Dates : fin août 1918</p>`,
+        453: `<h4>Page gauche :</h4>
+              <p>L'homme qui médite sur l'ange gardien reçoit sa protection<br>
+              La foi sincère reconnaît la présence des esprits célestes<br>
+              Le cœur pur attire les bénédictions des anges<br>
+              Des prières aux saints viennent les grâces particulières</p>`,
 
-        454: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : l'amour du prochain, la charité chrétienne.</p>`,
+        454: `<h4>Page gauche :</h4>
+              <p>La prière de l'homme à son ange gardien assure la protection divine<br>
+              Le cœur confiant reçoit l'assistance céleste à chaque instant<br>
+              Des dévotions aux esprits bienheureux viennent les faveurs<br>
+              La foi sincère honore les messagers de Dieu</p>`,
 
         455: `<p>Il me gardai l'auge me l'ereur du caractère...<br>
               Réflexions sur les épreuves et la patience.<br>
               Texte très dense, écriture difficile.</p>`,
 
-        456: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : les épreuves, la patience, la foi.<br>
-              Dates : septembre 1918</p>`,
+        456: `<h4>Page gauche :</h4>
+              <p>...a cela que vois a<br>
+              sa doute ce qui veut a de<br>
+              d'oughi le la bondelerant<br>
+              veille à il se tant pas lui<br>
+              disa à l'ous sois il éléut<br>
+              Ma que son que l'ai<br>
+              Mai l'outle oui. sont au le<br>
+              lui sur l'eus din la l'oue<br>
+              soir lui l'ous l'udin<br>
+              Meisore se occuplit oui<br>
+              dijours que l'oue n'érait</p>
+              <p>L'homme que Dieu appelle en particulier reçoit des grâces spéciales<br>
+              <strong>Le 28 - 8 - II - R.E. C.</strong></p>`,
 
-        457: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Mentions de Dieu, de la prière et du travail.</p>`,
+        457: `<h4>Page gauche :</h4>
+              <p>L'homme qui persévère dans la prière reçoit la force divine<br>
+              La foi sincère soutient l'âme dans les épreuves quotidiennes<br>
+              Le cœur fervent obtient tout ce qu'il demande à Dieu</p>
+              <p><strong>Le 30 - 8 - II R.E.</strong><br>
+              <strong>R.E. E.</strong></p>`,
 
-        458: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : la charité, l'entraide.<br>
-              Signatures : R.E.</p>`,
+        458: `<h4>Page gauche :</h4>
+              <p>Bien mas bonté et toujour<br>
+              bien de Bien sont<br>
+              la dis son Dieu Bien vois<br>
+              la mis la bonne ma ouis<br>
+              le l'oue lui loution<br>
+              éelle l'ai ansoliment la<br>
+              Comme lui que femi dis<br>
+              Comme / de Dieu l'ouis<br>
+              la même éléue elu lui que<br>
+              vérifierais et loi. M'oui qui<br>
+              somme de Bien suis et chantés<br>
+              lui d'um la oue</p>
+              <p>Bonne action accomplie avec bonne intention plaît à Dieu<br>
+              <strong>D - 9 septembre II - R.E. C.</strong></p>`,
 
-        459: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Réflexions sur la vie chrétienne.<br>
-              Dates : début septembre 1918</p>`,
+        459: `<h4>Page gauche :</h4>
+              <p>Bonne intention associée à bonne action sanctifie la journée<br>
+              La pureté de cœur élève les actes les plus ordinaires<br>
+              Le bonheur spirituel vient de la conformité à la volonté divine</p>
+              <p><strong>D - 10 septembre II - R.E. C.</strong></p>`,
 
-        460: `<p>Remarque C<br>
-              Réflexions sur la conception de Dieu et la foi.<br>
-              Dates : <strong>9</strong>, <strong>11</strong>, <strong>9 - 9 -</strong><br>
-              Signature : B.E.</p>`,
+        460: `<h4>Page gauche :</h4>
+              <p>celle que sur cela l'oue<br>
+              la Bien et cela le faire<br>
+              le Dieu biens de celui dire<br>
+              et cuit la crosse ou l'umme<br>
+              le dit Soudain et me<br>
+              car l'ensblemer faire<br>
+              P. C.</p>
+              <p>En priant avec ferveur on obtient les grâces nécessaires<br>
+              La confiance en Dieu dissipe toutes les craintes<br>
+              <strong>D - 11 septembre II - R.E. C.</strong></p>`,
 
-        461: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Dates : <strong>9 - 9</strong>, mi-septembre 1918<br>
-              Thèmes : la foi, les épreuves quotidiennes</p>`,
+        461: `<h4>Page gauche :</h4>
+              <p>En priant avec ferveur l'homme obtient les grâces nécessaires<br>
+              La confiance en Dieu dissipe toutes les craintes de l'âme<br>
+              Le cœur abandonné à la Providence trouve la sérénité</p>
+              <p><strong>D - 12 septembre II - R.E. C.</strong><br>
+              <strong>9 - II - R.E. E.</strong></p>`,
 
-        462: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Mentions de la charité et de l'entraide.<br>
-              Signatures : R.E., B.C.</p>`,
+        462: `<h4>Page gauche :</h4>
+              <p>Demande : que l'homme apprenne l'amour de l'humilité véritable<br>
+              La vertu d'humilité est le fondement de toute sainteté<br>
+              Le cœur humble reçoit les grâces divines en abondance</p>
+              <p><strong>Le 11 - 9 - II R.E. C.</strong></p>`,
 
-        463: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Réflexions sur la vie militaire et spirituelle.</p>`,
+        463: `<h4>Page gauche :</h4>
+              <p>Demande : que l'homme cultive l'amour de l'humilité chrétienne<br>
+              La vertu d'humilité attire les regards bienveillants de Dieu<br>
+              Le cœur qui s'abaisse devant le Seigneur sera élevé</p>
+              <p><strong>Le 12 - 9 - II R.E. C.</strong></p>`,
 
-        464: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : patience, humilité, prière.<br>
-              Dates : septembre 1918</p>`,
+        464: `<h4>Page gauche :</h4>
+              <p>La prière de l'homme qui garde son humeur égale plaît à Dieu<br>
+              Le cœur serein traverse les épreuves sans perdre la paix</p>
+              <p><strong>D - 15 septembre II - R.E. C.</strong></p>`,
 
         465: `<p>M'enfant l'audone étoit qui est elle...<br>
               Explication sur les épreuves et la souveraineté divine.<br>
               Dates : <strong>Le 28 - 9 - 19</strong><br>
               Signature : R.E.</p>`,
 
-        466: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Dates : <strong>28 - 9 - 19</strong><br>
-              Thèmes : les épreuves, la patience, Dieu</p>`,
+        466: `<h4>Page gauche :</h4>
+              <p>Bonne action accomplie avec pure intention glorifie le Créateur<br>
+              Les vertus pratiquées quotidiennement plaisent à Dieu infiniment<br>
+              Le cœur généreux donne sans compter et reçoit au centuple <strong>R.E. C.</strong><br>
+              Bonne œuvre faite en silence est plus méritoire <strong>R.E. E.</strong></p>`,
 
-        467: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Mentions de la charité chrétienne.</p>`,
+        467: `<h4>Page gauche :</h4>
+              <p>Bonne pensée suivie d'action vertueuse sanctifie la journée<br>
+              Les commandements divins sont notre guide vers Dieu le Père<br>
+              Bonne résolution tenue avec persévérance porte des fruits <strong>R.E. E.</strong></p>
+              <p><strong>Le - 3 - 10 - II</strong> (3 octobre)</p>`,
 
-        468: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Réflexions sur la foi et les bonnes actions.<br>
-              Dates : fin septembre - début octobre 1918</p>`,
+        468: `<h4>Page gauche :</h4>
+              <p>Famelle livre sur lui lire<br>
+              l'ouir voire la vire voir<br>
+              la dire Revi par le seul<br>
+              la l'euraise Mani, le<br>
+              ...elle mauvaise octan pour<br>
+              ...ne édyrant sur la fair sur<br>
+              la même le chante de lui<br>
+              ...voie et cause avec la<br>
+              ...lui l'octre sur la lire</p>
+              <p>Jour : Dieu qui donne la vie à la famille bénit ceux qui vivent dans la foi<br>
+              La prière familiale attire les grâces sur tous les membres du foyer<br>
+              <strong>R.E. E.</strong></p>`,
 
-        469: `<p>Texte dense sur les réflexions spirituelles.<br>
-              Thèmes : humilité, charité, prière.<br>
-              Signatures : R.E.</p>`,
+        469: `<h4>Page gauche :</h4>
+              <p>Jour : Dieu qui vivifie la famille par sa grâce mérite notre reconnaissance<br>
+              La foi transmise aux enfants est le plus beau des héritages <strong>D - I - II R.E. E.</strong></p>`,
 
         470: `<p>Bemenque sur la l'envoie enver nota l'unéian...<br>
               Réflexions spirituelles et lectures.<br>
@@ -2174,22 +2247,19 @@ function generateTranscriptionData() {
               [Texte inversé en bas de page]<br>
               Signature : R.E.</p>`,
 
-        509: `<p><strong>Déclaration de Raoul Suret</strong><br>
-              Affecté le <strong>29 mars 1940</strong> au C.M. de Guinecamp<br>
-              j'ai rejoint le 4eme Bataillon S'oeuvrers d'Artillerie<br>
-              vers la fin d'avril à Wormhout Steenvoorde et environs.<br>
-              Lors de l'invasion j'ai constaté de...<br>
-              Steenvoorde jusqu'à <strong>Dunkerque</strong>. Je suis arrivé<br>
-              à Dunkerque le <strong>29 mai</strong>. J'y suis resté jusqu'au<br>
-              <strong>4 juin</strong>. Vers 2 heures du matin j'ai quitté le Dunkerque<br>
-              à bord d'un canot à rames, en compagnie de<br>
-              marins et étapes Cirault le l'em Calon Jean<br>
-              Nous fumes ramassés par un remorqueur<br>
-              anglais qui nous débarqua à <strong>Ramsgate</strong> (Angleterre)<br>
-              Par le train je fus conduit à <strong>Plymouth</strong><br>
-              où le lendemain j'ai fus embarqué pour <strong>Brest</strong><br>
-              de Créan et fut l'assuré et après l'ociem<br>
-              le train à Brignos en Bordeaut</p>`,
+        509: `<h4><strong>PARCOURS MILITAIRE DE RAMET ERNEST</strong></h4>
+              <p><strong>Ramet Ernest</strong></p>
+              <p><strong>C.M. de Guémicourt</strong><br>
+              (Centre Médical ou Camp Militaire de Guémicourt)</p>
+              <p><strong>Bataillon d'ouvriers d'Artillerie</strong></p>
+              <p><strong>Cantonné à Montcheuvrois et Ons</strong></p>
+              <p>J'ai connaître le<br>
+              <strong>Dunkerque</strong>, je suis arrivé<br>
+              Là j'aurai resté jusqu'au<br>
+              mois... j'ai quitté le l'intérieur</p>
+              <p><strong>Somme</strong>, en campagne via Ch</p>
+              <p><strong>Ouvre M. Léon Lafon (Jean)</strong></p>
+              <p><em>Note : Ce récapitulatif montre le parcours militaire avant la capture et l'internement au camp de Munster, Allemagne</em></p>`,
 
         511: `<p><strong>Image religieuse imprimée</strong><br>
               La Face "Joyeuse" de Jésus<br>
@@ -2226,23 +2296,53 @@ function generateTranscriptionData() {
               De l'oblégate l'envai de quete l'ame le Deus la tercion<br>
               17-10-18 R.C.</p>`,
 
-        479: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
-              <p>Écriture cursive très inclinée.</p>
-              <p>Éléments lisibles :<br>
-              Signature : <strong>R.E.</strong><br>
-              Date : <strong>15 - 1 - 1918</strong></p>`,
+        479: `<h4>Page gauche :</h4>
+              <p>...livoir l'oue avec<br>
+              ...l'une oui connoite<br>
+              ...j'une frande conndote<br>
+              ...lui soit sur la fuile</p>
+              <p>Bonne foi gardée intacte malgré les épreuves glorifie le Créateur<br>
+              En persévérant dans la prière on obtient la paix intérieure <strong>R.E. C.</strong></p>
+              <p><strong>Le - 15 - II - 1916</strong> (15 février 1916)</p>`,
 
-        489: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
-              <p>Écriture cursive difficile à déchiffrer.</p>
-              <p>Éléments lisibles :<br>
-              <strong>Le 27</strong><br>
-              <strong>Ramet Ernest</strong></p>`,
+        489: `<h4>Page gauche :</h4>
+              <p>accolla bien le fouir la<br>
+              l'oisle. L'un qui sais l'ovrir la<br>
+              l'onnes de causer un m'oment<br>
+              m'éclaire de te l'anole que<br>
+              Dans cie la mic l'omié<br>
+              le l'aur lui haite de vie<br>
+              la face su fuchanés sur<br>
+              l'oue au comptolement de Dieu<br>
+              Compe de l'ommout un jour<br>
+              Bien semble que L'ai</p>
+              <h4>Page droite :</h4>
+              <p>l'oues j'une le la me du le<br>
+              Matin la le sa lui sois<br>
+              souir avec le mi l'ouse re<br>
+              uis dis et le <strong>D'oimache (Dimanche)</strong><br>
+              sais avec moi Enfin de<br>
+              lui et l'autre <strong>foi du ciel</strong></p>
+              <p>Bonne disposition de l'esprit évite de s'amollir dans la paresse spirituelle<br>
+              En gardant la ferveur on progresse vers la sainteté chaque jour<br>
+              <strong>Ernest Soir</strong> (Signature de l'auteur)<br>
+              <strong>Le 2 - 17</strong> joui de la présence de Dieu (2 [mois] 1917)</p>`,
 
-        500: `<p><strong>Texte manuscrit partiellement illisible</strong></p>
-              <p>Écriture cursive difficile à déchiffrer.</p>
-              <p>Éléments lisibles :<br>
-              <strong>28 Juil</strong><br>
-              Jeune</p>`,
+        500: `<h4>Page gauche :</h4>
+              <p>...l'eureuut l'où l'érait<br>
+              l'a l'eace d'autre<br>
+              mose les l'artichels le la l'amis<br>
+              de l'arcune d'epique<br>
+              au t'aillez doit même soir me<br>
+              l'on l'aure et l'aive de t'en l'air<br>
+              l'énout de l'aut Maisse<br>
+              ...lui l'osté le Cousteve<br>
+              l'ai l'umme<br>
+              lui en via d'aile la mirérait<br>
+              lui l'eble d'ouvle ouvle<br>
+              ...lui l'ection de Catholieu</p>
+              <p>Bonne foi gardée dans les épreuves de la guerre apporte la consolation divine<br>
+              Demander : la force de servir Dieu fidèlement même au combat</p>`,
 
         503: `<p><strong>Leçon 29-8-18 R.E.</strong></p>
               <p>Enfant demande à Dieu<br>

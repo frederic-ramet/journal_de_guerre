@@ -1,0 +1,50 @@
+<%- include('../partials/head', { title, additionalCss: ['etude'] }) %>
+<%- include('../partials/nav', { activePage: 'etude' }) %>
+
+<main class="etude-main">
+  <section class="search-results-section">
+    <h1><i class="fas fa-search"></i> Résultats de recherche</h1>
+
+    <form action="/etude/search" method="GET" class="search-form">
+      <input type="text" name="q" value="<%= query %>" placeholder="Rechercher..." required minlength="3">
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-search"></i> Rechercher
+      </button>
+    </form>
+
+    <% if (query) { %>
+      <p class="results-count">
+        <strong><%= results.length %></strong> résultat(s) pour "<%= query %>"
+      </p>
+    <% } %>
+
+    <div class="results-list">
+      <% if (results.length > 0) { %>
+        <% results.forEach(result => { %>
+          <div class="result-card">
+            <div class="result-header">
+              <h3><%= result.title || `Page ${result.page_number}` %></h3>
+              <a href="/journal/page/<%= result.page_number %>" class="btn btn-outline btn-sm">
+                <i class="fas fa-eye"></i> Voir
+              </a>
+            </div>
+            <% if (result.description) { %>
+              <p class="result-description"><%= result.description %></p>
+            <% } %>
+            <div class="result-excerpt">
+              ...<%= result.excerpt %>...
+            </div>
+          </div>
+        <% }); %>
+      <% } else if (query) { %>
+        <div class="no-results">
+          <i class="fas fa-search"></i>
+          <p>Aucun résultat trouvé pour "<%= query %>"</p>
+          <p>Essayez avec d'autres termes ou vérifiez l'orthographe.</p>
+        </div>
+      <% } %>
+    </div>
+  </section>
+</main>
+
+<%- include('../partials/footer', { additionalJs: [] }) %>

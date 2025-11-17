@@ -1,0 +1,397 @@
+<%- include('../partials/head', { title, additionalCss: ['etude', 'ontology'] }) %>
+<%- include('../partials/nav', { activePage: 'etude' }) %>
+
+<main class="etude-main">
+  <!-- Hero -->
+  <section class="etude-hero">
+    <h1>Étude & Analyse</h1>
+    <p>Comprendre le contexte historique et explorer les thèmes du journal</p>
+  </section>
+
+  <!-- Context Section -->
+  <section class="context-section">
+    <h2><i class="fas fa-history"></i> Contexte Historique</h2>
+    <div class="context-grid">
+      <div class="context-card">
+        <h3>L'Auteur</h3>
+        <ul>
+          <li><strong>Nom :</strong> <%= context.author %></li>
+          <li><strong>Période :</strong> <%= context.period %></li>
+          <li><strong>Lieu :</strong> <%= context.location %></li>
+          <li><strong>Contexte :</strong> <%= context.context %></li>
+        </ul>
+      </div>
+      <div class="context-card">
+        <h3>Le Journal</h3>
+        <p>103 pages de réflexions spirituelles écrites pendant la captivité au camp de Munster.
+        Le journal mêle spiritisme (études de 1911) et foi chrétienne, témoignant de l'évolution
+        spirituelle de l'auteur face à l'adversité de la guerre.</p>
+      </div>
+      <div class="context-card">
+        <h3>Structure</h3>
+        <ul>
+          <li><strong>Pages 1-11 :</strong> Enseignements spirites</li>
+          <li><strong>Pages 12-91 :</strong> Journal dévotionnel</li>
+          <li><strong>Pages 92-103 :</strong> Annexes et documents</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Search Section -->
+  <section class="search-section">
+    <h2><i class="fas fa-search"></i> Recherche</h2>
+    <form action="/etude/search" method="GET" class="search-form">
+      <input type="text" name="q" placeholder="Rechercher dans les transcriptions..." required minlength="3">
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-search"></i> Rechercher
+      </button>
+    </form>
+  </section>
+
+  <!-- Themes Section -->
+  <section class="themes-section">
+    <h2><i class="fas fa-tags"></i> Thèmes Principaux</h2>
+    <div class="themes-grid">
+      <% if (themes && themes.length > 0) { %>
+        <% themes.forEach(theme => { %>
+          <div class="theme-card" style="border-left-color: <%= theme.color %>">
+            <h4><%= theme.name %></h4>
+            <p><%= theme.description %></p>
+            <span class="theme-count"><%= theme.page_count || 0 %> pages</span>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <div class="theme-card">
+          <h4>Spiritisme</h4>
+          <p>Enseignements et pratiques spirites</p>
+        </div>
+        <div class="theme-card">
+          <h4>Foi chrétienne</h4>
+          <p>Prières et réflexions religieuses</p>
+        </div>
+        <div class="theme-card">
+          <h4>Captivité</h4>
+          <p>Expériences au camp de Munster</p>
+        </div>
+        <div class="theme-card">
+          <h4>Morale</h4>
+          <p>Réflexions morales et vertus</p>
+        </div>
+      <% } %>
+    </div>
+  </section>
+
+  <!-- Knowledge Graph Section -->
+  <section class="graph-section">
+    <h2><i class="fas fa-project-diagram"></i> Graphe de Connaissances</h2>
+    <p>Visualisation interactive des relations entre entités, concepts et thèmes du journal.</p>
+    <div class="graph-controls">
+      <button onclick="graph?.zoomIn()" class="btn btn-sm"><i class="fas fa-search-plus"></i></button>
+      <button onclick="graph?.zoomOut()" class="btn btn-sm"><i class="fas fa-search-minus"></i></button>
+      <button onclick="graph?.resetZoom()" class="btn btn-sm"><i class="fas fa-expand"></i></button>
+      <select onchange="graph?.filter(this.value)" class="filter-select">
+        <option value="all">Tout afficher</option>
+        <option value="person">Personnes</option>
+        <option value="concept">Concepts</option>
+        <option value="place">Lieux</option>
+        <option value="theme">Thèmes</option>
+      </select>
+    </div>
+    <div id="knowledge-graph" class="graph-container"></div>
+  </section>
+
+  <!-- Ontology Browser Section -->
+  <section class="ontology-browser-section">
+    <h2><i class="fas fa-sitemap"></i> Explorateur d'Ontologie</h2>
+    <div class="ontology-browser">
+      <div class="ontology-tabs">
+        <div class="ontology-tab active" data-tab="hierarchy">Hiérarchie</div>
+        <div class="ontology-tab" data-tab="relations">Relations</div>
+        <div class="ontology-tab" data-tab="stats">Statistiques</div>
+      </div>
+
+      <div class="ontology-tab-content active" id="hierarchy-content">
+        <div class="hierarchy-tree" id="hierarchy-tree">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="ontology-tab-content" id="relations-content">
+        <div id="relations-list">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+
+      <div class="ontology-tab-content" id="stats-content">
+        <div id="ontology-statistics">
+          <!-- Will be populated by JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Entities Section -->
+  <section class="entities-section">
+    <h2><i class="fas fa-list"></i> Entités Mentionnées</h2>
+    <div class="entities-grid">
+      <div class="entity-category">
+        <h3><i class="fas fa-user"></i> Personnes</h3>
+        <ul>
+          <% const persons = entities.filter(e => e.type === 'person'); %>
+          <% if (persons.length > 0) { %>
+            <% persons.forEach(p => { %>
+              <li>
+                <strong><%= p.name %></strong>
+                <% if (p.description) { %><br><small><%= p.description %></small><% } %>
+              </li>
+            <% }); %>
+          <% } else { %>
+            <li><strong>Ramet Ernest</strong><br><small>Auteur du journal</small></li>
+            <li><strong>Legar larre</strong><br><small>Mentor au camp</small></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="entity-category">
+        <h3><i class="fas fa-map-marker-alt"></i> Lieux</h3>
+        <ul>
+          <% const places = entities.filter(e => e.type === 'place'); %>
+          <% if (places.length > 0) { %>
+            <% places.forEach(p => { %>
+              <li>
+                <strong><%= p.name %></strong>
+                <% if (p.description) { %><br><small><%= p.description %></small><% } %>
+              </li>
+            <% }); %>
+          <% } else { %>
+            <li><strong>Munster Westphalie</strong><br><small>Camp de prisonniers</small></li>
+            <li><strong>Dunkerque</strong><br><small>Ville française</small></li>
+            <li><strong>Guémicourt</strong><br><small>Centre médical</small></li>
+          <% } %>
+        </ul>
+      </div>
+
+      <div class="entity-category">
+        <h3><i class="fas fa-lightbulb"></i> Concepts</h3>
+        <ul>
+          <% const concepts = entities.filter(e => e.type === 'concept'); %>
+          <% if (concepts.length > 0) { %>
+            <% concepts.forEach(c => { %>
+              <li>
+                <strong><%= c.name %></strong>
+                <% if (c.description) { %><br><small><%= c.description %></small><% } %>
+              </li>
+            <% }); %>
+          <% } else { %>
+            <li><strong>Incarnation</strong><br><small>Esprit qui habite le corps</small></li>
+            <li><strong>Bonne action</strong><br><small>Acte vertueux quotidien</small></li>
+          <% } %>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section class="timeline-section">
+    <h2><i class="fas fa-clock"></i> Chronologie</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">1911</div>
+        <div class="timeline-content">
+          <h4>Premières études spirites</h4>
+          <p>Ramet Ernest commence ses études spirites, prenant des notes sur l'incarnation,
+          la désincarnation et la réincarnation.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">1914-17</div>
+        <div class="timeline-content">
+          <h4>Service militaire</h4>
+          <p>Engagement dans le Bataillon d'ouvriers d'Artillerie. Passages par Dunkerque,
+          Guémicourt, la Somme.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">Juin 1918</div>
+        <div class="timeline-content">
+          <h4>Captivité à Munster</h4>
+          <p>Début du journal au camp de prisonniers. Il commence à copier ses notes spirituelles
+          antérieures, les préservant pour la postérité.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-date">1918</div>
+        <div class="timeline-content">
+          <h4>Évolution spirituelle</h4>
+          <p>Le journal montre une transition du spiritisme vers une foi chrétienne plus profonde,
+          renforcée par l'épreuve de la captivité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+  <section class="resources-section">
+    <h2><i class="fas fa-book"></i> Ressources</h2>
+    <div class="resources-grid">
+      <a href="/api/export" class="resource-card" target="_blank">
+        <i class="fas fa-download"></i>
+        <h4>Export JSON</h4>
+        <p>Télécharger toutes les données</p>
+      </a>
+      <a href="/journal" class="resource-card">
+        <i class="fas fa-book-reader"></i>
+        <h4>Lire le Journal</h4>
+        <p>Consultation immersive</p>
+      </a>
+      <a href="/archives" class="resource-card">
+        <i class="fas fa-edit"></i>
+        <h4>Éditer les Archives</h4>
+        <p>Contribuer aux transcriptions</p>
+      </a>
+    </div>
+  </section>
+</main>
+
+<!-- D3.js for graph visualization -->
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<script>
+  let graph = null;
+
+  // Initialize knowledge graph
+  document.addEventListener('DOMContentLoaded', async () => {
+    // Load graph
+    if (window.KnowledgeGraph) {
+      graph = new KnowledgeGraph('knowledge-graph');
+    }
+
+    // Ontology browser tabs
+    const tabButtons = document.querySelectorAll('.ontology-tab');
+    const tabContents = document.querySelectorAll('.ontology-tab-content');
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        tabButtons.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+
+        btn.classList.add('active');
+        const tabName = btn.dataset.tab;
+        document.getElementById(`${tabName}-content`).classList.add('active');
+
+        // Load content on demand
+        if (tabName === 'hierarchy') loadHierarchy();
+        if (tabName === 'relations') loadRelations();
+        if (tabName === 'stats') loadStatistics();
+      });
+    });
+
+    // Load initial content
+    loadHierarchy();
+  });
+
+  async function loadHierarchy() {
+    try {
+      const response = await fetch('/api/ontology/hierarchy');
+      const hierarchy = await response.json();
+      const container = document.getElementById('hierarchy-tree');
+
+      let html = '';
+      for (const [category, entityIds] of Object.entries(hierarchy)) {
+        html += `
+          <div class="hierarchy-item">
+            <div class="hierarchy-category" onclick="this.classList.toggle('expanded')">
+              <i class="fas fa-chevron-right"></i>
+              ${formatCategoryName(category)}
+            </div>
+            <div class="hierarchy-children">
+              ${entityIds.map(id => `<div class="hierarchy-child">${id}</div>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      container.innerHTML = html;
+    } catch (err) {
+      console.error('Error loading hierarchy:', err);
+    }
+  }
+
+  async function loadRelations() {
+    try {
+      const response = await fetch('/api/ontology/relations');
+      const relations = await response.json();
+      const container = document.getElementById('relations-list');
+
+      let html = '<table class="relations-table"><thead><tr><th>Source</th><th>Type</th><th>Cible</th></tr></thead><tbody>';
+      relations.forEach(rel => {
+        html += `<tr><td>${rel.source}</td><td><strong>${rel.type}</strong></td><td>${rel.target}</td></tr>`;
+      });
+      html += '</tbody></table>';
+
+      container.innerHTML = html;
+    } catch (err) {
+      console.error('Error loading relations:', err);
+    }
+  }
+
+  async function loadStatistics() {
+    try {
+      const response = await fetch('/api/ontology/statistics');
+      const stats = await response.json();
+      const container = document.getElementById('ontology-statistics');
+
+      container.innerHTML = `
+        <div class="stats-grid">
+          <div class="stat-box">
+            <div class="stat-number">${stats.totalEntities}</div>
+            <div class="stat-label">Entités totales</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.persons}</div>
+            <div class="stat-label">Personnes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.concepts}</div>
+            <div class="stat-label">Concepts</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.places}</div>
+            <div class="stat-label">Lieux</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.themes}</div>
+            <div class="stat-label">Thèmes</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">${stats.counts.relations}</div>
+            <div class="stat-label">Relations</div>
+          </div>
+        </div>
+        <p class="stats-meta">
+          Version: ${stats.version}<br>
+          Dernière mise à jour: ${new Date(stats.lastUpdated).toLocaleString('fr-FR')}
+        </p>
+      `;
+    } catch (err) {
+      console.error('Error loading statistics:', err);
+    }
+  }
+
+  function formatCategoryName(name) {
+    const translations = {
+      'ÊTRE_SUPRÊME': 'Être Suprême',
+      'ÊTRE_HUMAIN': 'Être Humain',
+      'PARTIE_HOMME': 'Parties de l\'Homme',
+      'VERTU_THÉOLOGALE': 'Vertus Théologales',
+      'VERTU_MORALE': 'Vertus Morales',
+      'ACTION_SPIRITUELLE': 'Actions Spirituelles',
+      'ESCHATOLOGIE': 'Eschatologie',
+      'SPIRITISME': 'Spiritisme'
+    };
+    return translations[name] || name;
+  }
+</script>
+
+<%- include('../partials/footer', { additionalJs: ['etude', 'knowledge-graph'] }) %>

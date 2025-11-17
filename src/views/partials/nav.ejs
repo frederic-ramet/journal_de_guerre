@@ -1,0 +1,27 @@
+  <nav class="main-nav">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">
+        <i class="fas fa-book-open"></i>
+        <span>Journal de Guerre</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="/" class="nav-link <%= typeof activePage !== 'undefined' && activePage === 'home' ? 'active' : '' %>">
+          <i class="fas fa-home"></i> Accueil
+        </a>
+        <a href="/journal" class="nav-link <%= typeof activePage !== 'undefined' && activePage === 'journal' ? 'active' : '' %>">
+          <i class="fas fa-book-reader"></i> Journal
+        </a>
+        <a href="/archives" class="nav-link <%= typeof activePage !== 'undefined' && activePage === 'archives' ? 'active' : '' %>">
+          <i class="fas fa-archive"></i> Archives
+        </a>
+        <a href="/etude" class="nav-link <%= typeof activePage !== 'undefined' && activePage === 'etude' ? 'active' : '' %>">
+          <i class="fas fa-microscope"></i> Étude
+        </a>
+      </div>
+
+      <button class="nav-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>

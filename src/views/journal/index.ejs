@@ -1,0 +1,93 @@
+<%- include('../partials/head', { title, additionalCss: ['journal'] }) %>
+<%- include('../partials/nav', { activePage: 'journal' }) %>
+
+<main class="journal-viewer">
+  <!-- Fullscreen Image Viewer -->
+  <div class="viewer-container">
+    <div class="viewer-image-wrapper">
+      <img id="currentImage" src="" alt="Page du journal" class="viewer-image">
+      <div class="viewer-controls">
+        <button id="zoomIn" class="btn btn-icon" title="Zoom +">
+          <i class="fas fa-search-plus"></i>
+        </button>
+        <button id="zoomOut" class="btn btn-icon" title="Zoom -">
+          <i class="fas fa-search-minus"></i>
+        </button>
+        <button id="resetZoom" class="btn btn-icon" title="Réinitialiser">
+          <i class="fas fa-expand"></i>
+        </button>
+        <button id="toggleDarkMode" class="btn btn-icon" title="Mode nuit">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="viewer-navigation">
+      <button id="prevPage" class="nav-btn">
+        <i class="fas fa-chevron-left"></i>
+        <span>Précédent</span>
+      </button>
+      <div class="page-indicator">
+        <span id="currentPageNum">1</span> / <span id="totalPages"><%= pages.length || 103 %></span>
+      </div>
+      <button id="nextPage" class="nav-btn">
+        <span>Suivant</span>
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Transcription Panel (collapsible) -->
+  <div class="transcription-panel" id="transcriptionPanel">
+    <div class="panel-header">
+      <h3 id="pageTitle">Page 1</h3>
+      <button id="togglePanel" class="btn btn-icon">
+        <i class="fas fa-chevron-down"></i>
+      </button>
+    </div>
+    <div class="panel-content" id="panelContent">
+      <div class="transcription-text" id="transcriptionText">
+        <p>Sélectionnez une page pour voir la transcription</p>
+      </div>
+      <div class="page-metadata">
+        <span id="pageStatus" class="badge badge-draft">Brouillon</span>
+        <span id="pageDate" class="metadata-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Thumbnails Strip -->
+  <div class="thumbnails-strip" id="thumbnailsStrip">
+    <button id="scrollLeft" class="thumb-scroll-btn">
+      <i class="fas fa-angle-left"></i>
+    </button>
+    <div class="thumbnails-container" id="thumbnailsContainer">
+      <% if (pages && pages.length > 0) { %>
+        <% pages.forEach((page, index) => { %>
+          <div class="thumbnail" data-index="<%= index %>" data-image="/<%= page.image_path %>">
+            <img src="/<%= page.image_path %>" alt="Page <%= index + 1 %>" loading="lazy">
+            <span class="thumb-number"><%= index + 1 %></span>
+          </div>
+        <% }); %>
+      <% } else { %>
+        <% for (let i = 410; i <= 512; i++) { %>
+          <div class="thumbnail" data-index="<%= i - 410 %>" data-image="/jpg_web/IMG_0<%= i %>.jpeg">
+            <img src="/jpg_web/IMG_0<%= i %>.jpeg" alt="Page <%= i - 409 %>" loading="lazy">
+            <span class="thumb-number"><%= i - 409 %></span>
+          </div>
+        <% } %>
+      <% } %>
+    </div>
+    <button id="scrollRight" class="thumb-scroll-btn">
+      <i class="fas fa-angle-right"></i>
+    </button>
+  </div>
+</main>
+
+<script>
+  // Pass pages data to JavaScript
+  window.pagesData = <%- JSON.stringify(pages || []) %>;
+</script>
+
+<%- include('../partials/footer', { additionalJs: ['journal'] }) %>

@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "dev": "nodemon server.js",
-    "build": "node scripts/build-static.js",
+    "build": "node scripts/init-database.js && node scripts/migrate-data.js && node scripts/build-static.js",
+    "build:static": "node scripts/build-static.js",
     "init-db": "node scripts/init-database.js",
     "migrate": "node scripts/migrate-data.js"
   },

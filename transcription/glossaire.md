@@ -94,17 +94,36 @@ suivants — à enrichir au fil de l'eau._
   plusieurs pages (IMG_0413_a, IMG_0413_b) ; ne pas transcrire "Norman" ou
   "Vormand" sauf doute réel sur une page particulière.
 - Camille (camarade, cité une fois aux côtés de Normand)
+- **Georges Lété** (camarade) — nom et prénom d'un camarade, confirmé sur
+  IMG_0418_a ("Camarade Gorge[?] Lété qu'il ma fait voire la lumière...") et
+  IMG_0482_a ("J'ai recue la photo, De mes camarades Gorges Lété, Normand,
+  Toussaint..."). **Ne pas confondre avec le nom du maître de la page de
+  titre** ("Geco[?]tét", voir ci-dessous) : la ressemblance graphique/
+  phonétique entre "Georges Lété" et "Geco[?]tét" a probablement causé une
+  lecture erronée "George[?]tek" dans un essai antérieur sur la page de
+  titre — ce sont deux personnes distinctes (un camarade vs. le maître
+  donnant la leçon).
+- Toussaint, Quilbert/Guilbert Abel (camarades, cités une fois sur IMG_0482_a
+  aux côtés de Georges Lété et Normand — graphie du nom "Quilbert"/"guilbert"
+  incohérente même chez le scripteur, transcrite telle quelle sans harmoniser).
 
 ## Points ouverts (page de titre, IMG_0410_b) — à recouper sur les lots suivants
 
 - **Lieu de captivité** : suite à "Westphalie, Allemagne", un mot illisible
   précède. Lectures proposées selon les passages : "M[ünster ?]",
   "Martène[?]", "Mart[?]e" — aucune confirmée par relecture humaine de
-  l'image à haute résolution. **Ne réapparaît sur aucune autre page du
-  premier lot (IMG_0410–IMG_0414)** — à rechercher dans les lots suivants.
+  l'image à haute résolution. Le mot "Allemagne" seul (sans "Westphalie")
+  réapparaît en tête de plusieurs dates/signatures dans le corps du carnet
+  (ex. IMG_0482_a : "Allemagne. Le 18. 11. 1918. Ramet Ernest") — mais c'est
+  la mention générique du pays de captivité, pas une reprise du nom de ville
+  précis de la page de titre. **Le nom de ville lui-même ne réapparaît nulle
+  part de IMG_0410 à IMG_0484.**
 - **Nom du maître donnant la leçon** : lu "Geco[?]tét", "George[?]tek" selon
-  les passages — incertain dans tous les cas. **Ne réapparaît sur aucune
-  autre page du premier lot** — à rechercher dans les lots suivants.
+  les passages — incertain dans tous les cas. **Piste probable écartée** :
+  ce n'est pas la même personne que le camarade "Georges Lété" (voir
+  ci-dessus), malgré la ressemblance de graphie. Ne réapparaît nulle part de
+  IMG_0410 à IMG_0484 sous une forme clairement identifiable comme nom de
+  maître.
 
 ## Pages de fin de carnet (à partir d'IMG_0504)
 

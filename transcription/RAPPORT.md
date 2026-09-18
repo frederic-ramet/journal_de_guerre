@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 01:44:31 — lot 9 (pages IMG_0479_b-IMG_0484_a)_
+_Dernière mise à jour : 2026-09-19 01:54:09 — lot 10 (pages IMG_0484_b-IMG_0489_a)_
 
 ## Avancement
 
-- Pages transcrites : **148 / 197**
-- Pages restantes : **49**
-- Temps moyen par page : 52s (148 pages chronométrées)
-- Temps cumulé de transcription : 128 min
-- Estimation temps restant au rythme actuel : ~42 min
+- Pages transcrites : **158 / 197**
+- Pages restantes : **39**
+- Temps moyen par page : 52s (158 pages chronométrées)
+- Temps cumulé de transcription : 138 min
+- Estimation temps restant au rythme actuel : ~34 min
 
 ## Dernier lot traité
 
-Lot 9 — pages IMG_0479_b-IMG_0484_a :
+Lot 10 — pages IMG_0484_b-IMG_0489_a :
 
-- IMG_0479_b : 0 [?]
-- IMG_0480_a : 2 [?]
-- IMG_0480_b : 2 [?]
-- IMG_0481_a : 3 [?]
-- IMG_0481_b : 3 [?]
-- IMG_0482_a : 2 [?]
-- IMG_0482_b : 4 [?]
-- IMG_0483_a : 1 [?]
-- IMG_0483_b : 3 [?]
-- IMG_0484_a : 1 [?]
+- IMG_0484_b : 0 [?]
+- IMG_0485_a : 0 [?]
+- IMG_0485_b : 0 [?]
+- IMG_0486_a : 1 [?]
+- IMG_0486_b : 3 [?]
+- IMG_0487_a : 3 [?]
+- IMG_0487_b : 2 [?]
+- IMG_0488_a : 1 [?]
+- IMG_0488_b : 2 [?]
+- IMG_0489_a : 3 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -70,6 +70,9 @@ Lot 9 — pages IMG_0479_b-IMG_0484_a :
 | IMG_0481_a | 3 |
 | IMG_0481_b | 3 |
 | IMG_0483_b | 3 |
+| IMG_0486_b | 3 |
+| IMG_0487_a | 3 |
+| IMG_0489_a | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
@@ -101,6 +104,8 @@ Lot 9 — pages IMG_0479_b-IMG_0484_a :
 | IMG_0480_a | 2 |
 | IMG_0480_b | 2 |
 | IMG_0482_a | 2 |
+| IMG_0487_b | 2 |
+| IMG_0488_b | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -135,6 +140,8 @@ Lot 9 — pages IMG_0479_b-IMG_0484_a :
 | IMG_0479_a | 1 |
 | IMG_0483_a | 1 |
 | IMG_0484_a | 1 |
+| IMG_0486_a | 1 |
+| IMG_0488_a | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -177,6 +184,9 @@ Lot 9 — pages IMG_0479_b-IMG_0484_a :
 | IMG_0473_b | 0 |
 | IMG_0478_b | 0 |
 | IMG_0479_b | 0 |
+| IMG_0484_b | 0 |
+| IMG_0485_a | 0 |
+| IMG_0485_b | 0 |
 
 ## Pages à revoir
 
@@ -188,7 +198,7 @@ Mentions trouvées sur : IMG_0410_b, IMG_0421_a, IMG_0482_a
 
 ## Nom du maître ("Geco[?]tét" / variantes)
 
-Mentions trouvées sur : IMG_0410_b, IMG_0418_a, IMG_0432_a, IMG_0482_a
+Mentions trouvées sur : IMG_0410_b, IMG_0418_a, IMG_0432_a, IMG_0482_a, IMG_0485_b
 
 ## Points à trancher au retour
 

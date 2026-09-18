@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 00:37:00 — lot 2 (pages IMG_0444_b-IMG_0449_a)_
+_Dernière mise à jour : 2026-09-19 00:44:53 — lot 3 (pages IMG_0449_b-IMG_0454_a)_
 
 ## Avancement
 
-- Pages transcrites : **79 / 197**
-- Pages restantes : **118**
-- Temps moyen par page : 47s (79 pages chronométrées)
-- Temps cumulé de transcription : 61 min
-- Estimation temps restant au rythme actuel : ~92 min
+- Pages transcrites : **89 / 197**
+- Pages restantes : **108**
+- Temps moyen par page : 47s (89 pages chronométrées)
+- Temps cumulé de transcription : 69 min
+- Estimation temps restant au rythme actuel : ~84 min
 
 ## Dernier lot traité
 
-Lot 2 — pages IMG_0444_b-IMG_0449_a :
+Lot 3 — pages IMG_0449_b-IMG_0454_a :
 
-- IMG_0444_b : 3 [?]
-- IMG_0445_a : 4 [?]
-- IMG_0445_b : 0 [?]
-- IMG_0446_a : 2 [?]
-- IMG_0446_b : 1 [?]
-- IMG_0447_a : 0 [?]
-- IMG_0447_b : 0 [?]
-- IMG_0448_a : 4 [?]
-- IMG_0448_b : 4 [?]
-- IMG_0449_a : 0 [?]
+- IMG_0449_b : 2 [?]
+- IMG_0450_a : 2 [?]
+- IMG_0450_b : 1 [?]
+- IMG_0451_a : 1 [?]
+- IMG_0451_b : 0 [?]
+- IMG_0452_a : 0 [?]
+- IMG_0452_b : 0 [?]
+- IMG_0453_a : 0 [?]
+- IMG_0453_b : 2 [?]
+- IMG_0454_a : 0 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -63,6 +63,9 @@ Lot 2 — pages IMG_0444_b-IMG_0449_a :
 | IMG_0434_b | 2 |
 | IMG_0439_a | 2 |
 | IMG_0446_a | 2 |
+| IMG_0449_b | 2 |
+| IMG_0450_a | 2 |
+| IMG_0453_b | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -82,6 +85,8 @@ Lot 2 — pages IMG_0444_b-IMG_0449_a :
 | IMG_0442_b | 1 |
 | IMG_0443_b | 1 |
 | IMG_0446_b | 1 |
+| IMG_0450_b | 1 |
+| IMG_0451_a | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -108,6 +113,11 @@ Lot 2 — pages IMG_0444_b-IMG_0449_a :
 | IMG_0447_a | 0 |
 | IMG_0447_b | 0 |
 | IMG_0449_a | 0 |
+| IMG_0451_b | 0 |
+| IMG_0452_a | 0 |
+| IMG_0452_b | 0 |
+| IMG_0453_a | 0 |
+| IMG_0454_a | 0 |
 
 ## Pages à revoir
 

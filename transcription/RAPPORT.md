@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 00:44:53 — lot 3 (pages IMG_0449_b-IMG_0454_a)_
+_Dernière mise à jour : 2026-09-19 00:55:43 — lot 4 (pages IMG_0454_b-IMG_0459_a)_
 
 ## Avancement
 
-- Pages transcrites : **89 / 197**
-- Pages restantes : **108**
-- Temps moyen par page : 47s (89 pages chronométrées)
-- Temps cumulé de transcription : 69 min
-- Estimation temps restant au rythme actuel : ~84 min
+- Pages transcrites : **99 / 197**
+- Pages restantes : **98**
+- Temps moyen par page : 48s (99 pages chronométrées)
+- Temps cumulé de transcription : 80 min
+- Estimation temps restant au rythme actuel : ~79 min
 
 ## Dernier lot traité
 
-Lot 3 — pages IMG_0449_b-IMG_0454_a :
+Lot 4 — pages IMG_0454_b-IMG_0459_a :
 
-- IMG_0449_b : 2 [?]
-- IMG_0450_a : 2 [?]
-- IMG_0450_b : 1 [?]
-- IMG_0451_a : 1 [?]
-- IMG_0451_b : 0 [?]
-- IMG_0452_a : 0 [?]
-- IMG_0452_b : 0 [?]
-- IMG_0453_a : 0 [?]
-- IMG_0453_b : 2 [?]
-- IMG_0454_a : 0 [?]
+- IMG_0454_b : 3 [?]
+- IMG_0455_a : 0 [?]
+- IMG_0455_b : 0 [?]
+- IMG_0456_a : 1 [?]
+- IMG_0456_b : 0 [?]
+- IMG_0457_a : 2 [?]
+- IMG_0457_b : 0 [?]
+- IMG_0458_a : 1 [?]
+- IMG_0458_b : 1 [?]
+- IMG_0459_a : 2 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -51,6 +51,7 @@ Lot 3 — pages IMG_0449_b-IMG_0454_a :
 | IMG_0442_a | 3 |
 | IMG_0443_a | 3 |
 | IMG_0444_b | 3 |
+| IMG_0454_b | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
@@ -66,6 +67,8 @@ Lot 3 — pages IMG_0449_b-IMG_0454_a :
 | IMG_0449_b | 2 |
 | IMG_0450_a | 2 |
 | IMG_0453_b | 2 |
+| IMG_0457_a | 2 |
+| IMG_0459_a | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -87,6 +90,9 @@ Lot 3 — pages IMG_0449_b-IMG_0454_a :
 | IMG_0446_b | 1 |
 | IMG_0450_b | 1 |
 | IMG_0451_a | 1 |
+| IMG_0456_a | 1 |
+| IMG_0458_a | 1 |
+| IMG_0458_b | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -118,6 +124,10 @@ Lot 3 — pages IMG_0449_b-IMG_0454_a :
 | IMG_0452_b | 0 |
 | IMG_0453_a | 0 |
 | IMG_0454_a | 0 |
+| IMG_0455_a | 0 |
+| IMG_0455_b | 0 |
+| IMG_0456_b | 0 |
+| IMG_0457_b | 0 |
 
 ## Pages à revoir
 

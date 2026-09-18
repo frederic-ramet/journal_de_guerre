@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 01:16:25 — lot 6 (pages IMG_0464_b-IMG_0469_a)_
+_Dernière mise à jour : 2026-09-19 01:26:12 — lot 7 (pages IMG_0469_b-IMG_0474_a)_
 
 ## Avancement
 
-- Pages transcrites : **118 / 197**
-- Pages restantes : **79**
-- Temps moyen par page : 51s (118 pages chronométrées)
-- Temps cumulé de transcription : 100 min
-- Estimation temps restant au rythme actuel : ~67 min
+- Pages transcrites : **128 / 197**
+- Pages restantes : **69**
+- Temps moyen par page : 51s (128 pages chronométrées)
+- Temps cumulé de transcription : 110 min
+- Estimation temps restant au rythme actuel : ~59 min
 
 ## Dernier lot traité
 
-Lot 6 — pages IMG_0464_b-IMG_0469_a :
+Lot 7 — pages IMG_0469_b-IMG_0474_a :
 
-- IMG_0464_b : 4 [?]
-- IMG_0465_a : 0 [?]
-- IMG_0465_b : 2 [?]
-- IMG_0466_a : 1 [?]
-- IMG_0466_b : 0 [?]
-- IMG_0467_a : ÉCHEC (fichier temporaire non créé par claude)
-- IMG_0467_b : 4 [?]
-- IMG_0468_a : 1 [?]
-- IMG_0468_b : 3 [?]
-- IMG_0469_a : 1 [?]
+- IMG_0469_b : 4 [?]
+- IMG_0470_a : 2 [?]
+- IMG_0470_b : 4 [?]
+- IMG_0471_a : 3 [?]
+- IMG_0471_b : 0 [?]
+- IMG_0472_a : 2 [?]
+- IMG_0472_b : 2 [?]
+- IMG_0473_a : 2 [?]
+- IMG_0473_b : 0 [?]
+- IMG_0474_a : 2 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -39,6 +39,8 @@ Lot 6 — pages IMG_0464_b-IMG_0469_a :
 | IMG_0463_a | 4 |
 | IMG_0464_b | 4 |
 | IMG_0467_b | 4 |
+| IMG_0469_b | 4 |
+| IMG_0470_b | 4 |
 | IMG_0410_b | 3 |
 | IMG_0411_a | 3 |
 | IMG_0414_b | 3 |
@@ -59,6 +61,7 @@ Lot 6 — pages IMG_0464_b-IMG_0469_a :
 | IMG_0460_b | 3 |
 | IMG_0462_b | 3 |
 | IMG_0468_b | 3 |
+| IMG_0471_a | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
@@ -79,6 +82,11 @@ Lot 6 — pages IMG_0464_b-IMG_0469_a :
 | IMG_0459_b | 2 |
 | IMG_0462_a | 2 |
 | IMG_0465_b | 2 |
+| IMG_0470_a | 2 |
+| IMG_0472_a | 2 |
+| IMG_0472_b | 2 |
+| IMG_0473_a | 2 |
+| IMG_0474_a | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -147,6 +155,8 @@ Lot 6 — pages IMG_0464_b-IMG_0469_a :
 | IMG_0464_a | 0 |
 | IMG_0465_a | 0 |
 | IMG_0466_b | 0 |
+| IMG_0471_b | 0 |
+| IMG_0473_b | 0 |
 
 ## Pages à revoir
 

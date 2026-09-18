@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-18 22:18:29 — lot 6 (pages IMG_0440_a-IMG_0444_b)_
+_Dernière mise à jour : 2026-09-18 22:35:34 — lot 7 (pages IMG_0445_a-IMG_0449_b)_
 
 ## Avancement
 
-- Pages transcrites : **68 / 197**
-- Pages restantes : **129**
-- Temps moyen par page : 53s (68 pages chronométrées)
-- Temps cumulé de transcription : 60 min
-- Estimation temps restant au rythme actuel : ~114 min
+- Pages transcrites : **77 / 197**
+- Pages restantes : **120**
+- Temps moyen par page : 59s (77 pages chronométrées)
+- Temps cumulé de transcription : 76 min
+- Estimation temps restant au rythme actuel : ~118 min
 
 ## Dernier lot traité
 
-Lot 6 — pages IMG_0440_a-IMG_0444_b :
+Lot 7 — pages IMG_0445_a-IMG_0449_b :
 
-- IMG_0440_a : 61 [?]
-- IMG_0440_b : 60 [?]
-- IMG_0441_a : 16 [?]
-- IMG_0441_b : 21 [?]
-- IMG_0442_a : 19 [?]
-- IMG_0442_b : 13 [?]
-- IMG_0443_a : 19 [?]
-- IMG_0443_b : 13 [?]
-- IMG_0444_a : ÉCHEC (fichier temporaire non créé par claude)
-- IMG_0444_b : 23 [?]
+- IMG_0445_a : 40 [?]
+- IMG_0445_b : 11 [?]
+- IMG_0446_a : ÉCHEC (fichier temporaire non créé par claude)
+- IMG_0446_b : 13 [?]
+- IMG_0447_a : 1 [?]
+- IMG_0447_b : 8 [?]
+- IMG_0448_a : 8 [?]
+- IMG_0448_b : 6 [?]
+- IMG_0449_a : 8 [?]
+- IMG_0449_b : 6 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -31,6 +31,7 @@ Lot 6 — pages IMG_0440_a-IMG_0444_b :
 |---|---|
 | IMG_0440_a | 61 |
 | IMG_0440_b | 60 |
+| IMG_0445_a | 40 |
 | IMG_0432_b | 30 |
 | IMG_0444_b | 23 |
 | IMG_0441_b | 21 |
@@ -39,8 +40,15 @@ Lot 6 — pages IMG_0440_a-IMG_0444_b :
 | IMG_0441_a | 16 |
 | IMG_0442_b | 13 |
 | IMG_0443_b | 13 |
+| IMG_0446_b | 13 |
 | IMG_0420_b | 11 |
+| IMG_0445_b | 11 |
 | IMG_0439_a | 8 |
+| IMG_0447_b | 8 |
+| IMG_0448_a | 8 |
+| IMG_0449_a | 8 |
+| IMG_0448_b | 6 |
+| IMG_0449_b | 6 |
 | IMG_0438_a | 5 |
 | IMG_0433_b | 4 |
 | IMG_0410_b | 3 |
@@ -79,6 +87,7 @@ Lot 6 — pages IMG_0440_a-IMG_0444_b :
 | IMG_0430_a | 1 |
 | IMG_0435_a | 1 |
 | IMG_0436_a | 1 |
+| IMG_0447_a | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |

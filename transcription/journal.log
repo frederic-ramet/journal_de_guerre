@@ -102,3 +102,16 @@
 [2026-09-18 22:18:29] OK  IMG_0444_b  (93s, coût affiché $0.39767430000000004, 23 [?])  [58 traitées, 2 sautées / 187]
 [2026-09-18 22:18:29] IMG_0444_b a 23 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
 [2026-09-18 22:18:29] --- Fin de lot : IMG_0440_a .. IMG_0444_b (60/187 au total) ---
+[2026-09-18 22:18:29] Commit git créé pour le lot 6.
+[2026-09-18 22:21:39] OK  IMG_0445_a  (189s, coût affiché $0.6804345999999999, 40 [?])  [59 traitées, 2 sautées / 187]
+[2026-09-18 22:21:39] IMG_0445_a a 40 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:23:08] OK  IMG_0445_b  (89s, coût affiché $0.33000939999999995, 11 [?])  [60 traitées, 2 sautées / 187]
+[2026-09-18 22:24:32] ECHEC IMG_0446_a (84s) : fichier temporaire non créé par claude — page sautée.
+[2026-09-18 22:25:42] OK  IMG_0446_b  (70s, coût affiché $0.34919859999999997, 13 [?])  [61 traitées, 3 sautées / 187]
+[2026-09-18 22:26:54] OK  IMG_0447_a  (71s, coût affiché $0.4019834, 1 [?])  [62 traitées, 3 sautées / 187]
+[2026-09-18 22:28:26] OK  IMG_0447_b  (92s, coût affiché $0.3258142, 8 [?])  [63 traitées, 3 sautées / 187]
+[2026-09-18 22:29:48] OK  IMG_0448_a  (82s, coût affiché $0.2782198, 8 [?])  [64 traitées, 3 sautées / 187]
+[2026-09-18 22:30:43] OK  IMG_0448_b  (55s, coût affiché $0.20588260000000005, 6 [?])  [65 traitées, 3 sautées / 187]
+[2026-09-18 22:32:08] OK  IMG_0449_a  (85s, coût affiché $0.35188420000000004, 8 [?])  [66 traitées, 3 sautées / 187]
+[2026-09-18 22:35:34] OK  IMG_0449_b  (206s, coût affiché $0.8236493000000001, 6 [?])  [67 traitées, 3 sautées / 187]
+[2026-09-18 22:35:34] --- Fin de lot : IMG_0445_a .. IMG_0449_b (70/187 au total) ---

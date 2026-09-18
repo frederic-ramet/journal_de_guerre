@@ -106,6 +106,19 @@ suivants — à enrichir au fil de l'eau._
   les passages — incertain dans tous les cas. **Ne réapparaît sur aucune
   autre page du premier lot** — à rechercher dans les lots suivants.
 
+## Pages de fin de carnet (à partir d'IMG_0504)
+
+- À partir d'IMG_0504, les pages changent de nature : couvertures, images
+  pieuses, et une lettre de 1940 sans rapport avec le carnet de 1918
+  (déclaration militaire d'Ernest Ramet lors de l'évacuation de Dunkerque,
+  déjà documentée dans `transcription/pilote/doc-declaration-1940.md`).
+  Utiliser un `type` cohérent avec le contenu réel (ex. "page_vierge",
+  "image_pieuse", "document_annexe") plutôt que de forcer une lecture de
+  type journal/leçon sur ces pages.
+- **IMG_0508 et IMG_0509 sont deux photos du même document** (la lettre de
+  1940) : IMG_0509 est exclue du traitement automatique (voir
+  `scripts/transcribe.sh`, `EXCLUDED_IDS`), seule IMG_0508 est transcrite.
+
 ## Incident : pages photographiées avec le carnet tourné à 90°
 
 - À partir d'IMG_0439 environ, Ernest tournait le carnet pour écrire

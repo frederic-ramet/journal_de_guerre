@@ -1,20 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-18 23:42:14 — lot 1 (pages IMG_0441_a-IMG_0441_a)_
+_Dernière mise à jour : 2026-09-19 00:29:23 — lot 1 (pages IMG_0436_b-IMG_0444_a)_
 
 ## Avancement
 
-- Pages transcrites : **59 / 197**
-- Pages restantes : **138**
-- Temps moyen par page : 46s (59 pages chronométrées)
-- Temps cumulé de transcription : 46 min
-- Estimation temps restant au rythme actuel : ~107 min
+- Pages transcrites : **69 / 197**
+- Pages restantes : **128**
+- Temps moyen par page : 47s (69 pages chronométrées)
+- Temps cumulé de transcription : 54 min
+- Estimation temps restant au rythme actuel : ~100 min
 
 ## Dernier lot traité
 
-Lot 1 — pages IMG_0441_a-IMG_0441_a :
+Lot 1 — pages IMG_0436_b-IMG_0444_a :
 
-- IMG_0441_a : 2 [?]
+- IMG_0436_b : 0 [?]
+- IMG_0439_a : 2 [?]
+- IMG_0439_b : 0 [?]
+- IMG_0441_a : 1 [?]
+- IMG_0441_b : 1 [?]
+- IMG_0442_a : 3 [?]
+- IMG_0442_b : 1 [?]
+- IMG_0443_a : 3 [?]
+- IMG_0443_b : 1 [?]
+- IMG_0444_a : 0 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -36,6 +45,8 @@ Lot 1 — pages IMG_0441_a-IMG_0441_a :
 | IMG_0433_a | 3 |
 | IMG_0434_a | 3 |
 | IMG_0435_b | 3 |
+| IMG_0442_a | 3 |
+| IMG_0443_a | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
@@ -46,6 +57,7 @@ Lot 1 — pages IMG_0441_a-IMG_0441_a :
 | IMG_0430_b | 2 |
 | IMG_0431_a | 2 |
 | IMG_0434_b | 2 |
+| IMG_0439_a | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -60,6 +72,10 @@ Lot 1 — pages IMG_0441_a-IMG_0441_a :
 | IMG_0430_a | 1 |
 | IMG_0435_a | 1 |
 | IMG_0436_a | 1 |
+| IMG_0441_a | 1 |
+| IMG_0441_b | 1 |
+| IMG_0442_b | 1 |
+| IMG_0443_b | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -74,11 +90,14 @@ Lot 1 — pages IMG_0441_a-IMG_0441_a :
 | IMG_0427_b | 0 |
 | IMG_0428_b | 0 |
 | IMG_0431_b | 0 |
+| IMG_0436_b | 0 |
 | IMG_0437_a | 0 |
 | IMG_0437_b | 0 |
 | IMG_0438_b | 0 |
+| IMG_0439_b | 0 |
 | IMG_0440_a | 0 |
 | IMG_0440_b | 0 |
+| IMG_0444_a | 0 |
 
 ## Pages à revoir
 

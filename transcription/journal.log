@@ -226,3 +226,15 @@
 [2026-09-19 01:03:19] OK  IMG_0463_b  (32s, coût affiché $0.1966352, 1 [?])  [49 traitées, 0 sautées / 137]
 [2026-09-19 01:03:46] OK  IMG_0464_a  (27s, coût affiché $0.13142800000000002, 0 [?])  [50 traitées, 0 sautées / 137]
 [2026-09-19 01:03:46] --- Fin de lot : IMG_0459_b .. IMG_0464_a (50/137 au total) ---
+[2026-09-19 01:03:46] Commit git créé pour le lot 5.
+[2026-09-19 01:05:25] OK  IMG_0464_b  (99s, coût affiché $0.3642476000000001, 4 [?])  [51 traitées, 0 sautées / 137]
+[2026-09-19 01:05:52] OK  IMG_0465_a  (27s, coût affiché $0.13151400000000002, 0 [?])  [52 traitées, 0 sautées / 137]
+[2026-09-19 01:09:35] OK  IMG_0465_b  (223s, coût affiché $0.8449448999999999, 2 [?])  [53 traitées, 0 sautées / 137]
+[2026-09-19 01:10:38] OK  IMG_0466_a  (62s, coût affiché $0.280202, 1 [?])  [54 traitées, 0 sautées / 137]
+[2026-09-19 01:11:07] OK  IMG_0466_b  (29s, coût affiché $0.14131, 0 [?])  [55 traitées, 0 sautées / 137]
+[2026-09-19 01:11:46] ECHEC IMG_0467_a (39s) : fichier temporaire non créé par claude — page sautée.
+[2026-09-19 01:13:22] OK  IMG_0467_b  (96s, coût affiché $0.34371029999999997, 4 [?])  [56 traitées, 1 sautées / 137]
+[2026-09-19 01:14:38] OK  IMG_0468_a  (76s, coût affiché $0.27525259999999996, 1 [?])  [57 traitées, 1 sautées / 137]
+[2026-09-19 01:15:31] OK  IMG_0468_b  (53s, coût affiché $0.25593000000000005, 3 [?])  [58 traitées, 1 sautées / 137]
+[2026-09-19 01:16:25] OK  IMG_0469_a  (54s, coût affiché $0.2024592, 1 [?])  [59 traitées, 1 sautées / 137]
+[2026-09-19 01:16:25] --- Fin de lot : IMG_0464_b .. IMG_0469_a (60/137 au total) ---

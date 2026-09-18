@@ -20,3 +20,7 @@ retranscrites depuis des photos où le carnet apparaissait tourné à 90°
 correspondantes ont été supprimées et seront refaites depuis les images
 redressées — voir RAPPORT.md pour le détail de l'incident.
 -->
+
+## IMG_0467_a — 2026-09-19 01:11:46
+
+**Échec de transcription** (39s) : fichier temporaire non créé par claude.

@@ -262,3 +262,15 @@
 [2026-09-19 01:34:19] OK  IMG_0478_b  (27s, coût affiché $0.130268, 0 [?])  [78 traitées, 1 sautées / 137]
 [2026-09-19 01:36:17] OK  IMG_0479_a  (118s, coût affiché $0.4701936000000001, 1 [?])  [79 traitées, 1 sautées / 137]
 [2026-09-19 01:36:17] --- Fin de lot : IMG_0474_b .. IMG_0479_a (80/137 au total) ---
+[2026-09-19 01:36:17] Commit git créé pour le lot 8.
+[2026-09-19 01:36:35] OK  IMG_0479_b  (18s, coût affiché $0.1307796, 0 [?])  [80 traitées, 1 sautées / 137]
+[2026-09-19 01:37:43] OK  IMG_0480_a  (68s, coût affiché $0.37646440000000003, 2 [?])  [81 traitées, 1 sautées / 137]
+[2026-09-19 01:38:38] OK  IMG_0480_b  (55s, coût affiché $0.20499059999999997, 2 [?])  [82 traitées, 1 sautées / 137]
+[2026-09-19 01:39:36] OK  IMG_0481_a  (58s, coût affiché $0.31747719999999996, 3 [?])  [83 traitées, 1 sautées / 137]
+[2026-09-19 01:40:27] OK  IMG_0481_b  (51s, coût affiché $0.2116552, 3 [?])  [84 traitées, 1 sautées / 137]
+[2026-09-19 01:41:23] OK  IMG_0482_a  (56s, coût affiché $0.234229, 2 [?])  [85 traitées, 1 sautées / 137]
+[2026-09-19 01:42:19] OK  IMG_0482_b  (56s, coût affiché $0.32254459999999996, 4 [?])  [86 traitées, 1 sautées / 137]
+[2026-09-19 01:43:25] OK  IMG_0483_a  (66s, coût affiché $0.27394779999999996, 1 [?])  [87 traitées, 1 sautées / 137]
+[2026-09-19 01:43:58] OK  IMG_0483_b  (33s, coût affiché $0.1988642, 3 [?])  [88 traitées, 1 sautées / 137]
+[2026-09-19 01:44:31] OK  IMG_0484_a  (33s, coût affiché $0.183111, 1 [?])  [89 traitées, 1 sautées / 137]
+[2026-09-19 01:44:31] --- Fin de lot : IMG_0479_b .. IMG_0484_a (90/137 au total) ---

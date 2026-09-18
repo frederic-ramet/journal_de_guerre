@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-18 21:31:57 — lot 2 (pages IMG_0420_a-IMG_0424_b)_
+_Dernière mise à jour : 2026-09-18 21:38:03 — lot 3 (pages IMG_0425_a-IMG_0429_b)_
 
 ## Avancement
 
-- Pages transcrites : **30 / 197**
-- Pages restantes : **167**
-- Temps moyen par page : 37s (30 pages chronométrées)
-- Temps cumulé de transcription : 18 min
-- Estimation temps restant au rythme actuel : ~103 min
+- Pages transcrites : **40 / 197**
+- Pages restantes : **157**
+- Temps moyen par page : 37s (40 pages chronométrées)
+- Temps cumulé de transcription : 25 min
+- Estimation temps restant au rythme actuel : ~96 min
 
 ## Dernier lot traité
 
-Lot 2 — pages IMG_0420_a-IMG_0424_b :
+Lot 3 — pages IMG_0425_a-IMG_0429_b :
 
-- IMG_0420_a : 2 [?]
-- IMG_0420_b : 11 [?]
-- IMG_0421_a : 0 [?]
-- IMG_0421_b : 2 [?]
-- IMG_0422_a : 0 [?]
-- IMG_0422_b : 2 [?]
-- IMG_0423_a : 2 [?]
-- IMG_0423_b : 1 [?]
-- IMG_0424_a : 0 [?]
-- IMG_0424_b : 3 [?]
+- IMG_0425_a : 0 [?]
+- IMG_0425_b : 2 [?]
+- IMG_0426_a : 1 [?]
+- IMG_0426_b : 1 [?]
+- IMG_0427_a : 3 [?]
+- IMG_0427_b : 0 [?]
+- IMG_0428_a : 1 [?]
+- IMG_0428_b : 0 [?]
+- IMG_0429_a : 1 [?]
+- IMG_0429_b : 1 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -37,18 +37,25 @@ Lot 2 — pages IMG_0420_a-IMG_0424_b :
 | IMG_0416_a | 3 |
 | IMG_0417_a | 3 |
 | IMG_0424_b | 3 |
+| IMG_0427_a | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
 | IMG_0421_b | 2 |
 | IMG_0422_b | 2 |
 | IMG_0423_a | 2 |
+| IMG_0425_b | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
 | IMG_0418_b | 1 |
 | IMG_0419_b | 1 |
 | IMG_0423_b | 1 |
+| IMG_0426_a | 1 |
+| IMG_0426_b | 1 |
+| IMG_0428_a | 1 |
+| IMG_0429_a | 1 |
+| IMG_0429_b | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -59,6 +66,9 @@ Lot 2 — pages IMG_0420_a-IMG_0424_b :
 | IMG_0421_a | 0 |
 | IMG_0422_a | 0 |
 | IMG_0424_a | 0 |
+| IMG_0425_a | 0 |
+| IMG_0427_b | 0 |
+| IMG_0428_b | 0 |
 
 ## Pages à revoir
 

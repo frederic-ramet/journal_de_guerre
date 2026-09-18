@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-18 23:11:27 — lot 9 (pages IMG_0455_a-IMG_0459_b)_
+_Dernière mise à jour : 2026-09-18 23:27:45 — lot 10 (pages IMG_0460_a-IMG_0464_b)_
 
 ## Avancement
 
-- Pages transcrites : **93 / 197**
-- Pages restantes : **104**
-- Temps moyen par page : 68s (93 pages chronométrées)
-- Temps cumulé de transcription : 106 min
-- Estimation temps restant au rythme actuel : ~118 min
+- Pages transcrites : **102 / 197**
+- Pages restantes : **95**
+- Temps moyen par page : 71s (102 pages chronométrées)
+- Temps cumulé de transcription : 121 min
+- Estimation temps restant au rythme actuel : ~113 min
 
 ## Dernier lot traité
 
-Lot 9 — pages IMG_0455_a-IMG_0459_b :
+Lot 10 — pages IMG_0460_a-IMG_0464_b :
 
-- IMG_0455_a : ÉCHEC (fichier temporaire non créé par claude)
-- IMG_0455_b : 23 [?]
-- IMG_0456_a : 34 [?]
-- IMG_0456_b : 6 [?]
-- IMG_0457_a : 27 [?]
-- IMG_0457_b : 11 [?]
-- IMG_0458_a : 11 [?]
-- IMG_0458_b : 16 [?]
-- IMG_0459_a : ÉCHEC (fichier temporaire non créé par claude)
-- IMG_0459_b : ÉCHEC (fichier temporaire non créé par claude)
+- IMG_0460_a : 19 [?]
+- IMG_0460_b : 22 [?]
+- IMG_0461_a : 24 [?]
+- IMG_0461_b : 5 [?]
+- IMG_0462_a : 23 [?]
+- IMG_0462_b : 8 [?]
+- IMG_0463_a : 7 [?]
+- IMG_0463_b : 10 [?]
+- IMG_0464_a : ÉCHEC (fichier temporaire non créé par claude)
+- IMG_0464_b : 12 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -37,12 +37,16 @@ Lot 9 — pages IMG_0455_a-IMG_0459_b :
 | IMG_0450_b | 27 |
 | IMG_0457_a | 27 |
 | IMG_0453_a | 25 |
+| IMG_0461_a | 24 |
 | IMG_0444_b | 23 |
 | IMG_0454_b | 23 |
 | IMG_0455_b | 23 |
+| IMG_0462_a | 23 |
+| IMG_0460_b | 22 |
 | IMG_0441_b | 21 |
 | IMG_0442_a | 19 |
 | IMG_0443_a | 19 |
+| IMG_0460_a | 19 |
 | IMG_0452_a | 17 |
 | IMG_0441_a | 16 |
 | IMG_0458_b | 16 |
@@ -50,19 +54,24 @@ Lot 9 — pages IMG_0455_a-IMG_0459_b :
 | IMG_0443_b | 13 |
 | IMG_0446_b | 13 |
 | IMG_0453_b | 12 |
+| IMG_0464_b | 12 |
 | IMG_0420_b | 11 |
 | IMG_0445_b | 11 |
 | IMG_0452_b | 11 |
 | IMG_0457_b | 11 |
 | IMG_0458_a | 11 |
+| IMG_0463_b | 10 |
 | IMG_0439_a | 8 |
 | IMG_0447_b | 8 |
 | IMG_0448_a | 8 |
 | IMG_0449_a | 8 |
+| IMG_0462_b | 8 |
+| IMG_0463_a | 7 |
 | IMG_0448_b | 6 |
 | IMG_0449_b | 6 |
 | IMG_0456_b | 6 |
 | IMG_0438_a | 5 |
+| IMG_0461_b | 5 |
 | IMG_0433_b | 4 |
 | IMG_0451_b | 4 |
 | IMG_0410_b | 3 |

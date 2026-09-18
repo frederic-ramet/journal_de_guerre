@@ -83,3 +83,22 @@
 [2026-09-18 21:58:09] OK  IMG_0439_a  (119s, coût affiché $0.4326814000000001, 8 [?])  [48 traitées, 1 sautées / 187]
 [2026-09-18 21:58:20] OK  IMG_0439_b  (11s, coût affiché $0.1119002, 0 [?])  [49 traitées, 1 sautées / 187]
 [2026-09-18 21:58:20] --- Fin de lot : IMG_0435_a .. IMG_0439_b (50/187 au total) ---
+[2026-09-18 21:58:20] Commit git créé pour le lot 5.
+[2026-09-18 22:00:39] OK  IMG_0440_a  (139s, coût affiché $0.39392799999999994, 61 [?])  [50 traitées, 1 sautées / 187]
+[2026-09-18 22:00:39] IMG_0440_a a 61 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:01:45] OK  IMG_0440_b  (65s, coût affiché $0.3136902, 60 [?])  [51 traitées, 1 sautées / 187]
+[2026-09-18 22:01:45] IMG_0440_b a 60 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:03:59] OK  IMG_0441_a  (134s, coût affiché $0.4771762, 16 [?])  [52 traitées, 1 sautées / 187]
+[2026-09-18 22:03:59] IMG_0441_a a 16 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:05:25] OK  IMG_0441_b  (85s, coût affiché $0.3843396, 21 [?])  [53 traitées, 1 sautées / 187]
+[2026-09-18 22:05:25] IMG_0441_b a 21 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:06:32] OK  IMG_0442_a  (67s, coût affiché $0.30916440000000006, 19 [?])  [54 traitées, 1 sautées / 187]
+[2026-09-18 22:06:32] IMG_0442_a a 19 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:08:28] OK  IMG_0442_b  (116s, coût affiché $0.4064616, 13 [?])  [55 traitées, 1 sautées / 187]
+[2026-09-18 22:10:36] OK  IMG_0443_a  (127s, coût affiché $0.6143634, 19 [?])  [56 traitées, 1 sautées / 187]
+[2026-09-18 22:10:36] IMG_0443_a a 19 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:12:31] OK  IMG_0443_b  (115s, coût affiché $0.40573980000000004, 13 [?])  [57 traitées, 1 sautées / 187]
+[2026-09-18 22:16:56] ECHEC IMG_0444_a (265s) : fichier temporaire non créé par claude — page sautée.
+[2026-09-18 22:18:29] OK  IMG_0444_b  (93s, coût affiché $0.39767430000000004, 23 [?])  [58 traitées, 2 sautées / 187]
+[2026-09-18 22:18:29] IMG_0444_b a 23 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:18:29] --- Fin de lot : IMG_0440_a .. IMG_0444_b (60/187 au total) ---

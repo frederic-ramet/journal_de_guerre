@@ -31,6 +31,14 @@ suivants — à enrichir au fil de l'eau._
 
 - **"Bonne action"** — relevé quotidien annoncé dans un engagement personnel
   ("je marquerai tout les jours une bonne action que j'aurai faite").
+- **"B.A."** = abréviation de "Bonne Action" (confirmé sur IMG_0440_a, page
+  de référence relue à la main : "B.A. que j'ai faite ? [action]", répété en
+  colonne). **"M.A."** = abréviation symétrique de "Mauvaise Action"
+  (confirmé sur IMG_0440_b : "M.A. que j'ai évité [action]"). Attention : sur
+  une page tournée/mal orientée, ces deux lettres peuvent être mal lues comme
+  un caractère isolé incertain (ex. "M[?]." transcrit à tort dans un essai
+  antérieur) — reconnaître "B.A."/"M.A." en premier sur toute liste répétitive
+  de ce type avant de marquer un [?].
 - **"Demander"**, **"Explication"** — signalés comme récurrents par ailleurs,
   pas encore rencontrés littéralement dans ce lot ; à surveiller.
 - Vocabulaire de spiritisme (IMG_0411_a, page isolée de définitions) :
@@ -97,6 +105,20 @@ suivants — à enrichir au fil de l'eau._
 - **Nom du maître donnant la leçon** : lu "Geco[?]tét", "George[?]tek" selon
   les passages — incertain dans tous les cas. **Ne réapparaît sur aucune
   autre page du premier lot** — à rechercher dans les lots suivants.
+
+## Incident : pages photographiées avec le carnet tourné à 90°
+
+- À partir d'IMG_0439 environ, Ernest tournait le carnet pour écrire
+  certaines pages (texte perpendiculaire à l'orientation habituelle). Les
+  photos correspondantes dans `jpg_pages/` ont été redressées le 2026-09-18
+  (135 pages, de 0439 à 0503, 0506 à 0509, et 0512). Toute transcription
+  faite avant cette correction sur ces pages est invalide et a été
+  supprimée : ne pas s'y fier si on la retrouve dans un historique git.
+- Chaque image contient, sur un bord, une fine bande de la page voisine
+  (recouvrement de découpe) : ne pas la transcrire, seulement la page
+  principale.
+- IMG_0440_a et IMG_0440_b (statut `verifie_claude`, corrigées à la main)
+  servent de référence de qualité attendue pour ce type de page.
 
 ## Note méthodologique (transcription en une image, page entière)
 

@@ -163,3 +163,6 @@
 [2026-09-18 23:26:40] ECHEC IMG_0464_a (68s) : fichier temporaire non créé par claude — page sautée.
 [2026-09-18 23:27:45] OK  IMG_0464_b  (65s, coût affiché $0.24127420000000002, 12 [?])  [92 traitées, 8 sautées / 187]
 [2026-09-18 23:27:45] --- Fin de lot : IMG_0460_a .. IMG_0464_b (100/187 au total) ---
+[2026-09-18 23:27:45] Commit git créé pour le lot 10.
+[2026-09-18 23:31:01] OK  IMG_0465_a  (196s, coût affiché $0.6805314000000001, 1 [?])  [93 traitées, 8 sautées / 187]
+[2026-09-18 23:32:15] OK  IMG_0465_b  (74s, coût affiché $0.33702680000000007, 1 [?])  [94 traitées, 8 sautées / 187]

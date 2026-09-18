@@ -115,3 +115,19 @@
 [2026-09-18 22:32:08] OK  IMG_0449_a  (85s, coût affiché $0.35188420000000004, 8 [?])  [66 traitées, 3 sautées / 187]
 [2026-09-18 22:35:34] OK  IMG_0449_b  (206s, coût affiché $0.8236493000000001, 6 [?])  [67 traitées, 3 sautées / 187]
 [2026-09-18 22:35:34] --- Fin de lot : IMG_0445_a .. IMG_0449_b (70/187 au total) ---
+[2026-09-18 22:35:34] Commit git créé pour le lot 7.
+[2026-09-18 22:36:17] OK  IMG_0450_a  (43s, coût affiché $0.24301460000000003, 3 [?])  [68 traitées, 3 sautées / 187]
+[2026-09-18 22:40:14] OK  IMG_0450_b  (237s, coût affiché $0.9664987000000004, 27 [?])  [69 traitées, 3 sautées / 187]
+[2026-09-18 22:40:14] IMG_0450_b a 27 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:41:03] OK  IMG_0451_a  (49s, coût affiché $0.21523180000000003, 3 [?])  [70 traitées, 3 sautées / 187]
+[2026-09-18 22:42:02] OK  IMG_0451_b  (59s, coût affiché $0.226134, 4 [?])  [71 traitées, 3 sautées / 187]
+[2026-09-18 22:43:54] OK  IMG_0452_a  (112s, coût affiché $0.36602439999999997, 17 [?])  [72 traitées, 3 sautées / 187]
+[2026-09-18 22:43:54] IMG_0452_a a 17 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:45:19] OK  IMG_0452_b  (85s, coût affiché $0.3452364, 11 [?])  [73 traitées, 3 sautées / 187]
+[2026-09-18 22:47:54] OK  IMG_0453_a  (155s, coût affiché $0.44431100000000007, 25 [?])  [74 traitées, 3 sautées / 187]
+[2026-09-18 22:47:54] IMG_0453_a a 25 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:48:53] OK  IMG_0453_b  (59s, coût affiché $0.29694000000000004, 12 [?])  [75 traitées, 3 sautées / 187]
+[2026-09-18 22:49:32] ECHEC IMG_0454_a (39s) : fichier temporaire non créé par claude — page sautée.
+[2026-09-18 22:51:32] OK  IMG_0454_b  (120s, coût affiché $0.5745072, 23 [?])  [76 traitées, 4 sautées / 187]
+[2026-09-18 22:51:32] IMG_0454_b a 23 [?] (seuil 15) — noté dans transcription/a_revoir.md, on continue.
+[2026-09-18 22:51:32] --- Fin de lot : IMG_0450_a .. IMG_0454_b (80/187 au total) ---

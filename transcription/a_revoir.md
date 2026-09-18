@@ -52,3 +52,23 @@ relecture prioritaire).
 ## IMG_0446_a — 2026-09-18 22:24:32
 
 **Échec de transcription** (84s) : fichier temporaire non créé par claude.
+
+## IMG_0450_b — 2026-09-18 22:40:14
+
+**27 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.
+
+## IMG_0452_a — 2026-09-18 22:43:54
+
+**17 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.
+
+## IMG_0453_a — 2026-09-18 22:47:54
+
+**25 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.
+
+## IMG_0454_a — 2026-09-18 22:49:32
+
+**Échec de transcription** (39s) : fichier temporaire non créé par claude.
+
+## IMG_0454_b — 2026-09-18 22:51:32
+
+**23 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.

@@ -1,6 +1,6 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-18 23:40:24 — lot 1 (pages IMG_0441_a-IMG_0441_a)_
+_Dernière mise à jour : 2026-09-18 23:42:14 — lot 1 (pages IMG_0441_a-IMG_0441_a)_
 
 ## Avancement
 

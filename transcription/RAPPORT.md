@@ -1,29 +1,29 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 02:04:21 — lot 11 (pages IMG_0489_b-IMG_0494_a)_
+_Dernière mise à jour : 2026-09-19 02:18:32 — lot 12 (pages IMG_0494_b-IMG_0499_a)_
 
 ## Avancement
 
-- Pages transcrites : **167 / 197**
-- Pages restantes : **30**
-- Temps moyen par page : 53s (167 pages chronométrées)
-- Temps cumulé de transcription : 147 min
-- Estimation temps restant au rythme actuel : ~26 min
+- Pages transcrites : **177 / 197**
+- Pages restantes : **20**
+- Temps moyen par page : 54s (177 pages chronométrées)
+- Temps cumulé de transcription : 161 min
+- Estimation temps restant au rythme actuel : ~18 min
 
 ## Dernier lot traité
 
-Lot 11 — pages IMG_0489_b-IMG_0494_a :
+Lot 12 — pages IMG_0494_b-IMG_0499_a :
 
-- IMG_0489_b : 1 [?]
-- IMG_0490_a : 2 [?]
-- IMG_0490_b : 4 [?]
-- IMG_0491_a : 3 [?]
-- IMG_0491_b : 0 [?]
-- IMG_0492_a : ÉCHEC (fichier temporaire non créé par claude)
-- IMG_0492_b : 3 [?]
-- IMG_0493_a : 3 [?]
-- IMG_0493_b : 3 [?]
-- IMG_0494_a : 0 [?]
+- IMG_0494_b : 0 [?]
+- IMG_0495_a : 3 [?]
+- IMG_0495_b : 2 [?]
+- IMG_0496_a : 1 [?]
+- IMG_0496_b : 4 [?]
+- IMG_0497_a : 0 [?]
+- IMG_0497_b : 0 [?]
+- IMG_0498_a : 3 [?]
+- IMG_0498_b : 1 [?]
+- IMG_0499_a : 0 [?]
 
 ## Décompte des [?] par page (toutes pages transcrites, triées par nombre décroissant)
 
@@ -44,6 +44,7 @@ Lot 11 — pages IMG_0489_b-IMG_0494_a :
 | IMG_0474_b | 4 |
 | IMG_0482_b | 4 |
 | IMG_0490_b | 4 |
+| IMG_0496_b | 4 |
 | IMG_0410_b | 3 |
 | IMG_0411_a | 3 |
 | IMG_0414_b | 3 |
@@ -78,6 +79,8 @@ Lot 11 — pages IMG_0489_b-IMG_0494_a :
 | IMG_0492_b | 3 |
 | IMG_0493_a | 3 |
 | IMG_0493_b | 3 |
+| IMG_0495_a | 3 |
+| IMG_0498_a | 3 |
 | IMG_0414_a | 2 |
 | IMG_0419_a | 2 |
 | IMG_0420_a | 2 |
@@ -112,6 +115,7 @@ Lot 11 — pages IMG_0489_b-IMG_0494_a :
 | IMG_0487_b | 2 |
 | IMG_0488_b | 2 |
 | IMG_0490_a | 2 |
+| IMG_0495_b | 2 |
 | IMG_0413_a | 1 |
 | IMG_0417_b | 1 |
 | IMG_0418_a | 1 |
@@ -149,6 +153,8 @@ Lot 11 — pages IMG_0489_b-IMG_0494_a :
 | IMG_0486_a | 1 |
 | IMG_0488_a | 1 |
 | IMG_0489_b | 1 |
+| IMG_0496_a | 1 |
+| IMG_0498_b | 1 |
 | IMG_0410_a | 0 |
 | IMG_0411_b | 0 |
 | IMG_0412_a | 0 |
@@ -196,6 +202,10 @@ Lot 11 — pages IMG_0489_b-IMG_0494_a :
 | IMG_0485_b | 0 |
 | IMG_0491_b | 0 |
 | IMG_0494_a | 0 |
+| IMG_0494_b | 0 |
+| IMG_0497_a | 0 |
+| IMG_0497_b | 0 |
+| IMG_0499_a | 0 |
 
 ## Pages à revoir
 

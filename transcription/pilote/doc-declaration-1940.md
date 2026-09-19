@@ -1,3 +1,11 @@
+<!--
+PÉRIMÉ — ne plus lire ni utiliser comme source.
+Ce fichier documentait le format pilote, avant le redressement d'image du
+2026-09-18. La transcription à jour de ce document est
+transcription/pages/IMG_0508.md (texte plus complet et corrigé). Le site
+(fiche /documents/declaration-1940) lit exclusivement IMG_0508.md.
+-->
+
 ---
 id: doc-declaration-1940
 source: IMG_0508.jpg

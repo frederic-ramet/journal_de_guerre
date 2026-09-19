@@ -24,3 +24,7 @@ redressées — voir RAPPORT.md pour le détail de l'incident.
 ## IMG_0467_a — 2026-09-19 01:11:46
 
 **Échec de transcription** (39s) : fichier temporaire non créé par claude.
+
+## IMG_0492_a — 2026-09-19 02:00:23
+
+**Échec de transcription** (72s) : fichier temporaire non créé par claude.

@@ -1,6 +1,6 @@
 # Rapport de transcription — Journal de guerre d'Ernest Ramet
 
-_Dernière mise à jour : 2026-09-19 02:34:47 — lot 14 (pages IMG_0505-IMG_0512)_
+_Dernière mise à jour : 2026-09-19 02:36:42 — lot 14 (pages IMG_0505-IMG_0512)_
 
 ## Avancement
 
@@ -227,11 +227,11 @@ Voir [`transcription/a_revoir.md`](a_revoir.md) pour le détail (échecs, pages 
 
 ## Lieu de captivité ("... Westphalie, Allemagne")
 
-Mentions trouvées sur : IMG_0410_b, IMG_0421_a, IMG_0482_a
+Mentions trouvées sur : IMG_0410_b, IMG_0421_a
 
 ## Nom du maître ("Geco[?]tét" / variantes)
 
-Mentions trouvées sur : IMG_0410_b, IMG_0418_a, IMG_0432_a, IMG_0482_a, IMG_0485_b
+Aucune occurrence trouvée en dehors de la page de titre (IMG_0410_b) pour l'instant.
 
 ## Points à trancher au retour
 

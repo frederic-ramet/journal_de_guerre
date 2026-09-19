@@ -9,9 +9,8 @@ relecture prioritaire).
 
 **30 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.
 
-## IMG_0436_b — 2026-09-18 21:51:54
-
-**Échec de transcription** (26s) : échec appel claude (exit 1).
+<!-- IMG_0436_b : échec initial (2026-09-18 21:51:54), retranscrite avec succès
+lors du run suivant (statut ia, 0 [?]) — entrée retirée le 2026-09-19. -->
 
 <!--
 Entrées IMG_0439 à IMG_0465 retirées le 2026-09-18 : ces pages ont été

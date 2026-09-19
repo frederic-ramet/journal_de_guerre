@@ -1,12 +1,15 @@
 # TODO - Journal de Guerre
 
-_Mis à jour le 16/09/2026_
+_Mis à jour le 19/09/2026_
 
-Usage : privé (moi seul). Site Vercel ignoré.
+Usage : privé, moi et la famille. Hébergement prévu sur le devserver (LXC 101). Vercel abandonné.
 
 ## Maintenant
 
-- [ ] Supprimer `.git/index.lock` (bloque git)
+- [x] Tout pousser sur `origin/main` (les transcriptions n'existaient que sur le Mac)
+- [ ] Corriger les renvois `[N]` de la section Sources sur `/contexte`
+- [ ] Durcir `git-commit.ts` : `git add` explicite, vérification avant commit, aucun `git reset`
+- [ ] Préparer le déploiement (voir Déploiement)
 
 ## Transcription HD (quand crédits)
 
@@ -69,17 +72,29 @@ Plan détaillé dans `ontology.md`. À lancer après la relecture, pas avant.
 - [ ] Mettre à jour `CLAUDE.md`, fusionner les README
 - [ ] Nettoyer branches `claude/*`
 
-## Stack (aligner sur le stack homelab)
+## Déploiement
 
-Référence = devserver (voir `devserver-documentation.md`) : Supabase self-hosted (Postgres, Auth, Storage), Gitea, Dokploy, accès Tailscale.
+Cible : devserver LXC 101, `192.168.1.194`, `/mnt/data/dev/projects/journal_de_guerre`. Voir `devserver-heberger-un-projet.md` (mais pas de Supabase, pas de Gitea, pas de Dokploy).
 
-- [ ] Données : Supabase Postgres (pages, transcriptions, historique corrections, annotations) au lieu de SQLite
-- [ ] Images HD + découpes : Supabase Storage ou datapool ZFS (libère le Mac)
-- [ ] Auth : Supabase Auth (moi + comptes autorisés)
-- [ ] Déploiement : Dokploy depuis Gitea, plus Vercel
-- [ ] Export `.md` par page dans git (sauvegarde lisible)
-- [ ] Framework front : à trancher (garder Express/EJS ou passer au front de référence)
-- [ ] Remplacer l'ontologie par mots-clés par des entités tirées du texte corrigé
+Décisions prises :
+
+- dépôt de référence : GitHub `origin`. Le clone du serveur est en écriture, c'est le site qui commite les corrections
+- pas d'auto-push : tâche planifiée quotidienne sur le serveur
+- le Mac n'édite plus les `.md` de `transcription/pages/` à la main une fois en production
+- clone en `--single-branch --branch main` (la branche `claude/review-requested-*` porte 500 Mo de photos)
+- médias hors dépôt dans `/mnt/data/dev/data/journal_de_guerre/`
+
+Reste à faire :
+
+- [ ] `docker-compose.yml` : monter le dépôt entier (`.:/data`), `.git` compris, médias depuis le chemin serveur
+- [ ] Identité git dans le conteneur (variables `GIT_*`, `safe.directory`), testée par un vrai commit
+- [ ] Dockerfile multi-étapes (sortir `playwright` et `sharp` de l'image finale)
+- [ ] Route `/api/health` + healthcheck compose
+- [ ] `deploy.sh` idempotent
+- [ ] Choisir un port libre en 30xx (vérifier, ne pas deviner)
+- [ ] rsync de `jpg_pages` vers le serveur, puis régénérer les tuiles sur place
+- [ ] NPM : Access List + `proxy_set_header X-Authenticated-User $remote_user`
+- [ ] AdGuard : `carnet.home` → `192.168.1.194` (AdGuard et NPM sont sur le homeserver, LXC 100)
 
 ## UI/UX
 

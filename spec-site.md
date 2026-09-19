@@ -189,3 +189,7 @@ S'arrêter après chaque étape et montrer le résultat.
 - Ne jamais réécrire un fichier de `transcription/pages/` autrement que par le parcours de correction décrit en §7.
 - Ne pas réintroduire le contenu de l'ancien site (`index.html`, `script.js`, `transcriptions_*.md`, `synthese_journal.md`) : il est faux.
 - Aucune donnée inventée pour remplir un écran, aucun contenu de démonstration.
+- Le dépôt monté en écriture pour la correction (§7) est un risque réel, pas théorique : un `git add` trop large emporte des fichiers qu'on ne voulait pas toucher, sans personne pour s'en apercevoir en production. Trois règles, sans exception :
+  - jamais `git add -A`, `git add .`, ni aucune forme implicite : toujours le chemin exact du fichier concerné, avec `--` pour qu'il ne soit jamais interprété comme une option ;
+  - avant de committer, vérifier que `git diff --cached --name-only` ne contient que ce chemin et rien d'autre ; sinon avorter sans committer et remonter l'erreur ;
+  - aucune commande git qui annule ou réécrit l'historique (`git reset`, `git checkout --`, `git clean`, `git restore`) n'a sa place dans la base de code du site. Le site écrit et commite, il n'annule jamais rien.

@@ -28,3 +28,7 @@ redressées — voir RAPPORT.md pour le détail de l'incident.
 ## IMG_0492_a — 2026-09-19 02:00:23
 
 **Échec de transcription** (72s) : fichier temporaire non créé par claude.
+
+## IMG_0503_b — 2026-09-19 02:27:35
+
+**17 [?]** dans le bloc Diplomatique (seuil d'alerte : 15). À relire en priorité.

@@ -1,0 +1,181 @@
+---
+import Base from '../layouts/Base.astro';
+import { index } from '../lib/index-store';
+import {
+  ACCROCHE,
+  MISE_EN_SITUATION,
+  CHRONOLOGIE,
+  CE_QUON_NE_SAIT_PAS_ENCORE,
+} from '../data/contenu-editorial';
+
+const entrees = CHRONOLOGIE.map((entree) => ({
+  ...entree,
+  pages: entree.sourceIds.map((id) => index.byId(id)).filter((p) => p !== undefined),
+}));
+---
+
+<Base title="Ernest" active="ernest">
+  <section class="wrap">
+    <h1>Ernest</h1>
+    <p class="accroche">{ACCROCHE}</p>
+    <p class="situation">{MISE_EN_SITUATION}</p>
+
+    <ol class="tl">
+      {
+        entrees.map((entree) => (
+          <li class="ev">
+            <div class="when">{entree.quand}</div>
+            <div class="what">
+              <b>{entree.titre}</b>
+              <p>{entree.texte}</p>
+              <p class="src">
+                source :{' '}
+                {entree.sourceLabel === 'Documents' ? (
+                  entree.pages[0] ? (
+                    <a href={`/lire/${entree.pages[0].numero}`}>Documents</a>
+                  ) : (
+                    'Documents'
+                  )
+                ) : entree.pages.length > 1 ? (
+                  entree.pages.map((p, i) => (
+                    <>
+                      {i > 0 && ' et '}
+                      <a href={`/lire/${p.numero}`}>page {p.numero}</a>
+                    </>
+                  ))
+                ) : entree.pages[0] ? (
+                  <a href={`/lire/${entree.pages[0].numero}`}>
+                    {entree.sourceLabel ?? `page ${entree.pages[0].numero}`}
+                  </a>
+                ) : (
+                  entree.sourceLabel
+                )}
+              </p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
+
+    <aside class="unknown">
+      <p><b>Ce que l'on ne sait pas encore.</b> {CE_QUON_NE_SAIT_PAS_ENCORE}</p>
+    </aside>
+  </section>
+</Base>
+
+<style>
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 22px 80px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0 0 24px;
+  }
+
+  .accroche {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+  }
+
+  .situation {
+    color: var(--ink-soft);
+    font-size: 15px;
+    margin: 0 0 48px;
+  }
+
+  .tl {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--line);
+  }
+
+  .ev {
+    display: grid;
+    grid-template-columns: 130px minmax(0, 1fr);
+    gap: 18px;
+    padding: 18px 0 18px 20px;
+    position: relative;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ev:last-child {
+    border-bottom: 0;
+  }
+
+  .ev::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 24px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--paper);
+    border: 2px solid var(--rule);
+  }
+
+  @media (max-width: 620px) {
+    .ev {
+      grid-template-columns: 1fr;
+      gap: 4px;
+    }
+  }
+
+  .when {
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--rule);
+    letter-spacing: 0.04em;
+    padding-top: 2px;
+  }
+
+  .what b {
+    display: block;
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .what p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    max-width: 58ch;
+  }
+
+  .src {
+    margin-top: 8px !important;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted) !important;
+  }
+
+  .src a {
+    color: var(--rule);
+    text-decoration: none;
+  }
+
+  .unknown {
+    margin-top: 40px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 16px 18px;
+    background: var(--paper);
+  }
+
+  .unknown p {
+    margin: 0;
+    font-size: 14px;
+    color: var(--ink-soft);
+  }
+</style>

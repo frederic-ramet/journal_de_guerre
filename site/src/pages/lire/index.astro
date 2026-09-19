@@ -1,0 +1,111 @@
+---
+import Base from '../../layouts/Base.astro';
+import { index } from '../../lib/index-store';
+import { PERIODES } from '../../data/periodes';
+
+const pages = index.all();
+const groupes = PERIODES.map((periode) => ({
+  periode,
+  pages: pages.filter((p) => p.periode.slug === periode.slug),
+}));
+---
+
+<Base title="Lire" active="lire">
+  <section class="wrap">
+    <h1>Sommaire</h1>
+    <p class="lede">{pages.length} pages, dans l'ordre où elles ont été photographiées.</p>
+
+    {
+      groupes.map(({ periode, pages: pagesDeLaPeriode }) => (
+        <Fragment>
+          <h2>{periode.titre}</h2>
+          <ol class="pages" start={pagesDeLaPeriode[0]?.numero}>
+            {pagesDeLaPeriode.map((p) => (
+              <li>
+                <a href={`/lire/${p.numero}`}>
+                  <span class="num">{p.numero}</span>
+                  <span class="date">{p.date ?? '—'}</span>
+                  <span class="type">{p.type ?? '—'}</span>
+                </a>
+              </li>
+            ))}
+          </ol>
+        </Fragment>
+      ))
+    }
+  </section>
+</Base>
+
+<style>
+  .wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 22px 80px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 32px;
+    margin: 0 0 8px;
+  }
+
+  .lede {
+    color: var(--ink-soft);
+    margin: 0 0 40px;
+  }
+
+  h2 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 20px;
+    border-bottom: 1px solid var(--line);
+    padding-bottom: 8px;
+    margin: 40px 0 12px;
+  }
+
+  .pages {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 2px;
+  }
+
+  .pages li a {
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+    text-decoration: none;
+    padding: 6px 8px;
+    font-size: 13.5px;
+    color: var(--ink-soft);
+    border-radius: 2px;
+  }
+
+  .pages li a:hover {
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .num {
+    font-family: var(--font-mono);
+    color: var(--rule);
+    min-width: 2.5em;
+  }
+
+  .date {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+
+  .type {
+    color: var(--muted);
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+</style>

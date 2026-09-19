@@ -1,0 +1,593 @@
+---
+import Base from '../../layouts/Base.astro';
+import { index } from '../../lib/index-store';
+import { renderDiplomatique, renderNormalise } from '../../lib/render';
+import { tilesExist, dziUrl } from '../../lib/tiles';
+import { formatDateAffichage } from '../../lib/format-date';
+import { DOCUMENTS } from '../../data/documents';
+import { signatureSvg } from '../../lib/signature';
+
+const { n } = Astro.params;
+const numero = Number.parseInt(n ?? '', 10);
+const page = Number.isFinite(numero) ? index.byNumero(numero) : undefined;
+
+if (!page) {
+  return Astro.redirect('/lire');
+}
+
+const precedente = numero > 1 ? numero - 1 : null;
+const suivante = numero < index.size ? numero + 1 : null;
+const pagePrecedente = precedente ? index.byNumero(precedente) : undefined;
+const pageSuivante = suivante ? index.byNumero(suivante) : undefined;
+
+const canEdit = Boolean(Astro.locals.authenticatedUser);
+
+const diplomatiqueHtml = renderDiplomatique(page.diplomatique);
+const normaliseHtml = renderNormalise(page.normalise);
+const notesHtml = page.notes ? renderNormalise(page.notes) : '';
+
+// Le champ `doublon` du front matter donne un nom de fichier (ex.
+// "IMG_0466_a.jpg") : on retrouve la page correspondante par son id dérivé
+// pour proposer un vrai lien de navigation plutôt qu'un texte inerte.
+const doublonId = page.doublon?.replace(/\.jpe?g$/i, '');
+const pageDoublon = doublonId ? index.byId(doublonId) : undefined;
+
+const documentAssocie = DOCUMENTS.find((d) => d.pageId === page.id);
+
+const hasTiles = tilesExist(page.id);
+const dzi = hasTiles ? dziUrl(page.id) : null;
+
+// Préchargement des .dzi voisins : simple hint navigateur, pas de viewer
+// créé pour les pages voisines (coûteux), juste le fichier XML du manifeste.
+const dziPrecedente = pagePrecedente && tilesExist(pagePrecedente.id) ? dziUrl(pagePrecedente.id) : null;
+const dziSuivante = pageSuivante && tilesExist(pageSuivante.id) ? dziUrl(pageSuivante.id) : null;
+
+const OSD_VERSION = '6.1.1';
+---
+
+<Base title={`Page ${page.numero}`} active="lire">
+  {dziPrecedente && <link rel="prefetch" href={dziPrecedente} as="fetch" crossorigin="anonymous" />}
+  {dziSuivante && <link rel="prefetch" href={dziSuivante} as="fetch" crossorigin="anonymous" />}
+
+  <section class="reader">
+    <div class="plate" id="plate">
+      {
+        hasTiles ? (
+          <div id="osd-viewer" class="osd-viewer" data-dzi={dzi}>
+            <img
+              src={`/images/${page.source}`}
+              alt={`Page ${page.numero} du carnet`}
+              class="plate-fallback-img"
+            />
+          </div>
+        ) : (
+          <img src={`/images/${page.source}`} alt={`Page ${page.numero} du carnet`} class="plate-img" />
+        )
+      }
+      <button type="button" id="fullscreen-btn" class="fullscreen-btn" aria-label="Plein écran" title="Plein écran">
+        ⛶
+      </button>
+    </div>
+
+    <div class="text">
+      <div class="text-main">
+        <div class="text-head">
+          <div class="text-head-info">
+            <span class="folio">Page {page.numero} sur {index.size}</span>
+            {page.date && <span class="date">{formatDateAffichage(page.date)}</span>}
+            <span class="type-tag">{page.type ?? 'type inconnu'}</span>
+          </div>
+          <nav class="pager" aria-label="Navigation entre les pages">
+            {precedente ? (
+              <a href={`/lire/${precedente}`} rel="prev">← précédente</a>
+            ) : (
+              <span class="disabled">← précédente</span>
+            )}
+            {suivante ? (
+              <a href={`/lire/${suivante}`} rel="next">suivante →</a>
+            ) : (
+              <span class="disabled">suivante →</span>
+            )}
+          </nav>
+        </div>
+        <p class="kbd-hint" id="kbd-hint">← → pour naviguer</p>
+
+        {
+          documentAssocie && (
+            <p class="doublon-banner">
+              Cette feuille n'appartient pas au carnet, voir la{' '}
+              <a href={`/documents/${documentAssocie.slug}`}>fiche document</a>.
+            </p>
+          )
+        }
+
+        {
+          page.doublon && (
+            <p class="doublon-banner">
+              Cette page a été photographiée deux fois, voir aussi{' '}
+              {pageDoublon ? (
+                <a href={`/lire/${pageDoublon.numero}`}>page {pageDoublon.numero}</a>
+              ) : (
+                page.doublon
+              )}
+              .
+            </p>
+          )
+        }
+
+        <div class="toggle" role="tablist" aria-label="Version du texte">
+          <button type="button" data-view="normalise" class="on" role="tab" aria-selected="true">
+            Normalisé
+          </button>
+          <button type="button" data-view="diplomatique" role="tab" aria-selected="false">
+            Diplomatique
+          </button>
+        </div>
+
+        <div class="transcript transcript-normalise" data-panel="normalise" set:html={normaliseHtml} />
+        <pre
+          class="transcript transcript-diplomatique"
+          data-panel="diplomatique"
+          hidden
+          set:html={diplomatiqueHtml}
+        />
+
+        {
+          page.signature && (
+            <p class="sign">
+              <span class="sign-img" set:html={signatureSvg()} title="Signature R.E." />
+            </p>
+          )
+        }
+
+        {
+          page.notes && (
+            <details class="notes">
+              <summary>Notes de la transcription</summary>
+              <div set:html={notesHtml} />
+            </details>
+          )
+        }
+      </div>
+
+      {
+        canEdit && (
+          <div class="text-foot">
+            <a href={`/admin/corriger/${page.id}`} class="edit-link">Corriger cette page</a>
+          </div>
+        )
+      }
+    </div>
+  </section>
+</Base>
+
+{
+  hasTiles && (
+    <script
+      is:inline
+      src={`https://cdnjs.cloudflare.com/ajax/libs/openseadragon/${OSD_VERSION}/openseadragon.min.js`}
+      integrity="sha512-JpQ9oAv9oa446xKS3oEbeEZThqrTktwlVFA1BCYjxei6ckmjnTLNzXiIX708rmElelb2Y/YzvgdRn3PkgWsJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  )
+}
+
+<script define:vars={{ precedente, suivante, hasTiles, dzi }}>
+  const toggleButtons = document.querySelectorAll('.toggle button');
+  const panels = document.querySelectorAll('[data-panel]');
+
+  toggleButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const view = btn.getAttribute('data-view');
+      toggleButtons.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('on', active);
+        b.setAttribute('aria-selected', String(active));
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.getAttribute('data-panel') !== view;
+      });
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    // Ignore les flèches quand le focus est dans un champ de saisie.
+    const target = e.target;
+    if (target instanceof HTMLElement && ['INPUT', 'TEXTAREA'].includes(target.tagName)) return;
+
+    if (e.key === 'ArrowLeft' && precedente) {
+      window.location.href = `/lire/${precedente}`;
+    } else if (e.key === 'ArrowRight' && suivante) {
+      window.location.href = `/lire/${suivante}`;
+    }
+  });
+
+  // L'indication "← → pour naviguer" ne s'affiche qu'avant la première
+  // utilisation des flèches (mémorisé par viewer, dans ce seul navigateur).
+  try {
+    if (localStorage.getItem('carnet:kbd-hint-vu')) {
+      document.getElementById('kbd-hint')?.remove();
+    } else {
+      document.addEventListener(
+        'keydown',
+        (e) => {
+          if (e.key === 'ArrowLeft' || e.key === 'ArrowRight') {
+            localStorage.setItem('carnet:kbd-hint-vu', '1');
+          }
+        },
+        { once: true },
+      );
+    }
+  } catch {
+    // localStorage indisponible (navigation privée, etc.) : l'indication reste affichée, sans conséquence.
+  }
+
+  const plate = document.getElementById('plate');
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+  function enterFullscreen() {
+    if (plate.requestFullscreen) plate.requestFullscreen();
+  }
+
+  fullscreenBtn?.addEventListener('click', enterFullscreen);
+
+  // Sur mobile, l'image réduite s'ouvre en plein écran (avec zoom) au tap.
+  if (window.matchMedia('(max-width: 760px)').matches) {
+    plate.addEventListener('click', (e) => {
+      if (e.target === fullscreenBtn) return;
+      enterFullscreen();
+    });
+  }
+
+  // OpenSeadragon : si les tuiles existent et que la lib a bien chargé
+  // (chargement CDN qui peut échouer), on l'initialise ; sinon, repli
+  // silencieux sur la balise <img> déjà présente dans le DOM.
+  if (hasTiles && dzi && typeof window.OpenSeadragon === 'function') {
+    const container = document.getElementById('osd-viewer');
+    const fallbackImg = container?.querySelector('.plate-fallback-img');
+
+    try {
+      const viewer = window.OpenSeadragon({
+        element: container,
+        tileSources: dzi,
+        showNavigationControl: false,
+        homeFillsViewer: false,
+        visibilityRatio: 1,
+        minZoomImageRatio: 1,
+        defaultZoomLevel: 0,
+        gestureSettingsMouse: { clickToZoom: false, dblClickToZoom: true },
+      });
+
+      viewer.addHandler('open', () => {
+        fallbackImg?.remove();
+      });
+
+      viewer.addHandler('open-failed', () => {
+        // Les tuiles annoncées comme présentes n'ont pas pu être chargées
+        // (fichier corrompu, etc.) : on laisse le fallback <img> visible.
+        viewer.destroy();
+      });
+
+      const zoomInBtn = document.createElement('button');
+      zoomInBtn.textContent = '+';
+      zoomInBtn.className = 'osd-zoom-btn osd-zoom-in';
+      zoomInBtn.type = 'button';
+      zoomInBtn.setAttribute('aria-label', 'Zoomer');
+      zoomInBtn.addEventListener('click', () => viewer.viewport.zoomBy(1.4) && viewer.viewport.applyConstraints());
+
+      const zoomOutBtn = document.createElement('button');
+      zoomOutBtn.textContent = '−';
+      zoomOutBtn.className = 'osd-zoom-btn osd-zoom-out';
+      zoomOutBtn.type = 'button';
+      zoomOutBtn.setAttribute('aria-label', 'Dézoomer');
+      zoomOutBtn.addEventListener('click', () => viewer.viewport.zoomBy(1 / 1.4) && viewer.viewport.applyConstraints());
+
+      const zoomControls = document.createElement('div');
+      zoomControls.className = 'osd-zoom-controls';
+      zoomControls.append(zoomOutBtn, zoomInBtn);
+      plate.appendChild(zoomControls);
+    } catch {
+      // OpenSeadragon a échoué à l'initialisation : le fallback <img> reste visible.
+    }
+  }
+</script>
+
+<style>
+  .reader {
+    display: grid;
+    grid-template-columns: 1.08fr 1fr;
+    height: calc(100vh - 60px);
+  }
+
+  @media (max-width: 760px) {
+    .reader {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  }
+
+  .plate {
+    background: #0f1113;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  }
+
+  .plate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .osd-viewer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .plate-fallback-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    inset: 0;
+  }
+
+  .fullscreen-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(232, 228, 218, 0.9);
+    color: var(--ink);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media (max-width: 760px) {
+    .fullscreen-btn {
+      display: flex;
+    }
+
+    .plate {
+      height: 45vh;
+    }
+  }
+
+  .plate :global(.osd-zoom-controls) {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: flex;
+    gap: 6px;
+    z-index: 5;
+  }
+
+  .plate :global(.osd-zoom-btn) {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    background: rgba(232, 228, 218, 0.9);
+    color: #23252b;
+    font-size: 17px;
+    font-family: var(--font-mono);
+    border: none;
+    cursor: pointer;
+  }
+
+  .text {
+    padding: 26px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .text-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto 0;
+  }
+
+  @media (max-width: 760px) {
+    .text {
+      height: auto;
+    }
+
+    .text-main {
+      margin: 0;
+    }
+  }
+
+  .text-head {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .text-head-info {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .kbd-hint {
+    margin: 0;
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+
+  .folio {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+  }
+
+  .date {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--rule);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+    padding: 2px 7px;
+  }
+
+  .type-tag {
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted);
+  }
+
+  .doublon-banner {
+    font-size: 13px;
+    color: var(--muted);
+    background: var(--paper-2);
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 8px 12px;
+    margin: 0;
+  }
+
+  .doublon-banner a {
+    color: var(--rule);
+  }
+
+  .toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+    width: max-content;
+  }
+
+  .toggle button {
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    padding: 5px 12px;
+    color: var(--ink-soft);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle button.on {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .transcript {
+    font-family: var(--font-serif);
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: var(--ink);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .transcript :global(p) {
+    margin: 0 0 14px;
+  }
+
+  .transcript :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  pre.transcript-diplomatique {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+
+  .transcript :global(.doubt) {
+    border-bottom: 1.5px dotted var(--rule);
+    cursor: help;
+  }
+
+  .sign {
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+
+  .sign-img {
+    display: inline-flex;
+    color: var(--ink);
+  }
+
+  .sign-img :global(svg) {
+    display: block;
+    height: 26px;
+    width: auto;
+  }
+
+  .notes {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  .notes summary {
+    cursor: pointer;
+    color: var(--rule);
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+
+  .notes > div {
+    margin-top: 8px;
+    max-width: 62ch;
+  }
+
+  .text-foot {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+  }
+
+  .pager {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+  }
+
+  .pager a {
+    color: var(--rule);
+    text-decoration: none;
+  }
+
+  .pager .disabled {
+    color: var(--line);
+  }
+
+  .edit-link {
+    font-size: 13px;
+    color: var(--rule);
+    text-decoration: none;
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+    padding: 5px 10px;
+  }
+</style>

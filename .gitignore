@@ -3,6 +3,12 @@ jpg_source/
 jpg_extract/
 jpg_split/
 
+# Pages images (~460 MB), montées en volume dans le conteneur du site
+jpg_pages/
+
+# Tuiles DZI générées par site/scripts/tiles.js, montées en volume Docker
+tiles/
+
 # Compression script (not needed for deployment)
 compress_images.py
 
@@ -21,9 +27,18 @@ yarn-error.log*
 data/*.db
 data/*.db-wal
 data/*.db-shm
+data/processed/
+
+# Anciens artefacts d'analyse (v1 Python), non reproductibles depuis le texte corrigé
+embeddings_cache.pkl
+tmp_crops/
 
 # Build output
 dist/
+
+# Captures d'écran de démo (npm run captures) : régénérables, jamais commitées.
+# Le dépôt contient les sources et le contenu, pas les sorties dérivées.
+site/docs/captures/
 
 # OS
 .DS_Store

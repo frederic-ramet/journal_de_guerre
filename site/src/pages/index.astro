@@ -1,0 +1,138 @@
+---
+import Base from '../layouts/Base.astro';
+import { index } from '../lib/index-store';
+import { PAGE_ENTREE_ID } from '../data/periodes';
+import { ACCROCHE, MISE_EN_SITUATION } from '../data/contenu-editorial';
+
+// L'accueil conduit au début du journal du camp, pas à la page 1 : c'est là
+// qu'est la vie quotidienne, les pages de titre et de définitions n'accrochent
+// personne.
+const pageEntree = index.byId(PAGE_ENTREE_ID);
+---
+
+<Base title="Accueil" active="accueil">
+  <section class="hero">
+    <div>
+      <p class="hero-meta">Ernest Ramet — 1918-1919</p>
+      <h1>Carnet d'Ernest</h1>
+      <p class="accroche">{ACCROCHE}</p>
+      <p class="situation">{MISE_EN_SITUATION}</p>
+      <div class="cta">
+        <a class="btn" href={pageEntree ? `/lire/${pageEntree.numero}` : '/lire'}>Lire le carnet</a>
+        <a class="btn ghost" href="/ernest">Qui était Ernest ?</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      {
+        pageEntree && (
+          <img
+            src={`/images/${pageEntree.source}`}
+            alt={`Page ${pageEntree.numero} du carnet`}
+          />
+        )
+      }
+    </div>
+  </section>
+</Base>
+
+<style>
+  .hero {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    gap: 36px;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 40px 22px;
+    align-items: center;
+    min-height: calc(100vh - 60px);
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 760px) {
+    .hero {
+      grid-template-columns: 1fr;
+      padding: 24px 16px;
+      min-height: auto;
+    }
+  }
+
+  .hero-meta {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.06em;
+    margin: 0 0 16px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: clamp(28px, 4vw, 42px);
+    letter-spacing: -0.01em;
+    margin: 0 0 18px;
+  }
+
+  .accroche {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 19px;
+    color: var(--ink-soft);
+    max-width: 46ch;
+    margin: 0 0 20px;
+  }
+
+  .situation {
+    max-width: 46ch;
+    color: var(--ink-soft);
+    font-size: 15px;
+  }
+
+  .cta {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    flex-wrap: wrap;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 2px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+  }
+
+  .btn.ghost {
+    background: transparent;
+    color: var(--ink);
+  }
+
+  .hero-img {
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+    padding: 10px;
+    box-shadow: var(--shadow);
+    max-height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+
+  .hero-img img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+
+  @media (max-width: 760px) {
+    .hero-img {
+      max-height: 40vh;
+    }
+  }
+</style>

@@ -1,0 +1,109 @@
+---
+import Base from '../layouts/Base.astro';
+import { readContexteMarkdown, extractContexteBody } from '../lib/contexte-store';
+import { renderEditorialMarkdown } from '../lib/render-editorial';
+
+const body = extractContexteBody(readContexteMarkdown());
+const html = renderEditorialMarkdown(body);
+---
+
+<Base title="Contexte">
+  <section class="wrap">
+    <div class="prose" set:html={html} />
+  </section>
+</Base>
+
+<style>
+  .wrap {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 48px 22px 100px;
+  }
+
+  .prose {
+    font-family: var(--font-serif);
+    font-size: 16.5px;
+    line-height: 1.75;
+    color: var(--ink);
+  }
+
+  .prose :global(h1) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 16px;
+  }
+
+  .prose :global(h2) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 48px 0 16px;
+  }
+
+  .prose :global(h3) {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 18px;
+    margin: 32px 0 12px;
+  }
+
+  .prose :global(p) {
+    margin: 0 0 18px;
+  }
+
+  .prose :global(ul) {
+    margin: 0 0 18px;
+    padding-left: 24px;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 6px;
+  }
+
+  .prose :global(blockquote) {
+    margin: 0 0 18px;
+    padding-left: 18px;
+    border-left: 2px solid var(--rule-soft);
+    color: var(--ink-soft);
+    font-style: italic;
+  }
+
+  .prose :global(a) {
+    color: var(--rule);
+  }
+
+  .prose :global(a.ref) {
+    font-style: normal;
+    font-size: 0.85em;
+    text-decoration: none;
+    vertical-align: super;
+  }
+
+  .prose :global(a.page-ref) {
+    font-family: var(--font-mono);
+    font-size: 0.85em;
+    text-decoration: none;
+    border-bottom: 1px dotted var(--rule-soft);
+  }
+
+  .prose :global(.caveat) {
+    margin: 0 0 18px;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    padding: 14px 16px;
+    background: var(--paper);
+    font-size: 15px;
+  }
+
+  .prose :global(.caveat p) {
+    margin: 0;
+    color: var(--ink-soft);
+  }
+
+  .prose :global(hr) {
+    border: none;
+    border-top: 1px solid var(--line);
+    margin: 40px 0;
+  }
+</style>

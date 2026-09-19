@@ -1,0 +1,10 @@
+services:
+  site:
+    build: ./site
+    ports:
+      - "4321:4321"
+    volumes:
+      - ./transcription/pages:/data/transcription/pages
+      - ./jpg_pages:/data/jpg_pages:ro
+      - ./tiles:/data/tiles
+    restart: unless-stopped

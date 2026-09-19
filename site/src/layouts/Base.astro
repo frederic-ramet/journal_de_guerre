@@ -1,0 +1,73 @@
+---
+import '../styles/global.css';
+import { ROUTES_DISPONIBLES } from '../data/routes';
+import { signatureSvg } from '../lib/signature';
+
+interface Props {
+  title: string;
+  active?: 'accueil' | 'lire' | 'ernest' | 'documents' | 'explorer';
+}
+
+const { title, active } = Astro.props;
+
+function navLink(key: 'lire' | 'ernest' | 'documents' | 'explorer', href: string, label: string) {
+  return { key, href, label, disponible: ROUTES_DISPONIBLES[key] };
+}
+
+const navLinks = [
+  navLink('lire', '/lire', 'Lire'),
+  navLink('ernest', '/ernest', 'Ernest'),
+  navLink('documents', '/documents', 'Documents'),
+  navLink('explorer', '/explorer', 'Explorer'),
+];
+---
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap"
+    />
+    <title>{title} — Carnet d'Ernest</title>
+  </head>
+  <body>
+    <header class="site-nav">
+      <a class="brand" href="/">
+        <span class="brand-logo" set:html={signatureSvg()} />
+        <b>Carnet d'Ernest</b>
+      </a>
+      <nav>
+        {
+          navLinks.map((link) =>
+            link.disponible ? (
+              <a href={link.href} aria-current={active === link.key ? 'page' : undefined}>
+                {link.label}
+              </a>
+            ) : (
+              <span class="disabled" aria-disabled="true">
+                {link.label}
+              </span>
+            ),
+          )
+        }
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+
+    <footer class="foot">
+      <p>Carnet d'Ernest Ramet, 1918-1919. Transcription en cours.</p>
+      <nav class="foot-nav">
+        {ROUTES_DISPONIBLES.contexte ? <a href="/contexte">Contexte historique</a> : <span class="disabled">Contexte historique</span>}
+        {ROUTES_DISPONIBLES.documents ? <a href="/documents">Documents</a> : <span class="disabled">Documents</span>}
+        {ROUTES_DISPONIBLES.explorer ? <a href="/explorer">Explorer</a> : <span class="disabled">Explorer</span>}
+      </nav>
+    </footer>
+  </body>
+</html>

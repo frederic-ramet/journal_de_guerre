@@ -1,0 +1,432 @@
+---
+import Base from '../../layouts/Base.astro';
+import { index } from '../../lib/index-store';
+import { DOCUMENTS } from '../../data/documents';
+import { renderDiplomatique, renderNormalise } from '../../lib/render';
+import { tilesExist, dziUrl } from '../../lib/tiles';
+import { formatDateAffichage } from '../../lib/format-date';
+
+const { slug } = Astro.params;
+const doc = DOCUMENTS.find((d) => d.slug === slug);
+
+if (!doc) {
+  return new Response('Not found', { status: 404 });
+}
+
+const page = index.byId(doc.pageId);
+if (!page) {
+  return new Response('Not found', { status: 404 });
+}
+
+const diplomatiqueHtml = renderDiplomatique(page.diplomatique);
+const normaliseHtml = renderNormalise(page.normalise);
+const notesHtml = page.notes ? renderNormalise(page.notes) : '';
+
+const hasTiles = tilesExist(page.id);
+const dzi = hasTiles ? dziUrl(page.id) : null;
+
+const OSD_VERSION = '6.1.1';
+---
+
+<Base title={doc.titre} active="documents">
+  <section class="reader">
+    <div class="plate" id="plate">
+      {
+        hasTiles ? (
+          <div id="osd-viewer" class="osd-viewer" data-dzi={dzi}>
+            <img src={`/images/${page.source}`} alt={doc.titre} class="plate-fallback-img" />
+          </div>
+        ) : (
+          <img src={`/images/${page.source}`} alt={doc.titre} class="plate-img" />
+        )
+      }
+      <button type="button" id="fullscreen-btn" class="fullscreen-btn" aria-label="Plein écran" title="Plein écran">
+        ⛶
+      </button>
+    </div>
+
+    <div class="text">
+      <div class="text-main">
+        <div class="text-head">
+          <div class="text-head-info">
+            <a href="/documents" class="back-link">← Documents</a>
+            {page.date && <span class="date">{formatDateAffichage(page.date)}</span>}
+          </div>
+        </div>
+
+        <h1>{doc.titre}</h1>
+
+        <p class="doc-see-in-reader">
+          Cette page fait aussi partie de l'ordre de lecture du carnet :{' '}
+          <a href={`/lire/${page.numero}`}>voir page {page.numero}</a>.
+        </p>
+
+        <div class="toggle" role="tablist" aria-label="Version du texte">
+          <button type="button" data-view="normalise" class="on" role="tab" aria-selected="true">
+            Normalisé
+          </button>
+          <button type="button" data-view="diplomatique" role="tab" aria-selected="false">
+            Diplomatique
+          </button>
+        </div>
+
+        <div class="transcript transcript-normalise" data-panel="normalise" set:html={normaliseHtml} />
+        <pre
+          class="transcript transcript-diplomatique"
+          data-panel="diplomatique"
+          hidden
+          set:html={diplomatiqueHtml}
+        />
+
+        <p class="context-note">{doc.noteContexte}</p>
+
+        {
+          page.notes && (
+            <details class="notes">
+              <summary>Notes de la transcription</summary>
+              <div set:html={notesHtml} />
+            </details>
+          )
+        }
+      </div>
+    </div>
+  </section>
+</Base>
+
+{
+  hasTiles && (
+    <script
+      is:inline
+      src={`https://cdnjs.cloudflare.com/ajax/libs/openseadragon/${OSD_VERSION}/openseadragon.min.js`}
+      integrity="sha512-JpQ9oAv9oa446xKS3oEbeEZThqrTktwlVFA1BCYjxei6ckmjnTLNzXiIX708rmElelb2Y/YzvgdRn3PkgWsJZw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  )
+}
+
+<script define:vars={{ hasTiles, dzi }}>
+  const toggleButtons = document.querySelectorAll('.toggle button');
+  const panels = document.querySelectorAll('[data-panel]');
+
+  toggleButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const view = btn.getAttribute('data-view');
+      toggleButtons.forEach((b) => {
+        const active = b === btn;
+        b.classList.toggle('on', active);
+        b.setAttribute('aria-selected', String(active));
+      });
+      panels.forEach((panel) => {
+        panel.hidden = panel.getAttribute('data-panel') !== view;
+      });
+    });
+  });
+
+  const plate = document.getElementById('plate');
+  const fullscreenBtn = document.getElementById('fullscreen-btn');
+
+  function enterFullscreen() {
+    if (plate.requestFullscreen) plate.requestFullscreen();
+  }
+
+  fullscreenBtn?.addEventListener('click', enterFullscreen);
+
+  if (window.matchMedia('(max-width: 760px)').matches) {
+    plate.addEventListener('click', (e) => {
+      if (e.target === fullscreenBtn) return;
+      enterFullscreen();
+    });
+  }
+
+  if (hasTiles && dzi && typeof window.OpenSeadragon === 'function') {
+    const container = document.getElementById('osd-viewer');
+    const fallbackImg = container?.querySelector('.plate-fallback-img');
+
+    try {
+      const viewer = window.OpenSeadragon({
+        element: container,
+        tileSources: dzi,
+        showNavigationControl: false,
+        homeFillsViewer: false,
+        visibilityRatio: 1,
+        minZoomImageRatio: 1,
+        defaultZoomLevel: 0,
+        gestureSettingsMouse: { clickToZoom: false, dblClickToZoom: true },
+      });
+
+      viewer.addHandler('open', () => {
+        fallbackImg?.remove();
+      });
+
+      viewer.addHandler('open-failed', () => {
+        viewer.destroy();
+      });
+
+      const zoomInBtn = document.createElement('button');
+      zoomInBtn.textContent = '+';
+      zoomInBtn.className = 'osd-zoom-btn osd-zoom-in';
+      zoomInBtn.type = 'button';
+      zoomInBtn.setAttribute('aria-label', 'Zoomer');
+      zoomInBtn.addEventListener('click', () => viewer.viewport.zoomBy(1.4) && viewer.viewport.applyConstraints());
+
+      const zoomOutBtn = document.createElement('button');
+      zoomOutBtn.textContent = '−';
+      zoomOutBtn.className = 'osd-zoom-btn osd-zoom-out';
+      zoomOutBtn.type = 'button';
+      zoomOutBtn.setAttribute('aria-label', 'Dézoomer');
+      zoomOutBtn.addEventListener('click', () => viewer.viewport.zoomBy(1 / 1.4) && viewer.viewport.applyConstraints());
+
+      const zoomControls = document.createElement('div');
+      zoomControls.className = 'osd-zoom-controls';
+      zoomControls.append(zoomOutBtn, zoomInBtn);
+      plate.appendChild(zoomControls);
+    } catch {
+      // OpenSeadragon a échoué à l'initialisation : le fallback <img> reste visible.
+    }
+  }
+</script>
+
+<style>
+  .reader {
+    display: grid;
+    grid-template-columns: 1.08fr 1fr;
+    height: calc(100vh - 60px);
+  }
+
+  @media (max-width: 760px) {
+    .reader {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+  }
+
+  .plate {
+    background: #0f1113;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    position: relative;
+    height: calc(100vh - 60px);
+    overflow: hidden;
+  }
+
+  @media (max-width: 760px) {
+    .plate {
+      height: 45vh;
+    }
+  }
+
+  .plate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .osd-viewer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .plate-fallback-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    inset: 0;
+  }
+
+  .fullscreen-btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(232, 228, 218, 0.9);
+    color: var(--ink);
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  @media (max-width: 760px) {
+    .fullscreen-btn {
+      display: flex;
+    }
+  }
+
+  .plate :global(.osd-zoom-controls) {
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    display: flex;
+    gap: 6px;
+    z-index: 5;
+  }
+
+  .plate :global(.osd-zoom-btn) {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 2px;
+    background: rgba(232, 228, 218, 0.9);
+    color: #23252b;
+    font-size: 17px;
+    font-family: var(--font-mono);
+    border: none;
+    cursor: pointer;
+  }
+
+  .text {
+    padding: 26px 30px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .text-main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: auto 0;
+  }
+
+  @media (max-width: 760px) {
+    .text {
+      height: auto;
+    }
+
+    .text-main {
+      margin: 0;
+    }
+  }
+
+  .text-head-info {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
+
+  .back-link {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+
+  .date {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--rule);
+    border: 1px solid var(--rule-soft);
+    border-radius: 2px;
+    padding: 2px 7px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .doc-see-in-reader {
+    font-size: 13px;
+    color: var(--muted);
+    margin: 0;
+  }
+
+  .doc-see-in-reader a {
+    color: var(--rule);
+  }
+
+  .toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    border-radius: 2px;
+    overflow: hidden;
+    width: max-content;
+  }
+
+  .toggle button {
+    font-family: var(--font-sans);
+    font-size: 12.5px;
+    padding: 5px 12px;
+    color: var(--ink-soft);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle button.on {
+    background: var(--ink);
+    color: var(--paper);
+  }
+
+  .transcript {
+    font-family: var(--font-serif);
+    font-size: 16.5px;
+    line-height: 1.72;
+    color: var(--ink);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .transcript :global(p) {
+    margin: 0 0 14px;
+  }
+
+  .transcript :global(p:last-child) {
+    margin-bottom: 0;
+  }
+
+  pre.transcript-diplomatique {
+    font-family: var(--font-mono);
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }
+
+  .transcript :global(.doubt) {
+    border-bottom: 1.5px dotted var(--rule);
+    cursor: help;
+  }
+
+  .context-note {
+    font-size: 13.5px;
+    color: var(--muted);
+    border-top: 1px solid var(--line);
+    padding-top: 14px;
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .notes {
+    font-size: 13.5px;
+    color: var(--ink-soft);
+  }
+
+  .notes summary {
+    cursor: pointer;
+    color: var(--rule);
+    font-family: var(--font-mono);
+    font-size: 12px;
+  }
+
+  .notes > div {
+    margin-top: 8px;
+    max-width: 62ch;
+  }
+
+  .notes > div :global(p) {
+    margin: 0 0 10px;
+  }
+</style>

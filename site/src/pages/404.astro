@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+---
+
+<Base title="Page introuvable">
+  <section class="wrap">
+    <p class="eyebrow">404</p>
+    <h1>Cette page n'existe pas.</h1>
+    <p class="lede">Elle a peut-être été déplacée, ou l'adresse est incorrecte.</p>
+    <a class="btn" href="/lire">Retour à la lecture</a>
+  </section>
+</Base>
+
+<style>
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 100px 22px;
+    text-align: center;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 12px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin: 0 0 12px;
+  }
+
+  h1 {
+    font-family: var(--font-serif);
+    font-weight: 600;
+    font-size: 28px;
+    margin: 0 0 12px;
+  }
+
+  .lede {
+    color: var(--ink-soft);
+    margin: 0 0 28px;
+  }
+
+  .btn {
+    display: inline-block;
+    font-size: 14px;
+    padding: 9px 18px;
+    border-radius: 2px;
+    border: 1px solid var(--ink);
+    background: var(--ink);
+    color: var(--paper);
+    text-decoration: none;
+  }
+</style>

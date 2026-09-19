@@ -1,0 +1,124 @@
+@import './tokens.css';
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 22px;
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  display: inline-flex;
+  color: var(--ink);
+}
+
+.brand-logo svg {
+  display: block;
+  height: 30px;
+  width: auto;
+}
+
+.brand b {
+  font-family: var(--font-serif);
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.site-nav nav {
+  display: flex;
+  gap: 20px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+}
+
+.site-nav nav a {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 2px;
+}
+
+.site-nav nav a[aria-current='page'] {
+  color: var(--ink);
+  border-bottom: 2px solid var(--rule);
+}
+
+.site-nav nav .disabled {
+  color: var(--line);
+}
+
+.foot {
+  margin: 72px auto 0;
+  max-width: 1180px;
+  border-top: 1px solid var(--line);
+  padding: 22px 22px 40px;
+  color: var(--muted);
+  font-size: 13.5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.foot p {
+  margin: 0;
+}
+
+.foot-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.foot a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.foot a:hover {
+  color: var(--ink-soft);
+}
+
+.foot-nav a.disabled {
+  color: var(--line);
+  cursor: default;
+  pointer-events: none;
+}

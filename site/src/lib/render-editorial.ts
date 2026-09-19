@@ -25,13 +25,44 @@ const markdown = new Marked({
 });
 
 const REFERENCE_PATTERN = /\[(\d+)\]/g;
-const IMG_ID_PATTERN = /\b(IMG_\d{4}(?:_[ab])?)\b/g;
+const IMG_ID_PATTERN = /\bIMG_\d{4}(?:_[ab])?\b/g;
+// Une séquence de 2+ identifiants IMG_XXXX séparés par ", " (et un éventuel
+// " et " avant le dernier) : ce que produit une liste comme
+// "(IMG_0426_b, IMG_0427_b, IMG_0428_b, IMG_0429_b)" dans le texte source.
+const IMG_ID_GROUP_PATTERN = new RegExp(
+  `${IMG_ID_PATTERN.source}(?:(?:, | et )${IMG_ID_PATTERN.source})+`,
+  'g',
+);
+
+/** Un identifiant de page isolé (IMG_0424_b) n'a aucun sens pour un lecteur
+ * de la famille : c'est un nom de fichier, pas un repère de lecture. On
+ * affiche "page N" (le rang réel dans /lire), le lien continue de pointer
+ * vers cette page ; l'identifiant technique n'apparaît plus à l'écran. */
+function renderSingleImgLink(id: string): string {
+  const page = index.byId(id);
+  if (!page) return id;
+  return `<a href="/lire/${page.numero}" class="page-ref">page ${page.numero}</a>`;
+}
+
+/** Un groupe d'identifiants consécutifs ("IMG_A, IMG_B, IMG_C, IMG_D") se lit
+ * "pages N, N, N et N" plutôt que quatre liens collés à la file. */
+function renderImgLinkGroup(match: string): string {
+  const ids = match.match(IMG_ID_PATTERN) ?? [];
+  const links = ids.map((id) => {
+    const page = index.byId(id);
+    return page ? `<a href="/lire/${page.numero}" class="page-ref">${page.numero}</a>` : id;
+  });
+  if (links.length === 1) return `page ${links[0]}`;
+  const last = links[links.length - 1];
+  const rest = links.slice(0, -1);
+  return `pages ${rest.join(', ')} et ${last}`;
+}
 
 /** Transforme les renvois [1]..[9] en liens vers #source-N, et les
- * identifiants de page (IMG_0424_b...) en liens vers /lire/:n — appliqué
- * après le rendu Markdown, sur le HTML produit, jamais dans le fichier
- * source. Court-circuite à l'intérieur des balises <a>...</a> déjà présentes
- * pour ne pas imbriquer un lien dans un lien. */
+ * identifiants de page (IMG_0424_b...) en liens "page N" vers /lire/:n —
+ * appliqué après le rendu Markdown, sur le HTML produit, jamais dans le
+ * fichier source. Court-circuite à l'intérieur des balises <a>...</a> déjà
+ * présentes pour ne pas imbriquer un lien dans un lien. */
 function linkifyReferencesAndPageIds(html: string): string {
   // Découpe le HTML en segments alternant "hors lien" / "dans un lien
   // existant" (ex. les liens [1](url) du fichier de sources), pour ne
@@ -47,10 +78,10 @@ function linkifyReferencesAndPageIds(html: string): string {
         return `<a href="#source-${num}" class="ref">${match}</a>`;
       });
 
-      out = out.replace(IMG_ID_PATTERN, (match, id) => {
-        const page = index.byId(id);
-        return page ? `<a href="/lire/${page.numero}" class="page-ref">${match}</a>` : match;
-      });
+      // Les groupes d'identifiants consécutifs sont traités avant les
+      // identifiants isolés, sinon le pattern isolé les découperait un par un.
+      out = out.replace(IMG_ID_GROUP_PATTERN, renderImgLinkGroup);
+      out = out.replace(IMG_ID_PATTERN, renderSingleImgLink);
 
       return out;
     })
@@ -64,6 +95,25 @@ function linkifyReferencesAndPageIds(html: string): string {
  * ces [N]-là ne doivent jamais redevenir des liens, seulement porter l'ancre. */
 function anchorSourceEntries(html: string): string {
   return html.replace(/<p>\[(\d+)\]/g, '<p id="source-$1">[$1]');
+}
+
+// Une entrée de la section Sources, telle que produite par le Markdown :
+// "[1] <em>Titre</em>, Nom du site : <a href="URL">URL</a>". On veut le lien
+// sur le titre et l'URL masquée (seul le nom du site reste en texte) :
+// "[1] <a href="URL"><em>Titre</em></a>, Nom du site".
+const SOURCE_ENTRY_LINK_PATTERN =
+  /(<em>[^<]+<\/em>)(, [^<:]+) : <a href="([^"]+)">[^<]+<\/a>/g;
+
+/** Masque l'URL brute de chaque entrée [N] de la section Sources : le lien
+ * passe sur le titre, le nom du site reste visible en texte. N'affecte que
+ * les paragraphes d'entrées sourcées, pas les liens de la liste "Archives
+ * complémentaires" qui suit (pas de forme "[N] *titre*, site : url" là-bas). */
+function deduplicateSourceUrls(html: string): string {
+  return html.replace(
+    SOURCE_ENTRY_LINK_PATTERN,
+    (_match, titleEm: string, siteName: string, url: string) =>
+      `<a href="${url}">${titleEm}</a>${siteName}`,
+  );
 }
 
 /** Enveloppe dans un encadré "réserve méthodologique" tout paragraphe qui
@@ -111,5 +161,6 @@ export function renderEditorialMarkdown(source: string): string {
 
   const body = withCaveats.slice(0, splitIndex);
   const sources = withCaveats.slice(splitIndex);
-  return linkifyReferencesAndPageIds(body) + anchorSourceEntries(sources);
+  const renderedSources = deduplicateSourceUrls(anchorSourceEntries(sources));
+  return linkifyReferencesAndPageIds(body) + renderedSources;
 }

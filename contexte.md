@@ -6,7 +6,7 @@ _Rédigé le 19/09/2026. Destiné à la route `/contexte`, accessible depuis le 
 
 ## Contexte
 
-Le carnet d'Ernest ne raconte pas la guerre. Il ne nomme pas son camp, ne dit pas comment il a été fait prisonnier, ne cite jamais Étaples, et le 11 novembre 1918 il ne parle pas de l'armistice : ce jour-là, Ernest écrit qu'il s'est laissé prendre par le rire pendant une réunion, et qu'il le regrette (page 11-11-18, IMG_0478_a). C'est un cahier de devoirs, pas une chronique.
+Le carnet d'Ernest ne raconte pas la guerre. Il ne nomme pas son camp, ne dit pas comment il a été fait prisonnier, ne cite jamais Étaples, et le 11 novembre 1918 il ne parle pas de l'armistice : ce jour-là, Ernest écrit qu'il s'est laissé prendre par le rire pendant une réunion, et qu'il le regrette (IMG_0478_a, datée du 11-11-18). C'est un cahier de devoirs, pas une chronique.
 
 Cette page donne ce que le carnet passe sous silence : où il se trouvait, et ce qui arrivait à sa ville pendant ce temps.
 

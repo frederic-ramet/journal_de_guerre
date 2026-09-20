@@ -3,11 +3,15 @@ jpg_source/
 jpg_extract/
 jpg_split/
 
-# Pages images (~460 MB), montées en volume dans le conteneur du site
-jpg_pages/
+# Pages images (~460 MB), montées en volume dans le conteneur du site.
+# Ancré à la racine (/) : une règle "jpg_pages/" nue matcherait aussi un
+# dossier de ce nom n'importe où dans l'arbre, comme "tiles/" l'a fait pour
+# site/src/pages/tiles/ (code source d'une route, pas des tuiles générées)
+# jusqu'à ce que ce soit corrigé.
+/jpg_pages/
 
-# Tuiles DZI générées par site/scripts/tiles.js, montées en volume Docker
-tiles/
+# Tuiles DZI générées par site/scripts/tiles.js, montées en volume Docker.
+/tiles/
 
 # Compression script (not needed for deployment)
 compress_images.py

@@ -2,9 +2,56 @@ services:
   site:
     build: ./site
     ports:
-      - "4321:4321"
+      # HOST_PORT vient du .env à la racine du dépôt (jamais versionné, voir
+      # .gitignore) — docker compose le charge automatiquement. Pas de valeur
+      # par défaut ici : si HOST_PORT est absent, le démarrage doit échouer
+      # plutôt que de choisir un port au hasard.
+      - "${HOST_PORT:?HOST_PORT manquant — renseignez-le dans .env à la racine du dépôt}:4321"
     volumes:
-      - ./transcription/pages:/data/transcription/pages
-      - ./jpg_pages:/data/jpg_pages:ro
-      - ./tiles:/data/tiles
+      # Le dépôt entier, en écriture : la boucle de correction (site/src/lib/git-commit.ts)
+      # a besoin d'un vrai .git pour committer. Chemin absolu du clone sur le devserver
+      # (voir TODO.md, section Déploiement), jamais un chemin relatif au Mac.
+      - /mnt/data/dev/projects/journal_de_guerre:/data
+      # Médias hors dépôt : ils vivent sur le devserver, jamais dans le clone git
+      # (ni jpg_pages/ ni tiles/ ne doivent s'y retrouver). Montés par-dessus /data
+      # pour remplacer les chemins vides du dépôt. MEDIA_DIR vient du même .env
+      # que HOST_PORT (voir .env.example) — même valeur que celle utilisée par
+      # `deploy.sh --tiles` pour générer les tuiles au bon endroit.
+      - "${MEDIA_DIR:?MEDIA_DIR manquant — renseignez-le dans .env à la racine du dépôt}/jpg_pages:/data/jpg_pages:ro"
+      - "${MEDIA_DIR:?MEDIA_DIR manquant — renseignez-le dans .env à la racine du dépôt}/tiles:/data/tiles"
+    environment:
+      - CONTEXTE_MD_PATH=/data/contexte.md
+      # AUTH_HEADER et EDITORS viennent du .env unique à la racine (voir
+      # .env.example), passés explicitement plutôt que via env_file : ainsi
+      # seules ces deux variables entrent dans le conteneur, jamais tout le
+      # contenu du fichier (HOST_PORT et MEDIA_DIR n'ont rien à y faire).
+      # Valeur par défaut vide (${VAR:-}) : si absentes du .env, le site
+      # démarre quand même (AUTH_HEADER retombe sur X-Authenticated-User côté
+      # code, EDITORS vide veut dire personne ne peut éditer — jamais un
+      # démarrage bloqué pour ces deux-là, contrairement à HOST_PORT/MEDIA_DIR).
+      - AUTH_HEADER=${AUTH_HEADER:-}
+      - EDITORS=${EDITORS:-}
+      # EDIT_ENABLED n'est jamais défini ici en production (reste à sa valeur
+      # par défaut, false) : l'accès à /admin vient exclusivement de l'en-tête
+      # posé par le reverse proxy, jamais d'une variable d'environnement du
+      # conteneur.
+      - GIT_AUTHOR_NAME=Carnet d'Ernest (site)
+      - GIT_AUTHOR_EMAIL=site@carnet.local
+      - GIT_COMMITTER_NAME=Carnet d'Ernest (site)
+      - GIT_COMMITTER_EMAIL=site@carnet.local
+      # Le dépôt monté appartient à l'UID de l'hôte (devserver), pas à celui
+      # du conteneur : sans safe.directory, git refuse tout ("detected
+      # dubious ownership"). Posé en variable d'environnement (GIT_CONFIG_*)
+      # plutôt qu'en fichier de config, pour ne dépendre d'aucun $HOME ni
+      # d'un `git config --global` exécuté sous le mauvais utilisateur au
+      # build (le volume n'existe pas encore à ce moment-là de toute façon).
+      - GIT_CONFIG_COUNT=1
+      - GIT_CONFIG_KEY_0=safe.directory
+      - GIT_CONFIG_VALUE_0=/data
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4321/api/health').then(r => process.exit(r.ok ? 0 : 1)).catch(() => process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
     restart: unless-stopped

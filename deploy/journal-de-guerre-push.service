@@ -1,0 +1,23 @@
+[Unit]
+Description=Push quotidien des corrections du Carnet d'Ernest vers origin/main
+# Ne dépend d'aucun service Docker : ce push agit sur le dépôt git monté,
+# pas sur le conteneur. Peut tourner que le site soit up ou non.
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+# root : le conteneur docker compose écrit déjà dans ce clone en root (accès
+# SSH au devserver est root, voir docker-compose.yml), donc les fichiers du
+# clone appartiennent à root. Faire tourner ce timer sous un autre utilisateur
+# n'apporterait aucune séparation réelle — juste une clé déploiement de plus
+# à gérer et à faire correspondre aux permissions du clone. La clé SSH GitHub
+# dédiée vit donc dans /root/.ssh (voir la séquence de déploiement).
+User=root
+WorkingDirectory=/mnt/data/dev/projects/journal_de_guerre
+ExecStart=/mnt/data/dev/projects/journal_de_guerre/scripts/push-daily.sh
+# stdout/stderr vont dans le journal systemd (journalctl), pas de fichier de
+# log séparé à faire tourner : `journalctl -u journal-de-guerre-push.service`
+# suffit à constater les exécutions passées.
+StandardOutput=journal
+StandardError=journal

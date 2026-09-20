@@ -1,0 +1,16 @@
+[Unit]
+Description=Déclenche le push quotidien du Carnet d'Ernest
+
+[Timer]
+# Une fois par jour, à 03h locale (creux d'activité, avant toute
+# consultation matinale du site) ; Persistent=true rattrape l'exécution
+# manquée si le devserver était éteint à l'heure prévue, au prochain démarrage.
+OnCalendar=*-*-* 03:00:00
+Persistent=true
+# Étale légèrement le déclenchement pour éviter un pic exact à 03:00:00
+# si d'autres timers du serveur sont calés dessus (sans intérêt réel ici
+# avec un seul service, gardé par habitude systemd).
+RandomizedDelaySec=300
+
+[Install]
+WantedBy=timers.target

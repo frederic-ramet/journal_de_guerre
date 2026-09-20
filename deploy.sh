@@ -57,32 +57,45 @@ fi
 
 # Le serveur commite localement (boucle de correction, git-commit.ts) et ne
 # pousse qu'une fois par jour (tâche planifiée séparée, voir push-daily.sh) :
-# des corrections peuvent donc attendre ici au moment d'un déploiement. Un
-# --ff-only direct diverge dès que le Mac a poussé pendant ce temps. On pousse
-# d'abord ce qui est local, puis on tire.
+# des corrections peuvent donc attendre ici au moment d'un déploiement. On
+# pousse d'abord ce qui est local (s'il y en a), puis on tire.
 #
-# Le push peut échouer pour deux raisons distinctes, à ne pas confondre :
-# - problème de transport (réseau, clé) : `git push` ne contacte même pas
-#   le serveur distant, le message d'erreur de git le dit explicitement ;
-# - rejet "non-fast-forward" : origin/main a avancé depuis le dernier push
-#   du serveur (le Mac a poussé entre-temps). Un push simple ne résout jamais
-#   ça tout seul, et ce script ne tente aucun rebase/merge automatique
-#   (rien qui réécrive l'historique local, voir §10 de spec-site.md) :
-#   on s'arrête et on laisse quelqu'un regarder.
-echo "==> git push origin main (corrections en attente, s'il y en a)"
-PUSH_OUTPUT="$(git push origin main 2>&1)" && PUSH_STATUS=0 || PUSH_STATUS=$?
-echo "$PUSH_OUTPUT"
-if [ "$PUSH_STATUS" -ne 0 ]; then
-  if echo "$PUSH_OUTPUT" | grep -qi "rejected\|non-fast-forward\|fetch first"; then
-    echo "Erreur : push rejeté, origin/main a avancé depuis le dernier push du serveur" >&2
-    echo "(probablement le Mac). Pas de rebase automatique ici : examinez les deux historiques" >&2
-    echo "(git log --oneline main origin/main) et résolvez à la main avant de relancer." >&2
-  else
-    echo "Erreur : le push a échoué avant même de contacter le dépôt distant correctement" >&2
-    echo "(réseau, clé SSH, ou dépôt distant injoignable — voir le message git ci-dessus)." >&2
+# Le push n'est tenté que s'il existe vraiment des commits locaux non
+# présents sur origin/main : sinon (cas courant — le serveur vient d'être
+# redéployé sans avoir jamais commité de correction, ou est simplement en
+# retard sur origin), `git push` peut échouer avec "fetch first" même sans
+# aucune vraie divergence (main est un ancêtre strict d'origin/main), ce qui
+# bloquerait le déploiement pour rien.
+echo "==> git fetch origin main"
+git fetch origin main
+
+if [ -n "$(git log origin/main..HEAD --oneline)" ]; then
+  # Le push peut échouer pour deux raisons distinctes, à ne pas confondre :
+  # - problème de transport (réseau, clé) : `git push` ne contacte même pas
+  #   le serveur distant, le message d'erreur de git le dit explicitement ;
+  # - rejet "non-fast-forward" : origin/main a aussi avancé depuis le dernier
+  #   fetch (une autre correction poussée entre-temps), donc une vraie
+  #   divergence. Un push simple ne résout jamais ça tout seul, et ce script
+  #   ne tente aucun rebase/merge automatique (rien qui réécrive l'historique
+  #   local, voir §10 de spec-site.md) : on s'arrête et on laisse quelqu'un
+  #   regarder.
+  echo "==> git push origin main (corrections locales en attente)"
+  PUSH_OUTPUT="$(git push origin main 2>&1)" && PUSH_STATUS=0 || PUSH_STATUS=$?
+  echo "$PUSH_OUTPUT"
+  if [ "$PUSH_STATUS" -ne 0 ]; then
+    if echo "$PUSH_OUTPUT" | grep -qi "rejected\|non-fast-forward\|fetch first"; then
+      echo "Erreur : push rejeté, origin/main a avancé depuis le fetch ci-dessus" >&2
+      echo "(probablement le Mac). Pas de rebase automatique ici : examinez les deux historiques" >&2
+      echo "(git log --oneline main origin/main) et résolvez à la main avant de relancer." >&2
+    else
+      echo "Erreur : le push a échoué avant même de contacter le dépôt distant correctement" >&2
+      echo "(réseau, clé SSH, ou dépôt distant injoignable — voir le message git ci-dessus)." >&2
+    fi
+    echo "Le pull n'a pas été tenté. Rien n'a été touché côté déploiement." >&2
+    exit 1
   fi
-  echo "Le pull n'a pas été tenté. Rien n'a été touché côté déploiement." >&2
-  exit 1
+else
+  echo "==> Rien à pousser (aucun commit local en avance sur origin/main)"
 fi
 
 echo "==> git pull --ff-only origin main"

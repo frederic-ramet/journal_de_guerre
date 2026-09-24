@@ -1,20 +1,20 @@
 import type { APIRoute } from 'astro';
-import { getAuthHeaderName, getRawHeaderUser, isEditor } from '../../lib/auth';
+import { getJWTVerificationResult, isEditor } from '../../lib/auth';
 
 export const prerender = false;
 
-// Diagnostic pour la configuration du reverse proxy (NPM) : distingue "l'en-tête
-// n'arrive pas au site" de "il arrive mais le nom n'est pas dans EDITORS", deux
-// causes différentes d'un même 404 sur /admin/*, sinon indiscernables de
-// l'extérieur. Toujours 200, en lecture seule, jamais EDITORS ni aucune autre
-// variable d'environnement en clair — seulement ces trois informations.
+// Diagnostic pour la configuration Cloudflare Access : renvoie l'état du jeton,
+// la raison du refus s'il est invalide, l'email et isEditor.
+// Toujours 200, en lecture seule, jamais EDITORS ni aucune clé secrète.
 export const GET: APIRoute = async ({ request }) => {
-  const user = getRawHeaderUser(request);
+  const result = await getJWTVerificationResult(request);
 
   const body = {
-    expectedHeader: getAuthHeaderName(),
-    receivedUser: user,
-    isEditor: user !== null && isEditor(user),
+    hasToken: result.hasToken,
+    valid: result.valid,
+    reason: result.reason ?? null,
+    email: result.email ?? null,
+    isEditor: result.valid && result.email !== null && isEditor(result.email),
   };
 
   return new Response(JSON.stringify(body, null, 2), {

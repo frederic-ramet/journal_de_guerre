@@ -6,8 +6,8 @@ import { getAuthenticatedUser } from './lib/auth';
 // Sur les autres routes, l'identité (si présente) est juste exposée aux pages
 // pour qu'elles puissent afficher ou non les boutons d'édition (ex. "Corriger
 // cette page" sur /lire/:n), sans jamais bloquer l'accès en lecture.
-export const onRequest = defineMiddleware((context, next) => {
-  const user = getAuthenticatedUser(context.request);
+export const onRequest = defineMiddleware(async (context, next) => {
+  const user = await getAuthenticatedUser(context.request);
 
   if (context.url.pathname.startsWith('/admin') && !user) {
     return new Response('Not found', { status: 404 });

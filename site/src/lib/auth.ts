@@ -1,50 +1,139 @@
-// Authentification de /admin/* : ni comptes ni mots de passe côté site.
-// - En production, le reverse proxy (Nginx Proxy Manager) doit poser l'en-tête
-//   nommé par AUTH_HEADER après avoir authentifié la personne, et l'écraser
-//   pour tout ce qui vient du client (jamais transmis tel quel depuis
-//   l'extérieur). Ce site fait confiance à cet en-tête uniquement parce qu'il
-//   est supposé tourner derrière ce proxy, jamais exposé directement.
-// - En développement, EDIT_ENABLED=true force l'accès sans proxy.
-//
-// Authentifié ne veut pas dire éditeur : l'Access List de NPM protège tout
-// le site (lecture comprise), donc n'importe quel compte de la famille pose
-// l'en-tête. Seuls les noms listés dans EDITORS peuvent corriger — les
-// autres lisent, sans bouton d'édition et avec /admin/* qui répond 404.
-// EDITORS vide ou absent : personne ne peut éditer, y compris en étant
-// authentifié auprès du proxy.
+import { createRemoteJWKSet, jwtVerify } from 'jose';
 
-const AUTH_HEADER_NAME = process.env.AUTH_HEADER ?? 'X-Authenticated-User';
+// Authentification Cloudflare Access : JWT signé par Cloudflare
+// En développement, EDIT_ENABLED=true force l'accès sans vérification JWT.
+// En production, le jeton JWT est vérifié avec signature Cloudflare RS256,
+// aud (identifiant de l'application), et iss (domaine Cloudflare).
+// L'identité est l'email du jeton, EDITORS est une liste d'adresses (case-insensitive).
+// Le site reste lisible sans config Cloudflare ; seule l'édition est désactivée.
+
 const EDIT_ENABLED = process.env.EDIT_ENABLED === 'true';
-const EDITORS = (process.env.EDITORS ?? '')
+const CF_ACCESS_TEAM_DOMAIN = normalizeTeamDomain(process.env.CF_ACCESS_TEAM_DOMAIN ?? '');
+const CF_ACCESS_AUD = process.env.CF_ACCESS_AUD ?? '';
+const EDITORS_STR = (process.env.EDITORS ?? '').toLowerCase();
+const EDITORS = EDITORS_STR
   .split(',')
-  .map((name) => name.trim())
-  .filter((name) => name.length > 0);
+  .map((email) => email.trim())
+  .filter((email) => email.length > 0);
+
+function normalizeTeamDomain(domain: string): string {
+  if (!domain) return '';
+  return domain.replace(/^https?:\/\//, '').trim();
+}
+
+function isConfigurationComplete(): boolean {
+  return EDIT_ENABLED || (CF_ACCESS_TEAM_DOMAIN.length > 0 && CF_ACCESS_AUD.length > 0);
+}
+
+let jwksCache: ReturnType<typeof createRemoteJWKSet> | null = null;
+
+function getJWKS() {
+  if (jwksCache) return jwksCache;
+  if (!isConfigurationComplete()) return null;
+  const certsUrl = `https://${CF_ACCESS_TEAM_DOMAIN}/cdn-cgi/access/certs`;
+  jwksCache = createRemoteJWKSet(new URL(certsUrl));
+  return jwksCache;
+}
+
+interface CFAccessToken {
+  aud: string[];
+  email: string;
+  iss: string;
+  exp: number;
+  iat: number;
+}
+
+interface VerifyResult {
+  email: string | null;
+  valid: boolean;
+  reason?: string;
+}
+
+async function verifyCloudflareJWT(token: string): Promise<VerifyResult> {
+  if (!isConfigurationComplete()) {
+    return { email: null, valid: false, reason: 'configuration_incomplete' };
+  }
+
+  try {
+    const jwks = getJWKS();
+    if (!jwks) {
+      return { email: null, valid: false, reason: 'jwks_unavailable' };
+    }
+
+    const issuer = `https://${CF_ACCESS_TEAM_DOMAIN}`;
+    const result = await jwtVerify(token, jwks, {
+      algorithms: ['RS256'],
+      issuer,
+      audience: CF_ACCESS_AUD,
+    });
+
+    const payload = result.payload as CFAccessToken;
+
+    if (!payload.email) {
+      return { email: null, valid: false, reason: 'no_email_in_token' };
+    }
+
+    return { email: payload.email.toLowerCase(), valid: true };
+  } catch (error) {
+    const reason = error instanceof Error ? error.message : String(error);
+    if (reason.includes('signature')) {
+      return { email: null, valid: false, reason: 'invalid_signature' };
+    }
+    if (reason.includes('audience')) {
+      return { email: null, valid: false, reason: 'invalid_audience' };
+    }
+    if (reason.includes('issuer')) {
+      return { email: null, valid: false, reason: 'invalid_issuer' };
+    }
+    if (reason.includes('exp')) {
+      return { email: null, valid: false, reason: 'token_expired' };
+    }
+    return { email: null, valid: false, reason: 'verification_failed' };
+  }
+}
 
 /** Retourne l'identité de l'auteur si l'édition est autorisée, sinon null. */
-export function getAuthenticatedUser(request: Request): string | null {
+export async function getAuthenticatedUser(request: Request): Promise<string | null> {
   if (EDIT_ENABLED) {
     return process.env.EDIT_ENABLED_USER ?? 'dev';
   }
-  const user = getRawHeaderUser(request);
-  return user && isEditor(user) ? user : null;
+
+  const result = await getJWTVerificationResult(request);
+  return result.email && result.valid && isEditor(result.email) ? result.email : null;
 }
 
 /**
- * Valeur brute de l'en-tête d'authentification, sans filtrage par EDITORS —
- * distincte de getAuthenticatedUser() exprès : /api/whoami (voir cette route)
- * a besoin de savoir si l'en-tête arrive au site avant de savoir si le nom
- * reçu est autorisé à corriger, pour diagnostiquer un proxy qui ne
- * transmettrait pas l'en-tête sans le confondre avec un nom absent d'EDITORS.
+ * Résultat complet de la vérification du JWT.
+ * /api/whoami en a besoin pour diagnostiquer l'état du jeton.
  */
-export function getRawHeaderUser(request: Request): string | null {
-  const value = request.headers.get(AUTH_HEADER_NAME);
-  return value && value.trim().length > 0 ? value.trim() : null;
+export async function getJWTVerificationResult(
+  request: Request
+): Promise<VerifyResult & { hasToken: boolean }> {
+  const token = request.headers.get('Cf-Access-Jwt-Assertion');
+  if (!token) {
+    return { email: null, valid: false, hasToken: false, reason: 'no_token' };
+  }
+
+  const result = await verifyCloudflareJWT(token);
+  return { ...result, hasToken: true };
 }
 
-export function isEditor(user: string): boolean {
-  return EDITORS.includes(user);
+export function isEditor(email: string): boolean {
+  return EDITORS.includes(email.toLowerCase());
 }
 
-export function getAuthHeaderName(): string {
-  return AUTH_HEADER_NAME;
+export function getConfigStatus(): {
+  complete: boolean;
+  editEnabled: boolean;
+  teamDomain: string;
+  audConfigured: boolean;
+  editorsCount: number;
+} {
+  return {
+    complete: isConfigurationComplete(),
+    editEnabled: EDIT_ENABLED,
+    teamDomain: CF_ACCESS_TEAM_DOMAIN,
+    audConfigured: CF_ACCESS_AUD.length > 0,
+    editorsCount: EDITORS.length,
+  };
 }

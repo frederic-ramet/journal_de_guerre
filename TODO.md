@@ -53,6 +53,16 @@ Attention : ~3 Go libres sur le Mac.
 
 Images, à reprendre : recadrage trop large sur une partie des pages
 
+## Comprendre (espace pédagogique)
+
+Brief de recherche : `recherche/BRIEF.md`, confié à l'agent de recherche historique.
+
+- [ ] Lieu de captivité : la page de titre se lit « Martene Westphalie » (relecture HD du 24/09), très probablement **Marten, près de Dortmund** (mines, cokeries), rattaché au VII<sup>e</sup> corps (Münster). À confirmer par l'agent, puis corriger `contexte.md` (qui dit « rien de plus de lisible ») et `synthese.md`
+- [ ] Archives : fiches CICR et registre matricule d'Ernest, fiches de Georges Lété et des camarades
+- [ ] Pilotes : spiritisme, bonne action (piste Kardec, question 919), prière de Charlemagne
+- [ ] Rédiger les zooms à partir du matériau rapporté, puis section « Comprendre » dans le site (menu principal)
+- [ ] IMG_0483_a : date notée « 4-1-18 », en réalité 4 janvier 1919 (millésime écrit par habitude), à corriger dans le front matter
+
 ## Ontologie
 
 Plan détaillé dans `ontology.md`. À lancer après la relecture, pas avant.

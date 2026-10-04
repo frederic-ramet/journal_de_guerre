@@ -59,15 +59,16 @@ C'est la partie la plus émouvante, et elle était totalement absente des versio
 
 **1935.** Une lettre d'un correspondant religieux, datée du 11 mars 1935, est recopiée ou conservée dans le carnet (0490_a).
 
-**1940.** Le document glissé à la fin du carnet boucle l'histoire : affecté le 29 mars 1940 au centre mobilisateur de « Guin[?]amp » (le nom est incertain sur la feuille, probablement Guingamp, à vérifier), Ernest rejoint fin avril le 4e bataillon d'ouvriers d'artillerie à Wormhout et Steenvoorde. Lors de l'invasion il combat de Steenvoorde jusqu'à Dunkerque, où il arrive le 29 mai. Il quitte la plage le 4 juin vers deux heures du matin **à bord d'un canot à rames**, en compagnie de marins d'Étaples (« Perrault Léon », « Calvin[?] Jean », lectures à recouper), est recueilli par un remorqueur anglais, débarqué à Ramsgate, conduit par train à Plymouth, rembarqué pour Brest où il débarque le 6 juin, puis dirigé sur Caen, Lisieux, et la route à pied jusqu'à Bergerac en passant par Le Mans (IMG_0508).
+**1940.** Le document glissé à la fin du carnet n'est pas d'Ernest : c'est la déclaration de **son fils, Ernest lui aussi** (information familiale). Affecté le 29 mars 1940 au centre mobilisateur de « Guin[?]amp » (le nom est incertain sur la feuille, probablement Guingamp, à vérifier), il rejoint fin avril le 4e bataillon d'ouvriers d'artillerie à Wormhout et Steenvoorde. Lors de l'invasion il combat de Steenvoorde jusqu'à Dunkerque, où il arrive le 29 mai. Il quitte la plage le 4 juin vers deux heures du matin **à bord d'un canot à rames**, en compagnie de marins d'Étaples (« Perrault Léon », « Calvin[?] Jean », lectures à recouper), est recueilli par un remorqueur anglais, débarqué à Ramsgate, conduit par train à Plymouth, rembarqué pour Brest où il débarque le 6 juin, puis dirigé sur Caen, Lisieux, et la route à pied jusqu'à Bergerac en passant par Le Mans (IMG_0508).
 
-Le marin de 1940 qui s'échappe de Dunkerque à la rame est le même homme que le prisonnier de 1918 qui donnait ses biscuits aux Russes.
+Le carnet du père, prisonnier en 1918, a gardé le récit du fils, rescapé de Dunkerque en 1940. Ernest fils est sans doute l'un des « deux enfants » de la page IMG_0489_a, mais le carnet ne le dit pas.
 
 ## Points à trancher
 
 | Question | État |
 |---|---|
-| Le lieu de captivité | La page de titre porte un nom illisible suivi de « Westphalie, Allemagne » (0410_b). Münster est plausible mais **non prouvé**. Le lieu n'est jamais renommé ailleurs dans le carnet. |
+| Le lieu de captivité | La page de titre se lit « Martene, Westphalie, Allemagne » (0410_b, relecture de l'image HD du 24/09/2026) : très probablement **Marten**, commune minière près de Dortmund. Un bulletin de février 1918 signale une mine « Germania », très probablement celle de Marten, avec 184 Français et 105 Russes rattachés à Münster II (Kommando n° 40). **Probable, non prouvé** : aucun document ne nomme encore Ernest. Voir `recherche/00-lieu-et-archives.md`. |
+| La déclaration de 1940 | Écrite par Ernest Ramet **fils** (information familiale). Les versions antérieures de ce document et du site l'attribuaient à tort au père. |
 | « Ernest Soir » | Ce pseudonyme, affirmé par les anciennes versions, **n'apparaît nulle part** dans les 194 pages. À abandonner. |
 | Les dates de janvier | Ernest écrit « 4-1-18 », « 7-1-18 », « 10-1-18 » alors que le contexte impose janvier 1919, et il écrit « 12-1-19 » quelques pages plus loin. Erreur de sa part, fréquente en début d'année. |
 | Le texte sur l'orgueil | Auteur non identifié. Piste : Pierre Nicole. |

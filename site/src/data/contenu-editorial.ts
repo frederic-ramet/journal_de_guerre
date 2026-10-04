@@ -8,9 +8,9 @@ export const ACCROCHE =
 
 export const MISE_EN_SITUATION =
   "En juin 1918, Ernest Ramet est prisonnier en Westphalie et partage ses biscuits avec des " +
-  "Russes affamés. À 800 kilomètres de là, Étaples, sa ville, est devenue la plus grande base " +
-  "britannique de la guerre, et ses hôpitaux viennent d'être bombardés. Vingt-deux ans plus " +
-  'tard, il quittera la plage de Dunkerque à la rame.';
+  "Russes affamés. À plus de 400 kilomètres de là, Étaples, sa ville, est devenue la plus " +
+  "grande base britannique de la guerre, et ses hôpitaux viennent d'être bombardés. Vingt-deux " +
+  'ans plus tard, son fils, Ernest lui aussi, quittera la plage de Dunkerque à la rame.';
 
 export interface ChronologieEntree {
   quand: string;
@@ -27,8 +27,8 @@ export const CHRONOLOGIE: ChronologieEntree[] = [
     quand: '14 juin 1918',
     titre: 'Le cahier commence',
     texte:
-      'Prisonnier en Westphalie, il ouvre un « carnet d\'aspirations » et suit les ' +
-      'leçons de son camarade Georges Lété.',
+      'Prisonnier en Westphalie, il ouvre son cahier, « Étude commencée le 14 juin 1918 », ' +
+      'et suit les leçons de son camarade Georges Lété.',
     sourceIds: ['IMG_0410_b'],
   },
   {
@@ -44,20 +44,20 @@ export const CHRONOLOGIE: ChronologieEntree[] = [
     quand: '15 octobre 1918',
     titre: 'Une autre main le corrige',
     texte:
-      '« C\'est assez bien. Faites un peu attention aux fautes. Vous faites des ' +
-      'progrès. »',
+      '« C\'est assez bien. Faites un peu attention aux fautes. […] Vous faites des ' +
+      'progrès […]. »',
     sourceIds: ['IMG_0470_b'],
   },
   {
     quand: 'janvier 1919',
     titre: 'Le retour',
     texte:
-      '« J\'ai négligé un peu mes devoirs d\'écrire sur mon cahier, c\'était par ' +
+      '« J\'ai négligé un peu mes devoirs d\'écrire sur mon cahier, c\'était par […] ' +
       'l\'émotion du retour de ma captivité. »',
     sourceIds: ['IMG_0483_a'],
   },
   {
-    quand: 'années 1920',
+    quand: 'après la guerre',
     titre: 'La mer, une femme, deux enfants',
     texte: '« Je copierai une petite phrase chaque fois que je serai à terre. »',
     sourceIds: ['IMG_0489_a', 'IMG_0491_a'],
@@ -65,15 +65,17 @@ export const CHRONOLOGIE: ChronologieEntree[] = [
   },
   {
     quand: '4 juin 1940',
-    titre: 'Dunkerque, à la rame',
+    titre: 'Son fils, à Dunkerque',
     texte:
-      'Il quitte la plage vers deux heures du matin dans un canot à rames, avec des ' +
-      'marins d\'Étaples.',
+      'Son fils, Ernest lui aussi, quitte la plage vers deux heures du matin dans un ' +
+      'canot à rames, avec des marins d\'Étaples. Sa déclaration était glissée dans le carnet.',
     sourceIds: ['IMG_0508'],
     sourceLabel: 'Documents',
   },
 ];
 
 export const CE_QUON_NE_SAIT_PAS_ENCORE =
-  'Le nom du lieu de captivité est illisible sur la page de titre : le carnet dit ' +
-  'seulement Westphalie. Münster est probable, mais non prouvé.';
+  'La page de titre se lit « Martene, Westphalie » : très probablement Marten, commune ' +
+  'minière près de Dortmund. Une mine « Germania », sans doute celle de Marten, employait ' +
+  'des prisonniers français et russes rattachés au camp de Münster. Mais aucun document ' +
+  'ne nomme encore Ernest à cet endroit.';

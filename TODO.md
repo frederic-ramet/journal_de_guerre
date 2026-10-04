@@ -53,6 +53,18 @@ Attention : ~3 Go libres sur le Mac.
 
 Images, à reprendre : recadrage trop large sur une partie des pages
 
+## Corrections de contenu (04/10/2026)
+
+- [x] **La déclaration de 1940 est celle d'Ernest fils**, pas du père : corrigé dans `synthese.md`, `contexte.md`, `spec-site.md`, `recherche/BRIEF.md`, `glossaire.md`, et dans le site (`contenu-editorial.ts`, `documents.ts`)
+- [x] Distance Étaples / Westphalie : « 800 km » faux, environ 415 à 450 km, corrigé en « plus de 400 »
+- [x] « carnet d'aspirations » : formule absente du carnet, remplacée par la page de titre réelle
+- [x] Citations tronquées sans marque de coupure (IMG_0470_b, IMG_0483_a) : « […] » ajoutés
+- [x] « années 1920 » non daté par le carnet : remplacé par « après la guerre »
+- [x] Lieu de captivité : Münster remplacé par Marten (probable) dans le site, `contexte.md` et `synthese.md`
+- [ ] Par le parcours de correction du site : IMG_0410_b, lieu « Mart[?]e » → « Martene » ; IMG_0508, préciser « Ernest Ramet fils » dans les notes
+- [ ] Accroche « Chaque soir, il notait… » : « chaque soir » n'est pas attesté par le carnet (entrées datées au jour). À trancher par Frédéric
+- [ ] Recherche : la fiche matricule mobilisée en 1939-1940 est celle d'Ernest fils ; prévenir l'agent (le raisonnement sur la classe du père dans `recherche/00` part de la mauvaise hypothèse)
+
 ## Comprendre (espace pédagogique)
 
 Brief de recherche : `recherche/BRIEF.md`, confié à l'agent de recherche historique.
@@ -60,7 +72,9 @@ Brief de recherche : `recherche/BRIEF.md`, confié à l'agent de recherche histo
 - [ ] Lieu de captivité : la page de titre se lit « Martene Westphalie » (relecture HD du 24/09), très probablement **Marten, près de Dortmund** (mines, cokeries), rattaché au VII<sup>e</sup> corps (Münster). À confirmer par l'agent, puis corriger `contexte.md` (qui dit « rien de plus de lisible ») et `synthese.md`
 - [ ] Archives : fiches CICR et registre matricule d'Ernest, fiches de Georges Lété et des camarades
 - [ ] Pilotes : spiritisme, bonne action (piste Kardec, question 919), prière de Charlemagne
-- [ ] Rédiger les zooms à partir du matériau rapporté, puis section « Comprendre » dans le site (menu principal)
+- [x] Page « Comprendre » (carte des 11 questions, état de la recherche) : `comprendre.md`
+- [ ] Route `/comprendre` dans le site, entrée du menu principal
+- [ ] Rédiger les zooms, un par question, à partir du matériau rapporté
 - [ ] IMG_0483_a : date notée « 4-1-18 », en réalité 4 janvier 1919 (millésime écrit par habitude), à corriger dans le front matter
 
 ## Ontologie
@@ -103,7 +117,7 @@ Reste à faire :
 - [ ] `deploy.sh` idempotent
 - [ ] Choisir un port libre en 30xx (vérifier, ne pas deviner)
 - [ ] rsync de `jpg_pages` vers le serveur, puis régénérer les tuiles sur place
-- [ ] NPM : Access List + `proxy_set_header X-Authenticated-User $remote_user`
+- [ ] Cloudflare : tunnel homelab-local vers `carnet.ramet.net`, Access (code par e-mail) devant, vérifier `/api/whoami`
 - [ ] AdGuard : `carnet.home` → `192.168.1.194` (AdGuard et NPM sont sur le homeserver, LXC 100)
 
 ## UI/UX

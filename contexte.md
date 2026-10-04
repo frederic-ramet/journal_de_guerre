@@ -16,9 +16,9 @@ Cette page donne ce que le carnet passe sous silence : où il se trouvait, et ce
 
 Environ 2,4 millions d'hommes ont été prisonniers en Allemagne entre 1914 et 1918. Les trois plus gros contingents : 1,4 million de Russes, 535 000 Français, 185 000 Britanniques [1].
 
-Le carnet dit « en Westphalie ». Il ne dit rien de plus de lisible. Le plus grand ensemble de camps de la région était celui de Münster, composé de trois camps : Münster I (Haus-Spital), Münster II (Rennbahn, construit sur un ancien hippodrome, par lequel sont passés près de 48 000 prisonniers) et Münster III (Neue-Kasernen). On y trouvait des Français, des Belges, des Portugais, des Serbes, des Russes, des Anglais, des Italiens et des Roumains, les Français formant le contingent le plus nombreux [2].
+La page de titre du carnet dit « Martene, Westphalie ». Ernest écrit comme il entend : c'est très probablement **Marten**, alors commune minière près de Dortmund, avec ses puits et ses cokeries [7]. Le plus grand ensemble de camps de la région était celui de Münster, composé de trois camps : Münster I (Haus-Spital), Münster II (Rennbahn, construit sur un ancien hippodrome, par lequel sont passés près de 48 000 prisonniers) et Münster III (Neue-Kasernen). On y trouvait des Français, des Belges, des Portugais, des Serbes, des Russes, des Anglais, des Italiens et des Roumains, les Français formant le contingent le plus nombreux [2].
 
-**Münster reste une hypothèse.** C'est le complexe le plus probable, pas un fait établi. Le nom porté sur la page de titre du carnet n'est pas déchiffrable avec certitude.
+**Marten reste une hypothèse.** C'est la lecture la plus probable, pas un fait établi. Un bulletin de février 1918 signale une mine « Germania », très probablement celle de Marten, où travaillaient 184 Français et 105 Russes rattachés au camp de Münster II [8]. Mais aucun document ne nomme encore Ernest à cet endroit.
 
 ### Le travail
 
@@ -69,11 +69,11 @@ La grippe espagnole frappe ensuite la population en 1918-1919 [6].
 
 Pour être clair sur les limites de ce document :
 
-- il ne nomme pas le camp de façon lisible ;
+- il ne nomme pas son camp, seulement un lieu, « Martene » ;
 - il ne dit pas la date ni les circonstances de la capture ;
 - il ne mentionne jamais Étaples, ni la famille restée là-bas ;
 - il ne dit pas un mot de l'armistice ;
-- le seul texte qui parle de guerre au sens propre est la déclaration de 1940, glissée à la fin, qui n'appartient pas au carnet.
+- le seul texte qui parle de guerre au sens propre est la déclaration de 1940, glissée à la fin : elle n'appartient pas au carnet, et elle est de son fils, Ernest lui aussi.
 
 Ce silence n'est pas un oubli. Le cahier avait une autre fonction : tenir le compte quotidien d'une bonne action faite et d'une mauvaise action évitée, et le soumettre à un correcteur.
 
@@ -92,6 +92,10 @@ Ce silence n'est pas un oubli. Le cahier avait une autre fonction : tenir le com
 [5] *Air raid on Etaples, 19 May 1918*, The Great War Forum : https://www.greatwarforum.org/topic/8381-air-raid-on-etaples-19-may-1918/
 
 [6] *Étaples*, Wikipédia : https://fr.wikipedia.org/wiki/%C3%89taples
+
+[7] *Marten*, répertoire historique GOV (GenWiki) : https://wiki.genealogy.net/GOV:MARTENJO31QM
+
+[8] *Bulletin de l'Office d'information des œuvres de secours aux prisonniers de guerre*, 9 février 1918, Gallica : https://gallica.bnf.fr/ark:/12148/bpt6k65583091
 
 Archives complémentaires non encore dépouillées, à explorer plus tard :
 

@@ -14,10 +14,11 @@ export interface DocumentDef {
 export const DOCUMENTS: DocumentDef[] = [
   {
     slug: 'declaration-1940',
-    titre: 'Déclaration de Ramet Ernest, 1940',
+    titre: 'Déclaration d\'Ernest Ramet fils, 1940',
     pageId: 'IMG_0508',
     noteContexte:
-      "Ce document n'appartient pas au carnet : il y était simplement glissé. Il " +
-      'date de juin 1940, vingt-deux ans après les pages qui précèdent.',
+      "Ce document n'appartient pas au carnet : il y était simplement glissé. C'est la " +
+      'déclaration de son fils, Ernest lui aussi, qui raconte sa retraite de mai et juin ' +
+      '1940, vingt-deux ans après les pages qui précèdent.',
   },
 ];

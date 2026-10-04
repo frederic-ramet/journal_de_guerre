@@ -129,7 +129,7 @@ suivants — à enrichir au fil de l'eau._
 
 - À partir d'IMG_0504, les pages changent de nature : couvertures, images
   pieuses, et une lettre de 1940 sans rapport avec le carnet de 1918
-  (déclaration militaire d'Ernest Ramet lors de l'évacuation de Dunkerque,
+  (déclaration militaire d'Ernest Ramet fils lors de l'évacuation de Dunkerque,
   déjà documentée dans `transcription/pilote/doc-declaration-1940.md`).
   Utiliser un `type` cohérent avec le contenu réel (ex. "page_vierge",
   "image_pieuse", "document_annexe") plutôt que de forcer une lecture de

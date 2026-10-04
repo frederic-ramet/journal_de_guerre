@@ -118,7 +118,7 @@ Recherche plein texte (SQLite FTS5) sur les deux versions du texte, glossaire, f
 
 ### Mise en situation, trois phrases
 
-> En juin 1918, Ernest Ramet est prisonnier en Westphalie et partage ses biscuits avec des Russes affamés. À 800 kilomètres de là, Étaples, sa ville, est devenue la plus grande base britannique de la guerre, et ses hôpitaux viennent d'être bombardés. Vingt-deux ans plus tard, il quittera la plage de Dunkerque à la rame.
+> En juin 1918, Ernest Ramet est prisonnier en Westphalie et partage ses biscuits avec des Russes affamés. À plus de 400 kilomètres de là, Étaples, sa ville, est devenue la plus grande base britannique de la guerre, et ses hôpitaux viennent d'être bombardés. Vingt-deux ans plus tard, son fils, Ernest lui aussi, quittera la plage de Dunkerque à la rame.
 
 ### Repère de lecture
 
@@ -138,7 +138,8 @@ Le carnet commence comme la vie d'un homme et finit comme un catéchisme. Le sit
 1. Rien sans source : carnet, document, ou mémoire familiale, et on dit laquelle.
 2. Aucun chiffre ni citation qui ne vienne du texte transcrit.
 3. En cas de doute, écrire « à vérifier ». Ne jamais combler.
-4. Le lieu de captivité s'écrit « en Westphalie ». Münster est une hypothèse, présentée comme telle.
+4. Le lieu de captivité s'écrit « en Westphalie ». Marten, près de Dortmund, est l'hypothèse la plus probable, présentée comme telle.
+5. La déclaration de 1940 est celle d'Ernest Ramet fils, jamais du père.
 
 ## 7. Correction : le cœur technique
 
@@ -157,7 +158,7 @@ Parcours :
 
 Contraintes : un commit par page, jamais groupé. Ne jamais écraser un fichier dont le statut est `verifie_claude` sans confirmation explicite.
 
-Authentification : protection par le reverse proxy (Nginx Proxy Manager) ou accès Tailscale. Le site ne gère pas de comptes. Il lit un en-tête ou une variable d'environnement pour savoir s'il doit afficher les boutons d'édition.
+Authentification : Cloudflare Access devant le site (connexion par code envoyé par e-mail). Le site ne gère pas de comptes. Il vérifie la signature du jeton transmis par Cloudflare et n'affiche les boutons d'édition qu'aux adresses listées dans `EDITORS`.
 
 ## 8. Design
 

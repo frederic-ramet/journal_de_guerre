@@ -6,7 +6,7 @@ _Rédigé le 24/09/2026. Destinataire : l'agent de recherche historique. Command
 
 ## 1. Pour quoi faire
 
-Le carnet d'Ernest Ramet est un cahier tenu en captivité en Allemagne de juin 1918 à janvier 1919, puis complété jusqu'en 1940. Il est transcrit (196 pages) et publié sur un site privé pour la famille.
+Le carnet d'Ernest Ramet est un cahier tenu en captivité en Allemagne de juin 1918 à janvier 1919, puis complété les années suivantes. Une déclaration de 1940, écrite par son fils, y était glissée. Il est transcrit (196 pages) et publié sur un site privé pour la famille.
 
 On ouvre sur ce site un espace **« Comprendre »** : un outil pour entrer dans cette guerre par un autre chemin que celui des tranchées. Le public, c'est la famille, et en particulier **une adolescente de 15 ans**, l'arrière-arrière-petite-fille d'Ernest. Les textes pourront être longs et approfondis ; ce qui compte, c'est qu'ils soient vrais, concrets et qu'ils donnent envie de comprendre.
 
@@ -38,7 +38,7 @@ En bref :
 - Le contenu évolue : **spiritisme** (juin 1918), examen de conscience, **Évangile**, **prières de protection**, puis citations de saints.
 - Il recopie **Voltaire** (article « Rire »), **Descartes** (*Les Passions de l'âme*, la générosité), et un texte non attribué sur l'**orgueil** (piste : Pierre Nicole, *Essais de morale*).
 - Retour en France en **janvier 1919**. Plus tard marin, marié, deux enfants.
-- En **juin 1940**, il quitte Dunkerque à la rame avec des marins d'Étaples, passe par Ramsgate, Plymouth, Brest, puis gagne Bergerac à pied.
+- En **juin 1940**, **son fils, Ernest lui aussi**, quitte Dunkerque à la rame avec des marins d'Étaples, passe par Ramsgate, Plymouth, Brest, puis gagne Bergerac à pied. **La déclaration de 1940 est celle du fils, pas du père** (correction du 04/10/2026, information familiale).
 
 ## 4. Découverte à traiter en priorité : le lieu de captivité
 
@@ -64,7 +64,7 @@ C'est cohérent avec le reste du carnet : Ernest **charge du coke**, pousse des 
 **Sources à interroger :**
 
 - **Archives du CICR, prisonniers de la Première Guerre mondiale** : https://grandeguerre.icrc.org. Les fiches individuelles donnent en général le camp, la date et le lieu de capture, l'unité. C'est la source la plus directe, et c'est probablement là qu'il faut chercher Georges Lété, pas sur le web général.
-- **Registres matricules du Pas-de-Calais** (site des Archives départementales). La fiche matricule d'Ernest donnerait sa date de naissance, son unité, sa capture, son rapatriement, et peut-être sa mobilisation de 1940.
+- **Registres matricules du Pas-de-Calais** (site des Archives départementales). La fiche matricule d'Ernest donnerait sa date de naissance, son unité, sa capture, son rapatriement.
 - **Mémoire des hommes** et le **Grand Mémorial** (index national des registres matricules), pour recouper.
 
 **Noms à chercher, avec leurs variantes** (l'orthographe du carnet est phonétique, et les fiches allemandes ou suisses déforment les noms) :
@@ -79,7 +79,7 @@ C'est cohérent avec le reste du carnet : Ernest **charge du coke**, pousse des 
 
 **Ce que Frédéric peut fournir** si tu en as besoin : date et lieu de naissance d'Ernest, livret militaire ou papiers de famille, photos. Demande avant de chercher à l'aveugle.
 
-**1940** : la déclaration (IMG_0508) parle d'une affectation le 29 mars 1940 au « C.M. de Guin[?]amp » (centre mobilisateur, sans doute Guingamp) et du « 4<sup>e</sup> bataillon d'ouvriers d'artillerie » à Wormhout et Steenvoorde. À recouper.
+**1940** : la déclaration (IMG_0508) est celle d'**Ernest Ramet fils**. Elle parle d'une affectation le 29 mars 1940 au « C.M. de Guin[?]amp » (centre mobilisateur, sans doute Guingamp) et du « 4<sup>e</sup> bataillon d'ouvriers d'artillerie » à Wormhout et Steenvoorde. À recouper.
 
 ## 6. Axes thématiques
 
@@ -143,7 +143,7 @@ Approfondir `contexte.md` : la vie des civils, les pêcheurs, le regard des Éta
 
 Le rapatriement des prisonniers entre novembre 1918 et janvier 1919 : comment ils rentraient, l'accueil, la méfiance envers les prisonniers, l'absence de reconnaissance. Ernest écrit ses « 1<sup>ers</sup> devoirs en France » (IMG_0483_a) à une date notée « 4-1-18 » : c'est certainement le 4 janvier **1919**, écrit par habitude avec l'ancien millésime.
 
-### Axe 10 : 1940, Dunkerque
+### Axe 10 : 1940, Dunkerque (Ernest Ramet fils)
 
 L'opération Dynamo vue par les Français, les évacuations par petites embarcations, le retour des soldats français par Plymouth et Brest. **Question** : des bateaux ou des marins d'Étaples ont-ils participé à l'évacuation de Dunkerque ? Les deux marins cités par Ernest sont lus « Perrault Léon » et « Calvin[?] Jean » (lecture incertaine).
 
